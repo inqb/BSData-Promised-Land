@@ -404,47 +404,6 @@ This weapon has advantage when targeting *monsters* or *cavalry* units.</charact
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Purifiers" hidden="false" id="9ae9-20be-5f34-ff0a">
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="Purifier" hidden="false" id="be74-3f00-947c-7962">
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="b509-51c0-b34f-9c14" includeChildSelections="false"/>
-            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="4c75-5b84-123c-aca9" includeChildSelections="false"/>
-          </constraints>
-          <costs>
-            <cost name="Auri" typeId="cost-auri" value="25"/>
-          </costs>
-          <profiles>
-            <profile name="Infernal Blades" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="9a3e-c543-9e1b-99e9">
-              <characteristics>
-                <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">2</characteristic>
-                <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+2</characteristic>
-                <characteristic name="Damage" typeId="2780-b560-1641-b9a5">2</characteristic>
-                <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d">After a unit equipped with this weapon has finished attacking, for each *infantry* model slain by this weapon, make one additional attack roll. These additional attacks, should they slay more models, do not generate additional attacks.
-Each time a unit gains an attrition point as part of an attack that includes this weapon, it gains one additional attrition point.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <selectionEntries>
-            <selectionEntry type="model" import="true" name="Incendiarite (Max 1/3)" hidden="false" id="4d00-51b7-15a9-7c01">
-              <costs>
-                <cost name="Auri" typeId="cost-auri" value="10"/>
-              </costs>
-              <profiles>
-                <profile name="Lance of Perdition" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="03c4-7d53-a72d-52b4">
-                  <characteristics>
-                    <characteristic name="Dice" typeId="1192-2222-5926-5b4b">D10</characteristic>
-                    <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+2</characteristic>
-                    <characteristic name="Damage" typeId="a482-225f-a3cb-a700">2</characteristic>
-                    <characteristic name="Traits" typeId="76cd-5882-86da-52cf">This weapon can only target units within 15” of the attacking model.
-Obscuration rolls cannot be made against this weapon.
-Each time a unit gains an attrition point as part of an attack that includes this weapon, it gains one additional attrition point.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntry>
-      </selectionEntries>
       <profiles>
         <profile name="Purifiers" typeId="profile-unit" typeName="Unit" hidden="false" id="f4e3-1e00-ff8f-dfd5">
           <characteristics>
@@ -473,6 +432,62 @@ Each time a unit gains an attrition point as part of an attack that includes thi
       <infoLinks>
         <infoLink name="Fleshwrought Abominations (8+)" id="750e-37e3-58aa-d368" hidden="false" type="rule" targetId="1c40-0281-0ec5-b2cb"/>
       </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Models" id="d29b-3412-6cb4-445f" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Purifier" hidden="false" id="be74-3f00-947c-7962" defaultAmount="3">
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="25"/>
+              </costs>
+              <profiles>
+                <profile name="Infernal Blades" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="9a3e-c543-9e1b-99e9">
+                  <characteristics>
+                    <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">2</characteristic>
+                    <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+2</characteristic>
+                    <characteristic name="Damage" typeId="2780-b560-1641-b9a5">2</characteristic>
+                    <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d">After a unit equipped with this weapon has finished attacking, for each *infantry* model slain by this weapon, make one additional attack roll. These additional attacks, should they slay more models, do not generate additional attacks.
+Each time a unit gains an attrition point as part of an attack that includes this weapon, it gains one additional attrition point.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Incendiarite" hidden="false" id="4d00-51b7-15a9-7c01">
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="10"/>
+              </costs>
+              <profiles>
+                <profile name="Lance of Perdition" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="03c4-7d53-a72d-52b4">
+                  <characteristics>
+                    <characteristic name="Dice" typeId="1192-2222-5926-5b4b">D10</characteristic>
+                    <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+2</characteristic>
+                    <characteristic name="Damage" typeId="a482-225f-a3cb-a700">2</characteristic>
+                    <characteristic name="Traits" typeId="76cd-5882-86da-52cf">This weapon can only target units within 15” of the attacking model.
+Obscuration rolls cannot be made against this weapon.
+Each time a unit gains an attrition point as part of an attack that includes this weapon, it gains one additional attrition point.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="ce59-b108-7070-3cf0"/>
+              </constraints>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <repeats>
+                    <repeat value="2" repeats="1" field="selections" scope="parent" childId="be74-3f00-947c-7962" shared="true" roundUp="false"/>
+                  </repeats>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="ce59-b108-7070-3cf0"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="b509-51c0-b34f-9c14" includeChildSelections="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="4c75-5b84-123c-aca9" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Enlightened" hidden="false" id="d70a-c187-02ee-1169">
       <profiles>
