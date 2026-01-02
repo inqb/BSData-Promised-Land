@@ -1,0 +1,1127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="610b-48af-e8ef-2f35" name="Kingdoms of Mikaelhelde" gameSystemId="sys-promised-land" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="Cardinal" hidden="false" id="2ce2-88bf-8777-0c3e">
+      <categoryLinks>
+        <categoryLink targetId="5f3b-1e4c-ee88-4ac9" id="caf8-822a-8d7a-2721" primary="false" name="Kingdoms of Mikaelhelde"/>
+        <categoryLink targetId="2ed1-9284-2465-4634" id="d21f-a870-aa1e-1072" primary="false" name="Mystic"/>
+        <categoryLink targetId="cat-leader" id="1d9c-aeb2-f3c5-0279" primary="true" name="Leader"/>
+        <categoryLink targetId="b69d-0836-fe2c-d01b" id="b88d-bdcc-0e94-cf53" primary="false" name="Unique"/>
+        <categoryLink targetId="cat-infantry" id="9d5c-16b9-cac3-2739" primary="false" name="Infantry"/>
+        <categoryLink targetId="cat-independent" id="70bf-c5ac-0986-9aa8" primary="false" name="Independent"/>
+        <categoryLink targetId="0d5e-5366-12b5-5918" id="8a39-5389-f304-9d03" primary="false" name="Sightless"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Auri" typeId="cost-auri" value="295"/>
+      </costs>
+      <rules>
+        <rule name="Visage of Abyssal Dread - Aura (10&quot;)" id="e25b-f068-f4cb-09db" hidden="false">
+          <description>Natural attacks rolls of 1-4 made by enemy units within 10&quot; of this unit always fail, regardless of any modifiers.
+Each time an enemy unit within 10&quot; makes a failed attrition test roll, it loses one point of health. In addition, each time an enemy unit within 10&quot; of this unit makes a failed attrition test roll, this unit&apos;s controlling player may remove an attrition point from a friendly unit within 10&quot; of this unit.</description>
+        </rule>
+      </rules>
+      <profiles>
+        <profile name="Cardinal" typeId="profile-unit" typeName="Unit" hidden="false" id="2c58-bce2-1bff-72c5">
+          <characteristics>
+            <characteristic name="Speed" typeId="char-speed">8</characteristic>
+            <characteristic name="Health" typeId="char-health">10</characteristic>
+            <characteristic name="Defence" typeId="char-defence">8</characteristic>
+            <characteristic name="Initiative" typeId="char-initiative">9</characteristic>
+            <characteristic name="Morale" typeId="char-morale">5</characteristic>
+            <characteristic name="Arcane" typeId="char-arcane">6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Replace Staff of Torment (Max 1)" id="3094-0c99-0872-0eeb" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac71-b3f2-3754-c27d" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Wargear" id="8e84-b449-d86a-7c66" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Ranged Weapon" id="c20c-ee78-9ea3-ec4e" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Staff of Torment" hidden="false" id="a089-53f1-acb5-47f6" defaultAmount="1">
+                  <profiles>
+                    <profile name="Staff of Torment" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="0bd6-3b2a-55f8-4757">
+                      <characteristics>
+                        <characteristic name="Dice" typeId="1192-2222-5926-5b4b"/>
+                        <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">*</characteristic>
+                        <characteristic name="Damage" typeId="a482-225f-a3cb-a700"/>
+                        <characteristic name="Traits" typeId="76cd-5882-86da-52cf">Attacks made with this weapon can only target *infantry* units including two or more models within contact range. After selecting a unit for this attack. instead of attacking normally, roll a number of dice equal to the number of models in the unit, adding 1 to the roll for each attrition point that unit has allocated to it. For each roll of a 10+, a model in the target unit is slain.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Icon of the Deceiver" hidden="false" id="f014-001f-9579-2c61">
+                  <costs>
+                    <cost name="Auri" typeId="cost-auri" value="10"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Icon of the Deceiver" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="0569-0fec-f05f-2197">
+                      <characteristics>
+                        <characteristic name="Dice" typeId="1192-2222-5926-5b4b"/>
+                        <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">*</characteristic>
+                        <characteristic name="Damage" typeId="a482-225f-a3cb-a700"/>
+                        <characteristic name="Traits" typeId="76cd-5882-86da-52cf">Attacks made with this weapon can only target *infantry* units including two or more models within contact range. After selecting a unit for this attack. instead of attacking normally, each player rolls a dice, adding their respective units&apos; Morale characteristic to their roll.
+If the acting player&apos;s total is higher, select half the number of models in the target unit rounding up and resolve an attack from each model against the rest of their unit as if they were an enemy unit, subtracting 2 from their attack roll.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Infernal Totem" hidden="false" id="268c-fefc-d8be-c0ac">
+                  <profiles>
+                    <profile name="Infernal Totem" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="a951-ef6c-d866-1573">
+                      <characteristics>
+                        <characteristic name="Dice" typeId="1192-2222-5926-5b4b">8</characteristic>
+                        <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+3</characteristic>
+                        <characteristic name="Damage" typeId="a482-225f-a3cb-a700">3</characteristic>
+                        <characteristic name="Traits" typeId="76cd-5882-86da-52cf">Attacks made with this weapon count as *psychic* attacks.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Auri" typeId="cost-auri" value="15"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="11f7-cdea-faab-995b-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11f7-cdea-faab-995b-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <profiles>
+            <profile name="Murderous Talons" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="c4f8-1b5b-d91e-70b4">
+              <characteristics>
+                <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">8</characteristic>
+                <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+4</characteristic>
+                <characteristic name="Damage" typeId="2780-b560-1641-b9a5">2</characteristic>
+                <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d">Natural attack rolls of 10 made with this weapon always counts as critical hits.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Fleshwrought Abominations (8+)" id="b1a4-4500-c61a-f063" hidden="false" type="rule" targetId="1c40-0281-0ec5-b2cb"/>
+        <infoLink name="The Disciplines Kolymite" id="1ea7-c574-31ef-c1e0" hidden="false" type="infoGroup" targetId="3f7c-f16a-1bb4-6e7d"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="11aa-7876-6ff8-430e" type="selectionEntry" targetId="8497-7cf3-9a4a-1ecf"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Celebrant" hidden="false" id="f443-cdf6-79d2-a13a">
+      <profiles>
+        <profile name="Celebrant" typeId="profile-unit" typeName="Unit" hidden="false" id="a7cd-d073-e9d9-be00">
+          <characteristics>
+            <characteristic name="Speed" typeId="char-speed">8</characteristic>
+            <characteristic name="Health" typeId="char-health">7</characteristic>
+            <characteristic name="Defence" typeId="char-defence">7</characteristic>
+            <characteristic name="Initiative" typeId="char-initiative">6</characteristic>
+            <characteristic name="Morale" typeId="char-morale">4</characteristic>
+            <characteristic name="Arcane" typeId="char-arcane">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="5f3b-1e4c-ee88-4ac9" id="5d79-612b-c345-66f3" primary="false" name="Kingdoms of Mikaelhelde"/>
+        <categoryLink targetId="cat-leader" id="8264-4359-dab6-e8e7" primary="true" name="Leader"/>
+        <categoryLink targetId="cat-infantry" id="9ade-1aae-aa41-7bf9" primary="false" name="Infantry"/>
+        <categoryLink targetId="cat-independent" id="152d-a0ee-94c6-7703" primary="false" name="Independent"/>
+        <categoryLink targetId="2ed1-9284-2465-4634" id="2cbf-0630-e6d6-79d2" primary="false" name="Mystic"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Auri" typeId="cost-auri" value="165"/>
+      </costs>
+      <rules>
+        <rule name="Rippers" id="139b-db13-4a31-d6db" hidden="false">
+          <description>Each time this unit makes a successful charge, it and any unit it is grouped with add 1 to the dice characteristic of their melee weapons.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Fleshwrought Abominations (8+)" id="fd71-16cf-9f68-ce56" hidden="false" type="rule" targetId="1c40-0281-0ec5-b2cb"/>
+        <infoLink name="Butcher&apos;s Blade" id="738d-8358-a42a-e137" hidden="false" type="profile" targetId="134e-5b2c-cddd-d337"/>
+        <infoLink name="Butcher&apos;s Blade" id="7bed-1fd6-0ab1-7050" hidden="false" type="profile" targetId="134e-5b2c-cddd-d337"/>
+        <infoLink name="Butcher&apos;s Blade" id="324b-87ee-62d4-0808" hidden="false" type="profile" targetId="134e-5b2c-cddd-d337"/>
+        <infoLink name="Butcher&apos;s Blade" id="de57-e5b1-dba6-e991" hidden="false" type="profile" targetId="134e-5b2c-cddd-d337"/>
+        <infoLink name="The Disciplines Kolymite" id="76fc-149e-1a0e-1c34" hidden="false" type="infoGroup" targetId="3f7c-f16a-1bb4-6e7d"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="f77f-026c-01f6-17bd" type="selectionEntry" targetId="8497-7cf3-9a4a-1ecf"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Emissaries of Wrath" hidden="false" id="85c8-f99d-e1fc-3ab3">
+      <categoryLinks>
+        <categoryLink targetId="5552-8704-2fc8-e65d" id="53c8-2e53-c9f0-274d" primary="true" name="Force Traits"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="The Emissaries of Wrath (Choose 2)" id="c3d6-849e-0d75-8a7e" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Reavers" hidden="false" id="9164-60a6-d4da-3bf4">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50ae-0647-744a-18b7" includeChildSelections="false"/>
+              </constraints>
+              <rules>
+                <rule name="Reavers" id="2afe-3c06-4ade-5b60" hidden="false">
+                  <description>When a friendly non-*incarnate* unit makes a charge move action, it can select one enemy unit within range that is not within the front arc as its prey. That unit is then its only eligible charge target, but its charge distance is determined by rolling a D5 and adding 5, rather than rolling two D10s and selecting the highest.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="No Escape" hidden="false" id="1999-f6b9-b106-f3ba">
+              <rules>
+                <rule name="No Escape" id="9536-2f4d-9177-83f3" hidden="false">
+                  <description>When an enemy unit withdraws from a friendly Acolytes unit, if it is eligible to make a reaction, that Acolyte unit can instead gun them down. If it does so, it makes a Cut Them Down reaction, but does so with its ranged weapons instead of its melee weapons.</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b80-307a-436d-4199" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Death Magic" hidden="false" id="8b02-6af2-f49c-2ce1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6880-3a6b-b122-29cb" includeChildSelections="false"/>
+              </constraints>
+              <rules>
+                <rule name="Death Magic" id="271f-4a15-bf5c-e1a8" hidden="false">
+                  <description>Once per battle, when a friendly mystic is channelling their power through a Fleshlings unit, it can imbue its power with their souls. That mystic&apos;s invocation roll is equivalent to the number of models in that unit. The channeling unit is then immediately destroyed.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Mystic Munitions" hidden="false" id="aa9d-0b75-95b0-5aa9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5744-82eb-f837-3136" includeChildSelections="false"/>
+              </constraints>
+              <rules>
+                <rule name="Mystic Munitions" id="4d67-79e9-07e6-8e16" hidden="false">
+                  <description>If a friendly infantry unit makes no invocations, in the subsequent combat phase, obscuration rolls made by units targeted by that unit are reduced by a number equal to its mystic characteristic.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="All-Consuming" hidden="false" id="cfa6-1233-0fb6-a412">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="494b-852b-0844-eb0a" includeChildSelections="false"/>
+              </constraints>
+              <rules>
+                <rule name="All-Consuming" id="12cf-6d48-78fd-0d76" hidden="false">
+                  <description>Friendly non-incarnate units can make charge move actions while within the control range of enemy units, but can never voluntarily end any move further from enemy units than when they started.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="The Power of Flesh" hidden="false" id="89c2-e8c4-256a-cf19">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ffe-1773-ad39-694e" includeChildSelections="false"/>
+              </constraints>
+              <rules>
+                <rule name="The Power of Flesh" id="6ffb-3982-45b8-13e7" hidden="false">
+                  <description>Friendly non-incarnate units have advantage with their melee weapons when targeting construct and vehicle units.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Brutal Blades" hidden="false" id="6a79-634d-82f2-c948">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="13f0-063d-4295-b495" includeChildSelections="false"/>
+              </constraints>
+              <rules>
+                <rule name="Brutal Blades" id="24e5-9833-7efe-da74" hidden="false">
+                  <description>If a critical hit is inflicted by a melee weapon against a model, that model must subtract 1 from its attack rolls until the end of the turn.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Psychic Dominion" hidden="false" id="7585-13d1-4e0d-d19f">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8204-8b76-23aa-390a" includeChildSelections="false"/>
+              </constraints>
+              <rules>
+                <rule name="Psychic Dominion" id="60c7-472d-caac-dd1e" hidden="false">
+                  <description>Units making a nullifying roll add 1 to their mystic characteristic for each other friendly mystic unit within 6&quot; of them.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Consecration of Blood" hidden="false" id="756e-1244-e1d7-fd70">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4618-c513-e698-ae8d" includeChildSelections="false"/>
+              </constraints>
+              <rules>
+                <rule name="Consecration of Blood" id="9190-d39b-7941-ab8f" hidden="false">
+                  <description>If a friendly unit destroys an enemy unit while that enemy unit is the only enemy unit within control range of an objective marker, it controls that objective marker until any enemy units end a move within control range of it.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a3fe-da49-1377-de1a" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="16f9-ffdd-150f-fc88-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="16f9-ffdd-150f-fc88-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Fleshlings" hidden="false" id="6ab7-f466-b097-1cd8">
+      <profiles>
+        <profile name="Fleshlings" typeId="profile-unit" typeName="Unit" hidden="false" id="0a1f-d454-dfd7-fd7a">
+          <characteristics>
+            <characteristic name="Speed" typeId="char-speed">6</characteristic>
+            <characteristic name="Health" typeId="char-health">1</characteristic>
+            <characteristic name="Defence" typeId="char-defence">6</characteristic>
+            <characteristic name="Initiative" typeId="char-initiative">1</characteristic>
+            <characteristic name="Morale" typeId="char-morale">1</characteristic>
+            <characteristic name="Arcane" typeId="char-arcane">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Rotting Claws" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="aa67-6dd5-dd01-fa4b">
+          <characteristics>
+            <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">2</characteristic>
+            <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">-2</characteristic>
+            <characteristic name="Damage" typeId="2780-b560-1641-b9a5">1</characteristic>
+            <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="cat-troops" id="f75a-4bad-59d5-66aa" primary="true" name="Troops"/>
+        <categoryLink targetId="5f3b-1e4c-ee88-4ac9" id="d68f-ed03-3ff0-ddb5" primary="false" name="Kingdoms of Mikaelhelde"/>
+        <categoryLink targetId="cat-infantry" id="3053-278d-3d1c-3db8" primary="false" name="Infantry"/>
+        <categoryLink targetId="e111-ce9f-9a6c-a3bd" id="23c6-c34d-9245-e085" primary="false" name="Dæmon"/>
+        <categoryLink targetId="0d5e-5366-12b5-5918" id="30fd-cabf-2858-9c31" primary="false" name="Sightless"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Fleshling" hidden="false" id="2289-dded-ac9c-1317">
+          <costs>
+            <cost name="Auri" typeId="cost-auri" value="7"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="f288-c005-e2e6-90ef" includeChildSelections="false"/>
+            <constraint type="max" value="30" field="selections" scope="parent" shared="true" id="ef4d-2c0f-4f08-924e" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Auri" typeId="cost-auri" value="10"/>
+      </costs>
+      <rules>
+        <rule name="Feral Horde" id="6273-eff0-eb60-1189" hidden="false">
+          <description>This unit counts as having an Initiative characteristic of 4 for the purposes of making Cut Them Down reactions against non-*independent* *infantry* units, and can reroll all of its attacks rolls when making such a reaction.
+In addition, this unit can never contest or claim objective markers, and it ignores the effect of attrition points.
+Lastly, victory points cannot be scored for any objectives by destroying this unit.</description>
+        </rule>
+        <rule name="Blood Magic" id="6256-00f0-effd-19b5" hidden="false">
+          <description>During the combat phase, a friendly *Kingdoms of Mikhaelhelde* *mystic* unit can channel their power through this unit. If it does so, it can invoke the power as if it were using Wild Magic, if any doubles are rolled, instead of gaining *unbound insanity*, D5 models from this unit are slain.
+A unit with this ability can only be used to channel another unit&apos;s power once per turn.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Fleshwrought Abominations (10+)" id="a060-a880-6661-0905" hidden="false" type="rule" targetId="50b6-7cf2-2776-06ae"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Acolytes" hidden="false" id="ec29-c920-a0b6-b60a">
+      <profiles>
+        <profile name="Acolytes" typeId="profile-unit" typeName="Unit" hidden="false" id="18c8-39b7-be31-ab30">
+          <characteristics>
+            <characteristic name="Speed" typeId="char-speed">8</characteristic>
+            <characteristic name="Health" typeId="char-health">3</characteristic>
+            <characteristic name="Defence" typeId="char-defence">7</characteristic>
+            <characteristic name="Initiative" typeId="char-initiative">4</characteristic>
+            <characteristic name="Morale" typeId="char-morale">3</characteristic>
+            <characteristic name="Arcane" typeId="char-arcane">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Arcane Devouring" id="3403-3942-1f8f-7dd3" hidden="false">
+          <description>If this unit destroys any enemy unit with its melee weapons, any models which are below their starting health characteristic are fully healed and the unit adds 1 to its Arcane characteristic until the end of the battle.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Fleshwrought Abominations (8+)" id="b463-e3bc-bf62-2a59" hidden="false" type="rule" targetId="1c40-0281-0ec5-b2cb"/>
+        <infoLink name="The Disciplines Kolymite" id="cbcc-e142-a9df-6507" hidden="false" type="infoGroup" targetId="3f7c-f16a-1bb4-6e7d"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Acolyte" hidden="false" id="cd20-d9f6-f4b7-5680">
+          <costs>
+            <cost name="Auri" typeId="cost-auri" value="25"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="6551-37a9-eb68-ce73" includeChildSelections="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="4c3e-e6ef-f8d4-f9b7" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Wargear" id="d3b2-d0dc-e046-3041" hidden="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0d8c-165e-3845-30cb-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d8c-165e-3845-30cb-max" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Sokalian Carbine and Acolyte Glaive" hidden="false" id="114d-35e4-455e-df38" defaultAmount="1">
+                  <profiles>
+                    <profile name="Sokalian Carbine" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="6ccd-5b98-5a56-2da5">
+                      <characteristics>
+                        <characteristic name="Dice" typeId="1192-2222-5926-5b4b">2</characteristic>
+                        <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+2</characteristic>
+                        <characteristic name="Damage" typeId="a482-225f-a3cb-a700">1</characteristic>
+                        <characteristic name="Traits" typeId="76cd-5882-86da-52cf"/>
+                      </characteristics>
+                    </profile>
+                    <profile name="Acolyte Glaive" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="bf36-f580-c2d8-365b">
+                      <characteristics>
+                        <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">2</characteristic>
+                        <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+1</characteristic>
+                        <characteristic name="Damage" typeId="2780-b560-1641-b9a5">3</characteristic>
+                        <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d">Attack rolls made with this weapon are never made at a disadvantage, regardless of any abilities or effects on this unit.
+This weapon has advantage when targeting *monsters* or *cavalry* units.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Two Acolyte Cleavers and two Shotpistols" hidden="false" id="2d26-768c-a2b3-b0ed">
+                  <infoLinks>
+                    <infoLink name="Acolyte Cleavers" id="0b71-71ce-9a02-1565" hidden="false" type="profile" targetId="e52f-69e6-d5fb-077d"/>
+                    <infoLink name="Acolyte Cleavers" id="0195-d650-60e8-deba" hidden="false" type="profile" targetId="e52f-69e6-d5fb-077d"/>
+                    <infoLink name="Shotpistol" id="210d-bc67-72c6-d812" hidden="false" type="profile" targetId="222f-a0f1-84ec-00db"/>
+                    <infoLink name="Shotpistol" id="b7a3-9e06-dbaf-4c92" hidden="false" type="profile" targetId="222f-a0f1-84ec-00db"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Replace both its sokalian carbine and acolyte glaive" id="ff53-f156-55ac-454c" hidden="false"/>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Auri" typeId="cost-auri" value="40"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="cat-troops" id="e54a-e2bf-ffc9-58fc" primary="true" name="Troops"/>
+        <categoryLink targetId="cat-infantry" id="e962-78f3-8a6c-397e" primary="false" name="Infantry"/>
+        <categoryLink targetId="cat-core" id="367e-41c4-1305-b2f7" primary="false" name="Core"/>
+        <categoryLink targetId="2ed1-9284-2465-4634" id="56d6-697a-40f6-986d" primary="false" name="Mystic"/>
+        <categoryLink targetId="5f3b-1e4c-ee88-4ac9" id="80cf-465f-02eb-faf0" primary="false" name="Kingdoms of Mikaelhelde"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Purifiers" hidden="false" id="9ae9-20be-5f34-ff0a">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Purifier" hidden="false" id="be74-3f00-947c-7962">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="b509-51c0-b34f-9c14" includeChildSelections="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="4c75-5b84-123c-aca9" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Auri" typeId="cost-auri" value="25"/>
+          </costs>
+          <profiles>
+            <profile name="Infernal Blades" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="9a3e-c543-9e1b-99e9">
+              <characteristics>
+                <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">2</characteristic>
+                <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+2</characteristic>
+                <characteristic name="Damage" typeId="2780-b560-1641-b9a5">2</characteristic>
+                <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d">After a unit equipped with this weapon has finished attacking, for each *infantry* model slain by this weapon, make one additional attack roll. These additional attacks, should they slay more models, do not generate additional attacks.
+Each time a unit gains an attrition point as part of an attack that includes this weapon, it gains one additional attrition point.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Incendiarite (Max 1/3)" hidden="false" id="4d00-51b7-15a9-7c01">
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="10"/>
+              </costs>
+              <profiles>
+                <profile name="Lance of Perdition" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="03c4-7d53-a72d-52b4">
+                  <characteristics>
+                    <characteristic name="Dice" typeId="1192-2222-5926-5b4b">D10</characteristic>
+                    <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+2</characteristic>
+                    <characteristic name="Damage" typeId="a482-225f-a3cb-a700">2</characteristic>
+                    <characteristic name="Traits" typeId="76cd-5882-86da-52cf">This weapon can only target units within 15” of the attacking model.
+Obscuration rolls cannot be made against this weapon.
+Each time a unit gains an attrition point as part of an attack that includes this weapon, it gains one additional attrition point.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Purifiers" typeId="profile-unit" typeName="Unit" hidden="false" id="f4e3-1e00-ff8f-dfd5">
+          <characteristics>
+            <characteristic name="Speed" typeId="char-speed">8</characteristic>
+            <characteristic name="Health" typeId="char-health">3</characteristic>
+            <characteristic name="Defence" typeId="char-defence">8</characteristic>
+            <characteristic name="Initiative" typeId="char-initiative">4</characteristic>
+            <characteristic name="Morale" typeId="char-morale">2</characteristic>
+            <characteristic name="Arcane" typeId="char-arcane">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="5f3b-1e4c-ee88-4ac9" id="df8b-b78c-2936-8102" primary="false" name="Kingdoms of Mikaelhelde"/>
+        <categoryLink targetId="cat-support" id="6ecc-3173-5f1b-f113" primary="true" name="Support"/>
+        <categoryLink targetId="cat-infantry" id="1da6-065f-e15d-2a02" primary="false" name="Infantry"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Auri" typeId="cost-auri" value="90"/>
+      </costs>
+      <rules>
+        <rule name="The World Reborn In Fire" id="159b-12ab-87f1-98cc" hidden="false">
+          <description>This unit is immune to the effects of any weapons and abilities with the words ‘fire’, ‘inferno’, ‘blaze’ and ‘incinerate’ (or derivatives of those words) in their names, and attack rolls made as part of the Redemption in Death ability are made with disadvantage. In addition, each time this unit makes a successful charge, its charge target gains one additional attrition point.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Fleshwrought Abominations (8+)" id="750e-37e3-58aa-d368" hidden="false" type="rule" targetId="1c40-0281-0ec5-b2cb"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Enlightened" hidden="false" id="d70a-c187-02ee-1169">
+      <profiles>
+        <profile name="Enlightened" typeId="profile-unit" typeName="Unit" hidden="false" id="2d4b-1ec0-7ad4-80df">
+          <characteristics>
+            <characteristic name="Speed" typeId="char-speed">8</characteristic>
+            <characteristic name="Health" typeId="char-health">5</characteristic>
+            <characteristic name="Defence" typeId="char-defence">8</characteristic>
+            <characteristic name="Initiative" typeId="char-initiative">4</characteristic>
+            <characteristic name="Morale" typeId="char-morale">2</characteristic>
+            <characteristic name="Arcane" typeId="char-arcane">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="The Gift of Life" typeId="profile-invocation" typeName="Invocation" hidden="false" id="1da9-13bc-f64e-86fa">
+          <characteristics>
+            <characteristic name="Arcane Value" typeId="char-arc-val">8</characteristic>
+            <characteristic name="Description" typeId="char-desc">_The monstrous flesh of the acolyte hosts reknits, no ruin able to be wreaked upon it as the inhuman powers of the nether realm infuse it with strength._
+Until the following mystic phase, friendly visible units within 12” of this unit add 1 to Fleshwrought Abomination rolls when they would be slain by weapons with a damage characteristic of 3 or less.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="The Path to Ascension" typeId="profile-invocation" typeName="Invocation" hidden="false" id="2ac6-9e49-6b94-7784">
+          <characteristics>
+            <characteristic name="Arcane Value" typeId="char-arc-val">10</characteristic>
+            <characteristic name="Description" typeId="char-desc">_Whispers of the road to victory ride the winds of the battlefield, calling forth the apocalypse._
+Until the following mystic phase, all friendly units can reroll one of their charge roll dice.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Divine Intervention" typeId="profile-invocation" typeName="Invocation" hidden="false" id="69c0-6393-3b9f-6e91">
+          <characteristics>
+            <characteristic name="Arcane Value" typeId="char-arc-val">12</characteristic>
+            <characteristic name="Description" typeId="char-desc">_A shadow spreads across the world as the power of the Divine returns the butchered souls of the slain to their bodies, renewed with the light of undeath._
+Select one unit that was slain in this or any previous turn. An identical unit is placed within 12” of this unit, more than 1” away from any enemy units, with D5 points of health remaining (up to the maximum starting health of that unit). If this unit is independent and placed within control range of a friendly troops unit, it can immediately join them. This power may be successfully invoked only once per battle, and after invoking it, roll a dice. On a 1, the invoking unit is slain.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Ritual Blade" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="09d8-481a-2f88-3f74">
+          <characteristics>
+            <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">2</characteristic>
+            <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+1</characteristic>
+            <characteristic name="Damage" typeId="2780-b560-1641-b9a5">1</characteristic>
+            <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="cat-support" id="d9db-0097-4080-8f1d" primary="true" name="Support"/>
+        <categoryLink targetId="5f3b-1e4c-ee88-4ac9" id="c33b-cc28-08db-0e41" primary="false" name="Kingdoms of Mikaelhelde"/>
+        <categoryLink targetId="cat-infantry" id="3fd5-ac91-7968-45d0" primary="false" name="Infantry"/>
+        <categoryLink targetId="cat-independent" id="a0f1-58f6-b327-1f1c" primary="false" name="Independent"/>
+        <categoryLink targetId="2ed1-9284-2465-4634" id="ac13-326c-6e62-99d9" primary="false" name="Mystic"/>
+        <categoryLink targetId="b69d-0836-fe2c-d01b" id="9827-f999-109b-8fe5" primary="false" name="Unique"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Auri" typeId="cost-auri" value="195"/>
+      </costs>
+      <rules>
+        <rule name="Through The Eyes Of Revelation" id="ff21-0157-33b2-8f5f" hidden="false">
+          <description>This unit knows the following invocations: The Gift of Life, The Path to Ascension, Divine Intervention</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Fleshwrought Abominations (8+)" id="8e1b-bfc9-03c1-9cbe" hidden="false" type="rule" targetId="1c40-0281-0ec5-b2cb"/>
+        <infoLink name="The Disciplines Kolymite" id="18eb-f4aa-f0d7-d224" hidden="false" type="infoGroup" targetId="3f7c-f16a-1bb4-6e7d"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Anchorites" hidden="false" id="d886-4555-33a7-438f">
+      <profiles>
+        <profile name="Anchorites" typeId="profile-unit" typeName="Unit" hidden="false" id="a2fe-aa87-177c-b4e7">
+          <characteristics>
+            <characteristic name="Speed" typeId="char-speed">8</characteristic>
+            <characteristic name="Health" typeId="char-health">3</characteristic>
+            <characteristic name="Defence" typeId="char-defence">7</characteristic>
+            <characteristic name="Initiative" typeId="char-initiative">4</characteristic>
+            <characteristic name="Morale" typeId="char-morale">3</characteristic>
+            <characteristic name="Arcane" typeId="char-arcane">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Anchorite Hammers" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="d007-687a-3858-4385">
+          <characteristics>
+            <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">2</characteristic>
+            <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+2</characteristic>
+            <characteristic name="Damage" typeId="2780-b560-1641-b9a5">1</characteristic>
+            <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="The Ruinous Gong" id="ff61-e42f-6045-0d9f" hidden="false">
+          <description>When this unit, or any unit grouped with it, destroys an enemy unit, it can create a void echo. At the end of each combat phase, count the number of friendly units with void echoes on the battlefield.
+Roll a dice for each unit within 10” of one or more void echoes. If the roll is less than or equal to the number of attrition points allocated to that unit, that unit gains a number of additional attrition points equivalent to the number of void echoes on the battlefield.
+At the beginning of the resolution phase, all void echoes end.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Fleshwrought Abominations (8+)" id="40e0-7979-0652-9858" hidden="false" type="rule" targetId="1c40-0281-0ec5-b2cb"/>
+        <infoLink name="The Disciplines Kolymite" id="4032-cbb2-ef00-a87c" hidden="false" type="infoGroup" targetId="3f7c-f16a-1bb4-6e7d"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="5f3b-1e4c-ee88-4ac9" id="1158-5c07-95e1-e123" primary="false" name="Kingdoms of Mikaelhelde"/>
+        <categoryLink targetId="cat-support" id="414e-af71-77b1-4386" primary="true" name="Support"/>
+        <categoryLink targetId="cat-infantry" id="6903-e26d-cff8-bf07" primary="false" name="Infantry"/>
+        <categoryLink targetId="cat-independent" id="c6ff-bfd3-d514-203c" primary="false" name="Independent"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Auri" typeId="cost-auri" value="145"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Hetaera" hidden="false" id="419e-e4a6-5abf-f8d8">
+      <categoryLinks>
+        <categoryLink targetId="5f3b-1e4c-ee88-4ac9" id="7448-1153-715f-edcb" primary="false" name="Kingdoms of Mikaelhelde"/>
+        <categoryLink targetId="cat-monster" id="b5dd-8c06-58de-8f83" primary="true" name="Monster"/>
+        <categoryLink targetId="e111-ce9f-9a6c-a3bd" id="51f5-7c54-07fd-75f5" primary="false" name="Dæmon"/>
+        <categoryLink targetId="3ecd-470b-f807-6c77" id="ee72-e66c-81d5-f125" primary="false" name="Incarnate"/>
+        <categoryLink targetId="0d5e-5366-12b5-5918" id="483c-c45e-e605-eaca" primary="false" name="Sightless"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Hetaera" typeId="profile-unit" typeName="Unit" hidden="false" id="e3f8-54e6-1edd-5888">
+          <characteristics>
+            <characteristic name="Speed" typeId="char-speed">10</characteristic>
+            <characteristic name="Health" typeId="char-health">18</characteristic>
+            <characteristic name="Defence" typeId="char-defence">11</characteristic>
+            <characteristic name="Initiative" typeId="char-initiative">7</characteristic>
+            <characteristic name="Morale" typeId="char-morale">3</characteristic>
+            <characteristic name="Arcane" typeId="char-arcane">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Savage Claws" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="fe36-c221-ddcf-9e71">
+          <characteristics>
+            <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">10</characteristic>
+            <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+3</characteristic>
+            <characteristic name="Damage" typeId="2780-b560-1641-b9a5">2</characteristic>
+            <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d"/>
+          </characteristics>
+        </profile>
+        <profile name="Rotten Jaws" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="5bc7-8f14-1066-ce0c">
+          <characteristics>
+            <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">1</characteristic>
+            <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+6</characteristic>
+            <characteristic name="Damage" typeId="2780-b560-1641-b9a5">5</characteristic>
+            <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d">*Infantry* models hit by an attack with this weapon are instantly slain regardless of their Health characteristic</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Auri" typeId="cost-auri" value="195"/>
+      </costs>
+      <rules>
+        <rule name="Voidborn Horror" id="160f-b33f-9903-6131" hidden="false">
+          <description>Non-*psychic* melee attacks with a damage characteristic of 1 have disadvantage when targeting this unit.
+This unit never accumulates attrition points, unless they would be inflicted by an enemy *Dæmon* unit.
+This unit cannot be affected by any friendly units’ abilities.</description>
+        </rule>
+        <rule name="Blood and Death and Gore and Murder" id="52dc-edd9-7609-a308" hidden="false">
+          <description>Enemy units cannot mitigate any successful attack rolls made by this unit by any means.</description>
+        </rule>
+        <rule name="No Master But Hunger" id="0087-4f09-b586-f4bf" hidden="false">
+          <description>If, at any point, all *leaders* in a *Kingdoms of Mikaelhelde* force containing  this unit are slain, from the beginning of the following turn until the end of the battle this unit becomes *rogue*. Rogue units count as enemy units to all players - they must always charge if possible, and always move towards or charge the nearest unit, friend or foe, and resolve their attacks against them.
+Rogue units are always activated before any other units on the battlefield.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Reclaimant" hidden="false" id="ceff-cdaa-b711-9011">
+      <costs>
+        <cost name="Auri" typeId="cost-auri" value="205"/>
+      </costs>
+      <profiles>
+        <profile name="Reclaimant" typeId="profile-unit" typeName="Unit" hidden="false" id="fdbb-7531-89d5-e459">
+          <characteristics>
+            <characteristic name="Speed" typeId="char-speed">8</characteristic>
+            <characteristic name="Health" typeId="char-health">20</characteristic>
+            <characteristic name="Defence" typeId="char-defence">11</characteristic>
+            <characteristic name="Initiative" typeId="char-initiative">-</characteristic>
+            <characteristic name="Morale" typeId="char-morale">-</characteristic>
+            <characteristic name="Arcane" typeId="char-arcane">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Grasping Hands" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="0fa1-ef7b-fab3-d9ae">
+          <characteristics>
+            <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">15</characteristic>
+            <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">-1</characteristic>
+            <characteristic name="Damage" typeId="2780-b560-1641-b9a5">1</characteristic>
+            <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="5f3b-1e4c-ee88-4ac9" id="7a1f-3879-de69-144f" primary="false" name="Kingdoms of Mikaelhelde"/>
+        <categoryLink targetId="55d6-4f4f-a4fd-e249" id="f440-9145-3413-723f" primary="true" name="Construct"/>
+        <categoryLink targetId="e111-ce9f-9a6c-a3bd" id="8c92-e2e7-9e19-7b57" primary="false" name="Dæmon"/>
+        <categoryLink targetId="3326-5b0a-b607-c6b3" id="72d1-0407-b86b-ddc0" primary="false" name="Airborne"/>
+        <categoryLink targetId="0d5e-5366-12b5-5918" id="8028-e33a-64df-dd7b" primary="false" name="Sightless"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="A Construct of Ancient Stone" id="b123-2dbb-37fb-a948" hidden="false" type="rule" targetId="3dac-2ffa-ebe9-3d88"/>
+        <infoLink name="A Relic of the Primordial World" id="dc8c-3cbe-74c3-6540" hidden="false" type="rule" targetId="28ee-2333-5eec-2b99"/>
+        <infoLink name="Rupture of Reality" id="e813-b717-491e-6c0a" hidden="false" type="rule" targetId="43df-968f-d742-3136"/>
+        <infoLink name="Soul Eater" id="942c-c02d-7e40-3305" hidden="false" type="rule" targetId="590e-dc58-646b-83ad"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Crusader Battle Tank" hidden="false" id="2ad0-4f63-b084-ebc2">
+      <categoryLinks>
+        <categoryLink targetId="cat-vehicle" id="028d-4c6d-0736-3041" primary="true" name="Vehicle"/>
+        <categoryLink targetId="5f3b-1e4c-ee88-4ac9" id="3b7c-da53-7cd8-c370" primary="false" name="Kingdoms of Mikaelhelde"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Auri" typeId="cost-auri" value="155"/>
+      </costs>
+      <profiles>
+        <profile name="Crusader Battle Tank" typeId="profile-unit" typeName="Unit" hidden="false" id="4c13-77b9-f86f-a22d">
+          <characteristics>
+            <characteristic name="Speed" typeId="char-speed">14</characteristic>
+            <characteristic name="Health" typeId="char-health">14</characteristic>
+            <characteristic name="Defence" typeId="char-defence">11</characteristic>
+            <characteristic name="Initiative" typeId="char-initiative">3</characteristic>
+            <characteristic name="Morale" typeId="char-morale">3</characteristic>
+            <characteristic name="Arcane" typeId="char-arcane">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Blade Ram" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="bb29-5c94-4bc8-72d3">
+          <characteristics>
+            <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">10</characteristic>
+            <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+3</characteristic>
+            <characteristic name="Damage" typeId="2780-b560-1641-b9a5">1</characteristic>
+            <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d"/>
+          </characteristics>
+        </profile>
+        <profile name="Quad Cannon" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="82a9-34d8-8830-2f2f">
+          <characteristics>
+            <characteristic name="Dice" typeId="1192-2222-5926-5b4b">4</characteristic>
+            <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+3</characteristic>
+            <characteristic name="Damage" typeId="a482-225f-a3cb-a700">2</characteristic>
+            <characteristic name="Traits" typeId="76cd-5882-86da-52cf">Each time this weapon successfully hits an *infantry* unit target, it inflicts two hits instead of one.
+This weapon can target enemy units that are not visible to the attacking model. If it does so, that target unit has an 8+ obscuration roll.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Blood And Slaughter" id="4434-3a70-e012-04a9" hidden="false">
+          <description>Once per turn, when this unit makes a successful charge, it can immediately attack with its blade ram as if it were the combat phase. If it destroys the unit it charged with that attack, it can choose to immediately make another charge move action if any other enemy units are within 10”.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Arcane Oblivion" hidden="false" id="3162-b100-1ea9-fbec">
+      <costs>
+        <cost name="Auri" typeId="cost-auri" value="550"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="5f3b-1e4c-ee88-4ac9" id="b629-67c6-619f-b322" primary="false" name="Kingdoms of Mikaelhelde"/>
+        <categoryLink targetId="cat-leviathan" id="3836-8b04-2fd1-892a" primary="true" name="Leviathan"/>
+        <categoryLink targetId="55d6-4f4f-a4fd-e249" id="226e-5606-dd8a-0ccd" primary="false" name="Construct"/>
+        <categoryLink targetId="e111-ce9f-9a6c-a3bd" id="90ca-c111-771d-6c20" primary="false" name="Dæmon"/>
+        <categoryLink targetId="3326-5b0a-b607-c6b3" id="6019-122d-1bae-de79" primary="false" name="Airborne"/>
+        <categoryLink targetId="0d5e-5366-12b5-5918" id="bf07-7330-e50c-3f08" primary="false" name="Sightless"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Arcane Oblivion" typeId="profile-unit" typeName="Unit" hidden="false" id="db34-2da2-f636-ca9a">
+          <characteristics>
+            <characteristic name="Speed" typeId="char-speed">8</characteristic>
+            <characteristic name="Health" typeId="char-health">50</characteristic>
+            <characteristic name="Defence" typeId="char-defence">16</characteristic>
+            <characteristic name="Initiative" typeId="char-initiative">-</characteristic>
+            <characteristic name="Morale" typeId="char-morale">-</characteristic>
+            <characteristic name="Arcane" typeId="char-arcane">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Torrents of Viscera" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="b6db-f81e-b332-96ff">
+          <characteristics>
+            <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">2D10</characteristic>
+            <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+1</characteristic>
+            <characteristic name="Damage" typeId="2780-b560-1641-b9a5">1</characteristic>
+            <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="A Birth of Aberrant Flesh" id="5b71-97ac-c850-70c6" hidden="false">
+          <description>Each time this unit is activated in the movement phase, return a slain model to each friendly non-Fleshlings unit within 10” of it.
+Each time a friendly unit of Fleshlings is destroyed within 10” of this unit, roll a dice. On an 8+, the next time this unit is activated in the movement phase, an identical unit can be placed wholly within 6” of one unit with this rule. If this unit is placed within any enemy unit’s control ranges, it counts as having successfully charged them (attrition points are not inflicted as part of this charge).</description>
+        </rule>
+        <rule name="Incarnation of Sorcery" id="9aed-4923-0532-d194" hidden="false">
+          <description>While this unit is on the battlefield, all friendly *mystic* units add 1 to their Arcane characteristic.
+In addition, this unit may make one invocation per turn as if it were a *mystic*. This invocation automatically succeeds and cannot be nullified.</description>
+        </rule>
+        <rule name="The Rites of Oblivion" id="79bf-3467-cbef-023e" hidden="false">
+          <description>Once per battle, at the end of each combat phase, if there are six or more friendly units’ void echoes on the battlefield, each visible enemy unit (excluding *independent* units) within 20” of this unit loses D10 points of health.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="A Construct of Ancient Stone" id="355a-dc56-3cd5-16d2" hidden="false" type="rule" targetId="3dac-2ffa-ebe9-3d88"/>
+        <infoLink name="A Relic of the Primordial World" id="bed8-4c00-e5bb-58e3" hidden="false" type="rule" targetId="28ee-2333-5eec-2b99"/>
+        <infoLink name="Rupture of Reality" id="c485-a46b-3c99-7aa8" hidden="false" type="rule" targetId="43df-968f-d742-3136"/>
+        <infoLink name="Soul Eater" id="90aa-a321-75fa-e732" hidden="false" type="rule" targetId="590e-dc58-646b-83ad"/>
+        <infoLink name="The Disciplines Kolymite" id="0b9b-306e-4647-61d6" hidden="false" type="infoGroup" targetId="3f7c-f16a-1bb4-6e7d"/>
+      </infoLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <categoryEntries>
+    <categoryEntry name="Kingdoms of Mikaelhelde" id="5f3b-1e4c-ee88-4ac9" hidden="false"/>
+    <categoryEntry name="Dæmon" id="e111-ce9f-9a6c-a3bd" hidden="false"/>
+    <categoryEntry name="Incarnate" id="3ecd-470b-f807-6c77" hidden="false"/>
+  </categoryEntries>
+  <entryLinks>
+    <entryLink import="true" name="Cardinal" hidden="false" id="530c-2db7-b0ee-1627" type="selectionEntry" targetId="2ce2-88bf-8777-0c3e">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0c9e-4830-32ff-708f-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c9e-4830-32ff-708f-max" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="11ad-11e1-a7c8-9347" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Celebrant" hidden="false" id="3d3c-0be7-494a-4ad0" type="selectionEntry" targetId="f443-cdf6-79d2-a13a">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e8d-e0cb-09e3-5f1d-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e8d-e0cb-09e3-5f1d-max" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="81df-be3a-efbb-b6fc" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="The Emissaries of Wrath" hidden="false" id="7497-5e5d-b6fd-15b3" type="selectionEntry" targetId="85c8-f99d-e1fc-3ab3"/>
+    <entryLink import="true" name="Fleshlings" hidden="false" id="a62d-24bb-ac62-93df" type="selectionEntry" targetId="6ab7-f466-b097-1cd8">
+      <modifiers>
+        <modifier type="set" value="2" field="1e49-1590-5d8a-999a">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="81df-be3a-efbb-b6fc" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="4" field="1e49-1590-5d8a-999a">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="11ad-11e1-a7c8-9347" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="2" field="1e49-1590-5d8a-999a">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="81df-be3a-efbb-b6fc" shared="true" includeChildSelections="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8497-7cf3-9a4a-1ecf" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1e49-1590-5d8a-999a" includeChildSelections="false"/>
+      </constraints>
+    </entryLink>
+    <entryLink import="true" name="Acolytes" hidden="false" id="e111-db9f-f93c-9a34" type="selectionEntry" targetId="ec29-c920-a0b6-b60a">
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a94f-741e-5993-4a21" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="2" field="a94f-741e-5993-4a21">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="81df-be3a-efbb-b6fc" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="3" field="a94f-741e-5993-4a21">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="11ad-11e1-a7c8-9347" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="2" field="a94f-741e-5993-4a21">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="81df-be3a-efbb-b6fc" shared="true" includeChildSelections="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8497-7cf3-9a4a-1ecf" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Purifiers" hidden="false" id="335d-c778-12b2-b8ff" type="selectionEntry" targetId="9ae9-20be-5f34-ff0a">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="81df-be3a-efbb-b6fc" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5f94-3068-e189-e987" includeChildSelections="false"/>
+      </constraints>
+    </entryLink>
+    <entryLink import="true" name="Enlightened" hidden="false" id="20b4-094b-e24d-77c0" type="selectionEntry" targetId="d70a-c187-02ee-1169">
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0e14-c619-3c46-e5f7" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="0e14-c619-3c46-e5f7">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8497-7cf3-9a4a-1ecf" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="11ad-11e1-a7c8-9347" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Anchorites" hidden="false" id="a4b1-3653-cdc8-b809" type="selectionEntry" targetId="d886-4555-33a7-438f">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="81df-be3a-efbb-b6fc" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c17b-9a62-1a92-bbfc" includeChildSelections="false"/>
+      </constraints>
+    </entryLink>
+    <entryLink import="true" name="Hetaera" hidden="false" id="c488-380f-6f7e-a4db" type="selectionEntry" targetId="419e-e4a6-5abf-f8d8">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="11ad-11e1-a7c8-9347" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="1" field="a989-d058-5452-88c2">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8497-7cf3-9a4a-1ecf" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a989-d058-5452-88c2" includeChildSelections="false"/>
+      </constraints>
+    </entryLink>
+    <entryLink import="true" name="Reclaimant" hidden="false" id="a07a-a641-fe64-daf3" type="selectionEntry" targetId="ceff-cdaa-b711-9011">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="11ad-11e1-a7c8-9347" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="729a-2a5d-be8e-a252">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="3" field="forces" scope="roster" childId="force" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8497-7cf3-9a4a-1ecf" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="increment" value="1" field="729a-2a5d-be8e-a252">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="4" field="forces" scope="roster" childId="force" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8497-7cf3-9a4a-1ecf" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="increment" value="1" field="729a-2a5d-be8e-a252">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="5" field="forces" scope="roster" childId="force" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8497-7cf3-9a4a-1ecf" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="increment" value="1" field="729a-2a5d-be8e-a252">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="6" field="forces" scope="roster" childId="force" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8497-7cf3-9a4a-1ecf" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="729a-2a5d-be8e-a252" includeChildSelections="false"/>
+      </constraints>
+    </entryLink>
+    <entryLink import="true" name="Crusader Battle Tank" hidden="false" id="5410-7b7c-1eeb-6e87" type="selectionEntry" targetId="2ad0-4f63-b084-ebc2">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="40fb-d544-afe8-4137" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="81df-be3a-efbb-b6fc" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Arcane Oblivion" hidden="false" id="9772-78ef-11ed-b5eb" type="selectionEntry" targetId="3162-b100-1ea9-fbec">
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="4ec6-a65c-40a1-3fe8" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="81df-be3a-efbb-b6fc" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="1" field="4ec6-a65c-40a1-3fe8">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8497-7cf3-9a4a-1ecf" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+  </entryLinks>
+  <forceEntries>
+    <forceEntry name="The Wasteland Covens" id="49eb-75c2-9c03-df74" hidden="false">
+      <forceEntries>
+        <forceEntry name="Rite of the Shattered Sky" id="11ad-11e1-a7c8-9347" hidden="false">
+          <categoryLinks>
+            <categoryLink name="Leader" hidden="false" id="3847-9ea1-e09a-7aaa" targetId="cat-leader"/>
+            <categoryLink name="Troops" hidden="false" id="b76e-b2ab-8825-dd91" targetId="cat-troops"/>
+            <categoryLink name="Support" hidden="false" id="f4a1-2a81-1981-5101" targetId="cat-support"/>
+            <categoryLink name="Monster" hidden="false" id="af51-206d-3ba3-a57d" targetId="cat-monster"/>
+            <categoryLink name="Construct" hidden="false" id="a88a-4be7-a031-f442" targetId="55d6-4f4f-a4fd-e249"/>
+          </categoryLinks>
+        </forceEntry>
+        <forceEntry name="The Kingdom Ascendant" id="81df-be3a-efbb-b6fc" hidden="false">
+          <categoryLinks>
+            <categoryLink name="Leader" hidden="false" id="2a46-fb4f-9247-5ce3" targetId="cat-leader"/>
+            <categoryLink name="Troops" hidden="false" id="511c-ff4c-077c-32e8" targetId="cat-troops"/>
+            <categoryLink name="Support" hidden="false" id="57f7-4a91-9a18-c556" targetId="cat-support"/>
+            <categoryLink name="Vehicle" hidden="false" id="086e-03c6-3cbb-2e61" targetId="cat-vehicle"/>
+            <categoryLink name="Leviathan" hidden="false" id="d5ba-9d9d-b71d-a4a2" targetId="cat-leviathan"/>
+          </categoryLinks>
+        </forceEntry>
+      </forceEntries>
+      <constraints>
+        <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="0f01-96d7-e1cd-47fc-min" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="0f01-96d7-e1cd-47fc-max" includeChildSelections="true"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Force Traits" hidden="false" id="35f1-9787-3c97-7418" targetId="5552-8704-2fc8-e65d"/>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <sharedRules>
+    <rule name="Fleshwrought Abominations (8+)" id="1c40-0281-0ec5-b2cb" hidden="false">
+      <description>Each time a model from this unit is slain, roll a dice. On a roll of an 8+, that model remains alive with a single point of health remaining.</description>
+    </rule>
+    <rule name="Fleshwrought Abominations (10+)" id="50b6-7cf2-2776-06ae" hidden="false">
+      <description>_Possessed of sorcerous vitality, the warriors of the Kingdoms of Mikaelhelde can withstand even the mightiest blows._
+Each time a model from this unit is slain, roll a dice. On a roll of an 10+, that model remains alive with a single point of health remaining.</description>
+    </rule>
+    <rule name="A Construct of Ancient Stone" id="3dac-2ffa-ebe9-3d88" hidden="false">
+      <description>All attacks except *destroyer* attacks have disadvantage against this unit. In addition, this unit never accumulates attrition points and is immune to any attacks and effects based on morale or initiative.
+This unit never counts as being obscured by intervening units, and cannot make reactions, or contest or claim objective markers.</description>
+    </rule>
+    <rule name="A Relic of the Primordial World" id="28ee-2333-5eec-2b99" hidden="false">
+      <description>Friendly *Kingdoms of Mikaelhelde* units within 6” of this model (except *fleshlings*) add 1 to their Arcane characteristic, and enemy units within 6” reduce their Morale characteristic by 1. However, if all friendly *mystic leader* units are slain, this unit is immediately destroyed.</description>
+    </rule>
+    <rule name="Soul Eater" id="590e-dc58-646b-83ad" hidden="false">
+      <description>If this unit destroys an enemy unit, all friendly units within 12” can reroll natural invocation rolls of 1 until the end of the battle.</description>
+    </rule>
+    <rule name="Rupture of Reality" id="43df-968f-d742-3136" hidden="false">
+      <description>When this unit is destroyed, it is replaced by a marker of an equivalent base size. At the end of each combat phase, make an attack roll for each unit, equal to the number of models within 3” of the marker, with a strength of +5 and a damage of 1.</description>
+    </rule>
+  </sharedRules>
+  <sharedProfiles>
+    <profile name="Butcher&apos;s Blade" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="134e-5b2c-cddd-d337">
+      <characteristics>
+        <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">2</characteristic>
+        <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+2</characteristic>
+        <characteristic name="Damage" typeId="2780-b560-1641-b9a5">1</characteristic>
+        <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d"/>
+      </characteristics>
+    </profile>
+    <profile name="Turgescence" typeId="profile-invocation" typeName="Invocation" hidden="false" id="7e6a-2312-80f6-2291">
+      <characteristics>
+        <characteristic name="Arcane Value" typeId="char-arc-val">12</characteristic>
+        <characteristic name="Description" typeId="char-desc">Select a visible enemy infantry unit within 20&quot; of the invoking unit and roll a D5. If this roll exceeds the Initiative of that unit, a model within range is slain, and you may roll again. Repeat this until either a model fails to be slain, or a total of five models have been slain from the unit.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Warding" typeId="profile-invocation" typeName="Invocation" hidden="false" id="e608-0af7-2628-19ae">
+      <characteristics>
+        <characteristic name="Arcane Value" typeId="char-arc-val">7</characteristic>
+        <characteristic name="Description" typeId="char-desc">Until the beginning of the next combat phase, friendly units within 6&quot; of the invoking unit can reroll any failed Fleshwrought Abominations ability rolls.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Planeshift" typeId="profile-invocation" typeName="Invocation" hidden="false" id="030c-954b-7472-b322">
+      <characteristics>
+        <characteristic name="Arcane Value" typeId="char-arc-val">10</characteristic>
+        <characteristic name="Description" typeId="char-desc">Select an infantry unit within 5&quot; of the invoking unit. This unit is immediately moved to a position within 15&quot; of the invoking unit. This unit must end its move outside of any enemy units&apos; control range and outside of any impassable terrain.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="The Becoming" typeId="profile-invocation" typeName="Invocation" hidden="false" id="fd6e-e592-cc1b-9f95">
+      <characteristics>
+        <characteristic name="Arcane Value" typeId="char-arc-val">6</characteristic>
+        <characteristic name="Description" typeId="char-desc">Until the end of the turn, the invoking unit gains the *Dæmon* keyword, and the unit can immediately make a fight action, with the following modifiers applied until the end of the turn:
+* Add 1 to all of this unit&apos;s melee weapons Dice characteristic
+* This unit adds 2 to its Defence, Speed and Initiative characteristics
+At the end of the Combat Phase, the invoking unit gains four attrition points.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Infernal Darkness" typeId="profile-invocation" typeName="Invocation" hidden="false" id="4509-c193-a706-0814">
+      <characteristics>
+        <characteristic name="Arcane Value" typeId="char-arc-val">8</characteristic>
+        <characteristic name="Description" typeId="char-desc">Select an *infantry* unit within 24&quot; of the invoking unit. Both players roll-off, adding the respective Morale characteristic of the invoking unit and the target unit. If the invoking player&apos;s result is greater than the target unit&apos;s result, the target unit is enveloped by darkness until the following mystic phase. A unit enveloped by darkness:
+* Limits all of its *aura* abilities to 3&quot;
+* Cannot be affected by any abilities from friendly units that are more than 3&quot; away
+* Counts all units more than 3&quot; away as not being visible. 7-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Acolyte Cleavers" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="e52f-69e6-d5fb-077d">
+      <characteristics>
+        <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">2</characteristic>
+        <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+1</characteristic>
+        <characteristic name="Damage" typeId="2780-b560-1641-b9a5">1</characteristic>
+        <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d">Attack rolls made with this weapon are never made at a disadvantage, regardless of any abilities or effects on this unit.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Shotpistol" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="222f-a0f1-84ec-00db">
+      <characteristics>
+        <characteristic name="Dice" typeId="1192-2222-5926-5b4b">1</characteristic>
+        <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+2</characteristic>
+        <characteristic name="Damage" typeId="a482-225f-a3cb-a700">1</characteristic>
+        <characteristic name="Traits" typeId="76cd-5882-86da-52cf">This weapon can only target units within 10” of the attacking model.</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <sharedInfoGroups>
+    <infoGroup name="The Disciplines Kolymite" id="3f7c-f16a-1bb4-6e7d" hidden="false">
+      <infoLinks>
+        <infoLink name="Turgescence" id="9602-b2f9-28b5-c80b" hidden="false" type="profile" targetId="7e6a-2312-80f6-2291"/>
+        <infoLink name="Warding" id="b00b-e007-a7c7-5ef0" hidden="false" type="profile" targetId="e608-0af7-2628-19ae"/>
+        <infoLink name="Planeshift" id="5982-95f0-f3fb-3710" hidden="false" type="profile" targetId="030c-954b-7472-b322"/>
+        <infoLink name="The Becoming" id="67ad-a45f-5028-32dd" hidden="false" type="profile" targetId="fd6e-e592-cc1b-9f95"/>
+        <infoLink name="Infernal Darkness" id="2907-5c81-981b-333c" hidden="false" type="profile" targetId="4509-c193-a706-0814"/>
+      </infoLinks>
+    </infoGroup>
+  </sharedInfoGroups>
+  <infoLinks>
+    <infoLink name="The Disciplines Kolymite" id="a805-01b5-0e6b-3650" hidden="false" type="infoGroup" targetId="3f7c-f16a-1bb4-6e7d"/>
+  </infoLinks>
+</catalogue>
