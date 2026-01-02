@@ -773,7 +773,7 @@ Models in this unit cannot contest or claim any objective markers and do not ac
         <infoLink name="Explosive End (D5”)" id="da96-4893-b92a-4ee1" hidden="false" type="rule" targetId="e7a2-d585-bc1b-637d"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Vedette" hidden="false" id="7901-4c51-37a0-91a0">
+    <selectionEntry type="unit" import="true" name="Vedette" hidden="false" id="7901-4c51-37a0-91a0">
       <costs>
         <cost name="Auri" typeId="cost-auri" value="190"/>
       </costs>
@@ -1123,6 +1123,7 @@ Once this unit has finished making its attacks, roll a dice for each model in t
         </modifier>
       </modifiers>
     </entryLink>
+    <entryLink import="true" name="The Covenant Legions" hidden="false" id="ddab-22a5-8ad0-d507" type="selectionEntry" targetId="ead4-f076-8290-9700"/>
   </entryLinks>
   <sharedRules>
     <rule name="Skittering Horror" id="5644-27ad-e862-118b" hidden="false">
