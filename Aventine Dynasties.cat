@@ -621,41 +621,6 @@ While a *leader* is joined to this unit, it ignores the effects of being shaken,
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="a61a-28cd-a5a1-cc2d-min" includeChildSelections="false"/>
             <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="a61a-28cd-a5a1-cc2d-max" includeChildSelections="false"/>
           </constraints>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Upgrade" id="f7ee-60e6-5518-2a43" hidden="false">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="095a-bc83-a5ed-631b" includeChildSelections="false"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry type="model" import="true" name="Heavy Gunner" hidden="false" id="07e2-10de-45c7-0cf0">
-                  <costs>
-                    <cost name="Auri" typeId="cost-auri" value="25"/>
-                  </costs>
-                  <profiles>
-                    <profile name="Heavy Ion Reaper Carriage" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="3e6d-b8f0-16fb-2139">
-                      <characteristics>
-                        <characteristic name="Dice" typeId="1192-2222-5926-5b4b">4</characteristic>
-                        <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+3</characteristic>
-                        <characteristic name="Damage" typeId="a482-225f-a3cb-a700">2</characteristic>
-                        <characteristic name="Traits" typeId="76cd-5882-86da-52cf"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry type="model" import="true" name="Demolition Specialist" hidden="false" id="2418-ed06-0c94-6d03">
-                  <costs>
-                    <cost name="Auri" typeId="cost-auri" value="35"/>
-                  </costs>
-                  <rules>
-                    <rule name="Demolitions Specialist" id="9bce-c936-6a9e-d41a" hidden="false">
-                      <description>During deployment, for each unit in your army that includes a demolitions specialist, select one terrain piece to rig, and secretly note down (or place markers underneath) each rigged terrain piece. When a unit with a demolitions specialist activates in the combat phase, instead of making any other action, it can detonate one visible rigged terrain piece. Each non-*independent* unit (friend and foe) within 3” of a rigged terrain piece loses D5 points of health.
-Each terrain piece can only be rigged once per battle, and detonated once per battle. This ability counts as a *trap*.</description>
-                    </rule>
-                  </rules>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
           <profiles>
             <profile name="Excavator Pick" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="87ad-f05a-610b-1444">
               <characteristics>
@@ -698,6 +663,44 @@ When a unit with this ability deploys from reserve, the tunnelers must deploy s
         <categoryLink targetId="cat-infantry" id="1a2c-3e52-221b-6a2c" primary="false" name="Infantry"/>
         <categoryLink targetId="2228-50ba-f04e-7470" id="838e-1f6b-de99-9cd2" primary="false" name="Vanguard"/>
       </categoryLinks>
+      <costs>
+        <cost name="Auri" typeId="cost-auri" value="95"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Engineer Upgrade" id="f7ee-60e6-5518-2a43" hidden="false" defaultSelectionEntryId="none">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="095a-bc83-a5ed-631b" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Heavy Gunner" hidden="false" id="07e2-10de-45c7-0cf0">
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="25"/>
+              </costs>
+              <profiles>
+                <profile name="Heavy Ion Reaper Carriage" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="3e6d-b8f0-16fb-2139">
+                  <characteristics>
+                    <characteristic name="Dice" typeId="1192-2222-5926-5b4b">4</characteristic>
+                    <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+3</characteristic>
+                    <characteristic name="Damage" typeId="a482-225f-a3cb-a700">2</characteristic>
+                    <characteristic name="Traits" typeId="76cd-5882-86da-52cf"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Demolition Specialist" hidden="false" id="2418-ed06-0c94-6d03">
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="35"/>
+              </costs>
+              <rules>
+                <rule name="Demolitions Specialist" id="9bce-c936-6a9e-d41a" hidden="false">
+                  <description>During deployment, for each unit in your army that includes a demolitions specialist, select one terrain piece to rig, and secretly note down (or place markers underneath) each rigged terrain piece. When a unit with a demolitions specialist activates in the combat phase, instead of making any other action, it can detonate one visible rigged terrain piece. Each non-*independent* unit (friend and foe) within 3” of a rigged terrain piece loses D5 points of health.
+Each terrain piece can only be rigged once per battle, and detonated once per battle. This ability counts as a *trap*.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Pathfinder Cadre" hidden="false" id="48a4-81e3-b990-eef5">
       <profiles>
