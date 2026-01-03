@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="610b-48af-e8ef-2f35" name="Kingdoms of Mikaelhelde" gameSystemId="sys-promised-land" gameSystemRevision="1" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="610b-48af-e8ef-2f35" name="Kingdoms of Mikaelhelde" gameSystemId="sys-promised-land" gameSystemRevision="1" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Cardinal" hidden="false" id="2ce2-88bf-8777-0c3e">
       <categoryLinks>
@@ -421,9 +421,6 @@ This weapon has advantage when targeting *monsters* or *cavalry* units.</charact
         <categoryLink targetId="cat-support" id="6ecc-3173-5f1b-f113" primary="true" name="Support"/>
         <categoryLink targetId="cat-infantry" id="1da6-065f-e15d-2a02" primary="false" name="Infantry"/>
       </categoryLinks>
-      <costs>
-        <cost name="Auri" typeId="cost-auri" value="90"/>
-      </costs>
       <rules>
         <rule name="The World Reborn In Fire" id="159b-12ab-87f1-98cc" hidden="false">
           <description>This unit is immune to the effects of any weapons and abilities with the words ‘fire’, ‘inferno’, ‘blaze’ and ‘incinerate’ (or derivatives of those words) in their names, and attack rolls made as part of the Redemption in Death ability are made with disadvantage. In addition, each time this unit makes a successful charge, its charge target gains one additional attrition point.</description>
@@ -488,6 +485,14 @@ Each time a unit gains an attrition point as part of an attack that includes thi
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Unit Tax" hidden="false" id="e63c-c62e-57eb-28ec" defaultAmount="90">
+          <comment>Seems to be copy-paste error in source book</comment>
+          <costs>
+            <cost name="Auri" typeId="cost-auri" value="1"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Enlightened" hidden="false" id="d70a-c187-02ee-1169">
       <profiles>

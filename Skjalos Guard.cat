@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="e1ac-264e-1ab6-38a7" name="Skjalos Guard" gameSystemId="sys-promised-land" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="e1ac-264e-1ab6-38a7" name="Skjalos Guard" gameSystemId="sys-promised-land" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="cat-wild-magic" name="Wild Magic" hidden="false"/>
     <categoryEntry id="cat-vanguard" name="Vanguard" hidden="false"/>
@@ -243,87 +243,6 @@ If an enemy unit is destroyed in the turn in which a group including this unit 
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Legionaries" hidden="false" id="shared-entry-legionaries">
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="Legionary" hidden="false" id="557c-fbbc-06ca-ce92" defaultAmount="10">
-          <costs>
-            <cost name="Auri" typeId="cost-auri" value="18"/>
-          </costs>
-          <constraints>
-            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="9e20-94ad-a167-e29c" includeChildSelections="false"/>
-            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="b799-a551-56f8-f673" includeChildSelections="false"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Shotpistol" id="43c7-8051-7b3c-bdc5" hidden="false" type="profile" targetId="4ee3-1b2a-8ed5-d300"/>
-            <infoLink name="Trench Mace" id="7ed9-ed94-821f-5442" hidden="false" type="profile" targetId="f574-c5a8-7471-2285"/>
-          </infoLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Wargear" id="670f-e2af-590a-99c9" hidden="false">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Shotpistol and Trench Mace" hidden="false" id="db65-25cf-7213-88af" defaultAmount="1" sortIndex="1">
-                  <infoLinks>
-                    <infoLink name="Shotpistol" id="87a2-0f94-aa0d-205a" hidden="false" type="profile" targetId="4ee3-1b2a-8ed5-d300"/>
-                    <infoLink name="Trench Mace" id="9451-5d24-9781-0bbe" hidden="false" type="profile" targetId="f574-c5a8-7471-2285"/>
-                  </infoLinks>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Shotcarbine" hidden="false" id="d1b1-cd48-dc81-4f4d" min="0" max="10" sortIndex="2">
-                  <infoLinks>
-                    <infoLink name="Shotcarbine" id="cfa8-8ac6-1eac-b24f" hidden="false" type="profile" targetId="1a2d-31a6-a1c7-b1f0"/>
-                  </infoLinks>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Heavy Maul" hidden="false" id="1ba5-c5e2-2e0e-605c" min="0" max="10" sortIndex="3">
-                  <costs>
-                    <cost name="Auri" typeId="cost-auri" value="10"/>
-                  </costs>
-                  <infoLinks>
-                    <infoLink name="Heavy Maul" id="273d-ee83-fb71-8ace" hidden="false" type="profile" targetId="2c07-20c6-e268-fdce"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="faf3-eb2c-09d8-fd78-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="faf3-eb2c-09d8-fd78-max" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-        </selectionEntry>
-        <selectionEntry type="model" import="true" name="Headsman" hidden="false" id="738b-b6de-b21c-06f6" max="1">
-          <costs>
-            <cost name="Auri" typeId="cost-auri" value="15"/>
-          </costs>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Wargear" id="0303-bd66-bc18-17cb" hidden="false" max="1">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Blade of Judgement" hidden="false" id="6815-ddfe-5eda-ba22" max="1" sortIndex="2">
-                  <profiles>
-                    <profile name="Blade of Judgement" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="79e3-7691-f848-2dbc">
-                      <characteristics>
-                        <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">3</characteristic>
-                        <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+3</characteristic>
-                        <characteristic name="Damage" typeId="2780-b560-1641-b9a5">4</characteristic>
-                        <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d">Natural attack rolls of 10 made with this weapon always inflict Critical Hits.
-Successful hits made by a model attacking with this weapon can be allocated to models in a target unit by the attacking player, rather than by the target unit’s controlling player (even if models in that unit are already injured).</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Shotpistol and Trench Mace" hidden="false" id="0f50-cf5d-cf65-134c" sortIndex="1">
-                  <infoLinks>
-                    <infoLink name="Shotpistol" id="44b2-62ed-86dc-f485" hidden="false" type="profile" targetId="4ee3-1b2a-8ed5-d300"/>
-                    <infoLink name="Trench Mace" id="1006-ccff-c82d-494f" hidden="false" type="profile" targetId="f574-c5a8-7471-2285"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8660-62fb-ec46-e43b-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8660-62fb-ec46-e43b-max" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5717-5ea8-98cf-1176" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
       <infoLinks>
         <infoLink name="Base 28.5" id="31bf-8e3a-6680-1185" hidden="false" type="profile" targetId="e1d3-bd05-6cb1-9bdd"/>
       </infoLinks>
@@ -351,6 +270,91 @@ Successful hits made by a model attacking with this weapon can be allocated to 
         <categoryLink targetId="cat-troops" id="3c63-3631-34ea-ed65" primary="true" name="Troops"/>
         <categoryLink targetId="e385-16f4-3a80-8997" id="9143-f6c7-801e-ce5a" primary="false" name="Skjalos Guard"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Models" id="330d-1c47-0861-3d5d" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Legionary" hidden="false" id="557c-fbbc-06ca-ce92" defaultAmount="10">
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="18"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Shotpistol" id="43c7-8051-7b3c-bdc5" hidden="false" type="profile" targetId="4ee3-1b2a-8ed5-d300"/>
+                <infoLink name="Trench Mace" id="7ed9-ed94-821f-5442" hidden="false" type="profile" targetId="f574-c5a8-7471-2285"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Wargear" id="670f-e2af-590a-99c9" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Shotpistol and Trench Mace" hidden="false" id="db65-25cf-7213-88af" defaultAmount="1" sortIndex="1">
+                      <infoLinks>
+                        <infoLink name="Shotpistol" id="87a2-0f94-aa0d-205a" hidden="false" type="profile" targetId="4ee3-1b2a-8ed5-d300"/>
+                        <infoLink name="Trench Mace" id="9451-5d24-9781-0bbe" hidden="false" type="profile" targetId="f574-c5a8-7471-2285"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Shotcarbine" hidden="false" id="d1b1-cd48-dc81-4f4d" min="0" max="10" sortIndex="2">
+                      <infoLinks>
+                        <infoLink name="Shotcarbine" id="cfa8-8ac6-1eac-b24f" hidden="false" type="profile" targetId="1a2d-31a6-a1c7-b1f0"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Heavy Maul" hidden="false" id="1ba5-c5e2-2e0e-605c" min="0" max="10" sortIndex="3">
+                      <costs>
+                        <cost name="Auri" typeId="cost-auri" value="10"/>
+                      </costs>
+                      <infoLinks>
+                        <infoLink name="Heavy Maul" id="273d-ee83-fb71-8ace" hidden="false" type="profile" targetId="2c07-20c6-e268-fdce"/>
+                      </infoLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="faf3-eb2c-09d8-fd78-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="faf3-eb2c-09d8-fd78-max" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Headsman" hidden="false" id="738b-b6de-b21c-06f6" max="1">
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="33"/>
+              </costs>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Wargear" id="0303-bd66-bc18-17cb" hidden="false" max="1">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Blade of Judgement" hidden="false" id="6815-ddfe-5eda-ba22" max="1" sortIndex="2">
+                      <profiles>
+                        <profile name="Blade of Judgement" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="79e3-7691-f848-2dbc">
+                          <characteristics>
+                            <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">3</characteristic>
+                            <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+3</characteristic>
+                            <characteristic name="Damage" typeId="2780-b560-1641-b9a5">4</characteristic>
+                            <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d">Natural attack rolls of 10 made with this weapon always inflict Critical Hits.
+Successful hits made by a model attacking with this weapon can be allocated to models in a target unit by the attacking player, rather than by the target unit’s controlling player (even if models in that unit are already injured).</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Shotpistol and Trench Mace" hidden="false" id="0f50-cf5d-cf65-134c" sortIndex="1">
+                      <infoLinks>
+                        <infoLink name="Shotpistol" id="44b2-62ed-86dc-f485" hidden="false" type="profile" targetId="4ee3-1b2a-8ed5-d300"/>
+                        <infoLink name="Trench Mace" id="1006-ccff-c82d-494f" hidden="false" type="profile" targetId="f574-c5a8-7471-2285"/>
+                      </infoLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8660-62fb-ec46-e43b-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8660-62fb-ec46-e43b-max" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5717-5ea8-98cf-1176" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="9e20-94ad-a167-e29c" includeChildSelections="false"/>
+            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="b799-a551-56f8-f673" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Legionaries in Hazard Armour" hidden="false" id="shared-entry-hazard-legionaries" collective="false">
       <costs>
@@ -382,7 +386,7 @@ Successful hits made by a model attacking with this weapon can be allocated to 
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Legionary" hidden="false" id="6ebe-b425-167c-42fc">
           <costs>
-            <cost name="Auri" typeId="cost-auri" value="36"/>
+            <cost name="Auri" typeId="cost-auri" value="18"/>
           </costs>
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="251a-9c08-1be0-d5be" includeChildSelections="false"/>
@@ -444,6 +448,14 @@ Successful hits made by a model attacking with this weapon can be allocated to 
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Model Tax" hidden="false" id="cd7d-29db-3267-8886">
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="1"/>
+              </costs>
+              <comment>Source book seems to have wrong model cost, so you may adjust it manually here</comment>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -478,102 +490,106 @@ While grouped with this unit, a *leader* cannot be targeted by any attacks, or 
           <description>While this unit is wholly within its controlling player’s deployment zone or within range of an objective marker, friendly *infantry* units which are within 5” of this unit reduce the damage characteristic of incoming ranged attacks by 1.</description>
         </rule>
       </rules>
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="Veteran" hidden="false" id="model-veteran" max="5" defaultAmount="" collective="true">
-          <costs>
-            <cost name="Auri" typeId="cost-auri" value="20"/>
-          </costs>
-          <constraints>
-            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="6f28-0941-f0d4-a1d5" includeChildSelections="false"/>
-            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="c08b-8186-fc68-034a" includeChildSelections="false"/>
-          </constraints>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Wargear" id="bb6e-deba-ca4e-5ccc" hidden="false">
+      <infoLinks>
+        <infoLink name="Base 28.5" id="2554-987f-36c9-9734" hidden="false" type="profile" targetId="e1d3-bd05-6cb1-9bdd"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Models" id="4c9c-62bd-35f5-da8f" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Herald" hidden="false" id="model-herald">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="269e-f5a0-ecd2-5426-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="269e-f5a0-ecd2-5426-max" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="50"/>
+              </costs>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Melee Weapon" id="d216-699b-28be-36b0" hidden="false" sortIndex="2">
+                <selectionEntryGroup name="Wargear" id="587b-596e-afd2-11cf" hidden="false">
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Trench Mace" hidden="false" id="35a3-fc4c-3e9d-060a" sortIndex="1" defaultAmount="1">
+                    <selectionEntry type="upgrade" import="true" name="Shotpistol" hidden="false" id="55f5-a564-4175-7072" defaultAmount="1" sortIndex="1">
                       <infoLinks>
-                        <infoLink name="Trench Mace" id="8711-a450-a6e4-1c5b" hidden="false" type="profile" targetId="f574-c5a8-7471-2285"/>
+                        <infoLink name="Shotpistol" id="d0d2-247d-8f03-9897" hidden="false" type="profile" targetId="4ee3-1b2a-8ed5-d300"/>
                       </infoLinks>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Legacy Blade" hidden="false" id="497e-e3f6-40de-f39a" min="0" max="9" sortIndex="2">
+                    <selectionEntry type="upgrade" import="true" name="Shotcarbine" hidden="false" id="49dc-cc37-c139-5026" min="0" max="10" sortIndex="2">
                       <infoLinks>
-                        <infoLink name="Legacy Blade" id="9d0d-b65f-882f-4aed" hidden="false" type="profile" targetId="d081-1c92-6f09-01fb"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Legionary Axe" hidden="false" id="be90-fae1-952d-d187" min="0" max="9" sortIndex="3">
-                      <infoLinks>
-                        <infoLink name="Legionary Axe" id="2a53-0ac7-6254-cf11" hidden="false" type="profile" targetId="780f-8c30-484a-517c"/>
-                      </infoLinks>
-                    </selectionEntry>
-                  </selectionEntries>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8441-1eb4-ecb0-d906-min" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8441-1eb4-ecb0-d906-max" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntryGroup>
-                <selectionEntryGroup name="Ranged Weapon" id="b2ef-0e89-d66b-7f5b" hidden="false" sortIndex="1">
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Shotcarbine" hidden="false" id="b6cd-6418-a5b3-dda0" min="0" max="10" sortIndex="2">
-                      <infoLinks>
-                        <infoLink name="Shotcarbine" id="2b7c-886d-c280-2fc4" hidden="false" type="profile" targetId="1a2d-31a6-a1c7-b1f0"/>
+                        <infoLink name="Shotcarbine" id="f025-1177-3ecd-a580" hidden="false" type="profile" targetId="1a2d-31a6-a1c7-b1f0"/>
                       </infoLinks>
                       <costs>
                         <cost name="Auri" typeId="cost-auri" value="5"/>
                       </costs>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Shotpistol" hidden="false" id="d52a-dcac-54bc-9aa4" sortIndex="1" defaultAmount="1">
-                      <infoLinks>
-                        <infoLink name="Shotpistol" id="5e49-88e9-3b44-6c9a" hidden="false" type="profile" targetId="4ee3-1b2a-8ed5-d300"/>
-                      </infoLinks>
-                    </selectionEntry>
                   </selectionEntries>
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3fc6-d5b8-eb6f-1868-min" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3fc6-d5b8-eb6f-1868-max" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7aa1-192c-e30e-5dcf-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7aa1-192c-e30e-5dcf-max" includeChildSelections="false"/>
                   </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-        </selectionEntry>
-        <selectionEntry type="model" import="true" name="Herald" hidden="false" id="model-herald">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="269e-f5a0-ecd2-5426-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="269e-f5a0-ecd2-5426-max" includeChildSelections="false"/>
-          </constraints>
-          <costs>
-            <cost name="Auri" typeId="cost-auri" value="50"/>
-          </costs>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Wargear" id="587b-596e-afd2-11cf" hidden="false">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Shotpistol" hidden="false" id="55f5-a564-4175-7072" defaultAmount="1" sortIndex="1">
-                  <infoLinks>
-                    <infoLink name="Shotpistol" id="d0d2-247d-8f03-9897" hidden="false" type="profile" targetId="4ee3-1b2a-8ed5-d300"/>
-                  </infoLinks>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Shotcarbine" hidden="false" id="49dc-cc37-c139-5026" min="0" max="10" sortIndex="2">
-                  <infoLinks>
-                    <infoLink name="Shotcarbine" id="f025-1177-3ecd-a580" hidden="false" type="profile" targetId="1a2d-31a6-a1c7-b1f0"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="Auri" typeId="cost-auri" value="5"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Veteran" hidden="false" id="model-veteran" max="5" collective="true">
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="20"/>
+              </costs>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7aa1-192c-e30e-5dcf-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7aa1-192c-e30e-5dcf-max" includeChildSelections="false"/>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="6f28-0941-f0d4-a1d5" includeChildSelections="false"/>
+                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="c08b-8186-fc68-034a" includeChildSelections="false"/>
               </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-        </selectionEntry>
-      </selectionEntries>
-      <infoLinks>
-        <infoLink name="Base 28.5" id="2554-987f-36c9-9734" hidden="false" type="profile" targetId="e1d3-bd05-6cb1-9bdd"/>
-      </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Wargear" id="bb6e-deba-ca4e-5ccc" hidden="false">
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Melee Weapon" id="d216-699b-28be-36b0" hidden="false" sortIndex="2">
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Trench Mace" hidden="false" id="35a3-fc4c-3e9d-060a" sortIndex="1" defaultAmount="1">
+                          <infoLinks>
+                            <infoLink name="Trench Mace" id="8711-a450-a6e4-1c5b" hidden="false" type="profile" targetId="f574-c5a8-7471-2285"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Legacy Blade" hidden="false" id="497e-e3f6-40de-f39a" min="0" max="9" sortIndex="2">
+                          <infoLinks>
+                            <infoLink name="Legacy Blade" id="9d0d-b65f-882f-4aed" hidden="false" type="profile" targetId="d081-1c92-6f09-01fb"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Legionary Axe" hidden="false" id="be90-fae1-952d-d187" min="0" max="9" sortIndex="3">
+                          <infoLinks>
+                            <infoLink name="Legionary Axe" id="2a53-0ac7-6254-cf11" hidden="false" type="profile" targetId="780f-8c30-484a-517c"/>
+                          </infoLinks>
+                        </selectionEntry>
+                      </selectionEntries>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8441-1eb4-ecb0-d906-min" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8441-1eb4-ecb0-d906-max" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                    <selectionEntryGroup name="Ranged Weapon" id="b2ef-0e89-d66b-7f5b" hidden="false" sortIndex="1">
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Shotcarbine" hidden="false" id="b6cd-6418-a5b3-dda0" min="0" max="10" sortIndex="2">
+                          <infoLinks>
+                            <infoLink name="Shotcarbine" id="2b7c-886d-c280-2fc4" hidden="false" type="profile" targetId="1a2d-31a6-a1c7-b1f0"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="Auri" typeId="cost-auri" value="5"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Shotpistol" hidden="false" id="d52a-dcac-54bc-9aa4" sortIndex="1" defaultAmount="1">
+                          <infoLinks>
+                            <infoLink name="Shotpistol" id="5e49-88e9-3b44-6c9a" hidden="false" type="profile" targetId="4ee3-1b2a-8ed5-d300"/>
+                          </infoLinks>
+                        </selectionEntry>
+                      </selectionEntries>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3fc6-d5b8-eb6f-1868-min" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3fc6-d5b8-eb6f-1868-max" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Marshal in Hazard Armour" hidden="false" id="shared-entry-marshal" collective="false">
       <costs>

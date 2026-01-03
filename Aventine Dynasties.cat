@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="3d16-98d5-8461-68da" name="Aventine Dynasties" gameSystemId="sys-promised-land" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="3d16-98d5-8461-68da" name="Aventine Dynasties" gameSystemId="sys-promised-land" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="The Fleet of Folding Scars" id="206f-4f70-d88e-c755" hidden="false">
       <forceEntries>
@@ -275,37 +275,6 @@ At the beginning of each turn after the first, if this model’s controlling pl
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Navigators" hidden="false" id="f481-9288-261e-c08c">
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="Navigator" hidden="false" id="9edc-5ecb-e1a5-be14">
-          <costs>
-            <cost name="Auri" typeId="cost-auri" value="12"/>
-          </costs>
-          <constraints>
-            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="3c5a-191a-37fc-aa0b" includeChildSelections="false"/>
-            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="4b7a-16b1-8c63-84e2" includeChildSelections="false"/>
-          </constraints>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Wargear" id="92a0-a858-30e4-3aa0" hidden="false">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Shotrifle" hidden="false" id="ae64-117d-4c5d-20e5" defaultAmount="1">
-                  <infoLinks>
-                    <infoLink name="Shotrifle" id="ab2a-fac0-5781-1b1e" hidden="false" type="profile" targetId="950c-ac4b-f80f-1f2c"/>
-                  </infoLinks>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Tachyon Rifle" hidden="false" id="21b4-2efa-491b-8739">
-                  <infoLinks>
-                    <infoLink name="Tachyon Rifle" id="fbae-9161-55b8-ab79" hidden="false" type="profile" targetId="042b-72f1-6ac7-8781"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff2a-72de-74a6-5165-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff2a-72de-74a6-5165-max" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-        </selectionEntry>
-      </selectionEntries>
       <costs>
         <cost name="Auri" typeId="cost-auri" value="15"/>
       </costs>
@@ -322,9 +291,34 @@ At the beginning of each turn after the first, if this model’s controlling pl
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Command" id="bcac-b276-9910-b062" hidden="false">
+        <selectionEntryGroup name="Models" id="783c-096c-dd50-5903" hidden="false">
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Specialist" hidden="false" id="b80f-6f28-d463-98b3">
+            <selectionEntry type="model" import="true" name="Navigator" hidden="false" id="9edc-5ecb-e1a5-be14" defaultAmount="10" sortIndex="2">
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="12"/>
+              </costs>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Wargear" id="92a0-a858-30e4-3aa0" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Shotrifle" hidden="false" id="ae64-117d-4c5d-20e5" defaultAmount="1">
+                      <infoLinks>
+                        <infoLink name="Shotrifle" id="ab2a-fac0-5781-1b1e" hidden="false" type="profile" targetId="950c-ac4b-f80f-1f2c"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Tachyon Rifle" hidden="false" id="21b4-2efa-491b-8739">
+                      <infoLinks>
+                        <infoLink name="Tachyon Rifle" id="fbae-9161-55b8-ab79" hidden="false" type="profile" targetId="042b-72f1-6ac7-8781"/>
+                      </infoLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff2a-72de-74a6-5165-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff2a-72de-74a6-5165-max" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Specialist" hidden="false" id="b80f-6f28-d463-98b3" sortIndex="1">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="50c5-4e9b-9330-8c28" includeChildSelections="false"/>
               </constraints>
@@ -338,8 +332,15 @@ At the beginning of each turn after the first, if this model’s controlling pl
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="27"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
+          <constraints>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="3c5a-191a-37fc-aa0b" includeChildSelections="false"/>
+            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="4b7a-16b1-8c63-84e2" includeChildSelections="false"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <infoLinks>
@@ -551,51 +552,6 @@ In addition, if this unit moves more than 10” during a normal move, subtract 
           </characteristics>
         </profile>
       </profiles>
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="Protector" hidden="false" id="840d-828e-dffe-a0df">
-          <costs>
-            <cost name="Auri" typeId="cost-auri" value="20"/>
-          </costs>
-          <constraints>
-            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="9212-05fe-ab4c-99e1" includeChildSelections="false"/>
-            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="29c9-6116-8195-9ac5" includeChildSelections="false"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="model" import="true" name="Standard-bearer" hidden="false" id="50bd-c3bc-18b9-bbf2">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50b2-e666-0710-2863" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="Auri" typeId="cost-auri" value="15"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <profiles>
-            <profile name="Fleetguard Pike" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="77d8-15d1-2c0c-7f26">
-              <characteristics>
-                <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">1</characteristic>
-                <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+4</characteristic>
-                <characteristic name="Damage" typeId="2780-b560-1641-b9a5">2</characteristic>
-                <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d">This weapon has advantage when targeting *monsters* or *cavalry* units.
-If a unit equipped with fleetguard pikes is not within combat range of any enemy units in the combat phase, but it is within 3” of any enemy units, it can make a fight action targeting one of those enemy units. A unit attacking in this way can only make attacks using any fleetguard pikes it is equipped with.</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Ion Pistol" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="f557-252d-af74-b0c1">
-              <characteristics>
-                <characteristic name="Dice" typeId="1192-2222-5926-5b4b">1</characteristic>
-                <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+3</characteristic>
-                <characteristic name="Damage" typeId="a482-225f-a3cb-a700">2</characteristic>
-                <characteristic name="Traits" typeId="76cd-5882-86da-52cf">This weapon can only target units within 6” of the attacking model.</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Tower Shield" typeId="0c1d-fb59-db29-3959" typeName="Other Wargear" hidden="false" id="f0c0-a4d1-c9a0-4dd4">
-              <characteristics>
-                <characteristic name="Traits" typeId="e990-df09-ac6b-7481">Attacks with a strength of +3 or greater that target a unit with tower shields have disadvantage. This has no effect on *destroyer* or *psychic* attacks, or any attacks made by *leviathan* units.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-      </selectionEntries>
       <costs>
         <cost name="Auri" typeId="cost-auri" value="5"/>
       </costs>
@@ -613,29 +569,55 @@ While a *leader* is joined to this unit, it ignores the effects of being shaken,
         <categoryLink targetId="cat-troops" id="a41f-7b49-c487-51e4" primary="true" name="Troops"/>
         <categoryLink targetId="cat-infantry" id="32a7-da56-0818-b53d" primary="false" name="Infantry"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Models" id="6ec9-15d2-138c-28b8" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Standard-bearer" hidden="false" id="50bd-c3bc-18b9-bbf2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50b2-e666-0710-2863" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="35"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Protector" hidden="false" id="840d-828e-dffe-a0df" defaultAmount="5">
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="20"/>
+              </costs>
+              <profiles>
+                <profile name="Fleetguard Pike" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="77d8-15d1-2c0c-7f26">
+                  <characteristics>
+                    <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">1</characteristic>
+                    <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+4</characteristic>
+                    <characteristic name="Damage" typeId="2780-b560-1641-b9a5">2</characteristic>
+                    <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d">This weapon has advantage when targeting *monsters* or *cavalry* units.
+If a unit equipped with fleetguard pikes is not within combat range of any enemy units in the combat phase, but it is within 3” of any enemy units, it can make a fight action targeting one of those enemy units. A unit attacking in this way can only make attacks using any fleetguard pikes it is equipped with.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Ion Pistol" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="f557-252d-af74-b0c1">
+                  <characteristics>
+                    <characteristic name="Dice" typeId="1192-2222-5926-5b4b">1</characteristic>
+                    <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+3</characteristic>
+                    <characteristic name="Damage" typeId="a482-225f-a3cb-a700">2</characteristic>
+                    <characteristic name="Traits" typeId="76cd-5882-86da-52cf">This weapon can only target units within 6” of the attacking model.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Tower Shield" typeId="0c1d-fb59-db29-3959" typeName="Other Wargear" hidden="false" id="f0c0-a4d1-c9a0-4dd4">
+                  <characteristics>
+                    <characteristic name="Traits" typeId="e990-df09-ac6b-7481">Attacks with a strength of +3 or greater that target a unit with tower shields have disadvantage. This has no effect on *destroyer* or *psychic* attacks, or any attacks made by *leviathan* units.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="9212-05fe-ab4c-99e1" includeChildSelections="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="29c9-6116-8195-9ac5" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Navigator Engineers" hidden="false" id="f318-05ec-afb4-12b5">
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="Navigator Engineer" hidden="false" id="b43c-20ca-fbd1-09b2">
-          <constraints>
-            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="a61a-28cd-a5a1-cc2d-min" includeChildSelections="false"/>
-            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="a61a-28cd-a5a1-cc2d-max" includeChildSelections="false"/>
-          </constraints>
-          <profiles>
-            <profile name="Excavator Pick" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="87ad-f05a-610b-1444">
-              <characteristics>
-                <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">1</characteristic>
-                <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+2</characteristic>
-                <characteristic name="Damage" typeId="2780-b560-1641-b9a5">1</characteristic>
-                <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d"/>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Shotrifle" id="d687-706d-4409-cc01" hidden="false" type="profile" targetId="950c-ac4b-f80f-1f2c"/>
-          </infoLinks>
-        </selectionEntry>
-      </selectionEntries>
       <profiles>
         <profile name="Navigator Engineers" typeId="profile-unit" typeName="Unit" hidden="false" id="df78-09ae-e3aa-c9e0">
           <characteristics>
@@ -667,38 +649,63 @@ When a unit with this ability deploys from reserve, the tunnelers must deploy s
         <cost name="Auri" typeId="cost-auri" value="95"/>
       </costs>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Engineer Upgrade" id="f7ee-60e6-5518-2a43" hidden="false" defaultSelectionEntryId="none">
+        <selectionEntryGroup name="Models" id="2f7d-d30d-6a68-f919" hidden="false">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="095a-bc83-a5ed-631b" includeChildSelections="false"/>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="a61a-28cd-a5a1-cc2d-min" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="a61a-28cd-a5a1-cc2d-max" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Heavy Gunner" hidden="false" id="07e2-10de-45c7-0cf0">
-              <costs>
-                <cost name="Auri" typeId="cost-auri" value="25"/>
-              </costs>
+            <selectionEntry type="model" import="true" name="Navigator Engineer" hidden="false" id="b43c-20ca-fbd1-09b2">
               <profiles>
-                <profile name="Heavy Ion Reaper Carriage" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="3e6d-b8f0-16fb-2139">
+                <profile name="Excavator Pick" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="87ad-f05a-610b-1444">
                   <characteristics>
-                    <characteristic name="Dice" typeId="1192-2222-5926-5b4b">4</characteristic>
-                    <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+3</characteristic>
-                    <characteristic name="Damage" typeId="a482-225f-a3cb-a700">2</characteristic>
-                    <characteristic name="Traits" typeId="76cd-5882-86da-52cf"/>
+                    <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">1</characteristic>
+                    <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+2</characteristic>
+                    <characteristic name="Damage" typeId="2780-b560-1641-b9a5">1</characteristic>
+                    <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d"/>
                   </characteristics>
                 </profile>
               </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Demolition Specialist" hidden="false" id="2418-ed06-0c94-6d03">
-              <costs>
-                <cost name="Auri" typeId="cost-auri" value="35"/>
-              </costs>
-              <rules>
-                <rule name="Demolitions Specialist" id="9bce-c936-6a9e-d41a" hidden="false">
-                  <description>During deployment, for each unit in your army that includes a demolitions specialist, select one terrain piece to rig, and secretly note down (or place markers underneath) each rigged terrain piece. When a unit with a demolitions specialist activates in the combat phase, instead of making any other action, it can detonate one visible rigged terrain piece. Each non-*independent* unit (friend and foe) within 3” of a rigged terrain piece loses D5 points of health.
-Each terrain piece can only be rigged once per battle, and detonated once per battle. This ability counts as a *trap*.</description>
-                </rule>
-              </rules>
+              <infoLinks>
+                <infoLink name="Shotrifle" id="d687-706d-4409-cc01" hidden="false" type="profile" targetId="950c-ac4b-f80f-1f2c"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Engineer Upgrade" id="f7ee-60e6-5518-2a43" hidden="false" defaultSelectionEntryId="none">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="095a-bc83-a5ed-631b" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Heavy Gunner" hidden="false" id="07e2-10de-45c7-0cf0">
+                  <costs>
+                    <cost name="Auri" typeId="cost-auri" value="25"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Heavy Ion Reaper Carriage" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="3e6d-b8f0-16fb-2139">
+                      <characteristics>
+                        <characteristic name="Dice" typeId="1192-2222-5926-5b4b">4</characteristic>
+                        <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+3</characteristic>
+                        <characteristic name="Damage" typeId="a482-225f-a3cb-a700">2</characteristic>
+                        <characteristic name="Traits" typeId="76cd-5882-86da-52cf"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Demolition Specialist" hidden="false" id="2418-ed06-0c94-6d03">
+                  <costs>
+                    <cost name="Auri" typeId="cost-auri" value="35"/>
+                  </costs>
+                  <rules>
+                    <rule name="Demolitions Specialist" id="9bce-c936-6a9e-d41a" hidden="false">
+                      <description>During deployment, for each unit in your army that includes a demolitions specialist, select one terrain piece to rig, and secretly note down (or place markers underneath) each rigged terrain piece. When a unit with a demolitions specialist activates in the combat phase, instead of making any other action, it can detonate one visible rigged terrain piece. Each non-*independent* unit (friend and foe) within 3” of a rigged terrain piece loses D5 points of health.
+Each terrain piece can only be rigged once per battle, and detonated once per battle. This ability counts as a *trap*.</description>
+                    </rule>
+                  </rules>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="7c48-0504-3c48-89a0" name="Covenants of Astyri" gameSystemId="sys-promised-land" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="7c48-0504-3c48-89a0" name="Covenants of Astyri" gameSystemId="sys-promised-land" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="The Forces of Astyri" id="7aa2-a7ce-f7b3-a63e" hidden="false">
       <constraints>
@@ -324,43 +324,6 @@ In addition, while this unit is within 6” of two or more friendly *vehicles* a
       <costs>
         <cost name="Auri" typeId="cost-auri" value="10"/>
       </costs>
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="Minatarii" hidden="false" id="ac45-4471-20e9-05a4">
-          <constraints>
-            <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="d082-7870-addc-a84c" includeChildSelections="false"/>
-            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="0895-4e99-944f-0b20" includeChildSelections="false"/>
-          </constraints>
-          <costs>
-            <cost name="Auri" typeId="cost-auri" value="9"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="model" import="true" name="Archieronite" hidden="false" id="214d-a05a-5694-a66c">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e9d-52a0-c740-a449" includeChildSelections="false"/>
-          </constraints>
-          <costs>
-            <cost name="Auri" typeId="cost-auri" value="20"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="model" import="true" name="Augmetist" hidden="false" id="53b1-accc-0a7a-89ce">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da86-5804-c3b3-4e59" includeChildSelections="false"/>
-          </constraints>
-          <costs>
-            <cost name="Auri" typeId="cost-auri" value="35"/>
-          </costs>
-          <profiles>
-            <profile name="Augmetist’s tools" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="d7cf-dcce-5b2c-a275">
-              <characteristics>
-                <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">1</characteristic>
-                <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+2</characteristic>
-                <characteristic name="Damage" typeId="2780-b560-1641-b9a5">1</characteristic>
-                <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d"/>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-      </selectionEntries>
       <profiles>
         <profile name="Minatarii Hieronites" typeId="profile-unit" typeName="Unit" hidden="false" id="eb43-467c-55b5-d07e">
           <characteristics>
@@ -416,6 +379,45 @@ In addition, while this unit is within 6” of two or more friendly *vehicles* a
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Models" id="d5c2-5a05-e4d9-75f4" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Archieronite" hidden="false" id="214d-a05a-5694-a66c">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e9d-52a0-c740-a449" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="29"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Augmetist" hidden="false" id="53b1-accc-0a7a-89ce">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da86-5804-c3b3-4e59" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="44"/>
+              </costs>
+              <profiles>
+                <profile name="Augmetist’s tools" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="d7cf-dcce-5b2c-a275">
+                  <characteristics>
+                    <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">1</characteristic>
+                    <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+2</characteristic>
+                    <characteristic name="Damage" typeId="2780-b560-1641-b9a5">1</characteristic>
+                    <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Minatarii" hidden="false" id="ac45-4471-20e9-05a4" defaultAmount="10">
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="9"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="d082-7870-addc-a84c" includeChildSelections="false"/>
+            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="0895-4e99-944f-0b20" includeChildSelections="false"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <rules>
