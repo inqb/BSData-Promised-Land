@@ -654,6 +654,7 @@ Models in this unit cannot contest or claim any objective markers and do not ac
       <infoLinks>
         <infoLink name="Phase Carbine" id="8cca-cc80-0492-f6b2" hidden="false" type="profile" targetId="d471-ea58-bf03-689c"/>
         <infoLink name="Macrocoils" id="00de-0365-fc69-e22f" hidden="false" type="profile" targetId="65f5-936f-b3e9-6612"/>
+        <infoLink name="The Disciplines Kolymite" id="75b7-1205-8bf5-dac4" hidden="false" type="infoGroup" targetId="8c18-8e01-ac22-407d"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="6318-dd2c-0089-1879" hidden="false">
