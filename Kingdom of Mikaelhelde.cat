@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="610b-48af-e8ef-2f35" name="Kingdoms of Mikaelhelde" gameSystemId="sys-promised-land" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="610b-48af-e8ef-2f35" name="Kingdoms of Mikaelhelde" gameSystemId="sys-promised-land" gameSystemRevision="1" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Cardinal" hidden="false" id="2ce2-88bf-8777-0c3e">
       <categoryLinks>
@@ -453,7 +453,7 @@ Each time a unit gains an attrition point as part of an attack that includes thi
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Incendiarite" hidden="false" id="4d00-51b7-15a9-7c01">
               <costs>
-                <cost name="Auri" typeId="cost-auri" value="10"/>
+                <cost name="Auri" typeId="cost-auri" value="35"/>
               </costs>
               <profiles>
                 <profile name="Lance of Perdition" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="03c4-7d53-a72d-52b4">
