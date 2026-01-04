@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="610b-48af-e8ef-2f35" name="Kingdoms of Mikaelhelde" gameSystemId="sys-promised-land" gameSystemRevision="1" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="610b-48af-e8ef-2f35" name="Kingdoms of Mikaelhelde" gameSystemId="sys-promised-land" gameSystemRevision="1" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Cardinal" hidden="false" id="2ce2-88bf-8777-0c3e">
       <categoryLinks>
@@ -33,16 +33,11 @@ Each time an enemy unit within 10&quot; makes a failed attrition test roll, it l
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Replace Staff of Torment (Max 1)" id="3094-0c99-0872-0eeb" hidden="false">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac71-b3f2-3754-c27d" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntryGroup>
         <selectionEntryGroup name="Wargear" id="8e84-b449-d86a-7c66" hidden="false">
           <selectionEntryGroups>
             <selectionEntryGroup name="Ranged Weapon" id="c20c-ee78-9ea3-ec4e" hidden="false">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Staff of Torment" hidden="false" id="a089-53f1-acb5-47f6" defaultAmount="1">
+                <selectionEntry type="upgrade" import="true" name="Staff of Torment" hidden="false" id="a089-53f1-acb5-47f6" defaultAmount="1" sortIndex="1">
                   <profiles>
                     <profile name="Staff of Torment" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="0bd6-3b2a-55f8-4757">
                       <characteristics>
@@ -54,7 +49,7 @@ Each time an enemy unit within 10&quot; makes a failed attrition test roll, it l
                     </profile>
                   </profiles>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Icon of the Deceiver" hidden="false" id="f014-001f-9579-2c61">
+                <selectionEntry type="upgrade" import="true" name="Icon of the Deceiver" hidden="false" id="f014-001f-9579-2c61" sortIndex="2">
                   <costs>
                     <cost name="Auri" typeId="cost-auri" value="10"/>
                   </costs>
@@ -70,7 +65,7 @@ If the acting player&apos;s total is higher, select half the number of models in
                     </profile>
                   </profiles>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Infernal Totem" hidden="false" id="268c-fefc-d8be-c0ac">
+                <selectionEntry type="upgrade" import="true" name="Infernal Totem" hidden="false" id="268c-fefc-d8be-c0ac" sortIndex="3">
                   <profiles>
                     <profile name="Infernal Totem" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="a951-ef6c-d866-1573">
                       <characteristics>
