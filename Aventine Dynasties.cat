@@ -509,12 +509,6 @@ For each tether point a unit has, it must subtract 1 from its initiative, speed,
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
-          <categoryLinks>
-            <categoryLink targetId="4d59-409d-b10a-9244" id="7495-00bc-394b-b228" primary="false" name="Aventine Dynasties"/>
-            <categoryLink targetId="cat-troops" id="dbc6-d4a6-72d8-9cb0" primary="true" name="Troops"/>
-            <categoryLink targetId="cat-infantry" id="3d78-ca7f-7c86-75df" primary="false" name="Infantry"/>
-            <categoryLink targetId="3326-5b0a-b607-c6b3" id="2de8-fc72-a011-bfa2" primary="false" name="Airborne"/>
-          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <rules>
@@ -537,6 +531,10 @@ In addition, if this unit moves more than 10” during a normal move, subtract 
       </profiles>
       <categoryLinks>
         <categoryLink targetId="98e2-8bf5-6242-c731" id="af72-1089-5905-ea6c" primary="false" name="Cavalry"/>
+        <categoryLink targetId="cat-troops" id="543a-2769-21d3-7f6f" primary="true" name="Troops"/>
+        <categoryLink targetId="4d59-409d-b10a-9244" id="322d-bee5-8073-6956" primary="false" name="Aventine Dynasties"/>
+        <categoryLink targetId="3326-5b0a-b607-c6b3" id="7197-be29-6e05-5081" primary="false" name="Airborne"/>
+        <categoryLink targetId="cat-infantry" id="da93-c772-5383-8c90" primary="false" name="Infantry"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Fleetguard Protectors" hidden="false" id="7e3e-d983-5ac0-3ded">
