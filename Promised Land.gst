@@ -17,7 +17,8 @@
     <profileType id="profile-invocation" name="Invocation" kind="spell">
       <characteristicTypes>
         <characteristicType id="char-arc-val" name="Arcane Value"/>
-        <characteristicType id="char-desc" name="Description"/>
+        <characteristicType name="Effects" id="2062-1aef-9b73-d14b"/>
+        <characteristicType name="Misfire effects" id="456c-32eb-69b1-1fb7"/>
       </characteristicTypes>
     </profileType>
     <profileType name="Base" id="76aa-68f9-b955-0f6b" hidden="false" kind="model">
@@ -60,9 +61,14 @@
       </constraints>
       <modifiers>
         <modifier type="set" value="100" field="94bd-4516-89ce-d1d8">
-          <conditions>
-            <condition type="atLeast" value="1" field="forces" scope="a9b0-8b3b-f6a5-23d2" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="forces" scope="a9b0-8b3b-f6a5-23d2" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="forces" scope="f5b7-b377-157c-b972" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </categoryEntry>

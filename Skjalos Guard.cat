@@ -102,34 +102,36 @@ When this weapon targets an *independent infantry* or *monster* unit, it has a 
     <profile name="Ancestral Blades" typeId="profile-invocation" typeName="Invocation" hidden="false" id="2fc0-7f9b-0ba1-3edf">
       <characteristics>
         <characteristic name="Arcane Value" typeId="char-arc-val">9</characteristic>
-        <characteristic name="Description" typeId="char-desc">Select a visible point within 18” of the invoking unit. Each enemy unit within 3” of that point is struck D5 times by ancestral blades. For each strike made upon a unit, make an attack roll – but make the attack roll with a D5 instead of a D10, and use the target unit’s Morale instead of its Defence characteristic. This counts as a psychic attack.</characteristic>
+        <characteristic name="Effects" typeId="2062-1aef-9b73-d14b"/>
+        <characteristic name="Misfire effects" typeId="456c-32eb-69b1-1fb7"/>
       </characteristics>
     </profile>
     <profile name="Clairvoyance" typeId="profile-invocation" typeName="Invocation" hidden="false" id="dd27-19ed-5be0-99c9">
       <characteristics>
         <characteristic name="Arcane Value" typeId="char-arc-val">8</characteristic>
-        <characteristic name="Description" typeId="char-desc">Select a visible enemy unit within 36” of the invoking unit. The target unit counts as being within range of all friendly ranged weapons except pistols.</characteristic>
+        <characteristic name="Effects" typeId="2062-1aef-9b73-d14b"/>
+        <characteristic name="Misfire effects" typeId="456c-32eb-69b1-1fb7"/>
       </characteristics>
     </profile>
     <profile name="Frostbite" typeId="profile-invocation" typeName="Invocation" hidden="false" id="48e9-ac86-23dd-1849">
       <characteristics>
         <characteristic name="Arcane Value" typeId="char-arc-val">6</characteristic>
-        <characteristic name="Description" typeId="char-desc">Select a visible enemy *infantry* unit within 18” of the invoking unit.
-Roll a dice for each attrition point allocated to that unit. For each natural roll of a 10, a model in that unit is slain.
-If this invocation causes the target unit to gain additional attrition points, these do not allow further models to be slain.</characteristic>
+        <characteristic name="Effects" typeId="2062-1aef-9b73-d14b"/>
+        <characteristic name="Misfire effects" typeId="456c-32eb-69b1-1fb7"/>
       </characteristics>
     </profile>
     <profile name="Snowblind" typeId="profile-invocation" typeName="Invocation" hidden="false" id="7e7b-0ae5-b5e3-fc98">
       <characteristics>
         <characteristic name="Arcane Value" typeId="char-arc-val">9</characteristic>
-        <characteristic name="Description" typeId="char-desc">Select a visible enemy *infantry* unit within 18” of the invoking unit.
-Both players roll-off, adding 1 to the invoking player’s roll if the invoking unit’s Morale characteristic is double that of the target unit. If your result is greater than your opponent’s roll, the target unit must reroll all their successful attack rolls.</characteristic>
+        <characteristic name="Effects" typeId="2062-1aef-9b73-d14b"/>
+        <characteristic name="Misfire effects" typeId="456c-32eb-69b1-1fb7"/>
       </characteristics>
     </profile>
     <profile name="War Chant" typeId="profile-invocation" typeName="Invocation" hidden="false" id="9a11-e8d8-527f-905f">
       <characteristics>
         <characteristic name="Arcane Value" typeId="char-arc-val">8</characteristic>
-        <characteristic name="Description" typeId="char-desc">Select a visible friendly *infantry* unit within 12” of the invoking unit. This unit adds 1 to its melee weapons’ strength and its defence characteristic until the end of the turn.</characteristic>
+        <characteristic name="Effects" typeId="2062-1aef-9b73-d14b"/>
+        <characteristic name="Misfire effects" typeId="456c-32eb-69b1-1fb7"/>
       </characteristics>
     </profile>
     <profile name="Dozer Blade" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="75ea-8496-fca8-5c96">
@@ -1156,7 +1158,8 @@ Natural attack rolls of 10 against *infantry* and *monster* units with this we
         <profile name="Wildfire" typeId="profile-invocation" typeName="Invocation" hidden="false" id="inv-wildfire">
           <characteristics>
             <characteristic name="Arcane Value" typeId="char-arc-val">8</characteristic>
-            <characteristic name="Description" typeId="char-desc">Until the end of the turn, this unit has advantage on all of its attack rolls. In addition, one model in this unit is equipped with the Wildfire weapon until the end of the turn.</characteristic>
+            <characteristic name="Effects" typeId="2062-1aef-9b73-d14b"/>
+            <characteristic name="Misfire effects" typeId="456c-32eb-69b1-1fb7"/>
           </characteristics>
         </profile>
       </profiles>

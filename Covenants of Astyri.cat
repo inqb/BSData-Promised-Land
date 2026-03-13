@@ -899,36 +899,36 @@ When this unit deploys, make D10 attack rolls for each other unit within the fo
     <profile name="Unearting" typeId="profile-invocation" typeName="Invocation" hidden="false" id="9aa2-2aeb-a06d-7cf0">
       <characteristics>
         <characteristic name="Arcane Value" typeId="char-arc-val">8</characteristic>
-        <characteristic name="Description" typeId="char-desc">Select a visible point within 20” of the invoking unit and roll a dice for each unit within 5” of that point. On a 4+, that unit must half its Speed characteristic until the following mystic phase.</characteristic>
+        <characteristic name="Effects" typeId="2062-1aef-9b73-d14b"/>
+        <characteristic name="Misfire effects" typeId="456c-32eb-69b1-1fb7"/>
       </characteristics>
     </profile>
     <profile name="The Will of Iron" typeId="profile-invocation" typeName="Invocation" hidden="false" id="1eb4-1f68-242d-4be3">
       <characteristics>
         <characteristic name="Arcane Value" typeId="char-arc-val">9</characteristic>
-        <characteristic name="Description" typeId="char-desc">Select a visible enemy vehicle or construct unit that is not a leviathan within 20” of the invoking unit and roll a D5.
-If the roll matches or exceeds the target unit’s Morale characteristic, it immediately makes a Shoot or Fight action targeting a unit of the invoking player’s choice.
-This does not count as the target unit’s activation for this turn.
-If the roll does not exceed the target unit’s Morale characteristic, the target unit instead must subtract 1 from its attack rolls until the end of the turn.</characteristic>
+        <characteristic name="Effects" typeId="2062-1aef-9b73-d14b"/>
+        <characteristic name="Misfire effects" typeId="456c-32eb-69b1-1fb7"/>
       </characteristics>
     </profile>
     <profile name="Dominate" typeId="profile-invocation" typeName="Invocation" hidden="false" id="9852-d255-0121-a096">
       <characteristics>
         <characteristic name="Arcane Value" typeId="char-arc-val">5</characteristic>
-        <characteristic name="Description" typeId="char-desc">Select a visible enemy infantry unit within 20” of the invoking unit.
-Both players roll-off, adding 1 to the invoking player’s roll if the invoking unit’s Morale characteristic is double that of the target unit. If the invoking player’s result is equal to or greater than the targeted player&apos;s roll, the target unit immediately gains two attrition points.</characteristic>
+        <characteristic name="Effects" typeId="2062-1aef-9b73-d14b"/>
+        <characteristic name="Misfire effects" typeId="456c-32eb-69b1-1fb7"/>
       </characteristics>
     </profile>
     <profile name="Rampage" typeId="profile-invocation" typeName="Invocation" hidden="false" id="22a7-1eb0-5f82-5157">
       <characteristics>
         <characteristic name="Arcane Value" typeId="char-arc-val">6</characteristic>
-        <characteristic name="Description" typeId="char-desc">Select a visible friendly infantry unit within 10” of the invoking unit. This unit can then immediately make a Fight action as if it were the combat phase.
-Once this unit has finished making its attacks, roll a dice for each model in the unit. For each roll of a 10, a model in that unit is slain.</characteristic>
+        <characteristic name="Effects" typeId="2062-1aef-9b73-d14b"/>
+        <characteristic name="Misfire effects" typeId="456c-32eb-69b1-1fb7"/>
       </characteristics>
     </profile>
     <profile name="Deflagration" typeId="profile-invocation" typeName="Invocation" hidden="false" id="0b06-24db-925b-4628">
       <characteristics>
         <characteristic name="Arcane Value" typeId="char-arc-val">6</characteristic>
-        <characteristic name="Description" typeId="char-desc">Select a visible point within 15” of the invoking unit. Make D5 attack rolls for each unit within 3” of that point, with a damage characteristic of 1.</characteristic>
+        <characteristic name="Effects" typeId="2062-1aef-9b73-d14b"/>
+        <characteristic name="Misfire effects" typeId="456c-32eb-69b1-1fb7"/>
       </characteristics>
     </profile>
     <profile name="Phase Carbine" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="d471-ea58-bf03-689c">

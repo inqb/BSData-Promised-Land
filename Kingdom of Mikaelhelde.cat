@@ -509,22 +509,22 @@ Each time a unit gains an attrition point as part of an attack that includes thi
         <profile name="The Gift of Life" typeId="profile-invocation" typeName="Invocation" hidden="false" id="1da9-13bc-f64e-86fa">
           <characteristics>
             <characteristic name="Arcane Value" typeId="char-arc-val">8</characteristic>
-            <characteristic name="Description" typeId="char-desc">_The monstrous flesh of the acolyte hosts reknits, no ruin able to be wreaked upon it as the inhuman powers of the nether realm infuse it with strength._
-Until the following mystic phase, friendly visible units within 12” of this unit add 1 to Fleshwrought Abomination rolls when they would be slain by weapons with a damage characteristic of 3 or less.</characteristic>
+            <characteristic name="Effects" typeId="2062-1aef-9b73-d14b"/>
+            <characteristic name="Misfire effects" typeId="456c-32eb-69b1-1fb7"/>
           </characteristics>
         </profile>
         <profile name="The Path to Ascension" typeId="profile-invocation" typeName="Invocation" hidden="false" id="2ac6-9e49-6b94-7784">
           <characteristics>
             <characteristic name="Arcane Value" typeId="char-arc-val">10</characteristic>
-            <characteristic name="Description" typeId="char-desc">_Whispers of the road to victory ride the winds of the battlefield, calling forth the apocalypse._
-Until the following mystic phase, all friendly units can reroll one of their charge roll dice.</characteristic>
+            <characteristic name="Effects" typeId="2062-1aef-9b73-d14b"/>
+            <characteristic name="Misfire effects" typeId="456c-32eb-69b1-1fb7"/>
           </characteristics>
         </profile>
         <profile name="Divine Intervention" typeId="profile-invocation" typeName="Invocation" hidden="false" id="69c0-6393-3b9f-6e91">
           <characteristics>
             <characteristic name="Arcane Value" typeId="char-arc-val">12</characteristic>
-            <characteristic name="Description" typeId="char-desc">_A shadow spreads across the world as the power of the Divine returns the butchered souls of the slain to their bodies, renewed with the light of undeath._
-Select one unit that was slain in this or any previous turn. An identical unit is placed within 12” of this unit, more than 1” away from any enemy units, with D5 points of health remaining (up to the maximum starting health of that unit). If this unit is independent and placed within control range of a friendly troops unit, it can immediately join them. This power may be successfully invoked only once per battle, and after invoking it, roll a dice. On a 1, the invoking unit is slain.</characteristic>
+            <characteristic name="Effects" typeId="2062-1aef-9b73-d14b"/>
+            <characteristic name="Misfire effects" typeId="456c-32eb-69b1-1fb7"/>
           </characteristics>
         </profile>
         <profile name="Ritual Blade" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="09d8-481a-2f88-3f74">
@@ -1081,37 +1081,36 @@ This unit never counts as being obscured by intervening units, and cannot make 
     <profile name="Turgescence" typeId="profile-invocation" typeName="Invocation" hidden="false" id="7e6a-2312-80f6-2291">
       <characteristics>
         <characteristic name="Arcane Value" typeId="char-arc-val">12</characteristic>
-        <characteristic name="Description" typeId="char-desc">Select a visible enemy infantry unit within 20&quot; of the invoking unit and roll a D5. If this roll exceeds the Initiative of that unit, a model within range is slain, and you may roll again. Repeat this until either a model fails to be slain, or a total of five models have been slain from the unit.</characteristic>
+        <characteristic name="Effects" typeId="2062-1aef-9b73-d14b"/>
+        <characteristic name="Misfire effects" typeId="456c-32eb-69b1-1fb7"/>
       </characteristics>
     </profile>
     <profile name="Warding" typeId="profile-invocation" typeName="Invocation" hidden="false" id="e608-0af7-2628-19ae">
       <characteristics>
         <characteristic name="Arcane Value" typeId="char-arc-val">7</characteristic>
-        <characteristic name="Description" typeId="char-desc">Until the beginning of the next combat phase, friendly units within 6&quot; of the invoking unit can reroll any failed Fleshwrought Abominations ability rolls.</characteristic>
+        <characteristic name="Effects" typeId="2062-1aef-9b73-d14b"/>
+        <characteristic name="Misfire effects" typeId="456c-32eb-69b1-1fb7"/>
       </characteristics>
     </profile>
     <profile name="Planeshift" typeId="profile-invocation" typeName="Invocation" hidden="false" id="030c-954b-7472-b322">
       <characteristics>
         <characteristic name="Arcane Value" typeId="char-arc-val">10</characteristic>
-        <characteristic name="Description" typeId="char-desc">Select an infantry unit within 5&quot; of the invoking unit. This unit is immediately moved to a position within 15&quot; of the invoking unit. This unit must end its move outside of any enemy units&apos; control range and outside of any impassable terrain.</characteristic>
+        <characteristic name="Effects" typeId="2062-1aef-9b73-d14b"/>
+        <characteristic name="Misfire effects" typeId="456c-32eb-69b1-1fb7"/>
       </characteristics>
     </profile>
     <profile name="The Becoming" typeId="profile-invocation" typeName="Invocation" hidden="false" id="fd6e-e592-cc1b-9f95">
       <characteristics>
         <characteristic name="Arcane Value" typeId="char-arc-val">6</characteristic>
-        <characteristic name="Description" typeId="char-desc">Until the end of the turn, the invoking unit gains the *Dæmon* keyword, and the unit can immediately make a fight action, with the following modifiers applied until the end of the turn:
-* Add 1 to all of this unit&apos;s melee weapons Dice characteristic
-* This unit adds 2 to its Defence, Speed and Initiative characteristics
-At the end of the Combat Phase, the invoking unit gains four attrition points.</characteristic>
+        <characteristic name="Effects" typeId="2062-1aef-9b73-d14b"/>
+        <characteristic name="Misfire effects" typeId="456c-32eb-69b1-1fb7"/>
       </characteristics>
     </profile>
     <profile name="Infernal Darkness" typeId="profile-invocation" typeName="Invocation" hidden="false" id="4509-c193-a706-0814">
       <characteristics>
         <characteristic name="Arcane Value" typeId="char-arc-val">8</characteristic>
-        <characteristic name="Description" typeId="char-desc">Select an *infantry* unit within 24&quot; of the invoking unit. Both players roll-off, adding the respective Morale characteristic of the invoking unit and the target unit. If the invoking player&apos;s result is greater than the target unit&apos;s result, the target unit is enveloped by darkness until the following mystic phase. A unit enveloped by darkness:
-* Limits all of its *aura* abilities to 3&quot;
-* Cannot be affected by any abilities from friendly units that are more than 3&quot; away
-* Counts all units more than 3&quot; away as not being visible. 7-</characteristic>
+        <characteristic name="Effects" typeId="2062-1aef-9b73-d14b"/>
+        <characteristic name="Misfire effects" typeId="456c-32eb-69b1-1fb7"/>
       </characteristics>
     </profile>
     <profile name="Acolyte Cleavers" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="e52f-69e6-d5fb-077d">
