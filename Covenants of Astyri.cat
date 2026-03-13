@@ -220,6 +220,7 @@ If an enemy unit is hit by a natural attack roll of 10 with this weapon, that u
           <profiles>
             <profile name="Phase Revolver" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="6a60-1938-86be-0376">
               <characteristics>
+                <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
                 <characteristic name="Dice" typeId="1192-2222-5926-5b4b">1</characteristic>
                 <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+2</characteristic>
                 <characteristic name="Damage" typeId="a482-225f-a3cb-a700">1</characteristic>
@@ -230,7 +231,7 @@ If an enemy unit is hit by a natural attack roll of 10 with this weapon, that u
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Commander" hidden="false" id="0aa3-88ea-120f-34dd" type="selectionEntry" targetId="8497-7cf3-9a4a-1ecf"/>
+        <entryLink import="true" name="Warlord" hidden="false" id="0aa3-88ea-120f-34dd" type="selectionEntry" targetId="8497-7cf3-9a4a-1ecf"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="cat-leader" id="29be-14bd-3a65-1304" primary="true" name="Leader"/>
@@ -310,7 +311,7 @@ In addition, while this unit is within 6” of two or more friendly *vehicles* a
         <categoryLink targetId="3ea2-e1ed-214a-cbca" id="d7da-cedc-b6a4-5690" primary="false" name="Cryptwarden"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Commander" hidden="false" id="071c-b33a-ef0a-8c06" type="selectionEntry" targetId="8497-7cf3-9a4a-1ecf"/>
+        <entryLink import="true" name="Warlord" hidden="false" id="071c-b33a-ef0a-8c06" type="selectionEntry" targetId="8497-7cf3-9a4a-1ecf"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Minatarii Hieronites" hidden="false" id="759f-6def-2151-57a5">
@@ -362,6 +363,7 @@ In addition, while this unit is within 6” of two or more friendly *vehicles* a
               <profiles>
                 <profile name="Rail rifle" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="5875-89da-12a6-15cf">
                   <characteristics>
+                    <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
                     <characteristic name="Dice" typeId="1192-2222-5926-5b4b">1</characteristic>
                     <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+3</characteristic>
                     <characteristic name="Damage" typeId="a482-225f-a3cb-a700">3</characteristic>
@@ -556,6 +558,7 @@ In addition, one friendly Cryptwarden unit can join this unit as if they were *i
         </profile>
         <profile name="Voltaic Blastpistol" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="fd72-8c18-74eb-8e4b">
           <characteristics>
+            <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
             <characteristic name="Dice" typeId="1192-2222-5926-5b4b">1</characteristic>
             <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+3</characteristic>
             <characteristic name="Damage" typeId="a482-225f-a3cb-a700">1</characteristic>
@@ -724,6 +727,7 @@ Models in this unit cannot contest or claim any objective markers and do not ac
                   <profiles>
                     <profile name="Executioner Rotary Cannon (x2)" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="e959-c722-6f47-5334">
                       <characteristics>
+                        <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
                         <characteristic name="Dice" typeId="1192-2222-5926-5b4b">5</characteristic>
                         <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+1</characteristic>
                         <characteristic name="Damage" typeId="a482-225f-a3cb-a700">1</characteristic>
@@ -736,6 +740,7 @@ Models in this unit cannot contest or claim any objective markers and do not ac
                   <profiles>
                     <profile name="Laser Destructor (x2)" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="b571-f453-1a48-526e">
                       <characteristics>
+                        <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
                         <characteristic name="Dice" typeId="1192-2222-5926-5b4b">1</characteristic>
                         <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+5</characteristic>
                         <characteristic name="Damage" typeId="a482-225f-a3cb-a700">5</characteristic>
@@ -751,6 +756,7 @@ Models in this unit cannot contest or claim any objective markers and do not ac
                   <profiles>
                     <profile name="Narakyne Plasma Bombard (x2)" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="9569-7157-db89-2f21">
                       <characteristics>
+                        <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
                         <characteristic name="Dice" typeId="1192-2222-5926-5b4b">D5</characteristic>
                         <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+3</characteristic>
                         <characteristic name="Damage" typeId="a482-225f-a3cb-a700">2</characteristic>
@@ -927,6 +933,7 @@ Once this unit has finished making its attacks, roll a dice for each model in t
     </profile>
     <profile name="Phase Carbine" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="d471-ea58-bf03-689c">
       <characteristics>
+        <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
         <characteristic name="Dice" typeId="1192-2222-5926-5b4b">1</characteristic>
         <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+2</characteristic>
         <characteristic name="Damage" typeId="a482-225f-a3cb-a700">1</characteristic>

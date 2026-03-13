@@ -179,7 +179,7 @@
         <categoryLink targetId="cat-independent" id="e7bc-d991-361b-0286" primary="false" name="Independent"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Commander" hidden="false" id="91d7-5d93-3895-7443" type="selectionEntry" targetId="8497-7cf3-9a4a-1ecf"/>
+        <entryLink import="true" name="Warlord" hidden="false" id="91d7-5d93-3895-7443" type="selectionEntry" targetId="8497-7cf3-9a4a-1ecf"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Fleetmaster" hidden="false" id="93e1-36eb-685e-aa79">
@@ -268,7 +268,7 @@ At the beginning of each turn after the first, if this model’s controlling pl
         <categoryLink targetId="4d59-409d-b10a-9244" id="ec16-d483-6ddb-336c" primary="false" name="Aventine Dynasties"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Commander" hidden="false" id="cdc7-ce63-27ed-3ecd" type="selectionEntry" targetId="8497-7cf3-9a4a-1ecf"/>
+        <entryLink import="true" name="Warlord" hidden="false" id="cdc7-ce63-27ed-3ecd" type="selectionEntry" targetId="8497-7cf3-9a4a-1ecf"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Shot Revolver" id="8fee-a483-9718-256b" hidden="false" type="profile" targetId="c6ff-33c8-585f-36b7"/>
@@ -325,6 +325,7 @@ At the beginning of each turn after the first, if this model’s controlling pl
               <profiles>
                 <profile name="Incinerator" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="1463-ca77-4667-d6a0">
                   <characteristics>
+                    <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
                     <characteristic name="Dice" typeId="1192-2222-5926-5b4b">D5</characteristic>
                     <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+3</characteristic>
                     <characteristic name="Damage" typeId="a482-225f-a3cb-a700">1</characteristic>
@@ -374,6 +375,7 @@ At the beginning of each turn after the first, if this model’s controlling pl
                   <profiles>
                     <profile name="Rotary Gun" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="446f-8570-7c06-0e40">
                       <characteristics>
+                        <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
                         <characteristic name="Dice" typeId="1192-2222-5926-5b4b">4</characteristic>
                         <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+1</characteristic>
                         <characteristic name="Damage" typeId="a482-225f-a3cb-a700">1</characteristic>
@@ -462,6 +464,7 @@ This weapon may also be used to make attacks as part of a Shoot action, as if i
                   <profiles>
                     <profile name="Incinerator" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="7168-968d-d438-a6ed">
                       <characteristics>
+                        <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
                         <characteristic name="Dice" typeId="1192-2222-5926-5b4b">D5</characteristic>
                         <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+3</characteristic>
                         <characteristic name="Damage" typeId="a482-225f-a3cb-a700">1</characteristic>
@@ -479,6 +482,7 @@ Each time a unit gains an attrition point as part of an attack that includes thi
                   <profiles>
                     <profile name="Forward-mounted Rotary Guns" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="e7ea-a544-41d5-993c">
                       <characteristics>
+                        <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
                         <characteristic name="Dice" typeId="1192-2222-5926-5b4b">6</characteristic>
                         <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+1</characteristic>
                         <characteristic name="Damage" typeId="a482-225f-a3cb-a700">1</characteristic>
@@ -491,6 +495,7 @@ Each time a unit gains an attrition point as part of an attack that includes thi
                   <profiles>
                     <profile name="Harpoon Launcher" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="a30e-999a-8eea-7f2f">
                       <characteristics>
+                        <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
                         <characteristic name="Dice" typeId="1192-2222-5926-5b4b">1</characteristic>
                         <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+5</characteristic>
                         <characteristic name="Damage" typeId="a482-225f-a3cb-a700">1</characteristic>
@@ -594,6 +599,7 @@ If a unit equipped with fleetguard pikes is not within combat range of any enem
                 </profile>
                 <profile name="Ion Pistol" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="f557-252d-af74-b0c1">
                   <characteristics>
+                    <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
                     <characteristic name="Dice" typeId="1192-2222-5926-5b4b">1</characteristic>
                     <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+3</characteristic>
                     <characteristic name="Damage" typeId="a482-225f-a3cb-a700">2</characteristic>
@@ -682,6 +688,7 @@ When a unit with this ability deploys from reserve, the tunnelers must deploy s
                   <profiles>
                     <profile name="Heavy Ion Reaper Carriage" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="3e6d-b8f0-16fb-2139">
                       <characteristics>
+                        <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
                         <characteristic name="Dice" typeId="1192-2222-5926-5b4b">4</characteristic>
                         <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+3</characteristic>
                         <characteristic name="Damage" typeId="a482-225f-a3cb-a700">2</characteristic>
@@ -839,6 +846,7 @@ When this unit targets a group with an attack, it can target an *independent* u
               <profiles>
                 <profile name="Explosives Cache" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="b898-b1c0-cc73-383a">
                   <characteristics>
+                    <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
                     <characteristic name="Dice" typeId="1192-2222-5926-5b4b">-</characteristic>
                     <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+3</characteristic>
                     <characteristic name="Damage" typeId="a482-225f-a3cb-a700">1</characteristic>
@@ -895,6 +903,7 @@ When this unit targets a group with an attack, it can target an *independent* u
               <profiles>
                 <profile name="Heavy Incinerator" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="7401-9ab7-357f-4fda">
                   <characteristics>
+                    <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
                     <characteristic name="Dice" typeId="1192-2222-5926-5b4b">2D5</characteristic>
                     <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+3</characteristic>
                     <characteristic name="Damage" typeId="a482-225f-a3cb-a700">2</characteristic>
@@ -909,6 +918,7 @@ Each time a unit gains an attrition point as part of an attack that includes thi
               <profiles>
                 <profile name="Rotary Cannon" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="0d9e-741d-a9d8-b9a9">
                   <characteristics>
+                    <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
                     <characteristic name="Dice" typeId="1192-2222-5926-5b4b">10</characteristic>
                     <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+1</characteristic>
                     <characteristic name="Damage" typeId="a482-225f-a3cb-a700">1</characteristic>
@@ -921,6 +931,7 @@ Each time a unit gains an attrition point as part of an attack that includes thi
               <profiles>
                 <profile name="Heavy Harpoon Launcher" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="28cc-c8a0-dd9c-5ed9">
                   <characteristics>
+                    <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
                     <characteristic name="Dice" typeId="1192-2222-5926-5b4b">2</characteristic>
                     <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+5</characteristic>
                     <characteristic name="Damage" typeId="a482-225f-a3cb-a700">2</characteristic>
@@ -959,6 +970,7 @@ For each tether point a unit has, it must subtract 1 from its initiative, speed,
         </profile>
         <profile name="Ion Devastator Array" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="9a7f-e7e0-f567-4627">
           <characteristics>
+            <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
             <characteristic name="Dice" typeId="1192-2222-5926-5b4b">4</characteristic>
             <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+6</characteristic>
             <characteristic name="Damage" typeId="a482-225f-a3cb-a700">6</characteristic>
@@ -991,6 +1003,7 @@ For each tether point a unit has, it must subtract 1 from its initiative, speed,
         </profile>
         <profile name="Solar Annihilator" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="87e2-5a30-e56b-309f">
           <characteristics>
+            <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
             <characteristic name="Dice" typeId="1192-2222-5926-5b4b">2</characteristic>
             <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+10</characteristic>
             <characteristic name="Damage" typeId="a482-225f-a3cb-a700">20</characteristic>
@@ -1000,6 +1013,7 @@ At the end of any activation in which this weapon was fired, roll a dice. On a 
         </profile>
         <profile name="Sunderance Missile Launcher" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="b4fa-c2b2-3d23-527b">
           <characteristics>
+            <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
             <characteristic name="Dice" typeId="1192-2222-5926-5b4b">D10</characteristic>
             <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+3</characteristic>
             <characteristic name="Damage" typeId="a482-225f-a3cb-a700">3</characteristic>
@@ -1223,6 +1237,7 @@ If this unit is destroyed by its own solar annihilator, its singularity engine 
   <sharedProfiles>
     <profile name="Tachyon Rifle" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="042b-72f1-6ac7-8781">
       <characteristics>
+        <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
         <characteristic name="Dice" typeId="1192-2222-5926-5b4b">1</characteristic>
         <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+2</characteristic>
         <characteristic name="Damage" typeId="a482-225f-a3cb-a700">1</characteristic>
@@ -1231,6 +1246,7 @@ If this unit is destroyed by its own solar annihilator, its singularity engine 
     </profile>
     <profile name="Shotrifle" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="950c-ac4b-f80f-1f2c">
       <characteristics>
+        <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
         <characteristic name="Dice" typeId="1192-2222-5926-5b4b">1</characteristic>
         <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+2</characteristic>
         <characteristic name="Damage" typeId="a482-225f-a3cb-a700">1</characteristic>
@@ -1239,6 +1255,7 @@ If this unit is destroyed by its own solar annihilator, its singularity engine 
     </profile>
     <profile name="Shot Revolver" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="c6ff-33c8-585f-36b7">
       <characteristics>
+        <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
         <characteristic name="Dice" typeId="1192-2222-5926-5b4b">1</characteristic>
         <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+1</characteristic>
         <characteristic name="Damage" typeId="a482-225f-a3cb-a700">1</characteristic>

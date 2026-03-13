@@ -158,14 +158,12 @@
               <profiles>
                 <profile name="Cyclic Plasma Annihilator" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="8c69-e31e-c6f6-61fc">
                   <characteristics>
+                    <characteristic name="Range" typeId="1023-f0db-ffcf-da31">64&quot;</characteristic>
                     <characteristic name="Dice" typeId="1192-2222-5926-5b4b">*</characteristic>
                     <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+5</characteristic>
                     <characteristic name="Damage" typeId="a482-225f-a3cb-a700">2</characteristic>
                     <characteristic name="Traits" typeId="76cd-5882-86da-52cf">After selecting a target within range, draw a line between this model and one model in the target unit. Make a number of attack rolls against each unit this line crosses, equal to the number of models the line crosses over.</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute name="Traits" typeId="5152-ff25-1d12-ec4c">After selecting a target within range, draw a line between this model and one model in the target unit. Make a number of attack rolls against each unit this line crosses, equal to the number of models the line crosses over.</attribute>
-                  </attributes>
                 </profile>
               </profiles>
             </selectionEntry>
@@ -176,14 +174,12 @@
               <profiles>
                 <profile name="Leviathan Mortar" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="6237-ec0a-f1f9-caee">
                   <characteristics>
+                    <characteristic name="Range" typeId="1023-f0db-ffcf-da31">34&quot;</characteristic>
                     <characteristic name="Dice" typeId="1192-2222-5926-5b4b">1</characteristic>
                     <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+4</characteristic>
                     <characteristic name="Damage" typeId="a482-225f-a3cb-a700">3</characteristic>
                     <characteristic name="Traits" typeId="76cd-5882-86da-52cf">This is an *artillery* *blast* attack, with a 3” radius originating from a point within range.</characteristic>
                   </characteristics>
-                  <attributes>
-                    <attribute name="Traits" typeId="5152-ff25-1d12-ec4c">This is an *artillery* *blast* attack, with a 3” radius originating from a point within range.</attribute>
-                  </attributes>
                 </profile>
               </profiles>
             </selectionEntry>
@@ -328,9 +324,6 @@
         <characteristic name="Damage" typeId="2780-b560-1641-b9a5">2</characteristic>
         <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d">This is a *destroyer* attack.</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="Traits" typeId="8b8e-361d-1bfa-cf66">This is a *destroyer* attack.</attribute>
-      </attributes>
     </profile>
     <profile name="Demolisher Flail" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="10be-f723-a6c8-c240">
       <characteristics>
@@ -339,9 +332,6 @@
         <characteristic name="Damage" typeId="2780-b560-1641-b9a5">2D10</characteristic>
         <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d">This is a *destroyer* attack. Health points lost in excess of a model’s Health characteristic as a result of attacks with this weapon are not discarded, but instead allocated to the next model in the unit.</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="Traits" typeId="8b8e-361d-1bfa-cf66">This is a destroyer attack. Health points lost in excess of a model’s Health characteristic as a result of attacks with this weapon are not discarded, but instead allocated to the next model in the unit.</attribute>
-      </attributes>
     </profile>
     <profile name="Rotary Saw" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="fd01-c782-4337-ca32">
       <characteristics>
@@ -350,9 +340,6 @@
         <characteristic name="Damage" typeId="2780-b560-1641-b9a5">5</characteristic>
         <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d">This is a *destroyer* attack.</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="Traits" typeId="8b8e-361d-1bfa-cf66">This is a *destroyer* attack.</attribute>
-      </attributes>
     </profile>
     <profile name="Siege Drill" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="ad5b-2cbd-ead3-609f">
       <characteristics>
@@ -362,39 +349,32 @@
         <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d">This is a *destroyer* attack, and when rolling to determine the damage characteristic of this weapon, results of 4 or less count as 5.
 Each time this weapon inflicts a successful hit on a *vehicle*, *construct*, *monster* or *structure* model, the target model gains a drill point. At the end of the phase, if the target model is not slain, make one attack roll with this weapon for each drill point the target has allocated to it. Damage inflicted by these attacks cannot be allocated to models that do not have drill points allocated to them.</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="Traits" typeId="8b8e-361d-1bfa-cf66">This is a *destroyer* attack, and when rolling to determine the damage characteristic of this weapon, results of 4 or less count as 5.
-Each time this weapon inflicts a successful hit on a *vehicle*, *construct*, *monster* or *structure* model, the target model gains a drill point. At the end of the phase, if the target model is not slain, make one attack roll with this weapon for each drill point the target has allocated to it. Damage inflicted by these attacks cannot be allocated to models that do not have drill points allocated to them.</attribute>
-      </attributes>
     </profile>
     <profile name="Heavy Battle Cannon" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="f595-acc0-6461-6938">
       <characteristics>
+        <characteristic name="Range" typeId="1023-f0db-ffcf-da31">36&quot;</characteristic>
         <characteristic name="Dice" typeId="1192-2222-5926-5b4b">*</characteristic>
         <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+5</characteristic>
         <characteristic name="Damage" typeId="a482-225f-a3cb-a700">2</characteristic>
         <characteristic name="Traits" typeId="76cd-5882-86da-52cf">This is a *blast* attack, with a 3” radius originating from a visible point within range.</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="Traits" typeId="5152-ff25-1d12-ec4c">After selecting a target within range, draw a line between this model and one model in the target unit. Make a number of attack rolls against each unit this line crosses, equal to the number of models the line crosses over.</attribute>
-      </attributes>
     </profile>
     <profile name="Phase Devastator" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="7a60-17d6-4928-c27f">
       <characteristics>
+        <characteristic name="Range" typeId="1023-f0db-ffcf-da31">48&quot;</characteristic>
         <characteristic name="Dice" typeId="1192-2222-5926-5b4b">3</characteristic>
         <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+4</characteristic>
         <characteristic name="Damage" typeId="a482-225f-a3cb-a700">5</characteristic>
         <characteristic name="Traits" typeId="76cd-5882-86da-52cf">If this weapon targets a unit within 24”, it has a strength of +8. Attacks with this weapon count as *destroyer* attacks.</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="Traits" typeId="5152-ff25-1d12-ec4c">If this weapon targets a unit within 24”, it has a strength of +8. Attacks with this weapon count as *destroyer* attacks.</attribute>
-      </attributes>
     </profile>
     <profile name="Rotary Destructor" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="90cc-45fd-a2d7-36e6">
       <characteristics>
-        <characteristic name="Range" typeId="3181-230d-e0ab-b8ee">36&quot;</characteristic>
+        <characteristic name="Range" typeId="1023-f0db-ffcf-da31">36&quot;</characteristic>
         <characteristic name="Dice" typeId="1192-2222-5926-5b4b">12</characteristic>
         <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+2</characteristic>
         <characteristic name="Damage" typeId="a482-225f-a3cb-a700">2</characteristic>
+        <characteristic name="Traits" typeId="76cd-5882-86da-52cf"/>
       </characteristics>
     </profile>
     <profile name="Destructive Stomps" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="7975-f99c-3391-da93">
@@ -404,50 +384,42 @@ Each time this weapon inflicts a successful hit on a *vehicle*, *construct*, *mo
         <characteristic name="Damage" typeId="2780-b560-1641-b9a5">4</characteristic>
         <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d">Health points lost in excess of a model’s Health characteristic as a result of attacks with this weapon are not discarded, but instead allocated to the next model in the unit.</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="Traits" typeId="8b8e-361d-1bfa-cf66">Health points lost in excess of a model’s Health characteristic as a result of attacks with this weapon are not discarded, but instead allocated to the next model in the unit.</attribute>
-      </attributes>
     </profile>
     <profile name="Heavy Atlas Carronade" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="848d-a20d-6d3e-f015">
       <characteristics>
+        <characteristic name="Range" typeId="1023-f0db-ffcf-da31">64&quot;</characteristic>
         <characteristic name="Dice" typeId="1192-2222-5926-5b4b">2</characteristic>
         <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">8</characteristic>
         <characteristic name="Damage" typeId="a482-225f-a3cb-a700">6</characteristic>
         <characteristic name="Traits" typeId="76cd-5882-86da-52cf">Attacks with this weapon have advantage when targeting *vehicles*, *monsters* and *constructs*.</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="Traits" typeId="5152-ff25-1d12-ec4c">Attacks with this weapon have advantage when targeting *vehicles*, *monsters* and *constructs*.</attribute>
-      </attributes>
     </profile>
     <profile name="Magma Lance" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="ea04-7cd4-e835-aa79">
       <characteristics>
+        <characteristic name="Range" typeId="1023-f0db-ffcf-da31">24&quot;</characteristic>
         <characteristic name="Dice" typeId="1192-2222-5926-5b4b">D5+5</characteristic>
         <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+4</characteristic>
         <characteristic name="Damage" typeId="a482-225f-a3cb-a700">2</characteristic>
         <characteristic name="Traits" typeId="76cd-5882-86da-52cf">Units do not benefit from cover when being targeted by this weapon. Each time a unit gains an attrition point as part of an attack that includes this weapon, it gains one additional attrition point.</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="Traits" typeId="5152-ff25-1d12-ec4c">Units do not benefit from cover when being targeted by this weapon. Each time a unit gains an attrition point as part of an attack that includes this weapon, it gains one additional attrition point.</attribute>
-      </attributes>
     </profile>
     <profile name="Rotary Annihilator" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="3e7d-6b3a-7c76-4b5c">
       <characteristics>
-        <characteristic name="Range" typeId="3181-230d-e0ab-b8ee">36&quot;</characteristic>
+        <characteristic name="Range" typeId="1023-f0db-ffcf-da31">36&quot;</characteristic>
         <characteristic name="Dice" typeId="1192-2222-5926-5b4b">20</characteristic>
         <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+3</characteristic>
         <characteristic name="Damage" typeId="a482-225f-a3cb-a700">2</characteristic>
+        <characteristic name="Traits" typeId="76cd-5882-86da-52cf"/>
       </characteristics>
     </profile>
     <profile name="Thunderblast Mauler" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="ecc0-8979-1003-e6dd">
       <characteristics>
+        <characteristic name="Range" typeId="1023-f0db-ffcf-da31">24&quot;</characteristic>
         <characteristic name="Dice" typeId="1192-2222-5926-5b4b">1</characteristic>
         <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+5</characteristic>
         <characteristic name="Damage" typeId="a482-225f-a3cb-a700">3</characteristic>
         <characteristic name="Traits" typeId="76cd-5882-86da-52cf">This is a *blast* attack, with a 3” radius originating from a point within range. Health points lost in excess of a model’s Health characteristic as a result of attacks with this weapon are not discarded, but instead allocated to the next model in the unit.</characteristic>
       </characteristics>
-      <attributes>
-        <attribute name="Traits" typeId="5152-ff25-1d12-ec4c">This is a *blast* attack, with a 3” radius originating from a point within range. Health points lost in excess of a model’s Health characteristic as a result of attacks with this weapon are not discarded, but instead allocated to the next model in the unit.</attribute>
-      </attributes>
     </profile>
   </sharedProfiles>
   <sharedRules>

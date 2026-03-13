@@ -35,6 +35,7 @@
     </profileType>
     <profileType name="Ranged Weapon" id="f94b-6526-ad27-3051" hidden="false" kind="weapon">
       <characteristicTypes>
+        <characteristicType name="Range" id="1023-f0db-ffcf-da31"/>
         <characteristicType name="Dice" id="1192-2222-5926-5b4b"/>
         <characteristicType name="Strength" id="ff5b-347b-c7f0-5770"/>
         <characteristicType name="Damage" id="a482-225f-a3cb-a700"/>
@@ -99,6 +100,17 @@
       <characteristics>
         <characteristic name="Base Size" typeId="e452-67d7-e861-25f9"/>
       </characteristics>
+      <modifiers>
+        <modifier type="set" value="Base" field="name"/>
+      </modifiers>
+    </profile>
+    <profile name="Base 160" typeId="76aa-68f9-b955-0f6b" typeName="Base" hidden="false" id="c7b5-8d2f-ceaa-cd7e">
+      <characteristics>
+        <characteristic name="Base Size" typeId="e452-67d7-e861-25f9"/>
+      </characteristics>
+      <modifiers>
+        <modifier type="set" value="Base" field="name"/>
+      </modifiers>
     </profile>
   </sharedProfiles>
   <sharedSelectionEntries>

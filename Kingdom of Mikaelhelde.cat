@@ -41,6 +41,7 @@ Each time an enemy unit within 10&quot; makes a failed attrition test roll, it l
                   <profiles>
                     <profile name="Staff of Torment" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="0bd6-3b2a-55f8-4757">
                       <characteristics>
+                        <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
                         <characteristic name="Dice" typeId="1192-2222-5926-5b4b"/>
                         <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">*</characteristic>
                         <characteristic name="Damage" typeId="a482-225f-a3cb-a700"/>
@@ -56,6 +57,7 @@ Each time an enemy unit within 10&quot; makes a failed attrition test roll, it l
                   <profiles>
                     <profile name="Icon of the Deceiver" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="0569-0fec-f05f-2197">
                       <characteristics>
+                        <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
                         <characteristic name="Dice" typeId="1192-2222-5926-5b4b"/>
                         <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">*</characteristic>
                         <characteristic name="Damage" typeId="a482-225f-a3cb-a700"/>
@@ -69,6 +71,7 @@ If the acting player&apos;s total is higher, select half the number of models in
                   <profiles>
                     <profile name="Infernal Totem" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="a951-ef6c-d866-1573">
                       <characteristics>
+                        <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
                         <characteristic name="Dice" typeId="1192-2222-5926-5b4b">8</characteristic>
                         <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+3</characteristic>
                         <characteristic name="Damage" typeId="a482-225f-a3cb-a700">3</characteristic>
@@ -104,7 +107,7 @@ If the acting player&apos;s total is higher, select half the number of models in
         <infoLink name="The Disciplines Kolymite" id="1ea7-c574-31ef-c1e0" hidden="false" type="infoGroup" targetId="3f7c-f16a-1bb4-6e7d"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Commander" hidden="false" id="11aa-7876-6ff8-430e" type="selectionEntry" targetId="8497-7cf3-9a4a-1ecf"/>
+        <entryLink import="true" name="Warlord" hidden="false" id="11aa-7876-6ff8-430e" type="selectionEntry" targetId="8497-7cf3-9a4a-1ecf"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Celebrant" hidden="false" id="f443-cdf6-79d2-a13a">
@@ -144,7 +147,7 @@ If the acting player&apos;s total is higher, select half the number of models in
         <infoLink name="The Disciplines Kolymite" id="76fc-149e-1a0e-1c34" hidden="false" type="infoGroup" targetId="3f7c-f16a-1bb4-6e7d"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Commander" hidden="false" id="f77f-026c-01f6-17bd" type="selectionEntry" targetId="8497-7cf3-9a4a-1ecf"/>
+        <entryLink import="true" name="Warlord" hidden="false" id="f77f-026c-01f6-17bd" type="selectionEntry" targetId="8497-7cf3-9a4a-1ecf"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="The Emissaries of Wrath" hidden="false" id="85c8-f99d-e1fc-3ab3">
@@ -354,6 +357,7 @@ A unit with this ability can only be used to channel another unit&apos;s power o
                   <profiles>
                     <profile name="Sokalian Carbine" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="6ccd-5b98-5a56-2da5">
                       <characteristics>
+                        <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
                         <characteristic name="Dice" typeId="1192-2222-5926-5b4b">2</characteristic>
                         <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+2</characteristic>
                         <characteristic name="Damage" typeId="a482-225f-a3cb-a700">1</characteristic>
@@ -450,6 +454,7 @@ Each time a unit gains an attrition point as part of an attack that includes thi
               <profiles>
                 <profile name="Lance of Perdition" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="03c4-7d53-a72d-52b4">
                   <characteristics>
+                    <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
                     <characteristic name="Dice" typeId="1192-2222-5926-5b4b">D10</characteristic>
                     <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+2</characteristic>
                     <characteristic name="Damage" typeId="a482-225f-a3cb-a700">2</characteristic>
@@ -715,6 +720,7 @@ Rogue units are always activated before any other units on the battlefield.</des
         </profile>
         <profile name="Quad Cannon" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="82a9-34d8-8830-2f2f">
           <characteristics>
+            <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
             <characteristic name="Dice" typeId="1192-2222-5926-5b4b">4</characteristic>
             <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+3</characteristic>
             <characteristic name="Damage" typeId="a482-225f-a3cb-a700">2</characteristic>
@@ -1118,6 +1124,7 @@ At the end of the Combat Phase, the invoking unit gains four attrition points.</
     </profile>
     <profile name="Shotpistol" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="222f-a0f1-84ec-00db">
       <characteristics>
+        <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
         <characteristic name="Dice" typeId="1192-2222-5926-5b4b">1</characteristic>
         <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+2</characteristic>
         <characteristic name="Damage" typeId="a482-225f-a3cb-a700">1</characteristic>
