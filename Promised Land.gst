@@ -90,7 +90,7 @@
     </profile>
   </sharedProfiles>
   <sharedSelectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Commander" hidden="false" id="8497-7cf3-9a4a-1ecf">
+    <selectionEntry type="upgrade" import="true" name="Warlord" hidden="false" id="8497-7cf3-9a4a-1ecf">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="9c16-6c20-ffd7-41b7-min" includeChildSelections="true" includeChildForces="true"/>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9c16-6c20-ffd7-41b7-max" includeChildSelections="true" includeChildForces="true"/>
