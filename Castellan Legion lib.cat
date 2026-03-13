@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="true" id="8531-a20c-cb3b-77aa" name="Castellan Legion lib" gameSystemId="sys-promised-land" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry type="model" import="true" name="Cassiopeia" hidden="false" id="31a2-0c04-7682-abb0">
+      <profiles>
+        <profile name="Cassiopeia" typeId="profile-unit" typeName="Unit" hidden="false" id="6507-cc80-307c-1511">
+          <characteristics>
+            <characteristic name="Speed" typeId="char-speed">14</characteristic>
+            <characteristic name="Health" typeId="char-health">24</characteristic>
+            <characteristic name="Defence" typeId="char-defence">12 / 12 / 11</characteristic>
+            <characteristic name="Initiative" typeId="char-initiative">5</characteristic>
+            <characteristic name="Morale" typeId="char-morale">3</characteristic>
+            <characteristic name="Arcane" typeId="char-arcane">4</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="The Vespertide Scythe" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="5a96-0f88-e455-8239">
+          <characteristics>
+            <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">3</characteristic>
+            <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+5</characteristic>
+            <characteristic name="Damage" typeId="2780-b560-1641-b9a5">7</characteristic>
+            <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d">This weapon inflicts Critical Hits on natural attack rolls on a 7+ if its target is a *Dæmon*. Health points lost in excess of a model’s Health characteristic as a result of attacks with this weapon are not discarded, but instead allocated to the next model in the unit.
+Each time a unit is destroyed by this weapon, enemy units within 6” of its bearer gain one attrition point.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Auri" typeId="cost-auri" value="325"/>
+      </costs>
+      <rules>
+        <rule name="Knight-Imperatrix of the Ouresan Hosts - Aura (12”)" id="262e-e3b0-21ee-f628" hidden="false">
+          <description>Friendly *Castellan Legion* units within 12” of this unit may reroll failed attrition rolls.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="The Fractures" id="3786-b14c-8c93-2706" hidden="false" type="rule" targetId="aac0-f9eb-50dc-fb44"/>
+        <infoLink name="Explosive End (3”)" id="cfc5-83ca-5baf-755a" hidden="false" type="rule" targetId="0c4e-ec46-1e44-e9dd"/>
+        <infoLink name="Base 160" id="7f69-0a2c-83d4-8205" hidden="false" type="profile" targetId="c7b5-8d2f-ceaa-cd7e"/>
+        <infoLink name="Rites of Radiance" id="534c-6580-f932-e617" hidden="false" type="infoGroup" targetId="96b7-1f2f-b4c1-99ff">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2172-3a5d-8931-1359" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="The Ruin of Angels" id="dbb6-5453-69ee-64cc" hidden="false" type="rule" targetId="a410-deda-4b20-8aa4"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="8e84-46bb-2d66-b423" id="6cb2-ed76-d8b0-5990" primary="false" name="Castellan Legion"/>
+        <categoryLink targetId="cat-leviathan" id="8a32-ce95-285c-d2cd" primary="true" name="Leviathan"/>
+        <categoryLink targetId="2ed1-9284-2465-4634" id="84cb-b380-c42a-7127" primary="false" name="Mystic"/>
+        <categoryLink targetId="55d6-4f4f-a4fd-e249" id="bbbb-6f81-2c18-c0d5" primary="false" name="Construct"/>
+        <categoryLink targetId="b69d-0836-fe2c-d01b" id="78f1-0181-d445-530c" primary="false" name="Unique"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="The Angels of Ruin (Choose 2)" hidden="false" id="b0e5-e03f-8e66-fdde" type="selectionEntryGroup" targetId="97dd-e677-b3a7-2950"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Khailera" hidden="false" id="55c2-176e-a213-a074">
+      <profiles>
+        <profile name="Khailera" typeId="profile-unit" typeName="Unit" hidden="false" id="19a2-2df9-a425-ec13">
+          <characteristics>
+            <characteristic name="Speed" typeId="char-speed">14</characteristic>
+            <characteristic name="Health" typeId="char-health">24</characteristic>
+            <characteristic name="Defence" typeId="char-defence">12 / 12 / 11</characteristic>
+            <characteristic name="Initiative" typeId="char-initiative">5</characteristic>
+            <characteristic name="Morale" typeId="char-morale">3</characteristic>
+            <characteristic name="Arcane" typeId="char-arcane">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Sanctuary of Severance" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="9e53-21ea-b8aa-d9ee">
+          <characteristics>
+            <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">3</characteristic>
+            <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+8</characteristic>
+            <characteristic name="Damage" typeId="2780-b560-1641-b9a5">8</characteristic>
+            <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d">Each time this weapon makes a natural attack roll of 10, it can make an additional attack roll with this weapon. Subsequent attacks do not themselves generate additional attacks.
+In addition, this weapon inflicts Critical Hits on natural attack rolls of 9+, or on a 7+ if the target is a *Dæmon*.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="The Angel of Vengeance" id="ff42-94aa-cace-08d6" hidden="false">
+          <description>This unit’s charge distance is a maximum of 14 instead of 10, and can may reroll one or both of its dice when determining its charge distance. This unit has advantage with its melee attacks in any turn in which it makes a successful charge.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="The Fractures" id="cd8a-e5f5-5c5a-a7d0" hidden="false" type="rule" targetId="aac0-f9eb-50dc-fb44"/>
+        <infoLink name="Explosive End (3”)" id="a29a-104a-75de-8d44" hidden="false" type="rule" targetId="0c4e-ec46-1e44-e9dd"/>
+        <infoLink name="Base 160" id="e0ae-265a-e776-3635" hidden="false" type="profile" targetId="c7b5-8d2f-ceaa-cd7e"/>
+        <infoLink name="The Ruin of Angels" id="d3ee-69d8-ed92-7099" hidden="false" type="rule" targetId="a410-deda-4b20-8aa4"/>
+      </infoLinks>
+      <costs>
+        <cost name="Auri" typeId="cost-auri" value="365"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="8e84-46bb-2d66-b423" id="87ae-1c81-f280-b04b" primary="false" name="Castellan Legion"/>
+        <categoryLink targetId="cat-leviathan" id="d971-2660-811c-3441" primary="true" name="Leviathan"/>
+        <categoryLink targetId="55d6-4f4f-a4fd-e249" id="bebd-e21a-911f-d0c2" primary="false" name="Construct"/>
+        <categoryLink targetId="b69d-0836-fe2c-d01b" id="8552-81ee-7856-726f" primary="false" name="Unique"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="The Angels of Ruin (Choose 2)" hidden="false" id="70d5-1868-f109-ec39" type="selectionEntryGroup" targetId="97dd-e677-b3a7-2950"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Shikari" hidden="false" id="1c20-da87-1484-efe2">
+      <costs>
+        <cost name="Auri" typeId="cost-auri" value="285"/>
+      </costs>
+      <profiles>
+        <profile name="Shikari" typeId="profile-unit" typeName="Unit" hidden="false" id="2b6b-11df-20bd-a243">
+          <characteristics>
+            <characteristic name="Speed" typeId="char-speed">14</characteristic>
+            <characteristic name="Health" typeId="char-health">24</characteristic>
+            <characteristic name="Defence" typeId="char-defence">12 / 12 / 11</characteristic>
+            <characteristic name="Initiative" typeId="char-initiative">5</characteristic>
+            <characteristic name="Morale" typeId="char-morale">3</characteristic>
+            <characteristic name="Arcane" typeId="char-arcane">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="The Fractures" id="586f-7975-def0-f477" hidden="false" type="rule" targetId="aac0-f9eb-50dc-fb44"/>
+        <infoLink name="Explosive End (3”)" id="3f1b-1c46-352f-fe38" hidden="false" type="rule" targetId="0c4e-ec46-1e44-e9dd"/>
+        <infoLink name="Base 160" id="204a-ca80-ce99-d9ae" hidden="false" type="profile" targetId="c7b5-8d2f-ceaa-cd7e"/>
+        <infoLink name="The Ruin of Angels" id="1fc0-8087-4ea2-c912" hidden="false" type="rule" targetId="a410-deda-4b20-8aa4"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="781f-9a20-0096-8d8f" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b7f4-ed93-656f-a19c-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b7f4-ed93-656f-a19c-max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Dual Wield" hidden="false" id="87e2-96cf-1c83-e265">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Dual Wield" id="f007-e721-cd26-2dac" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Venatora Blades" hidden="false" id="f18e-f66c-7e92-06df" defaultAmount="2">
+                      <profiles>
+                        <profile name="Venatora Blades" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="7dc8-2f8c-f441-637e">
+                          <characteristics>
+                            <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">3</characteristic>
+                            <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+3</characteristic>
+                            <characteristic name="Damage" typeId="2780-b560-1641-b9a5">3</characteristic>
+                            <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d">This weapon inflicts Critical Hits on natural attack rolls on a 7+ if its target is a *Dæmon*.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Consecrated Autoballista" hidden="false" id="2ef4-f1c7-1a18-2ff6" defaultAmount="">
+                      <profiles>
+                        <profile name="Consecrated Autoballista" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="b8a2-367d-5c26-f95e">
+                          <characteristics>
+                            <characteristic name="Range" typeId="1023-f0db-ffcf-da31">36&quot;</characteristic>
+                            <characteristic name="Dice" typeId="1192-2222-5926-5b4b">1</characteristic>
+                            <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+4</characteristic>
+                            <characteristic name="Damage" typeId="a482-225f-a3cb-a700">3</characteristic>
+                            <characteristic name="Traits" typeId="76cd-5882-86da-52cf">This is a *blast* attack, with a 2” radius originating from a visible point within range.
+This weapon inflicts Critical Hits on natural attack rolls on a 7+ if its target is a *Dæmon*.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="90b1-4d7e-7744-753e"/>
+                      </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Xhunite Battleaxe" hidden="false" id="f137-6bb9-63e2-d99a" defaultAmount="">
+                      <profiles>
+                        <profile name="Xhunite Battleaxe" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="9de1-8fc3-1833-d382">
+                          <characteristics>
+                            <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">2</characteristic>
+                            <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+4</characteristic>
+                            <characteristic name="Damage" typeId="2780-b560-1641-b9a5">4</characteristic>
+                            <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d">This weapon inflicts Critical Hits on natural attack rolls on a 7+ if its target is a *Dæmon*.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="2a4f-2200-2326-d863-min"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2a4f-2200-2326-d863-max"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Spear of Dawn" hidden="false" id="20b6-80cc-9763-6e2b">
+              <profiles>
+                <profile name="Spear of Dawn" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="a73b-f646-8601-ce2e">
+                  <characteristics>
+                    <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">3</characteristic>
+                    <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+5</characteristic>
+                    <characteristic name="Damage" typeId="2780-b560-1641-b9a5">5</characteristic>
+                    <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="cat-leviathan" id="98a1-98b5-0fb9-2a25" primary="true" name="Leviathan"/>
+        <categoryLink targetId="8e84-46bb-2d66-b423" id="9b22-6363-c65b-2d16" primary="false" name="Castellan Legion"/>
+        <categoryLink targetId="55d6-4f4f-a4fd-e249" id="a32b-636f-5088-86a8" primary="false" name="Construct"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="The Angels of Ruin (Choose 2)" hidden="false" id="8f00-5b0e-5a90-aa6d" type="selectionEntryGroup" targetId="97dd-e677-b3a7-2950"/>
+      </entryLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <categoryEntries>
+    <categoryEntry name="Castellan Legion" id="8e84-46bb-2d66-b423" hidden="false"/>
+  </categoryEntries>
+  <sharedRules>
+    <rule name="The Fractures" id="aac0-f9eb-50dc-fb44" hidden="false">
+      <description>While there are enemy *Dæmon* or *aberration* units on the battlefield, this unit cannot be *shaken*, and this unit never gains attrition points as a result of *psychic* weapons or invocations.
+At the end of any Resolution Phase in which this unit is *shaken*, instead of modifying its characteristics as normal, roll a D5 and add the number of attrition points allocated to this unit. If the total equals the result on the table below, resolve its effect.
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt;Roll Result&lt;/th&gt;&lt;th&gt;Effects&lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;&lt;b&gt;6&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Reign of Confusion&lt;/b&gt;&lt;br/&gt;Until the following Resolution Phase, this unit halves its Speed characteristic.&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;&lt;b&gt;7&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Melancholia&lt;/b&gt;&lt;br/&gt;Until the following Resolution Phase, this unit cannot make reactions.&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;&lt;b&gt;8&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;The Withering&lt;/b&gt;&lt;br/&gt;Until the following Resolution Phase, subtract 1 from this unit’s Defence characteristics and attack rolls.&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;&lt;b&gt;9&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;The Shadows of Forgotten Foes&lt;/b&gt;&lt;br/&gt;This unit immediately moves, ending its move as close as possible to the nearest non-Castellan Legion unit. If it ends its move in control range of that unit it counts as having made a successful charge against that unit, and makes a Fight action targeting them.&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;&lt;b&gt;10+&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Losing The Final Battle&lt;/b&gt;&lt;br/&gt;This unit is immediately destroyed, without triggering its Explosive End ability. Friendly visible Castellan Legion units within 12” of a unit that loses its final battle gain one attrition point.&lt;/td&gt;&lt;/tr&gt;
+  &lt;tbody&gt;
+&lt;/table&gt;
+</description>
+    </rule>
+    <rule name="Explosive End (3”)" id="0c4e-ec46-1e44-e9dd" hidden="false">
+      <description>When this unit is destroyed, before removing the model, roll a dice. On a 5+, it explodes in a *blast* attack, with a 3” radius originating from its base, with a strength of +3 and a damage of 1. This attack has no effect on friendly units.</description>
+    </rule>
+    <rule name="The Ruin of Angels" id="a410-deda-4b20-8aa4" hidden="false">
+      <description>At the end of any Resolution Phase in which this unit is *shaken*, its characteristics are not modified as normal, and instead its controlling player rolls a D5. If the result is greater than the number of attrition points, or if there are any visible enemy *Dæmon* units within 12” of this unit, this unit shakes off the effects and nothing further happens.
+If the result is equal to or less than the number of attrition points allocated to this unit, roll a dice and resolve the corresponding effect below:&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt;Roll Result&lt;/th&gt;&lt;th&gt;Effects&lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;&lt;b&gt;1&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Fading Radiance&lt;/b&gt;&lt;br/&gt;Until the end of the following Resolution Phase, psychic attacks against this unit have advantage.&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;&lt;b&gt;2&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Haunted Soul&lt;/b&gt;&lt;br/&gt;This unit doubles the number of attrition points allocated to it.&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;&lt;b&gt;3&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Heart of Damnation&lt;/b&gt;&lt;br/&gt;This unit immediately loses D5 points of health. Units cannot gain attrition points as a result of this effect.&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;&lt;b&gt;4&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Lost in Memories&lt;/b&gt;&lt;br/&gt;Until the end of the following Resolution Phase, subtract 1 from this unit’s Morale characteristic.&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;&lt;b&gt;5&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Melancholy Spirit&lt;/b&gt;&lt;br/&gt;Until the end of the following Resolution Phase, this unit cannot make reactions.&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;&lt;b&gt;6&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Splintered Aegis&lt;/b&gt;&lt;br/&gt;Until the end of the following Resolution Phase, subtract 1 from this unit’s Defence characteristics.&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;&lt;b&gt;7&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;This Endless Quest&lt;/b&gt;&lt;br/&gt;Until the end of the following Resolution Phase, this unit does not count as being within control range of objective markers.&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;&lt;b&gt;8&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;The Shadows of Forgotten Foes&lt;/b&gt;&lt;br/&gt;This unit immediately moves, ending its move as close as possible to the nearest non-Castellan Legion unit. If it ends its move in control range of that unit it counts as having made a successful charge against that unit, and makes a Fight action targeting them.&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;&lt;b&gt;9&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;The Withering&lt;/b&gt;&lt;br/&gt;Until the end of the following Resolution Phase, subtract 1 from this unit’s attack rolls.&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;&lt;b&gt;10&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Wandering in Shadow&lt;/b&gt;&lt;br/&gt;Until the end of the following Resolution Phase, this unit halves its Speed characteristic.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tr&gt;
+
+  &lt;tbody&gt;
+&lt;/table&gt;</description>
+    </rule>
+  </sharedRules>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="The Angels of Ruin (Choose 2)" id="97dd-e677-b3a7-2950" hidden="false">
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2dcc-9be7-d2cb-78fb"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Arcane Weaving" hidden="false" id="2172-3a5d-8931-1359">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc93-6cf5-fc63-5370"/>
+          </constraints>
+          <rules>
+            <rule name="Arcane Weaving" id="1ce9-24f5-1897-12bf" hidden="false">
+              <description>This unit has an Arcane characteristic of 4.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Rites of Radiance" id="601c-e509-1cf8-091d" hidden="false" type="infoGroup" targetId="96b7-1f2f-b4c1-99ff"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Celestial Armour" hidden="false" id="15fa-fb85-a444-99d8">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f68-868b-e301-0ef0"/>
+          </constraints>
+          <rules>
+            <rule name="Celestial Armour" id="9915-303a-ec3b-56e3" hidden="false">
+              <description>Add 1 to this unit’s front arc defence.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Dance of Death" hidden="false" id="1767-64a6-3a33-2f23">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7215-dbca-d91e-eac3"/>
+          </constraints>
+          <rules>
+            <rule name="Dance of Death" id="52bc-2498-1401-75fd" hidden="false">
+              <description>This unit can move over *infantry* units when it makes a charge move (as long as its model can be placed on the battlefield at the end of that move). If a charge move made by this unit moves over or within the control range of any enemy units other than its charge target, it can make a single attack roll using the profile of one of its melee weapons against each of those units.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Dextrous Strikes" hidden="false" id="0f6a-f219-3a60-9d3f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a652-7d57-8627-c904"/>
+          </constraints>
+          <rules>
+            <rule name="Dextrous Strikes" id="de06-f8e3-5a9a-3802" hidden="false">
+              <description>Add 1 to this unit’s melee attack rolls.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Divine Consecration" hidden="false" id="dcb5-3a32-5458-74b9">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4352-97ba-f554-0d8c"/>
+          </constraints>
+          <rules>
+            <rule name="Divine Consecration" id="ab03-c166-3f00-f4df" hidden="false">
+              <description>This unit is *core*.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Graceful Advance" hidden="false" id="a9c0-d761-c8dd-70dd">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4c0-f80a-96ce-c3cd"/>
+          </constraints>
+          <rules>
+            <rule name="Graceful Advance" id="f329-c088-9f34-7b4b" hidden="false">
+              <description>When this unit makes an advance move, it can move up to its full Speed characteristic instead of only half.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Legendary Warrior" hidden="false" id="82e8-7787-76fc-7388">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ea8-e06f-b861-6c4f"/>
+          </constraints>
+          <rules>
+            <rule name="Legendary Warrior" id="0bca-6832-1844-c77d" hidden="false">
+              <description>Friendly units and *ally* units within 6” of this unit may add 1 to their attrition rolls.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Primordial Runes" hidden="false" id="ce72-fba9-d4e8-d33e">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="efab-b1e7-fd17-7a97"/>
+          </constraints>
+          <rules>
+            <rule name="Primordial Runes" id="95fb-1441-161d-295d" hidden="false">
+              <description>Each time this unit is the target of a *curse*, roll a dice. On a roll of 6+, that invocation has no effect on this unit.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Shroud of Silence" hidden="false" id="6a57-d286-fb74-6b6a">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b47-fefa-1be4-84c8"/>
+          </constraints>
+          <rules>
+            <rule name="Shroud of Silence" id="e7f1-1459-8582-e1ea" hidden="false">
+              <description>*Dæmon* units may not make reactions to this unit.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Soul Guidance" hidden="false" id="86e1-3cd9-1919-eae7">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd0d-762e-b6ec-27bf"/>
+          </constraints>
+          <rules>
+            <rule name="Soul Guidance" id="5938-9724-e09e-d290" hidden="false">
+              <description>Successful hits made by this model can be allocated to models in a target unit by the attacking player, rather than by the target unit’s controlling player (even if models in that unit are already injured). Such attacks can also be allocated to *independent* units in a group, even if there are three or models in its retinue.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedInfoGroups>
+    <infoGroup name="Rites of Radiance" id="96b7-1f2f-b4c1-99ff" hidden="false">
+      <profiles>
+        <profile name="Illumination" typeId="profile-invocation" typeName="Invocation" hidden="false" id="2821-4f62-8fde-6cc2">
+          <characteristics>
+            <characteristic name="Arcane Value" typeId="char-arc-val">7 - *Elemental*, *Divine**</characteristic>
+            <characteristic name="Effects" typeId="2062-1aef-9b73-d14b">Select a visible enemy unit within 24” of the invoking unit. Whenever a friendly unit targets this unit, their attack rolls ignore all negative modifiers, and that unit does not benefit from cover.</characteristic>
+            <characteristic name="Misfire effects" typeId="456c-32eb-69b1-1fb7">The invoking unit gains one attrition point.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Starlit Maelstorm" typeId="profile-invocation" typeName="Invocation" hidden="false" id="6097-02ac-fa6d-11fa">
+          <characteristics>
+            <characteristic name="Arcane Value" typeId="char-arc-val">9 - *Curse*, *Divine**</characteristic>
+            <characteristic name="Effects" typeId="2062-1aef-9b73-d14b">This invocation is a *psychic* *blast* attack, with a 3” radius originating from a visible point within 18” of the invoking unit, with a strength characteristic of +3 and a damage of 2.</characteristic>
+            <characteristic name="Misfire effects" typeId="456c-32eb-69b1-1fb7">The invoking unit immediately gains two attrition points.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Blinding Light" typeId="profile-invocation" typeName="Invocation" hidden="false" id="aeed-3b06-6414-edc1">
+          <characteristics>
+            <characteristic name="Arcane Value" typeId="char-arc-val">9 - *Curse*, *Divine**</characteristic>
+            <characteristic name="Effects" typeId="2062-1aef-9b73-d14b">Enemy *infantry* units within 6” of the invoking unit are blinded by light, and can either choose to witness angelic horrors or shield their eyes. Witnesses lose D5 health, and those who shield their eyes cannot take reactions during this turn.</characteristic>
+            <characteristic name="Misfire effects" typeId="456c-32eb-69b1-1fb7">The invoking unit immediately gains two attrition points.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Blessed Blades" typeId="profile-invocation" typeName="Invocation" hidden="false" id="9270-673e-0719-13e2">
+          <characteristics>
+            <characteristic name="Arcane Value" typeId="char-arc-val">10 - *Blessing*, *Divine**</characteristic>
+            <characteristic name="Effects" typeId="2062-1aef-9b73-d14b">This unit has advantage on attack rolls made with its melee weapons.</characteristic>
+            <characteristic name="Misfire effects" typeId="456c-32eb-69b1-1fb7">This unit has disadvantage on attack rolls made with melee weapons</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </infoGroup>
+  </sharedInfoGroups>
+  <rules>
+    <rule name="Celestial Magic" id="936e-0357-d6d3-e075" hidden="false">
+      <alias>Divine</alias>
+      <description>When a *Dæmon* *mystic* makes a counterspell reaction against a *Divine* invocations, it halves its Arcane characteristic (rounding up).</description>
+    </rule>
+  </rules>
+</catalogue>

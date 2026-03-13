@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="2ac7-7632-8f2c-488a" name="Castellan Legion" gameSystemId="sys-promised-land" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <forceEntries>
+    <forceEntry name="Castellan Legion" id="f5b7-b377-157c-b972" hidden="false">
+      <constraints>
+        <constraint type="min" value="1" field="forces" scope="parent" shared="true" id="02e5-463f-c035-a6d5-min"/>
+        <constraint type="max" value="1" field="forces" scope="parent" shared="true" id="02e5-463f-c035-a6d5-max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Force Traits" hidden="false" id="2379-dc23-61ef-b0a0" targetId="5552-8704-2fc8-e65d"/>
+      </categoryLinks>
+      <forceEntries>
+        <forceEntry name="Castellan Spearhead" id="c34e-ca4d-14b4-5dd2" hidden="false">
+          <categoryLinks>
+            <categoryLink name="Leviathan" hidden="false" id="f9e5-01db-052c-72f7" targetId="cat-leviathan"/>
+            <categoryLink name="Leader" hidden="false" id="e724-e9f6-ae02-5a65" targetId="cat-leader"/>
+          </categoryLinks>
+        </forceEntry>
+      </forceEntries>
+    </forceEntry>
+  </forceEntries>
+  <entryLinks>
+    <entryLink import="true" name="Shikari" hidden="false" id="47de-13ba-c73a-f854" type="selectionEntry" targetId="1c20-da87-1484-efe2">
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="969f-c185-4cdb-6b9d"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="8497-7cf3-9a4a-1ecf" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+  </entryLinks>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Castellan Legion lib" id="f284-03b3-8814-d23d" targetId="8531-a20c-cb3b-77aa"/>
+  </catalogueLinks>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Leader" hidden="false" id="03e7-75f4-be4a-5894">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Leader" id="46be-a9e0-528c-31e9" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Cassiopeia" hidden="false" id="9650-05b9-0f87-b748" type="selectionEntry" targetId="31a2-0c04-7682-abb0"/>
+            <entryLink import="true" name="Khailera" hidden="false" id="8e29-4d94-e2fb-9709" type="selectionEntry" targetId="55c2-176e-a213-a074"/>
+            <entryLink import="true" name="Shikari" hidden="false" id="f582-beeb-6341-fdcc" type="selectionEntry" targetId="1c20-da87-1484-efe2"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3029-75b1-6d93-894f-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3029-75b1-6d93-894f-max"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="cat-leviathan" id="ebbf-7e1e-2870-9afd" primary="false" name="Leviathan"/>
+        <categoryLink targetId="cat-leader" id="9901-7070-1df1-1cfd" primary="true" name="Leader"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Warlord" hidden="false" id="0874-2e53-2e97-0bac" type="selectionEntry" targetId="8497-7cf3-9a4a-1ecf"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e3c9-e415-f14e-41ee-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e3c9-e415-f14e-41ee-max"/>
+      </constraints>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>
