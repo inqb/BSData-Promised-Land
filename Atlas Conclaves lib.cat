@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="true" id="c7bc-e4cf-827b-af5a" name="Atlas Conclaves lib" gameSystemId="sys-promised-land" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry type="model" import="true" name="Amalia Assault Engine" hidden="false" id="2100-7e8d-755c-6a14">
+      <categoryLinks>
+        <categoryLink targetId="cat-leviathan" id="c329-e635-a483-52a2" primary="true" name="Leviathan"/>
+        <categoryLink targetId="1018-2140-b907-b2d9" id="ce22-1c54-e3c9-c876" primary="false" name="Atlas Conclaves"/>
+        <categoryLink targetId="55d6-4f4f-a4fd-e249" id="4f9f-4513-8cd4-a881" primary="false" name="Construct"/>
+        <categoryLink targetId="7662-20c1-b08b-911f" id="e15f-391a-5f38-5596" primary="false" name="Nyphia"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Auri" typeId="cost-auri" value="395"/>
+      </costs>
+      <profiles>
+        <profile name="Amalia Assault Engine" typeId="profile-unit" typeName="Unit" hidden="false" id="bc8b-161d-111f-7b02">
+          <characteristics>
+            <characteristic name="Speed" typeId="char-speed">8</characteristic>
+            <characteristic name="Health" typeId="char-health">36</characteristic>
+            <characteristic name="Defence" typeId="char-defence">13 / 12 / 11</characteristic>
+            <characteristic name="Initiative" typeId="char-initiative">2</characteristic>
+            <characteristic name="Morale" typeId="char-morale">4</characteristic>
+            <characteristic name="Arcane" typeId="char-arcane">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Arm Mounted Weapon" id="ea9b-b6ac-090c-d5c6" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Destroyer Gauntlet" hidden="false" id="81a4-e7ac-a1b4-92d3" defaultAmount="1">
+              <infoLinks>
+                <infoLink name="Destroyer Gauntlet" id="3aac-4ce7-4c2b-7ef1" hidden="false" type="profile" targetId="8a58-5266-8b25-709b"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Demolisher Flail" hidden="false" id="c343-9098-8685-47a7">
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="20"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Demolisher Flail" id="cabf-c3c4-5a37-be84" hidden="false" type="profile" targetId="10be-f723-a6c8-c240"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Heavy Battle Cannon" hidden="false" id="63b0-2ed0-e4ff-f0bf">
+              <infoLinks>
+                <infoLink name="Heavy Battle Cannon" id="f578-16ff-0150-afe7" hidden="false" type="profile" targetId="f595-acc0-6461-6938"/>
+              </infoLinks>
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="10"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Phase Devastator" hidden="false" id="6e2d-252b-d8cb-f3f4">
+              <infoLinks>
+                <infoLink name="Phase Devastator" id="c334-09d6-1a96-17ed" hidden="false" type="profile" targetId="7a60-17d6-4928-c27f"/>
+              </infoLinks>
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="15"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rotary Destructor" hidden="false" id="64d2-e09f-48ec-afa2">
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="25"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Rotary Destructor" id="329b-dbf9-c180-73e3" hidden="false" type="profile" targetId="90cc-45fd-a2d7-36e6"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rotary Saw" hidden="false" id="2dfe-7034-0de4-f1ca">
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="35"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Rotary Saw" id="4a82-c2ab-0c04-1041" hidden="false" type="profile" targetId="fd01-c782-4337-ca32"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Siege Drill" hidden="false" id="7b66-843e-3e32-9e09">
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="10"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Siege Drill" id="c819-b41a-82a0-f16b" hidden="false" type="profile" targetId="ad5b-2cbd-ead3-609f"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="db03-a5c7-5b4b-5ef4-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db03-a5c7-5b4b-5ef4-max"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Arm Mounted Weapon" id="8510-8907-8675-9839" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Destroyer Gauntlet" hidden="false" id="4371-362f-b7ad-9a46" defaultAmount="1">
+              <infoLinks>
+                <infoLink name="Destroyer Gauntlet" id="3846-e493-02f0-c2b1" hidden="false" type="profile" targetId="8a58-5266-8b25-709b"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Demolisher Flail" hidden="false" id="c880-f5a7-2875-23c5">
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="20"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Demolisher Flail" id="e68e-26af-9a2e-dc20" hidden="false" type="profile" targetId="10be-f723-a6c8-c240"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Heavy Battle Cannon" hidden="false" id="7baa-3538-1ecf-b1bd">
+              <infoLinks>
+                <infoLink name="Heavy Battle Cannon" id="3f83-404d-182d-a3ce" hidden="false" type="profile" targetId="f595-acc0-6461-6938"/>
+              </infoLinks>
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="10"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Phase Devastator" hidden="false" id="6e6c-104b-0587-6d5a">
+              <infoLinks>
+                <infoLink name="Phase Devastator" id="52d0-22b5-66dd-6e5d" hidden="false" type="profile" targetId="7a60-17d6-4928-c27f"/>
+              </infoLinks>
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="15"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rotary Destructor" hidden="false" id="ca9b-21bc-94c2-7de9">
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="25"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Rotary Destructor" id="864d-5f9c-2b5f-3417" hidden="false" type="profile" targetId="90cc-45fd-a2d7-36e6"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rotary Saw" hidden="false" id="4ff7-61e6-b092-b385">
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="35"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Rotary Saw" id="520d-b37b-2eb7-adcc" hidden="false" type="profile" targetId="fd01-c782-4337-ca32"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Siege Drill" hidden="false" id="349c-04b6-6dce-b0a0">
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="10"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Siege Drill" id="444e-9cff-39ae-1e87" hidden="false" type="profile" targetId="ad5b-2cbd-ead3-609f"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5bac-e19e-f6d6-206d-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5bac-e19e-f6d6-206d-max"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Turret Mounted Weapon" id="00c9-3691-5cec-298a" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f70d-9719-f28a-ee1e"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Cyclic Plasma Annihilator" hidden="false" id="bff9-5645-5286-212e">
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="50"/>
+              </costs>
+              <profiles>
+                <profile name="Cyclic Plasma Annihilator" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="8c69-e31e-c6f6-61fc">
+                  <characteristics>
+                    <characteristic name="Dice" typeId="1192-2222-5926-5b4b">*</characteristic>
+                    <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+5</characteristic>
+                    <characteristic name="Damage" typeId="a482-225f-a3cb-a700">2</characteristic>
+                    <characteristic name="Traits" typeId="76cd-5882-86da-52cf">After selecting a target within range, draw a line between this model and one model in the target unit. Make a number of attack rolls against each unit this line crosses, equal to the number of models the line crosses over.</characteristic>
+                  </characteristics>
+                  <attributes>
+                    <attribute name="Traits" typeId="5152-ff25-1d12-ec4c">After selecting a target within range, draw a line between this model and one model in the target unit. Make a number of attack rolls against each unit this line crosses, equal to the number of models the line crosses over.</attribute>
+                  </attributes>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Leviathan Mortar" hidden="false" id="7e3e-2255-6280-ac71">
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="25"/>
+              </costs>
+              <profiles>
+                <profile name="Leviathan Mortar" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="6237-ec0a-f1f9-caee">
+                  <characteristics>
+                    <characteristic name="Dice" typeId="1192-2222-5926-5b4b">1</characteristic>
+                    <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+4</characteristic>
+                    <characteristic name="Damage" typeId="a482-225f-a3cb-a700">3</characteristic>
+                    <characteristic name="Traits" typeId="76cd-5882-86da-52cf">This is an *artillery* *blast* attack, with a 3” radius originating from a point within range.</characteristic>
+                  </characteristics>
+                  <attributes>
+                    <attribute name="Traits" typeId="5152-ff25-1d12-ec4c">This is an *artillery* *blast* attack, with a 3” radius originating from a point within range.</attribute>
+                  </attributes>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rotary Destructor" hidden="false" id="00c0-6b6d-b80e-53cb">
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="40"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Rotary Destructor" id="5407-e5ff-12c8-207e" hidden="false" type="profile" targetId="90cc-45fd-a2d7-36e6"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Base 250" id="697a-b34b-66b4-7772" hidden="false" type="profile" targetId="9dbd-323f-2f96-4b5a"/>
+        <infoLink name="Ancient Colossus" id="d526-ff05-78a0-9acd" hidden="false" type="rule" targetId="ac42-c7ab-6f57-a1d7"/>
+        <infoLink name="The Ruin of All (D5+5”)" id="bbd4-2991-03ef-dcce" hidden="false" type="rule" targetId="7323-bfe2-44d0-6c9d"/>
+        <infoLink name="Destructive Stomps" id="97cb-6749-579a-beab" hidden="false" type="profile" targetId="7975-f99c-3391-da93"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Nyphia Destroyer Engine" hidden="false" id="1948-c4f3-b80b-a6d0">
+      <profiles>
+        <profile name="Nyphia Destroyer Engine" typeId="profile-unit" typeName="Unit" hidden="false" id="ce35-41d5-f8c1-fe08">
+          <characteristics>
+            <characteristic name="Speed" typeId="char-speed">8</characteristic>
+            <characteristic name="Health" typeId="char-health">48</characteristic>
+            <characteristic name="Defence" typeId="char-defence">14 / 13 / 11</characteristic>
+            <characteristic name="Initiative" typeId="char-initiative">2</characteristic>
+            <characteristic name="Morale" typeId="char-morale">5</characteristic>
+            <characteristic name="Arcane" typeId="char-arcane">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Auri" typeId="cost-auri" value="495"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="cat-leviathan" id="821a-1c5f-5e17-93ab" primary="true" name="Leviathan"/>
+        <categoryLink targetId="1018-2140-b907-b2d9" id="5416-2629-60bd-5bcf" primary="false" name="Atlas Conclaves"/>
+        <categoryLink targetId="7662-20c1-b08b-911f" id="38b8-58c6-855d-e534" primary="false" name="Nyphia"/>
+        <categoryLink targetId="55d6-4f4f-a4fd-e249" id="c79d-d35b-ef5f-58a1" primary="false" name="Construct"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Base 250" id="5d71-39b1-86f2-f82c" hidden="false" type="profile" targetId="9dbd-323f-2f96-4b5a"/>
+        <infoLink name="Ancient Colossus" id="2fbc-0b6d-6425-67f9" hidden="false" type="rule" targetId="ac42-c7ab-6f57-a1d7"/>
+        <infoLink name="The Ruin of All (D5+5”)" id="dcff-3c74-3a8a-39aa" hidden="false" type="rule" targetId="7323-bfe2-44d0-6c9d"/>
+        <infoLink name="Destructive Stomps" id="c7de-6430-3257-8f2a" hidden="false" type="profile" targetId="7975-f99c-3391-da93"/>
+      </infoLinks>
+      <rules>
+        <rule name="For I Bring Death Upon Your Mortal World" id="94ef-fb9c-5de0-4bf2" hidden="false">
+          <description>Enemy infantry units within 6” of this unit must reroll successful attrition rolls.</description>
+        </rule>
+      </rules>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Arm Mounted Weapon" id="0040-e759-aa7e-b04d" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e832-8226-19fd-45de-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e832-8226-19fd-45de-max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Magma Lance" hidden="false" id="a322-a274-e486-228c" defaultAmount="1">
+              <infoLinks>
+                <infoLink name="Magma Lance" id="fea4-85a2-6b84-fdcf" hidden="false" type="profile" targetId="ea04-7cd4-e835-aa79"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Heavy Atlas Carronade" hidden="false" id="fd75-3f93-4d2c-864c">
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="20"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Heavy Atlas Carronade" id="d3f2-bd49-ca0b-bba0" hidden="false" type="profile" targetId="848d-a20d-6d3e-f015"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rotary Annihilator" hidden="false" id="9c89-14d1-4af3-e5d8">
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="30"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Rotary Annihilator" id="8d69-8cb5-f56e-1764" hidden="false" type="profile" targetId="3e7d-6b3a-7c76-4b5c"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Thunderblast Mauler" hidden="false" id="5730-bd38-bc2f-0e3c">
+              <infoLinks>
+                <infoLink name="Thunderblast Mauler" id="ea2f-7138-86f3-2ba9" hidden="false" type="profile" targetId="ecc0-8979-1003-e6dd"/>
+              </infoLinks>
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="35"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Arm Mounted Weapon" id="cdab-96f4-3153-e2a7" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ae61-543f-12dd-dc10-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae61-543f-12dd-dc10-max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Magma Lance" hidden="false" id="5eef-3588-c58c-03ac" defaultAmount="1">
+              <infoLinks>
+                <infoLink name="Magma Lance" id="d808-3a81-4a39-897f" hidden="false" type="profile" targetId="ea04-7cd4-e835-aa79"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Heavy Atlas Carronade" hidden="false" id="51ae-7458-95e8-9e43">
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="20"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Heavy Atlas Carronade" id="26ec-dcec-2ca0-6e7d" hidden="false" type="profile" targetId="848d-a20d-6d3e-f015"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rotary Annihilator" hidden="false" id="b6f8-a98c-4349-617f">
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="30"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Rotary Annihilator" id="2579-cb64-4966-1bc4" hidden="false" type="profile" targetId="3e7d-6b3a-7c76-4b5c"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Thunderblast Mauler" hidden="false" id="4e6b-ccd7-1b21-fda8">
+              <infoLinks>
+                <infoLink name="Thunderblast Mauler" id="7034-f428-3472-f683" hidden="false" type="profile" targetId="ecc0-8979-1003-e6dd"/>
+              </infoLinks>
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="35"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <categoryEntries>
+    <categoryEntry name="Atlas Conclaves" id="1018-2140-b907-b2d9" hidden="false"/>
+    <categoryEntry name="Nyphia" id="7662-20c1-b08b-911f" hidden="false"/>
+  </categoryEntries>
+  <sharedProfiles>
+    <profile name="Destroyer Gauntlet" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="8a58-5266-8b25-709b">
+      <characteristics>
+        <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">3</characteristic>
+        <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+4</characteristic>
+        <characteristic name="Damage" typeId="2780-b560-1641-b9a5">2</characteristic>
+        <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d">This is a *destroyer* attack.</characteristic>
+      </characteristics>
+      <attributes>
+        <attribute name="Traits" typeId="8b8e-361d-1bfa-cf66">This is a *destroyer* attack.</attribute>
+      </attributes>
+    </profile>
+    <profile name="Demolisher Flail" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="10be-f723-a6c8-c240">
+      <characteristics>
+        <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">1</characteristic>
+        <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+6</characteristic>
+        <characteristic name="Damage" typeId="2780-b560-1641-b9a5">2D10</characteristic>
+        <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d">This is a *destroyer* attack. Health points lost in excess of a model’s Health characteristic as a result of attacks with this weapon are not discarded, but instead allocated to the next model in the unit.</characteristic>
+      </characteristics>
+      <attributes>
+        <attribute name="Traits" typeId="8b8e-361d-1bfa-cf66">This is a destroyer attack. Health points lost in excess of a model’s Health characteristic as a result of attacks with this weapon are not discarded, but instead allocated to the next model in the unit.</attribute>
+      </attributes>
+    </profile>
+    <profile name="Rotary Saw" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="fd01-c782-4337-ca32">
+      <characteristics>
+        <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">4</characteristic>
+        <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+6</characteristic>
+        <characteristic name="Damage" typeId="2780-b560-1641-b9a5">5</characteristic>
+        <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d">This is a *destroyer* attack.</characteristic>
+      </characteristics>
+      <attributes>
+        <attribute name="Traits" typeId="8b8e-361d-1bfa-cf66">This is a *destroyer* attack.</attribute>
+      </attributes>
+    </profile>
+    <profile name="Siege Drill" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="ad5b-2cbd-ead3-609f">
+      <characteristics>
+        <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">2</characteristic>
+        <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+5</characteristic>
+        <characteristic name="Damage" typeId="2780-b560-1641-b9a5">D10</characteristic>
+        <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d">This is a *destroyer* attack, and when rolling to determine the damage characteristic of this weapon, results of 4 or less count as 5.
+Each time this weapon inflicts a successful hit on a *vehicle*, *construct*, *monster* or *structure* model, the target model gains a drill point. At the end of the phase, if the target model is not slain, make one attack roll with this weapon for each drill point the target has allocated to it. Damage inflicted by these attacks cannot be allocated to models that do not have drill points allocated to them.</characteristic>
+      </characteristics>
+      <attributes>
+        <attribute name="Traits" typeId="8b8e-361d-1bfa-cf66">This is a *destroyer* attack, and when rolling to determine the damage characteristic of this weapon, results of 4 or less count as 5.
+Each time this weapon inflicts a successful hit on a *vehicle*, *construct*, *monster* or *structure* model, the target model gains a drill point. At the end of the phase, if the target model is not slain, make one attack roll with this weapon for each drill point the target has allocated to it. Damage inflicted by these attacks cannot be allocated to models that do not have drill points allocated to them.</attribute>
+      </attributes>
+    </profile>
+    <profile name="Heavy Battle Cannon" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="f595-acc0-6461-6938">
+      <characteristics>
+        <characteristic name="Dice" typeId="1192-2222-5926-5b4b">*</characteristic>
+        <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+5</characteristic>
+        <characteristic name="Damage" typeId="a482-225f-a3cb-a700">2</characteristic>
+        <characteristic name="Traits" typeId="76cd-5882-86da-52cf">This is a *blast* attack, with a 3” radius originating from a visible point within range.</characteristic>
+      </characteristics>
+      <attributes>
+        <attribute name="Traits" typeId="5152-ff25-1d12-ec4c">After selecting a target within range, draw a line between this model and one model in the target unit. Make a number of attack rolls against each unit this line crosses, equal to the number of models the line crosses over.</attribute>
+      </attributes>
+    </profile>
+    <profile name="Phase Devastator" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="7a60-17d6-4928-c27f">
+      <characteristics>
+        <characteristic name="Dice" typeId="1192-2222-5926-5b4b">3</characteristic>
+        <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+4</characteristic>
+        <characteristic name="Damage" typeId="a482-225f-a3cb-a700">5</characteristic>
+        <characteristic name="Traits" typeId="76cd-5882-86da-52cf">If this weapon targets a unit within 24”, it has a strength of +8. Attacks with this weapon count as *destroyer* attacks.</characteristic>
+      </characteristics>
+      <attributes>
+        <attribute name="Traits" typeId="5152-ff25-1d12-ec4c">If this weapon targets a unit within 24”, it has a strength of +8. Attacks with this weapon count as *destroyer* attacks.</attribute>
+      </attributes>
+    </profile>
+    <profile name="Rotary Destructor" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="90cc-45fd-a2d7-36e6">
+      <characteristics>
+        <characteristic name="Range" typeId="3181-230d-e0ab-b8ee">36&quot;</characteristic>
+        <characteristic name="Dice" typeId="1192-2222-5926-5b4b">12</characteristic>
+        <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+2</characteristic>
+        <characteristic name="Damage" typeId="a482-225f-a3cb-a700">2</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Destructive Stomps" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="7975-f99c-3391-da93">
+      <characteristics>
+        <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">2</characteristic>
+        <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+5</characteristic>
+        <characteristic name="Damage" typeId="2780-b560-1641-b9a5">4</characteristic>
+        <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d">Health points lost in excess of a model’s Health characteristic as a result of attacks with this weapon are not discarded, but instead allocated to the next model in the unit.</characteristic>
+      </characteristics>
+      <attributes>
+        <attribute name="Traits" typeId="8b8e-361d-1bfa-cf66">Health points lost in excess of a model’s Health characteristic as a result of attacks with this weapon are not discarded, but instead allocated to the next model in the unit.</attribute>
+      </attributes>
+    </profile>
+    <profile name="Heavy Atlas Carronade" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="848d-a20d-6d3e-f015">
+      <characteristics>
+        <characteristic name="Dice" typeId="1192-2222-5926-5b4b">2</characteristic>
+        <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">8</characteristic>
+        <characteristic name="Damage" typeId="a482-225f-a3cb-a700">6</characteristic>
+        <characteristic name="Traits" typeId="76cd-5882-86da-52cf">Attacks with this weapon have advantage when targeting *vehicles*, *monsters* and *constructs*.</characteristic>
+      </characteristics>
+      <attributes>
+        <attribute name="Traits" typeId="5152-ff25-1d12-ec4c">Attacks with this weapon have advantage when targeting *vehicles*, *monsters* and *constructs*.</attribute>
+      </attributes>
+    </profile>
+    <profile name="Magma Lance" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="ea04-7cd4-e835-aa79">
+      <characteristics>
+        <characteristic name="Dice" typeId="1192-2222-5926-5b4b">D5+5</characteristic>
+        <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+4</characteristic>
+        <characteristic name="Damage" typeId="a482-225f-a3cb-a700">2</characteristic>
+        <characteristic name="Traits" typeId="76cd-5882-86da-52cf">Units do not benefit from cover when being targeted by this weapon. Each time a unit gains an attrition point as part of an attack that includes this weapon, it gains one additional attrition point.</characteristic>
+      </characteristics>
+      <attributes>
+        <attribute name="Traits" typeId="5152-ff25-1d12-ec4c">Units do not benefit from cover when being targeted by this weapon. Each time a unit gains an attrition point as part of an attack that includes this weapon, it gains one additional attrition point.</attribute>
+      </attributes>
+    </profile>
+    <profile name="Rotary Annihilator" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="3e7d-6b3a-7c76-4b5c">
+      <characteristics>
+        <characteristic name="Range" typeId="3181-230d-e0ab-b8ee">36&quot;</characteristic>
+        <characteristic name="Dice" typeId="1192-2222-5926-5b4b">20</characteristic>
+        <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+3</characteristic>
+        <characteristic name="Damage" typeId="a482-225f-a3cb-a700">2</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Thunderblast Mauler" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="ecc0-8979-1003-e6dd">
+      <characteristics>
+        <characteristic name="Dice" typeId="1192-2222-5926-5b4b">1</characteristic>
+        <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+5</characteristic>
+        <characteristic name="Damage" typeId="a482-225f-a3cb-a700">3</characteristic>
+        <characteristic name="Traits" typeId="76cd-5882-86da-52cf">This is a *blast* attack, with a 3” radius originating from a point within range. Health points lost in excess of a model’s Health characteristic as a result of attacks with this weapon are not discarded, but instead allocated to the next model in the unit.</characteristic>
+      </characteristics>
+      <attributes>
+        <attribute name="Traits" typeId="5152-ff25-1d12-ec4c">This is a *blast* attack, with a 3” radius originating from a point within range. Health points lost in excess of a model’s Health characteristic as a result of attacks with this weapon are not discarded, but instead allocated to the next model in the unit.</attribute>
+      </attributes>
+    </profile>
+  </sharedProfiles>
+  <sharedRules>
+    <rule name="Ancient Colossus" id="ac42-c7ab-6f57-a1d7" hidden="false">
+      <description>When this unit is shaken, instead of modifying its characteristics as normal, attrition
+points are allocated to parts of its body. These effects are cumulative.
+Attrition Points | Effects
+1 | Crippled Legs: Subtract 1 from this unit’s Speed characteristic.
+2 | Cracked Armour: Subtract 1 from this unit’s Defence characteristics.
+3 | Blind Eye: Subtract 1 from this unit’s Initiative characteristic.
+4 | Deafened: This unit cannot benefit from aura abilities.
+5+ | Critical Damage: Each time this unit activates in the Movement Phase, it immediately loses D5 points of health.</description>
+    </rule>
+    <rule name="The Ruin of All (D5+5”)" id="7323-bfe2-44d0-6c9d" hidden="false">
+      <description>When this unit is destroyed, before removing the model, roll a dice. On a 6+, it explodes in a *blast* attack, with a D5+5” radius originating from its base, with a strength of +3 and a damage of 1. On a natural roll of a 10, or if this unit was destroyed by a *destroyer* weapon, or by losing health to critical damage (see the table above), its explosion has a strength of +5 and a damage of 3.</description>
+    </rule>
+  </sharedRules>
+</catalogue>

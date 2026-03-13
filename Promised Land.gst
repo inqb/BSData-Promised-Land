@@ -57,6 +57,13 @@
       <constraints>
         <constraint type="max" value="25" field="limit::cost-auri" scope="roster" shared="true" id="94bd-4516-89ce-d1d8" percentValue="true" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="100" field="94bd-4516-89ce-d1d8">
+          <conditions>
+            <condition type="atLeast" value="1" field="forces" scope="a9b0-8b3b-f6a5-23d2" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </categoryEntry>
     <categoryEntry id="cat-infantry" name="Infantry" hidden="false"/>
     <categoryEntry id="cat-independent" name="Independent" hidden="false"/>
@@ -87,6 +94,11 @@
       <modifiers>
         <modifier type="set" value="Base" field="name"/>
       </modifiers>
+    </profile>
+    <profile name="Base 250" typeId="76aa-68f9-b955-0f6b" typeName="Base" hidden="false" id="9dbd-323f-2f96-4b5a">
+      <characteristics>
+        <characteristic name="Base Size" typeId="e452-67d7-e861-25f9"/>
+      </characteristics>
     </profile>
   </sharedProfiles>
   <sharedSelectionEntries>

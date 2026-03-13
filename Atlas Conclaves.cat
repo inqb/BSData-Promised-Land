@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="a021-8fcd-4e60-e366" name="Atlas Conclaves" gameSystemId="sys-promised-land" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <forceEntries>
+    <forceEntry name="Atlas Conclaves" id="a9b0-8b3b-f6a5-23d2" hidden="false">
+      <constraints>
+        <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="b76a-7c6c-8ed0-94bb-min" includeChildSelections="true" includeChildForces="false"/>
+        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="b76a-7c6c-8ed0-94bb-max" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Force Traits" hidden="false" id="dc32-44c6-8434-9477" targetId="5552-8704-2fc8-e65d"/>
+      </categoryLinks>
+      <forceEntries>
+        <forceEntry name="Conclave Warhost" id="cbc2-432a-d9b3-948d" hidden="false">
+          <categoryLinks>
+            <categoryLink name="Leviathan" hidden="false" id="7702-a79e-04d1-c67d" targetId="cat-leviathan"/>
+            <categoryLink name="Leader" hidden="false" id="c476-c9ff-4a5d-f4de" targetId="cat-leader"/>
+          </categoryLinks>
+        </forceEntry>
+      </forceEntries>
+    </forceEntry>
+  </forceEntries>
+  <entryLinks>
+    <entryLink import="true" name="Amalia Assault Engine" hidden="false" id="224c-9ff9-2f65-4fed" type="selectionEntry" targetId="2100-7e8d-755c-6a14">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4037-2d16-aa7a-7e9c"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="cat-leader" id="4212-4969-477c-2cb0" primary="false" name="Leader"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Warlord" hidden="false" id="25ee-3cca-0544-b958" type="selectionEntry" targetId="8497-7cf3-9a4a-1ecf"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink import="true" name="Amalia Assault Engine" hidden="false" id="5266-64b7-09b6-4235" type="selectionEntry" targetId="2100-7e8d-755c-6a14">
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b90a-508d-819b-72c3"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="a021-8fcd-4e60-e366" childId="8497-7cf3-9a4a-1ecf" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="b90a-508d-819b-72c3">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8497-7cf3-9a4a-1ecf" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Nyphia Destroyer Engine" hidden="false" id="9fd6-a684-05a6-7e8e" type="selectionEntry" targetId="1948-c4f3-b80b-a6d0">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1ab4-92be-b6b9-2f40"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="parent" childId="8497-7cf3-9a4a-1ecf" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Gatherings of Iron" hidden="false" id="b645-cf8f-570c-132b" type="selectionEntry" targetId="1b98-18f5-64a8-392b"/>
+  </entryLinks>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Atlas Conclaves lib" id="8072-4bc6-01fa-2670" targetId="c7bc-e4cf-827b-af5a"/>
+  </catalogueLinks>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Gatherings of Iron" hidden="false" id="1b98-18f5-64a8-392b">
+      <categoryLinks>
+        <categoryLink targetId="5552-8704-2fc8-e65d" id="d62f-890e-3c52-d655" primary="true" name="Force Traits"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Gatherings of Iron (Choose 2)" id="fb45-12bb-8ea3-0e3c" hidden="false">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="346a-f0bd-b57c-97bd"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Armour Primordial, The" hidden="false" id="dac3-020d-06bc-ad07">
+              <rules>
+                <rule name="The Armour Primordial" id="4319-6f89-65b5-2a07" hidden="false">
+                  <description>Each time a melee attack targets this unit, subtract 1 from the damage characteristic of that attack (to a minimum of 1). This has no effect on *destroyer* attacks.</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="457e-955e-87f3-6413"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Blind Vengeance" hidden="false" id="9b7e-bd4e-87f2-8b7e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93ed-c2a6-cad9-01d3"/>
+              </constraints>
+              <rules>
+                <rule name="Blind Vengeance" id="7cf3-f50d-ef3c-485e" hidden="false">
+                  <description>The first time this unit loses a full 25%, it is taken by blind vengeance until the end of the battle. A unit taken by blind vengeance adds 2 to its speed characteristic, and adds 1 to its attack rolls in any turn in which it made a successful charge, but it must always move towards the closest enemy unit, and must always make a charge move if it is within 10” of an enemy unit.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Cool Temperament" hidden="false" id="1207-cd9f-9f1f-4532">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="64c3-5939-cb30-4a6a"/>
+              </constraints>
+              <rules>
+                <rule name="Cool Temperament" id="bce5-0543-0e69-96fc" hidden="false">
+                  <description>Each time this unit takes an attrition test, before making any attrition rolls, it can choose to automatically pass one attrition roll.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Covetous Engine" hidden="false" id="a1fd-4a26-74e3-4d66">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a657-c451-9cf3-4151"/>
+              </constraints>
+              <rules>
+                <rule name="Covetous Engine" id="c505-eee0-ccea-4ad9" hidden="false">
+                  <description>This unit may reroll natural attack rolls of 1 when targeting units within control range of objective markers.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Inescapable Wrath" hidden="false" id="0e25-7f30-c528-f81a">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="adc5-3054-0e1c-686d"/>
+              </constraints>
+              <rules>
+                <rule name="Inescapable Wrath" id="1fe4-f320-56f2-f738" hidden="false">
+                  <description>This unit counts as having an initiative characteristic of 5 when making Cut Them Down reactions. This is not cumulative with the A Watchful Eye trait.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Ironclad Mind" hidden="false" id="2aef-1cad-0c87-4dd9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a1d-1e36-84d7-c0cf"/>
+              </constraints>
+              <rules>
+                <rule name="Ironclad Mind" id="9d0a-d2f7-b07c-6765" hidden="false">
+                  <description>Each time this unit is the target of a *curse*, roll a dice. On a roll of 6+, that invocation has no effect on this unit.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Morbid Decorations" hidden="false" id="0544-1d46-342f-fe94">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d310-fc18-9b62-9947"/>
+              </constraints>
+              <rules>
+                <rule name="Morbid Decorations" id="4c3f-7e80-12e8-d8af" hidden="false">
+                  <description>*Infantry* units within 6” of this unit subtract 1 from their morale characteristics.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Punishing Firepower" hidden="false" id="2ee9-6636-aa4b-e17f">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f126-f33b-f0bc-1dd6"/>
+              </constraints>
+              <rules>
+                <rule name="Punishing Firepower" id="90d8-bab3-23fc-1639" hidden="false">
+                  <description>When this unit makes a Shoot action, it can ignore the penalty for close-quarters shooting.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Reinforced Structure" hidden="false" id="d289-8a39-5e9e-b1b7">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e2c-60b8-e7e9-d3ed"/>
+              </constraints>
+              <rules>
+                <rule name="Reinforced Structure" id="f539-ac14-b8c1-ce96" hidden="false">
+                  <description>This unit adds 4 to its health characteristic, and regains 1 point of health at the beginning of each Strategy Phase.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Reaping of a Mortal Tithe" hidden="false" id="2669-a2c6-5733-3db7">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c6e4-ebc9-1b99-21d8"/>
+              </constraints>
+              <rules>
+                <rule name="Reaping of a Mortal Tithe" id="549a-b454-82e6-0ddd" hidden="false">
+                  <description>This unit adds 1 to its attack rolls when targeting units which began the battle with 10 or more models. This trait has no effect on attacks made with Destructive Stomps, and cannot be combined with the Seeker of Worthy Foes trait.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Seeker of Worthy Foes" hidden="false" id="7563-2f75-25e3-deaf">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="005c-089a-828e-0b95"/>
+              </constraints>
+              <rules>
+                <rule name="Seeker of Worthy Foes" id="6c08-18ff-b56b-5aa4" hidden="false">
+                  <description>This unit adds 1 to its attack rolls when targeting units with a health characteristic of 20 or more, but must subtract 1 from its attack rolls against all other units. This trait has no effect on attacks made with Destructive Stomps.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Towering Guardian" hidden="false" id="b5ac-d08e-256e-e81b">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fc4-6e57-d724-3854"/>
+              </constraints>
+              <rules>
+                <rule name="Towering Guardian" id="29f3-ddd2-1fbd-7d13" hidden="false">
+                  <description>Friendly and allied units which are wholly within 6” of this unit benefit from cover if this unit is closer to the attacking unit.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Unwavering" hidden="false" id="049c-7a59-08ac-212c">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9692-4adc-9fe3-f39c"/>
+              </constraints>
+              <rules>
+                <rule name="Unwavering" id="ceec-9301-fb04-27f3" hidden="false">
+                  <description>Each time this unit loses a point of health as a result of a shooting attack, roll a dice. On an 8+, that point of health is not lost. This has no effect on *destroyer* attacks.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Veteran of a Thousand Wars" hidden="false" id="3969-61f3-a172-4e2b">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08d8-cfc4-cfda-402c"/>
+              </constraints>
+              <rules>
+                <rule name="Veteran of a Thousand Wars" id="9bf2-4e61-2c38-2bc6" hidden="false">
+                  <description>Each time this unit makes a Fight or Shoot action, it can reroll one miss.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Watchful Eye, A" hidden="false" id="86df-d541-e22d-13c1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6af6-d593-2e5d-792c"/>
+              </constraints>
+              <rules>
+                <rule name="A Watchful Eye" id="c41f-9f13-063e-a714" hidden="false">
+                  <description>This unit adds 2 to its initiative characteristic.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8fb4-17d9-1b7d-ff2b-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8fb4-17d9-1b7d-ff2b-max"/>
+      </constraints>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>
