@@ -275,6 +275,9 @@ If the result is equal to or less than the number of attrition points allocated 
           <infoLinks>
             <infoLink name="Rites of Radiance" id="601c-e509-1cf8-091d" hidden="false" type="infoGroup" targetId="96b7-1f2f-b4c1-99ff"/>
           </infoLinks>
+          <modifiers>
+            <modifier type="set" value="4" field="char-arcane" scope="parent" affects="self.profiles.Unit"/>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Celestial Armour" hidden="false" id="15fa-fb85-a444-99d8">
           <constraints>
