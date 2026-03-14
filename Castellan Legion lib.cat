@@ -48,10 +48,10 @@ Each time a unit is destroyed by this weapon, enemy units within 6” of its bea
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="8e84-46bb-2d66-b423" id="6cb2-ed76-d8b0-5990" primary="false" name="Castellan Legion"/>
-        <categoryLink targetId="cat-leviathan" id="8a32-ce95-285c-d2cd" primary="true" name="Leviathan"/>
         <categoryLink targetId="2ed1-9284-2465-4634" id="84cb-b380-c42a-7127" primary="false" name="Mystic"/>
         <categoryLink targetId="55d6-4f4f-a4fd-e249" id="bbbb-6f81-2c18-c0d5" primary="false" name="Construct"/>
         <categoryLink targetId="b69d-0836-fe2c-d01b" id="78f1-0181-d445-530c" primary="false" name="Unique"/>
+        <categoryLink targetId="1c82-800c-2e0c-6127" id="c358-1569-511d-6896" primary="true" name="Leviathan"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="The Angels of Ruin (Choose 2)" hidden="false" id="b0e5-e03f-8e66-fdde" type="selectionEntryGroup" targetId="97dd-e677-b3a7-2950"/>
@@ -95,9 +95,9 @@ In addition, this weapon inflicts Critical Hits on natural attack rolls of 9+, o
       </costs>
       <categoryLinks>
         <categoryLink targetId="8e84-46bb-2d66-b423" id="87ae-1c81-f280-b04b" primary="false" name="Castellan Legion"/>
-        <categoryLink targetId="cat-leviathan" id="d971-2660-811c-3441" primary="true" name="Leviathan"/>
         <categoryLink targetId="55d6-4f4f-a4fd-e249" id="bebd-e21a-911f-d0c2" primary="false" name="Construct"/>
         <categoryLink targetId="b69d-0836-fe2c-d01b" id="8552-81ee-7856-726f" primary="false" name="Unique"/>
+        <categoryLink targetId="1c82-800c-2e0c-6127" id="2d9a-5705-21d4-de29" primary="true" name="Leviathan"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="The Angels of Ruin (Choose 2)" hidden="false" id="70d5-1868-f109-ec39" type="selectionEntryGroup" targetId="97dd-e677-b3a7-2950"/>
@@ -148,7 +148,7 @@ In addition, this weapon inflicts Critical Hits on natural attack rolls of 9+, o
                         </profile>
                       </profiles>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Consecrated Autoballista" hidden="false" id="2ef4-f1c7-1a18-2ff6" defaultAmount="">
+                    <selectionEntry type="upgrade" import="true" name="Consecrated Autoballista" hidden="false" id="2ef4-f1c7-1a18-2ff6">
                       <profiles>
                         <profile name="Consecrated Autoballista" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="b8a2-367d-5c26-f95e">
                           <characteristics>
@@ -165,7 +165,7 @@ This weapon inflicts Critical Hits on natural attack rolls on a 7+ if its target
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="90b1-4d7e-7744-753e"/>
                       </constraints>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Xhunite Battleaxe" hidden="false" id="f137-6bb9-63e2-d99a" defaultAmount="">
+                    <selectionEntry type="upgrade" import="true" name="Xhunite Battleaxe" hidden="false" id="f137-6bb9-63e2-d99a">
                       <profiles>
                         <profile name="Xhunite Battleaxe" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="9de1-8fc3-1833-d382">
                           <characteristics>
@@ -201,9 +201,9 @@ This weapon inflicts Critical Hits on natural attack rolls on a 7+ if its target
         </selectionEntryGroup>
       </selectionEntryGroups>
       <categoryLinks>
-        <categoryLink targetId="cat-leviathan" id="98a1-98b5-0fb9-2a25" primary="true" name="Leviathan"/>
         <categoryLink targetId="8e84-46bb-2d66-b423" id="9b22-6363-c65b-2d16" primary="false" name="Castellan Legion"/>
         <categoryLink targetId="55d6-4f4f-a4fd-e249" id="a32b-636f-5088-86a8" primary="false" name="Construct"/>
+        <categoryLink targetId="1c82-800c-2e0c-6127" id="e1ca-94e3-937a-dbc9" primary="true" name="Leviathan"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="The Angels of Ruin (Choose 2)" hidden="false" id="8f00-5b0e-5a90-aa6d" type="selectionEntryGroup" targetId="97dd-e677-b3a7-2950"/>
@@ -228,8 +228,7 @@ At the end of any Resolution Phase in which this unit is *shaken*, instead of mo
     &lt;tr&gt;&lt;td&gt;&lt;b&gt;9&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;The Shadows of Forgotten Foes&lt;/b&gt;&lt;br/&gt;This unit immediately moves, ending its move as close as possible to the nearest non-Castellan Legion unit. If it ends its move in control range of that unit it counts as having made a successful charge against that unit, and makes a Fight action targeting them.&lt;/td&gt;&lt;/tr&gt;
     &lt;tr&gt;&lt;td&gt;&lt;b&gt;10+&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Losing The Final Battle&lt;/b&gt;&lt;br/&gt;This unit is immediately destroyed, without triggering its Explosive End ability. Friendly visible Castellan Legion units within 12” of a unit that loses its final battle gain one attrition point.&lt;/td&gt;&lt;/tr&gt;
   &lt;tbody&gt;
-&lt;/table&gt;
-</description>
+&lt;/table&gt;</description>
     </rule>
     <rule name="Explosive End (3”)" id="0c4e-ec46-1e44-e9dd" hidden="false">
       <description>When this unit is destroyed, before removing the model, roll a dice. On a 5+, it explodes in a *blast* attack, with a 3” radius originating from its base, with a strength of +3 and a damage of 1. This attack has no effect on friendly units.</description>
@@ -276,7 +275,7 @@ If the result is equal to or less than the number of attrition points allocated 
             <infoLink name="Rites of Radiance" id="601c-e509-1cf8-091d" hidden="false" type="infoGroup" targetId="96b7-1f2f-b4c1-99ff"/>
           </infoLinks>
           <modifiers>
-            <modifier type="set" value="4" field="char-arcane" scope="parent" affects="self.profiles.Unit"/>
+            <modifier type="set" value="4" field="char-arcane" scope="parent" affects="profiles.Unit"/>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Celestial Armour" hidden="false" id="15fa-fb85-a444-99d8">

@@ -50,17 +50,17 @@
     </profileType>
   </profileTypes>
   <categoryEntries>
-    <categoryEntry id="cat-leader" name="Leader" hidden="false">
+    <categoryEntry id="2824-ed94-4a5b-e775" name="Leader" hidden="false">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="31a8-b21b-81d0-b22a-min"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="31a8-b21b-81d0-b22a-max"/>
       </constraints>
     </categoryEntry>
-    <categoryEntry id="cat-troops" name="Troops" hidden="false"/>
-    <categoryEntry id="cat-support" name="Support" hidden="false"/>
-    <categoryEntry id="cat-monster" name="Monster" hidden="false"/>
-    <categoryEntry id="cat-vehicle" name="Vehicle" hidden="false"/>
-    <categoryEntry id="cat-leviathan" name="Leviathan" hidden="false">
+    <categoryEntry id="6545-e1b1-0b43-eb83" name="Troops" hidden="false"/>
+    <categoryEntry id="639d-7660-22f8-e165" name="Support" hidden="false"/>
+    <categoryEntry id="bd00-08bf-76c2-b6c1" name="Monster" hidden="false"/>
+    <categoryEntry id="6e36-be99-bf15-fb56" name="Vehicle" hidden="false"/>
+    <categoryEntry id="1c82-800c-2e0c-6127" name="Leviathan" hidden="false">
       <constraints>
         <constraint type="max" value="25" field="limit::cost-auri" scope="roster" shared="true" id="94bd-4516-89ce-d1d8" percentValue="true" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
@@ -77,9 +77,9 @@
         </modifier>
       </modifiers>
     </categoryEntry>
-    <categoryEntry id="cat-infantry" name="Infantry" hidden="false"/>
-    <categoryEntry id="cat-independent" name="Independent" hidden="false"/>
-    <categoryEntry id="cat-core" name="Core" hidden="false"/>
+    <categoryEntry id="b299-685a-c3bf-add7" name="Infantry" hidden="false"/>
+    <categoryEntry id="8bd5-e71f-ad75-c8f5" name="Independent" hidden="false"/>
+    <categoryEntry id="2430-4728-088b-039a" name="Core" hidden="false"/>
     <categoryEntry name="Ally" id="df72-a664-a1a2-6978" hidden="false"/>
     <categoryEntry name="Mystic" id="2ed1-9284-2465-4634" hidden="false"/>
     <categoryEntry name="Unique" id="b69d-0836-fe2c-d01b" hidden="false"/>

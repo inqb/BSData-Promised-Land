@@ -12,8 +12,8 @@
       <forceEntries>
         <forceEntry name="Castellan Spearhead" id="c34e-ca4d-14b4-5dd2" hidden="false">
           <categoryLinks>
-            <categoryLink name="Leviathan" hidden="false" id="f9e5-01db-052c-72f7" targetId="cat-leviathan"/>
-            <categoryLink name="Leader" hidden="false" id="e724-e9f6-ae02-5a65" targetId="cat-leader"/>
+            <categoryLink name="Leader" hidden="false" id="dedf-d028-b340-9dd5" targetId="2824-ed94-4a5b-e775"/>
+            <categoryLink name="Leviathan" hidden="false" id="227b-b87b-5e20-8867" targetId="1c82-800c-2e0c-6127"/>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
@@ -37,12 +37,12 @@
         <entryLink import="true" name="Warlord" hidden="false" id="a832-a9cd-0f1a-bbe3" type="selectionEntry" targetId="8497-7cf3-9a4a-1ecf"/>
       </entryLinks>
       <categoryLinks>
-        <categoryLink targetId="cat-leader" id="fcca-1d55-2abf-f54a" primary="true" name="Leader"/>
+        <categoryLink targetId="2824-ed94-4a5b-e775" id="800d-64ab-1528-ec8d" primary="true" name="Leader"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Khailera" hidden="false" id="8e29-4d94-e2fb-9709" type="selectionEntry" targetId="55c2-176e-a213-a074">
       <categoryLinks>
-        <categoryLink targetId="cat-leader" id="c359-1b4b-039f-4929" primary="true" name="Leader"/>
+        <categoryLink targetId="2824-ed94-4a5b-e775" id="5fc9-0d8c-973c-8878" primary="true" name="Leader"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" id="7b54-88d8-5774-f048" type="selectionEntry" targetId="8497-7cf3-9a4a-1ecf"/>
@@ -64,7 +64,7 @@
         <entryLink import="true" name="Warlord" hidden="false" id="b67b-b660-1e6b-84c3" type="selectionEntry" targetId="8497-7cf3-9a4a-1ecf"/>
       </entryLinks>
       <categoryLinks>
-        <categoryLink targetId="cat-leader" id="e640-8bfc-ebac-4539" primary="true" name="Leader"/>
+        <categoryLink targetId="2824-ed94-4a5b-e775" id="79f5-867c-dda6-eca5" primary="true" name="Leader"/>
       </categoryLinks>
     </selectionEntry>
   </selectionEntries>

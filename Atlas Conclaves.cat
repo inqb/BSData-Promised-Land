@@ -12,8 +12,8 @@
       <forceEntries>
         <forceEntry name="Conclave Warhost" id="cbc2-432a-d9b3-948d" hidden="false">
           <categoryLinks>
-            <categoryLink name="Leviathan" hidden="false" id="7702-a79e-04d1-c67d" targetId="cat-leviathan"/>
-            <categoryLink name="Leader" hidden="false" id="c476-c9ff-4a5d-f4de" targetId="cat-leader"/>
+            <categoryLink name="Leader" hidden="false" id="7466-3209-2f51-3a54" targetId="2824-ed94-4a5b-e775"/>
+            <categoryLink name="Leviathan" hidden="false" id="26e3-ecf8-d45e-4720" targetId="1c82-800c-2e0c-6127"/>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
@@ -49,7 +49,7 @@
     <catalogueLink type="catalogue" name="Atlas Conclaves lib" id="8072-4bc6-01fa-2670" targetId="c7bc-e4cf-827b-af5a"/>
   </catalogueLinks>
   <selectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Leader" hidden="false" id="c933-4bd9-4732-20bd">
+    <selectionEntry type="upgrade" import="true" name="Amalia Assault Engine" hidden="false" id="c933-4bd9-4732-20bd">
       <entryLinks>
         <entryLink import="true" name="Amalia Assault Engine" hidden="false" id="224c-9ff9-2f65-4fed" type="selectionEntry" targetId="2100-7e8d-755c-6a14" defaultAmount="1">
           <constraints>
@@ -57,13 +57,13 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="97c6-7929-85fc-ab4c-max"/>
           </constraints>
           <categoryLinks>
-            <categoryLink name="Leader" hidden="false" id="4212-4969-477c-2cb0" targetId="cat-leader" primary="false"/>
+            <categoryLink targetId="2824-ed94-4a5b-e775" id="5a1d-1545-1e1f-8d0f" primary="false" name="Leader"/>
           </categoryLinks>
         </entryLink>
         <entryLink import="true" name="Warlord" hidden="false" id="25ee-3cca-0544-b958" type="selectionEntry" targetId="8497-7cf3-9a4a-1ecf"/>
       </entryLinks>
       <categoryLinks>
-        <categoryLink targetId="cat-leader" id="7047-2e92-c4f4-beee" primary="true" name="Leader"/>
+        <categoryLink targetId="2824-ed94-4a5b-e775" id="8c99-a8a8-0684-e0b0" primary="true" name="Leader"/>
       </categoryLinks>
     </selectionEntry>
   </selectionEntries>

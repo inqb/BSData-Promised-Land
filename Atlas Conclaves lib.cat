@@ -3,10 +3,10 @@
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Amalia Assault Engine" hidden="false" id="2100-7e8d-755c-6a14">
       <categoryLinks>
-        <categoryLink targetId="cat-leviathan" id="c329-e635-a483-52a2" primary="true" name="Leviathan"/>
         <categoryLink targetId="1018-2140-b907-b2d9" id="ce22-1c54-e3c9-c876" primary="false" name="Atlas Conclaves"/>
         <categoryLink targetId="55d6-4f4f-a4fd-e249" id="4f9f-4513-8cd4-a881" primary="false" name="Construct"/>
         <categoryLink targetId="7662-20c1-b08b-911f" id="e15f-391a-5f38-5596" primary="false" name="Nyphia"/>
+        <categoryLink targetId="1c82-800c-2e0c-6127" id="e478-574e-fb7e-3194" primary="true" name="Leviathan"/>
       </categoryLinks>
       <costs>
         <cost name="Auri" typeId="cost-auri" value="395"/>
@@ -225,10 +225,10 @@
         <cost name="Auri" typeId="cost-auri" value="495"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="cat-leviathan" id="821a-1c5f-5e17-93ab" primary="true" name="Leviathan"/>
         <categoryLink targetId="1018-2140-b907-b2d9" id="5416-2629-60bd-5bcf" primary="false" name="Atlas Conclaves"/>
         <categoryLink targetId="7662-20c1-b08b-911f" id="38b8-58c6-855d-e534" primary="false" name="Nyphia"/>
         <categoryLink targetId="55d6-4f4f-a4fd-e249" id="c79d-d35b-ef5f-58a1" primary="false" name="Construct"/>
+        <categoryLink targetId="1c82-800c-2e0c-6127" id="38f8-e145-bcdf-6e1b" primary="true" name="Leviathan"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Base 250" id="5d71-39b1-86f2-f82c" hidden="false" type="profile" targetId="9dbd-323f-2f96-4b5a"/>
