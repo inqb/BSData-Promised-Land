@@ -1,24 +1,43 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="3d16-98d5-8461-68da" name="Aventine Dynasties" gameSystemId="sys-promised-land" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="3d16-98d5-8461-68da" name="Aventine Dynasties" gameSystemId="sys-promised-land" gameSystemRevision="1" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="The Fleet of Folding Scars" id="206f-4f70-d88e-c755" hidden="false">
       <forceEntries>
         <forceEntry name="Cantilla Fleet" id="676a-c573-5ae0-a1ea" hidden="false">
           <categoryLinks>
-            <categoryLink name="Leader" hidden="false" id="fd91-8199-b6a1-7527" targetId="cat-leader"/>
-            <categoryLink name="Troops" hidden="false" id="5290-6a0d-b0a3-c738" targetId="cat-troops"/>
-            <categoryLink name="Support" hidden="false" id="fd11-2b49-2a2d-23cc" targetId="cat-support"/>
-            <categoryLink name="Vehicle" hidden="false" id="eed4-33d7-33a4-2334" targetId="cat-vehicle"/>
+            <categoryLink name="Leader" hidden="false" id="fd91-8199-b6a1-7527" targetId="2824-ed94-4a5b-e775"/>
+            <categoryLink name="Troops" hidden="false" id="5290-6a0d-b0a3-c738" targetId="6545-e1b1-0b43-eb83"/>
+            <categoryLink name="Support" hidden="false" id="fd11-2b49-2a2d-23cc" targetId="639d-7660-22f8-e165"/>
+            <categoryLink name="Vehicle" hidden="false" id="eed4-33d7-33a4-2334" targetId="6e36-be99-bf15-fb56"/>
+            <categoryLink name="Leader (extra)" hidden="false" id="f713-af99-3ed4-cf27" targetId="d811-3a71-b9ea-e8e2"/>
           </categoryLinks>
         </forceEntry>
         <forceEntry name="Royal Aetherhost" id="0d90-aa61-60c7-eca0" hidden="false">
           <categoryLinks>
-            <categoryLink name="Leader" hidden="false" id="fec5-792c-1077-b31d" targetId="cat-leader"/>
-            <categoryLink name="Troops" hidden="false" id="8b39-6f9d-8fbc-bdff" targetId="cat-troops"/>
-            <categoryLink name="Support" hidden="false" id="19e8-57e1-54ea-c4c7" targetId="cat-support"/>
-            <categoryLink name="Vehicle" hidden="false" id="5b5c-6fbe-6b5d-43f1" targetId="cat-vehicle"/>
-            <categoryLink name="Leviathan" hidden="false" id="4841-b6a8-f2b0-6568" targetId="cat-leviathan"/>
+            <categoryLink name="Leader" hidden="false" id="fec5-792c-1077-b31d" targetId="2824-ed94-4a5b-e775"/>
+            <categoryLink name="Troops" hidden="false" id="8b39-6f9d-8fbc-bdff" targetId="6545-e1b1-0b43-eb83"/>
+            <categoryLink name="Support" hidden="false" id="19e8-57e1-54ea-c4c7" targetId="639d-7660-22f8-e165"/>
+            <categoryLink name="Vehicle" hidden="false" id="5b5c-6fbe-6b5d-43f1" targetId="6e36-be99-bf15-fb56"/>
+            <categoryLink name="Leviathan" hidden="false" id="4841-b6a8-f2b0-6568" targetId="1c82-800c-2e0c-6127"/>
+            <categoryLink name="Leader (extra)" hidden="false" id="2e62-1a7b-06d1-6bf7" targetId="d811-3a71-b9ea-e8e2"/>
           </categoryLinks>
+        </forceEntry>
+        <forceEntry name="Strike Wing" id="5293-c2f6-f64b-abd5" hidden="false">
+          <categoryLinks>
+            <categoryLink name="Leader" hidden="false" id="c419-4e4e-a7b9-bfc6" targetId="2824-ed94-4a5b-e775"/>
+            <categoryLink name="Troops" hidden="false" id="9963-6ef7-efd2-fc6d" targetId="6545-e1b1-0b43-eb83"/>
+            <categoryLink name="Vehicle" hidden="false" id="988e-f1fb-51ce-a65d" targetId="6e36-be99-bf15-fb56"/>
+            <categoryLink name="Leviathan" hidden="false" id="4376-c316-e8c9-e52e" targetId="1c82-800c-2e0c-6127"/>
+          </categoryLinks>
+        </forceEntry>
+        <forceEntry name="Outlander Scourhost" id="a6e7-1a82-ddaf-d848" hidden="false">
+          <categoryLinks>
+            <categoryLink name="Leader" hidden="false" id="b625-4402-1fca-4845" targetId="2824-ed94-4a5b-e775"/>
+            <categoryLink name="Vehicle" hidden="false" id="06e6-ef22-db11-e419" targetId="6e36-be99-bf15-fb56"/>
+            <categoryLink name="Troops" hidden="false" id="3ae7-e61c-7a97-a7b8" targetId="6545-e1b1-0b43-eb83"/>
+            <categoryLink name="Leader (extra)" hidden="false" id="39a4-4b37-0805-2cd4" targetId="d811-3a71-b9ea-e8e2"/>
+          </categoryLinks>
+          <comment>Forsaken Fleets Only</comment>
         </forceEntry>
       </forceEntries>
       <categoryLinks>
@@ -44,7 +63,7 @@
               </constraints>
               <rules>
                 <rule name="Veteran Pilots" id="07eb-3323-122f-ed5b" hidden="false">
-                  <description>Friendly *airborne* *vehicles* add 1 to their speed and initiative characteristics.</description>
+                  <description>Friendly *airborne* *vehicles* add 2 to their speed characteristics, and add 1 to their initiative characteristics.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -64,7 +83,7 @@
               </constraints>
               <rules>
                 <rule name="Aerial Sentinels" id="35b8-05e7-10bf-5fa0" hidden="false">
-                  <description>Friendly non-*altitude* *vehicle* units have the core keyword.</description>
+                  <description>Friendly non-*altitude* *vehicle* units are *core*.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -74,7 +93,7 @@
               </constraints>
               <rules>
                 <rule name="An Ancient Vengeance" id="8506-8f68-b3e5-8f00" hidden="false">
-                  <description>Friendly units can add 1 to their attack rolls when targeting *mystic* units, and count their Defence characteristic as 1 higher when targeted by *psychic* weapons.</description>
+                  <description>Friendly units can add 1 to their attack rolls when targeting *mystic* units, and any enemy *curses* which target friendly units increase their Arcane Value by 1.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -84,7 +103,7 @@
               </constraints>
               <rules>
                 <rule name="Blistering Onslaught" id="10a9-dc0d-6b5d-baae" hidden="false">
-                  <description>While targeting a unit within 10”, friendly units’ natural attack rolls of 10 with ranged weapons inflict 1 additional point of damage.</description>
+                  <description>While targeting a unit within 10”, friendly units’ natural attack rolls of 10 are always considered successful hits, regardless of the target’s defence characteristic.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -94,7 +113,7 @@
               </constraints>
               <rules>
                 <rule name="Dynastic Defenders" id="6691-c4ee-e612-2afc" hidden="false">
-                  <description>Add 1 to the attack rolls of friendly units in the turn in which they are successfully charged by an enemy unit.</description>
+                  <description>Add 1 to the attack rolls of friendly *infantry* units until the end of any turn in which they are successfully charged by an enemy unit.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -104,7 +123,7 @@
               </constraints>
               <rules>
                 <rule name="Scout Forces" id="ab95-d7b1-f4a9-596e" hidden="false">
-                  <description>During the first turn, if any unit makes an advance move, it can move up to its full Speed characteristic instead of only half.</description>
+                  <description>During the first turn, if any unit makes an advance move, it can move up to its full Speed characteristic instead of only half.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -114,7 +133,7 @@
               </constraints>
               <rules>
                 <rule name="The Hallowed of Hokorek" id="c16a-b992-9955-f610" hidden="false">
-                  <description>Each time a friendly *infantry* model is slain, roll a dice. On a natural roll of a 10+, the unit whose attacks slew it loses a point of health. If the model was slain as part of a ranged attack, this rule may only take effect if the slain model had a ranged weapon within contact range of and able to see the attacking unit.</description>
+                  <description>Each time a friendly *infantry* model is slain by an acting unit’s attacks, roll a dice. On a natural roll of a 10+, that acting unit loses a point of health. If the model was slain as part of a ranged attack, this rule may only take effect if the slain model had a ranged weapon within contact range of and able to see the attacking unit.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -124,7 +143,7 @@
               </constraints>
               <rules>
                 <rule name="The Promised Land" id="3fc2-875c-7203-7b3b" hidden="false">
-                  <description>While within 3” of an objective marker, friendly *infantry* units can reroll attrition tests of 1.</description>
+                  <description>While within 3” of an objective marker, friendly *infantry* units can reroll natural attrition rolls of 1.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -134,7 +153,7 @@
               </constraints>
               <rules>
                 <rule name="Trench Warriors" id="9bd2-ed52-2b6f-e801" hidden="false">
-                  <description>When a friendly *infantry* unit is obscured, they can add 2 to any obscuration rolls they make.</description>
+                  <description>When a friendly *infantry* unit benefits from cover, they add 3 to their defence characteristic instead of 2.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -145,9 +164,9 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Fleetmaster" hidden="false" id="0ae9-f83f-7fc2-dda3">
+    <selectionEntry type="model" name="Fleetmaster" hidden="false" id="0ae9-f83f-7fc2-dda3">
       <profiles>
-        <profile name="Fleetmaster" typeId="profile-unit" typeName="Unit" hidden="false" id="9e40-2f40-dc6f-b296">
+        <profile name="Fleetmaster" typeId="profile-unit" typeName="Unit" hidden="false" id="9e40-2f40-dc6f-b296" noindex="false">
           <characteristics>
             <characteristic name="Speed" typeId="char-speed">6</characteristic>
             <characteristic name="Health" typeId="char-health">6</characteristic>
@@ -162,86 +181,194 @@
         <rule name="The Divine Right" id="5a0c-168b-9211-4e3a" hidden="false">
           <description>Each time this unit is hit by an attack, before inflicting damage, roll a dice. On a natural 8+, that hit is negated.</description>
         </rule>
-        <rule name="Lord of Conquest – Aura (12”)" id="728b-da2a-bb79-3ca1" hidden="false">
-          <description>At the beginning of each Resolution Phase, select one objective marker within 12” of this unit which has any friendly non-*airborne* units within control range of it. That objective marker is claimed by that friendly unit, until the end of the phase, regardless of any other enemy units in range of it.</description>
-        </rule>
-        <rule name="Mamba Flagship" id="6a2f-f791-2e73-84a4" hidden="false">
-          <description>During deployment, this unit can opt to select one Mamba Strike Craft as a Flagship. This unit must embark upon the Flagship as if it were a *transport*, and cannot disembark, and is destroyed if the Flagship is destroyed. The Flagship gains this unit’s Lord of Conquest and The Divine Right abilities, and gains the *Leader* keyword.</description>
+        <rule name="Lord of Conquest – Command action" id="728b-da2a-bb79-3ca1" hidden="false">
+          <description>During the Strategy Phase, one unit with this ability can make this action.
+Select one objective marker within 12” of this unit. If, during the subsequent Resolution Phase of that turn, any friendly units (except airborne and shaken units) are within control range of that objective marker, it is claimed by that friendly unit, regardless of any other enemy units in range of it.
+Only one friendly unit may make this action each turn.</description>
         </rule>
       </rules>
       <costs>
         <cost name="Auri" typeId="cost-auri" value="90"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="cat-leader" id="9182-8d61-6d69-3233" primary="true" name="Leader"/>
         <categoryLink targetId="4d59-409d-b10a-9244" id="0d20-c662-f531-bb26" primary="false" name="Aventine Dynasties"/>
-        <categoryLink targetId="cat-infantry" id="8810-8254-7e47-5e5f" primary="false" name="Infantry"/>
-        <categoryLink targetId="cat-independent" id="e7bc-d991-361b-0286" primary="false" name="Independent"/>
+        <categoryLink targetId="4295-166c-68c2-a0ff" id="084a-2622-4ccf-c467" primary="false" name="Fleetmaster"/>
+        <categoryLink targetId="2824-ed94-4a5b-e775" id="7ea3-b0c2-4f1b-256a" primary="true" name="Leader"/>
+        <categoryLink targetId="b299-685a-c3bf-add7" id="0565-b8db-9985-52ed" primary="false" name="Infantry"/>
+        <categoryLink targetId="8bd5-e71f-ad75-c8f5" id="3e35-3697-6eec-f748" primary="false" name="Independent"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" id="91d7-5d93-3895-7443" type="selectionEntry" targetId="8497-7cf3-9a4a-1ecf"/>
       </entryLinks>
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="Fleetmaster" hidden="false" id="93e1-36eb-685e-aa79">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="c4d4-0c7d-842c-610d" hidden="false">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Wargear" id="a23e-a753-990b-4e88" hidden="false">
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Melee Weapon" id="ccc2-c57b-6b05-0eb6" hidden="false">
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Resonance Blade" hidden="false" id="4d2a-f9da-15a9-3ac5" defaultAmount="1">
-                      <infoLinks>
-                        <infoLink name="Resonance Blade" id="7402-7691-4c66-c7d9" hidden="false" type="profile" targetId="fa39-b276-f00b-7453"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Siege Maul" hidden="false" id="32ae-39a0-963a-b77a">
-                      <profiles>
-                        <profile name="Siege Maul" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="be68-1e98-a427-f8da">
-                          <characteristics>
-                            <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">2</characteristic>
-                            <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+3</characteristic>
-                            <characteristic name="Damage" typeId="2780-b560-1641-b9a5">3</characteristic>
-                            <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                    </selectionEntry>
-                  </selectionEntries>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="43b9-8c6c-9547-fe9e-min" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="43b9-8c6c-9547-fe9e-max" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntryGroup>
-                <selectionEntryGroup name="Ranged Weapon" id="7ff2-7607-7bcf-2e2c" hidden="false">
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Shotrifle" hidden="false" id="6cd7-f8bf-025d-863e" defaultAmount="1">
-                      <infoLinks>
-                        <infoLink name="Shotrifle" id="9069-a271-84bd-096c" hidden="false" type="profile" targetId="950c-ac4b-f80f-1f2c"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Tachyon Rifle" hidden="false" id="ce74-0517-d093-9e5a">
-                      <infoLinks>
-                        <infoLink name="Tachyon Rifle" id="63e7-f04e-5384-3d36" hidden="false" type="profile" targetId="042b-72f1-6ac7-8781"/>
-                      </infoLinks>
-                    </selectionEntry>
-                  </selectionEntries>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2e3a-ef10-dcb7-34df-min" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e3a-ef10-dcb7-34df-max" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
+            <selectionEntryGroup name="Weapons" id="5f5b-2cee-7245-134c" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Dual Wield" hidden="false" id="1032-3b27-cc24-55aa" defaultAmount="1">
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Main Hand" id="510b-db8e-f103-0023" hidden="false">
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Resonance Blade" hidden="false" id="b2ad-f277-8716-937b" defaultAmount="1">
+                          <infoLinks>
+                            <infoLink name="Resonance Blade" id="92ee-79ec-8c4d-e41f" hidden="false" type="profile" targetId="fa39-b276-f00b-7453"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Siege Maul" hidden="false" id="fd66-5f3e-431d-c581">
+                          <infoLinks>
+                            <infoLink name="Siege Maul" id="c8b0-b0b3-e1d5-8713" hidden="false" type="profile" targetId="cf93-bcfe-6500-0c86"/>
+                          </infoLinks>
+                        </selectionEntry>
+                      </selectionEntries>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="31a2-efff-34bf-ad01" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a961-4a63-e334-3d56" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                    <selectionEntryGroup name="Off Hand" id="5060-3a45-f202-a7c4" hidden="false">
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Shotrifle" hidden="false" id="4e5b-1ce8-a286-cd86" defaultAmount="1">
+                          <infoLinks>
+                            <infoLink name="Shotrifle" id="2ebf-c08f-61e4-5630" hidden="false" type="profile" targetId="950c-ac4b-f80f-1f2c"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="Auri" typeId="cost-auri" value="5"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Tachyon Rifle" hidden="false" id="ca06-baf9-de8a-3811">
+                          <infoLinks>
+                            <infoLink name="Tachyon Rifle" id="19a9-1801-d249-dcb4" hidden="false" type="profile" targetId="042b-72f1-6ac7-8781"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="Auri" typeId="cost-auri" value="5"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Shot Revolver" hidden="false" id="7fb7-b77c-9b61-33c5" defaultAmount="1">
+                          <infoLinks>
+                            <infoLink name="Shot Revolver" id="0353-89ac-74cc-9796" hidden="false" type="profile" targetId="c6ff-33c8-585f-36b7"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Ion Pistol" hidden="false" id="58b9-edf4-2f4e-9c31">
+                          <infoLinks>
+                            <infoLink name="Ion Pistol" id="e059-0143-03c3-719d" hidden="false" type="profile" targetId="5880-8a41-ac8c-20dc"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="Auri" typeId="cost-auri" value="5"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Resonance Blade" hidden="false" id="8b2f-354c-df32-34ae">
+                          <costs>
+                            <cost name="Auri" typeId="cost-auri" value="20"/>
+                          </costs>
+                          <infoLinks>
+                            <infoLink name="Resonance Blade" id="6228-584b-67c0-81c2" hidden="false" type="profile" targetId="fa39-b276-f00b-7453"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Siege Maul" hidden="false" id="5893-7818-0b13-b794">
+                          <infoLinks>
+                            <infoLink name="Siege Maul" id="27f2-f840-3ddd-6546" hidden="false" type="profile" targetId="cf93-bcfe-6500-0c86"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="Auri" typeId="cost-auri" value="20"/>
+                          </costs>
+                        </selectionEntry>
+                      </selectionEntries>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e872-bfef-bf44-365e" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0744-3b7b-4e36-fffd" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Two handed" hidden="false" id="dde7-9e78-aafd-c496">
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Melee Weapon" id="750b-4f2f-635c-f424" hidden="false">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0d60-13c4-c286-edc1-min"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d60-13c4-c286-edc1-max"/>
+                      </constraints>
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Fleetguard Pike" hidden="false" id="824c-c834-4070-8147">
+                          <infoLinks>
+                            <infoLink name="Fleetguard Pike" id="a8f0-123a-c20f-f235" hidden="false" type="profile" targetId="f73c-df71-23c1-9b9f"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Heavy Resonance Blade" hidden="false" id="7f0e-926b-8256-f2c4">
+                          <infoLinks>
+                            <infoLink name="Heavy Resonance Blade" id="04d8-548d-3ef1-fbbd" hidden="false" type="profile" targetId="df0c-619c-305f-2603"/>
+                          </infoLinks>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5a3b-846a-822b-124a-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a3b-846a-822b-124a-max"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Storm Armour" hidden="false" id="dc29-1e80-39ab-dd5b" type="selectionEntry" targetId="d8d2-13c5-cb7f-5b9e"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Trait" id="5f31-61d9-f3f2-5319" hidden="false">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dd76-4c93-a32c-fa6b-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd76-4c93-a32c-fa6b-max" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6d3f-e323-f233-7aa1-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d3f-e323-f233-7aa1-max"/>
           </constraints>
-        </selectionEntry>
-      </selectionEntries>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Beacon of Heroism" hidden="false" id="3057-5e00-70a6-f5a7">
+              <rules>
+                <rule name="Beacon of Heroism - Aura" id="92fb-ea57-5f1b-7c68" hidden="false">
+                  <description>Friendly units within 6” of this unit add 1 to their attrition test rolls.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Disciple of Hokorek" hidden="false" id="b958-74c6-ecaa-d86b">
+              <rules>
+                <rule name="Disciple of Hokorek" id="3990-9c11-ca43-9d62" hidden="false">
+                  <description>This unit has an Arcane characteristic of 4.</description>
+                </rule>
+              </rules>
+              <modifiers>
+                <modifier type="set" value="4" field="char-arcane" affects="profiles.Unit" scope="parent"/>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dynastic Champion" hidden="false" id="c4bc-9c49-c937-2b20">
+              <rules>
+                <rule name="Dynastic Champion" id="d810-0c51-a098-451a" hidden="false">
+                  <description>Add 1 to this unit’s attack rolls when it makes attacks with melee weapons.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Indomitable Warrior" hidden="false" id="2c35-dd14-f592-2261">
+              <rules>
+                <rule name="Indomitable Warrior" id="2ed8-189b-14cb-9cac" hidden="false">
+                  <description>This unit may reroll any rolls made as a result of The Divine Right ability.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Nomad Lord" hidden="false" id="2027-827a-e056-31ab">
+              <rules>
+                <rule name="Nomad Lord – Command action" id="93ba-6e74-d048-47ec" hidden="false">
+                  <description>During the Strategy Phase, one unit with this ability can make this action.
+During the Strategy Phase, select one unit within an enemy unit’s control range. Until the end of this turn, it can move an additional 2”, and Cut Them Down reactions may not be made against this unit.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Base 35" id="f2fb-0b8f-a649-a183" hidden="false" type="profile" targetId="5638-4dce-9001-1d15"/>
+        <infoLink name="Grand Admiral of the Aventine Fleets" id="82fe-66c8-23d1-913f" hidden="false" type="rule" targetId="b529-7c22-65df-2744"/>
+      </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Helmwarden" hidden="false" id="66f3-63d1-f107-cdec">
+    <selectionEntry type="model" import="true" name="Helmwarden" hidden="false" id="66f3-63d1-f107-cdec">
       <costs>
-        <cost name="Auri" typeId="cost-auri" value="70"/>
+        <cost name="Auri" typeId="cost-auri" value="80"/>
       </costs>
       <profiles>
         <profile name="Helmwarden" typeId="profile-unit" typeName="Unit" hidden="false" id="4e7c-f3af-8844-4ef0">
@@ -257,26 +384,66 @@
       </profiles>
       <rules>
         <rule name="Agent of Hokorek – Aura (12”)" id="3681-28a9-d65f-ea4b" hidden="false">
-          <description>At the beginning of each turn after the first, if this model’s controlling player has more victory points than their opponent, each friendly unit within 12” of a model with this ability may reroll their failed attrition test rolls.
-At the beginning of each turn after the first, if this model’s controlling player has fewer victory points than their opponent, each friendly unit within 12” of a model with this ability may reroll natural attack rolls of 1.</description>
+          <description>At the beginning of each turn after the first, if this model’s controlling player has more victory points than their opponent, each friendly unit within 12” of a model with this ability may reroll their failed attrition test rolls.
+At the beginning of each turn after the first, if this model’s controlling player has fewer victory points than their opponent, each friendly unit within 12” of a model with this ability may reroll natural attack rolls of 1.</description>
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink targetId="cat-leader" id="3a86-07f3-3a28-294a" primary="true" name="Leader"/>
-        <categoryLink targetId="cat-infantry" id="744e-d2b8-cdd4-64ad" primary="false" name="Infantry"/>
-        <categoryLink targetId="cat-independent" id="94b8-3675-0cff-eb2e" primary="false" name="Independent"/>
         <categoryLink targetId="4d59-409d-b10a-9244" id="ec16-d483-6ddb-336c" primary="false" name="Aventine Dynasties"/>
+        <categoryLink targetId="2824-ed94-4a5b-e775" id="93dc-4744-2ee9-cb4e" primary="true" name="Leader"/>
+        <categoryLink targetId="b299-685a-c3bf-add7" id="291a-4527-0c8d-e8cb" primary="false" name="Infantry"/>
+        <categoryLink targetId="8bd5-e71f-ad75-c8f5" id="cfef-a863-de6d-b6bc" primary="false" name="Independent"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" id="cdc7-ce63-27ed-3ecd" type="selectionEntry" targetId="8497-7cf3-9a4a-1ecf"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Shot Revolver" id="8fee-a483-9718-256b" hidden="false" type="profile" targetId="c6ff-33c8-585f-36b7"/>
+        <infoLink name="Base 35" id="38b6-16c3-2d3f-0873" hidden="false" type="profile" targetId="5638-4dce-9001-1d15"/>
       </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="22f8-2c11-e896-9ef4" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8633-fda8-0348-4862-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8633-fda8-0348-4862-max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Shot Revolver" hidden="false" id="e035-785a-95a4-d9fc" defaultAmount="1">
+              <infoLinks>
+                <infoLink name="Shot Revolver" id="bd0b-8414-4a21-1cdd" hidden="false" type="profile" targetId="c6ff-33c8-585f-36b7"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shotrifle" hidden="false" id="8cb6-97e4-4841-7d22">
+              <infoLinks>
+                <infoLink name="Shotrifle" id="a63c-317a-287f-a3bb" hidden="false" type="profile" targetId="950c-ac4b-f80f-1f2c"/>
+              </infoLinks>
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="5"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Tachyon Rifle" hidden="false" id="6e09-4d65-cf42-cb19">
+              <infoLinks>
+                <infoLink name="Tachyon Rifle" id="e21a-a40d-c5a2-9ca9" hidden="false" type="profile" targetId="042b-72f1-6ac7-8781"/>
+              </infoLinks>
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="5"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Cult Blade" hidden="false" id="963f-4e52-4911-bb8c">
+              <infoLinks>
+                <infoLink name="Cult Blade" id="e94a-d0d2-9d89-4c19" hidden="false" type="profile" targetId="1598-ec2f-03a4-747e"/>
+              </infoLinks>
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="5"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Navigators" hidden="false" id="f481-9288-261e-c08c">
       <costs>
-        <cost name="Auri" typeId="cost-auri" value="15"/>
+        <cost name="Auri" typeId="cost-auri" value="10"/>
       </costs>
       <profiles>
         <profile name="Navigators" typeId="profile-unit" typeName="Unit" hidden="false" id="922d-4ed5-37b3-ef60">
@@ -295,7 +462,7 @@ At the beginning of each turn after the first, if this model’s controlling pl
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Navigator" hidden="false" id="9edc-5ecb-e1a5-be14" defaultAmount="10" sortIndex="2">
               <costs>
-                <cost name="Auri" typeId="cost-auri" value="12"/>
+                <cost name="Auri" typeId="cost-auri" value="9"/>
               </costs>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Wargear" id="92a0-a858-30e4-3aa0" hidden="false">
@@ -310,6 +477,17 @@ At the beginning of each turn after the first, if this model’s controlling pl
                         <infoLink name="Tachyon Rifle" id="fbae-9161-55b8-ab79" hidden="false" type="profile" targetId="042b-72f1-6ac7-8781"/>
                       </infoLinks>
                     </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Incinerator" hidden="false" id="52b3-1a55-f7b6-0c29">
+                      <infoLinks>
+                        <infoLink name="Incinerator" id="3b37-4726-40a1-a36e" hidden="false" type="profile" targetId="8d9b-2f4e-cda9-6d81"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="Auri" typeId="cost-auri" value="15"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="unit" shared="true" id="3c45-2089-bda8-a525" includeChildSelections="true"/>
+                      </constraints>
+                    </selectionEntry>
                   </selectionEntries>
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff2a-72de-74a6-5165-min" includeChildSelections="false"/>
@@ -317,25 +495,6 @@ At the beginning of each turn after the first, if this model’s controlling pl
                   </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
-            </selectionEntry>
-            <selectionEntry type="model" import="true" name="Specialist" hidden="false" id="b80f-6f28-d463-98b3" sortIndex="1">
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="50c5-4e9b-9330-8c28" includeChildSelections="false"/>
-              </constraints>
-              <profiles>
-                <profile name="Incinerator" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="1463-ca77-4667-d6a0">
-                  <characteristics>
-                    <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
-                    <characteristic name="Dice" typeId="1192-2222-5926-5b4b">D5</characteristic>
-                    <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+3</characteristic>
-                    <characteristic name="Damage" typeId="a482-225f-a3cb-a700">1</characteristic>
-                    <characteristic name="Traits" typeId="76cd-5882-86da-52cf">This weapon can only target units within 15” of the attacking model. Obscuration rolls cannot be made against this weapon. Each time a unit gains an attrition point as part of an attack that includes this weapon, it gains one additional attrition point.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="Auri" typeId="cost-auri" value="27"/>
-              </costs>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -345,24 +504,25 @@ At the beginning of each turn after the first, if this model’s controlling pl
         </selectionEntryGroup>
       </selectionEntryGroups>
       <infoLinks>
-        <infoLink name="Ranked Fire" id="ccee-5e95-8dcb-bcf8" hidden="false" type="rule" targetId="ae07-7486-20a6-2acb"/>
+        <infoLink name="Ranked Fire" id="cde5-6c65-e54e-f3e4" hidden="false" type="rule" targetId="ae07-7486-20a6-2acb"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="4d59-409d-b10a-9244" id="4eb7-c861-9c5e-5c5c" primary="false" name="Aventine Dynasties"/>
-        <categoryLink targetId="cat-troops" id="41b0-03ce-8cd9-7793" primary="true" name="Troops"/>
-        <categoryLink targetId="cat-infantry" id="aeb9-ee97-ed94-38be" primary="false" name="Infantry"/>
-        <categoryLink targetId="cat-core" id="f6d7-1368-5d3e-0cee" primary="false" name="Core"/>
+        <categoryLink targetId="6545-e1b1-0b43-eb83" id="c85e-aed2-de95-8825" primary="true" name="Troops"/>
+        <categoryLink targetId="ec43-7f75-10fb-0ba5" id="be9f-27bb-70f0-aa30" primary="false" name="Navigators"/>
+        <categoryLink targetId="2430-4728-088b-039a" id="853d-8e6c-e0ed-e75c" primary="false" name="Core"/>
+        <categoryLink targetId="b299-685a-c3bf-add7" id="730f-817d-3ac0-1bd9" primary="false" name="Infantry"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Navigators in Storm Armour" hidden="false" id="a363-1ab9-6bfd-10cf">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Navigator" hidden="false" id="523e-3a2e-6508-f407">
+        <selectionEntry type="model" import="true" name="Storm Navigator" hidden="false" id="523e-3a2e-6508-f407">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="1ca9-f366-38dd-9a40" includeChildSelections="false"/>
             <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="81d2-a344-ed6b-2d36" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="Auri" typeId="cost-auri" value="20"/>
+            <cost name="Auri" typeId="cost-auri" value="25"/>
           </costs>
           <selectionEntryGroups>
             <selectionEntryGroup name="Wargear" id="355a-2b03-0cc1-992a" hidden="false">
@@ -371,11 +531,11 @@ At the beginning of each turn after the first, if this model’s controlling pl
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3520-1d4f-f33c-34a0-max" includeChildSelections="false"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Rotary Gun" hidden="false" id="8b4d-922f-1e18-b67f" collective="true">
+                <selectionEntry type="upgrade" import="true" name="Rotary Gun" hidden="false" id="8b4d-922f-1e18-b67f">
                   <profiles>
                     <profile name="Rotary Gun" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="446f-8570-7c06-0e40">
                       <characteristics>
-                        <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
+                        <characteristic name="Range" typeId="1023-f0db-ffcf-da31">24&quot;</characteristic>
                         <characteristic name="Dice" typeId="1192-2222-5926-5b4b">4</characteristic>
                         <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+1</characteristic>
                         <characteristic name="Damage" typeId="a482-225f-a3cb-a700">1</characteristic>
@@ -384,24 +544,17 @@ At the beginning of each turn after the first, if this model’s controlling pl
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="Auri" typeId="cost-auri" value="10"/>
+                    <cost name="Auri" typeId="cost-auri" value="5"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Heavy Ion Torch" hidden="false" id="18d2-51ee-aca2-7a56" collective="true">
-                  <profiles>
-                    <profile name="Heavy Ion Torch" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="17f6-3666-5ab7-c80a">
-                      <characteristics>
-                        <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">1</characteristic>
-                        <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+2</characteristic>
-                        <characteristic name="Damage" typeId="2780-b560-1641-b9a5">6</characteristic>
-                        <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d">When an attack with this weapon targets a *vehicle*, *construct* or *monster* model, or a piece of terrain, it has a strength characteristic of +4.
-This weapon may also be used to make attacks as part of a Shoot action, as if it were a ranged weapon, but can only target units within 5” of the attacking model.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
+                <selectionEntry type="upgrade" import="true" name="Heavy Ion Torch" hidden="false" id="18d2-51ee-aca2-7a56">
                   <costs>
-                    <cost name="Auri" typeId="cost-auri" value="10"/>
+                    <cost name="Auri" typeId="cost-auri" value="15"/>
                   </costs>
+                  <infoLinks>
+                    <infoLink name="Heavy Ion Torch" id="0bcf-280c-d9e7-0c7b" hidden="false" type="profile" targetId="d881-46d7-ef7c-a504"/>
+                    <infoLink name="Heavy Ion Torch" id="8ff0-1bf1-1791-e2af" hidden="false" type="profile" targetId="4361-8d1b-e85e-bd31"/>
+                  </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Heavy Excavator" hidden="false" id="9f58-ab4c-8c87-4ca9" defaultAmount="1">
                   <profiles>
@@ -409,8 +562,8 @@ This weapon may also be used to make attacks as part of a Shoot action, as if i
                       <characteristics>
                         <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">1</characteristic>
                         <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+3</characteristic>
-                        <characteristic name="Damage" typeId="2780-b560-1641-b9a5">3</characteristic>
-                        <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d">Each time this weapon inflicts damage on a *vehicle*, *construct* or *monster* model, or a piece of terrain, if that model is not slain, make an additional attack roll (up to a maximum of 2 additional attacks).</characteristic>
+                        <characteristic name="Damage" typeId="2780-b560-1641-b9a5">4</characteristic>
+                        <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d">Each time this weapon inflicts a successful hit on a *vehicle*, *construct*, *monster* or *structure* model, the target model gains a drill point. At the end of the phase, if the target model is not slain, make one attack roll with this weapon for each drill point the target has allocated to it. Units cannot make more attacks as a result of drill points than they have models remaining, and damage inflicted by these attacks cannot be allocated to models that do not have drill points allocated to them.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -421,7 +574,7 @@ This weapon may also be used to make attacks as part of a Shoot action, as if i
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Auri" typeId="cost-auri" value="25"/>
+        <cost name="Auri" typeId="cost-auri" value="0"/>
       </costs>
       <profiles>
         <profile name="Navigators in Storm Armour" typeId="profile-unit" typeName="Unit" hidden="false" id="a475-423c-28a0-4441">
@@ -437,11 +590,13 @@ This weapon may also be used to make attacks as part of a Shoot action, as if i
       </profiles>
       <infoLinks>
         <infoLink name="Ranked Fire" id="51e9-33f5-fa92-48e1" hidden="false" type="rule" targetId="ae07-7486-20a6-2acb"/>
+        <infoLink name="Base 35" id="e044-de61-267e-4626" hidden="false" type="profile" targetId="5638-4dce-9001-1d15"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="4d59-409d-b10a-9244" id="eac7-4488-4719-b07d" primary="false" name="Aventine Dynasties"/>
-        <categoryLink targetId="cat-troops" id="541c-2960-3bd0-2d50" primary="true" name="Troops"/>
-        <categoryLink targetId="cat-infantry" id="a7c9-6bdc-cc25-ffdb" primary="false" name="Infantry"/>
+        <categoryLink targetId="6545-e1b1-0b43-eb83" id="bf95-2c74-8c02-b4ee" primary="true" name="Troops"/>
+        <categoryLink targetId="ec43-7f75-10fb-0ba5" id="81a1-dc95-7783-e026" primary="false" name="Navigators"/>
+        <categoryLink targetId="b299-685a-c3bf-add7" id="9643-9c7e-a7d3-af91" primary="false" name="Infantry"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Asp Sentry Squadron" hidden="false" id="b8e2-023c-4263-d9dd">
@@ -452,7 +607,7 @@ This weapon may also be used to make attacks as part of a Shoot action, as if i
             <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="6bda-2e81-1dbb-da81" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="Auri" typeId="cost-auri" value="25"/>
+            <cost name="Auri" typeId="cost-auri" value="20"/>
           </costs>
           <infoLinks>
             <infoLink name="Shotrifle" id="0dea-0cd3-cb1e-733c" hidden="false" type="profile" targetId="950c-ac4b-f80f-1f2c"/>
@@ -460,17 +615,30 @@ This weapon may also be used to make attacks as part of a Shoot action, as if i
           <selectionEntryGroups>
             <selectionEntryGroup name="Wargear" id="2008-4efc-3357-1a06" hidden="false">
               <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Forward-mounted Harpoon Launcher" hidden="false" id="20af-1ef1-1797-714e">
+                  <profiles>
+                    <profile name="Harpoon Launcher" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="a30e-999a-8eea-7f2f">
+                      <characteristics>
+                        <characteristic name="Range" typeId="1023-f0db-ffcf-da31">12&quot;</characteristic>
+                        <characteristic name="Dice" typeId="1192-2222-5926-5b4b">1</characteristic>
+                        <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+4</characteristic>
+                        <characteristic name="Damage" typeId="a482-225f-a3cb-a700">3</characteristic>
+                        <characteristic name="Traits" typeId="76cd-5882-86da-52cf">This weapon can only target units within 12” of the attacking model.
+When targeting non-*infantry* units, attacks with this weapon have advantage and always successfully hit on a natural roll of a 10.
+Each time a non-*infantry* unit loses a point of health from this weapon, until the beginning of the following shooting phase, it gains a tether point. For each tether point a unit has, it must subtract 1 from its initiative, speed, and charge move distances (to a minimum of 0). If a unit that inflicted any tether points is entirely destroyed, all of the tether points it inflicted are removed. Leviathan units are not affected by tether points.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Forward-mounted Incinerator" hidden="false" id="e380-d5c0-cf7f-bbc3" defaultAmount="1">
                   <profiles>
                     <profile name="Incinerator" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="7168-968d-d438-a6ed">
                       <characteristics>
-                        <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
+                        <characteristic name="Range" typeId="1023-f0db-ffcf-da31">16&quot;</characteristic>
                         <characteristic name="Dice" typeId="1192-2222-5926-5b4b">D5</characteristic>
                         <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+3</characteristic>
                         <characteristic name="Damage" typeId="a482-225f-a3cb-a700">1</characteristic>
-                        <characteristic name="Traits" typeId="76cd-5882-86da-52cf">This weapon can only target units within 15” of the attacking model.
-Obscuration rolls cannot be made against this weapon.
-Each time a unit gains an attrition point as part of an attack that includes this weapon, it gains one additional attrition point.</characteristic>
+                        <characteristic name="Traits" typeId="76cd-5882-86da-52cf">Units do not benefit from cover when being targeted by this weapon. Each time a unit gains an attrition point as part of an attack that includes this weapon, it gains one additional attrition point. This is not cumulative with other instances of this rule.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -482,27 +650,11 @@ Each time a unit gains an attrition point as part of an attack that includes thi
                   <profiles>
                     <profile name="Forward-mounted Rotary Guns" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="e7ea-a544-41d5-993c">
                       <characteristics>
-                        <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
-                        <characteristic name="Dice" typeId="1192-2222-5926-5b4b">6</characteristic>
+                        <characteristic name="Range" typeId="1023-f0db-ffcf-da31">24&quot;</characteristic>
+                        <characteristic name="Dice" typeId="1192-2222-5926-5b4b">4</characteristic>
                         <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+1</characteristic>
                         <characteristic name="Damage" typeId="a482-225f-a3cb-a700">1</characteristic>
                         <characteristic name="Traits" typeId="76cd-5882-86da-52cf"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Forward-mounted Harpoon Launcher" hidden="false" id="20af-1ef1-1797-714e">
-                  <profiles>
-                    <profile name="Harpoon Launcher" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="a30e-999a-8eea-7f2f">
-                      <characteristics>
-                        <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
-                        <characteristic name="Dice" typeId="1192-2222-5926-5b4b">1</characteristic>
-                        <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+5</characteristic>
-                        <characteristic name="Damage" typeId="a482-225f-a3cb-a700">1</characteristic>
-                        <characteristic name="Traits" typeId="76cd-5882-86da-52cf">This weapon can only target units within 10” of the attacking model. When targeting non-*infantry* units, attacks with this weapon have advantage and always successfully hit on a natural roll of a 10.
-Each time a non-*infantry* unit loses a point of health from this weapon, until the beginning of the following shooting phase, it gains a *tether* point.
-For each tether point a unit has, it must subtract 1 from its initiative, speed, and charge move distances (to a minimum of 0). If a unit that inflicted any tether points is entirely destroyed, all of the tether points it inflicted are removed.
-*Leviathan* units are not affected by tether points.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -518,8 +670,8 @@ For each tether point a unit has, it must subtract 1 from its initiative, speed,
       </selectionEntries>
       <rules>
         <rule name="Agile Hunters" id="d0c0-9ab9-d303-d0bd" hidden="false">
-          <description>*Independent* units can only join this unit if they are *airborne*.
-In addition, if this unit moves more than 10” during a normal move, subtract 2 from all attacks that target it until the end of the turn.</description>
+          <description>When this unit advances, subtract 2 from all attacks that target it until the end of the turn.
+In addition, this unit may not embark on *transports* or *garrison* structures.</description>
         </rule>
       </rules>
       <profiles>
@@ -527,7 +679,7 @@ In addition, if this unit moves more than 10” during a normal move, subtract 
           <characteristics>
             <characteristic name="Speed" typeId="char-speed">10</characteristic>
             <characteristic name="Health" typeId="char-health">2</characteristic>
-            <characteristic name="Defence" typeId="char-defence">9</characteristic>
+            <characteristic name="Defence" typeId="char-defence">9 / 7 / 7</characteristic>
             <characteristic name="Initiative" typeId="char-initiative">3</characteristic>
             <characteristic name="Morale" typeId="char-morale">3</characteristic>
             <characteristic name="Arcane" typeId="char-arcane">-</characteristic>
@@ -536,11 +688,19 @@ In addition, if this unit moves more than 10” during a normal move, subtract 
       </profiles>
       <categoryLinks>
         <categoryLink targetId="98e2-8bf5-6242-c731" id="af72-1089-5905-ea6c" primary="false" name="Cavalry"/>
-        <categoryLink targetId="cat-troops" id="543a-2769-21d3-7f6f" primary="true" name="Troops"/>
         <categoryLink targetId="4d59-409d-b10a-9244" id="322d-bee5-8073-6956" primary="false" name="Aventine Dynasties"/>
         <categoryLink targetId="3326-5b0a-b607-c6b3" id="7197-be29-6e05-5081" primary="false" name="Airborne"/>
-        <categoryLink targetId="cat-infantry" id="da93-c772-5383-8c90" primary="false" name="Infantry"/>
+        <categoryLink targetId="6545-e1b1-0b43-eb83" id="e2f5-8200-c16a-7998" primary="true" name="Troops"/>
+        <categoryLink targetId="b299-685a-c3bf-add7" id="72de-3807-e816-ce5d" primary="false" name="Infantry"/>
+        <categoryLink targetId="2228-50ba-f04e-7470" id="da5b-48b5-5dce-242a" primary="false" name="Vanguard"/>
+        <categoryLink targetId="ec43-7f75-10fb-0ba5" id="633e-9792-68ab-8666" primary="false" name="Navigators"/>
       </categoryLinks>
+      <costs>
+        <cost name="Auri" typeId="cost-auri" value="15"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Base 50" id="f570-805c-c1a9-867c" hidden="false" type="profile" targetId="2425-4fb1-f230-4beb"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Fleetguard Protectors" hidden="false" id="7e3e-d983-5ac0-3ded">
       <profiles>
@@ -556,62 +716,30 @@ In addition, if this unit moves more than 10” during a normal move, subtract 
         </profile>
       </profiles>
       <costs>
-        <cost name="Auri" typeId="cost-auri" value="5"/>
+        <cost name="Auri" typeId="cost-auri" value="25"/>
       </costs>
       <rules>
         <rule name="Sacred Duty" id="fe21-17cf-e6b5-77fc" hidden="false">
-          <description>Only *leader* units can join this unit, and while one *leader* is grouped with this unit, no other *independent* units can be included in this group. While part of a group, this *leader* cannot be targeted by any attacks, or affected by any abilities or invocations, regardless of the number of models in the retinue unit.
-While a *leader* is joined to this unit, it ignores the effects of being shaken, and any abilities which would allow an enemy unit to allocate wounds to a model of their choice have no effect.</description>
-        </rule>
-        <rule name="Colour Guard" id="c181-e8b9-ddaf-c276" hidden="false">
-          <description>If this unit includes a standard-bearer, all friendly visible infantry units within 6” of it gain the *core* keyword.</description>
+          <description>Groups including this unit cannot include more than one independent unit, and only *leaders* can be included in groups with this unit. This unit always counts as having three or more models for the purpose of being a retinue.
+While a *leader* is joined to this unit, it ignores the effects of being shaken, and any abilities which would allow an enemy unit to allocate wounds to a model of their choice have no effect.</description>
         </rule>
       </rules>
       <categoryLinks>
         <categoryLink targetId="4d59-409d-b10a-9244" id="aecf-623c-b3b2-8bb7" primary="false" name="Aventine Dynasties"/>
-        <categoryLink targetId="cat-troops" id="a41f-7b49-c487-51e4" primary="true" name="Troops"/>
-        <categoryLink targetId="cat-infantry" id="32a7-da56-0818-b53d" primary="false" name="Infantry"/>
+        <categoryLink targetId="6545-e1b1-0b43-eb83" id="6ed5-bef6-59f7-6c0e" primary="true" name="Troops"/>
+        <categoryLink targetId="b299-685a-c3bf-add7" id="935b-771f-94f6-372d" primary="false" name="Infantry"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Models" id="6ec9-15d2-138c-28b8" hidden="false">
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Standard-bearer" hidden="false" id="50bd-c3bc-18b9-bbf2">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50b2-e666-0710-2863" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="Auri" typeId="cost-auri" value="35"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry type="model" import="true" name="Protector" hidden="false" id="840d-828e-dffe-a0df" defaultAmount="5">
               <costs>
                 <cost name="Auri" typeId="cost-auri" value="20"/>
               </costs>
-              <profiles>
-                <profile name="Fleetguard Pike" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="77d8-15d1-2c0c-7f26">
-                  <characteristics>
-                    <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">1</characteristic>
-                    <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+4</characteristic>
-                    <characteristic name="Damage" typeId="2780-b560-1641-b9a5">2</characteristic>
-                    <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d">This weapon has advantage when targeting *monsters* or *cavalry* units.
-If a unit equipped with fleetguard pikes is not within combat range of any enemy units in the combat phase, but it is within 3” of any enemy units, it can make a fight action targeting one of those enemy units. A unit attacking in this way can only make attacks using any fleetguard pikes it is equipped with.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Ion Pistol" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="f557-252d-af74-b0c1">
-                  <characteristics>
-                    <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
-                    <characteristic name="Dice" typeId="1192-2222-5926-5b4b">1</characteristic>
-                    <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+3</characteristic>
-                    <characteristic name="Damage" typeId="a482-225f-a3cb-a700">2</characteristic>
-                    <characteristic name="Traits" typeId="76cd-5882-86da-52cf">This weapon can only target units within 6” of the attacking model.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Tower Shield" typeId="0c1d-fb59-db29-3959" typeName="Other Wargear" hidden="false" id="f0c0-a4d1-c9a0-4dd4">
-                  <characteristics>
-                    <characteristic name="Traits" typeId="e990-df09-ac6b-7481">Attacks with a strength of +3 or greater that target a unit with tower shields have disadvantage. This has no effect on *destroyer* or *psychic* attacks, or any attacks made by *leviathan* units.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
+              <infoLinks>
+                <infoLink name="Fleetguard Pike" id="e7f7-8ec7-832a-7754" hidden="false" type="profile" targetId="f73c-df71-23c1-9b9f"/>
+                <infoLink name="Ion Pistol" id="f0e7-5698-db88-0f5e" hidden="false" type="profile" targetId="5880-8a41-ac8c-20dc"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -620,6 +748,9 @@ If a unit equipped with fleetguard pikes is not within combat range of any enem
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Base 35" id="e404-9934-5b4b-8ce3" hidden="false" type="profile" targetId="5638-4dce-9001-1d15"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Navigator Engineers" hidden="false" id="f318-05ec-afb4-12b5">
       <profiles>
@@ -636,7 +767,7 @@ If a unit equipped with fleetguard pikes is not within combat range of any enem
       </profiles>
       <rules>
         <rule name="Combat Engineers" id="42bd-e8a0-6f4d-9061" hidden="false">
-          <description>At the beginning of each resolution phase, select one friendly non-*altitude* *vehicle* within 3” of this unit. Roll a dice for each point of health it has lost, and for each natural 8+, a point of health is restored.</description>
+          <description>When this unit activates in the Combat Phase, instead of making any other action, if this unit is more than 6” from any enemy units it can repair one friendly non-*altitude* *vehicle* within 3”. That unit may immediately take an attrition test.</description>
         </rule>
         <rule name="Tunnelers" id="9d81-0cc6-b5bc-717f" hidden="false">
           <description>During deployment, you can select one *troops* unit numbering ten models or less (or a group including such a unit) in the same warband as tunnelers.
@@ -645,18 +776,19 @@ When a unit with this ability deploys from reserve, the tunnelers must deploy s
       </rules>
       <categoryLinks>
         <categoryLink targetId="4d59-409d-b10a-9244" id="84bf-1bf1-09a3-a91f" primary="false" name="Aventine Dynasties"/>
-        <categoryLink targetId="cat-support" id="4a1b-d86e-097b-b3e9" primary="true" name="Support"/>
-        <categoryLink targetId="cat-infantry" id="1a2c-3e52-221b-6a2c" primary="false" name="Infantry"/>
         <categoryLink targetId="2228-50ba-f04e-7470" id="838e-1f6b-de99-9cd2" primary="false" name="Vanguard"/>
+        <categoryLink targetId="639d-7660-22f8-e165" id="929a-191e-677d-df75" primary="true" name="Support"/>
+        <categoryLink targetId="b299-685a-c3bf-add7" id="0831-bdbc-a2a3-3720" primary="false" name="Infantry"/>
+        <categoryLink targetId="ec43-7f75-10fb-0ba5" id="64e8-6dae-b9a4-f4d5" primary="false" name="Navigators"/>
       </categoryLinks>
       <costs>
-        <cost name="Auri" typeId="cost-auri" value="95"/>
+        <cost name="Auri" typeId="cost-auri" value="40"/>
       </costs>
       <selectionEntryGroups>
         <selectionEntryGroup name="Models" id="2f7d-d30d-6a68-f919" hidden="false">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="a61a-28cd-a5a1-cc2d-min" includeChildSelections="false"/>
-            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="a61a-28cd-a5a1-cc2d-max" includeChildSelections="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="a61a-28cd-a5a1-cc2d-max" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Navigator Engineer" hidden="false" id="b43c-20ca-fbd1-09b2">
@@ -664,7 +796,7 @@ When a unit with this ability deploys from reserve, the tunnelers must deploy s
                 <profile name="Excavator Pick" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="87ad-f05a-610b-1444">
                   <characteristics>
                     <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">1</characteristic>
-                    <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+2</characteristic>
+                    <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+1</characteristic>
                     <characteristic name="Damage" typeId="2780-b560-1641-b9a5">1</characteristic>
                     <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d"/>
                   </characteristics>
@@ -672,7 +804,11 @@ When a unit with this ability deploys from reserve, the tunnelers must deploy s
               </profiles>
               <infoLinks>
                 <infoLink name="Shotrifle" id="d687-706d-4409-cc01" hidden="false" type="profile" targetId="950c-ac4b-f80f-1f2c"/>
+                <infoLink name="Base 28.5" id="7d9f-6335-e6a6-0cb8" hidden="false" type="profile" targetId="e1d3-bd05-6cb1-9bdd"/>
               </infoLinks>
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="10"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
@@ -681,25 +817,28 @@ When a unit with this ability deploys from reserve, the tunnelers must deploy s
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="095a-bc83-a5ed-631b" includeChildSelections="false"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Heavy Gunner" hidden="false" id="07e2-10de-45c7-0cf0">
+                <selectionEntry type="model" import="true" name="Heavy Gunner" hidden="false" id="07e2-10de-45c7-0cf0">
                   <costs>
-                    <cost name="Auri" typeId="cost-auri" value="25"/>
+                    <cost name="Auri" typeId="cost-auri" value="35"/>
                   </costs>
                   <profiles>
                     <profile name="Heavy Ion Reaper Carriage" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="3e6d-b8f0-16fb-2139">
                       <characteristics>
-                        <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
+                        <characteristic name="Range" typeId="1023-f0db-ffcf-da31">32&quot;</characteristic>
                         <characteristic name="Dice" typeId="1192-2222-5926-5b4b">4</characteristic>
                         <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+3</characteristic>
-                        <characteristic name="Damage" typeId="a482-225f-a3cb-a700">2</characteristic>
+                        <characteristic name="Damage" typeId="a482-225f-a3cb-a700">3</characteristic>
                         <characteristic name="Traits" typeId="76cd-5882-86da-52cf"/>
                       </characteristics>
                     </profile>
                   </profiles>
+                  <infoLinks>
+                    <infoLink name="Base 60" id="a039-e66e-b41d-7f96" hidden="false" type="profile" targetId="ebee-2597-c52d-5eb8"/>
+                  </infoLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Demolition Specialist" hidden="false" id="2418-ed06-0c94-6d03">
+                <selectionEntry type="model" import="true" name="Demolition Specialist" hidden="false" id="2418-ed06-0c94-6d03">
                   <costs>
-                    <cost name="Auri" typeId="cost-auri" value="35"/>
+                    <cost name="Auri" typeId="cost-auri" value="45"/>
                   </costs>
                   <rules>
                     <rule name="Demolitions Specialist" id="9bce-c936-6a9e-d41a" hidden="false">
@@ -729,10 +868,10 @@ Each terrain piece can only be rigged once per battle, and detonated once per b
       </profiles>
       <categoryLinks>
         <categoryLink targetId="4d59-409d-b10a-9244" id="566f-9643-2e25-c6e4" primary="false" name="Aventine Dynasties"/>
-        <categoryLink targetId="cat-support" id="2ce0-9693-8b0a-3056" primary="true" name="Support"/>
-        <categoryLink targetId="cat-infantry" id="9378-d270-aa72-7d16" primary="false" name="Infantry"/>
         <categoryLink targetId="2228-50ba-f04e-7470" id="74dc-7bef-4c0c-b745" primary="false" name="Vanguard"/>
-        <categoryLink targetId="cat-independent" id="fb98-d849-16b8-a703" primary="false" name="Independent"/>
+        <categoryLink targetId="639d-7660-22f8-e165" id="84fd-a71f-a167-8e0c" primary="true" name="Support"/>
+        <categoryLink targetId="b299-685a-c3bf-add7" id="ea1e-50fa-ac64-2f88" primary="false" name="Infantry"/>
+        <categoryLink targetId="8bd5-e71f-ad75-c8f5" id="8ac5-f9c4-b838-3972" primary="false" name="Independent"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Pathfinder" hidden="false" id="cead-f8fa-cbba-2e22">
@@ -743,12 +882,18 @@ Each terrain piece can only be rigged once per battle, and detonated once per b
           <infoLinks>
             <infoLink name="Shotrifle" id="72af-606e-9e0c-a317" hidden="false" type="profile" targetId="950c-ac4b-f80f-1f2c"/>
           </infoLinks>
+          <costs>
+            <cost name="Auri" typeId="cost-auri" value="45"/>
+          </costs>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Seeker" hidden="false" id="38b8-077f-30f7-ad4b">
           <constraints>
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="eef9-710c-6ce7-623d-min" includeChildSelections="false"/>
-            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="eef9-710c-6ce7-623d-max" includeChildSelections="false"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="eef9-710c-6ce7-623d-max" includeChildSelections="false"/>
           </constraints>
+          <costs>
+            <cost name="Auri" typeId="cost-auri" value="15"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <rules>
@@ -756,18 +901,22 @@ Each terrain piece can only be rigged once per battle, and detonated once per b
           <description>During deployment, models in this unit do not have to be placed within control range of each other and can be grouped with different units. As soon as this unit is deployed, each model is treated as a separate unit until the end of the battle.
 Models in this unit cannot contest or claim any objective markers and do not accrue attrition points, and no abilities are triggered, nor victory points scored, when they are destroyed.</description>
         </rule>
-        <rule name="Priority Target" id="83f2-b397-6ced-c72b" hidden="false">
-          <description>At the beginning of each turn, select one unit visible to any seeker or pathfinder models on the battlefield as a priority target. Only one unit may be selected as a priority target at any time.
-Until the end of the turn, the following effects apply to friendly units grouped with any seeker or pathfinder models on the battlefield:
-* Subtract 1 from any obscuration rolls the priority target makes.
-* When this unit wishes to react to the priority target, add 2 to its Initiative.</description>
+        <rule name="Priority Target - Command action" id="83f2-b397-6ced-c72b" hidden="false">
+          <description>During the Strategy Phase, one unit with this ability can make this action.
+Select one unit visible to any Seeker or Pathfinder models on the battlefield as a priority target. Until the end of the turn, the following effects apply to all friendly Seeker or Pathfinder models on the battlefield, and any units grouped with them:
+* The priority target does not benefit from cover while this unit is within 12” of it.
+* When this unit wishes to react to the priority target, add 2 to its Initiative.
+Only one friendly unit may make this action each turn.</description>
         </rule>
       </rules>
       <costs>
         <cost name="Auri" typeId="cost-auri" value="95"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Base 28.5" id="4044-9405-e8c3-1888" hidden="false" type="profile" targetId="e1d3-bd05-6cb1-9bdd"/>
+      </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Coryphe" hidden="false" id="066d-715d-490d-1c8f">
+    <selectionEntry type="model" import="true" name="Coryphe" hidden="false" id="066d-715d-490d-1c8f">
       <profiles>
         <profile name="Coryphe" typeId="profile-unit" typeName="Unit" hidden="false" id="d379-199d-19e7-0002">
           <characteristics>
@@ -785,23 +934,24 @@ Until the end of the turn, the following effects apply to friendly units groupe
       </costs>
       <categoryLinks>
         <categoryLink targetId="4d59-409d-b10a-9244" id="6b38-aad7-3a1c-15eb" primary="false" name="Aventine Dynasties"/>
-        <categoryLink targetId="cat-support" id="6d36-c933-db56-b359" primary="true" name="Support"/>
-        <categoryLink targetId="cat-infantry" id="5e01-8c82-b326-d809" primary="false" name="Infantry"/>
         <categoryLink targetId="2228-50ba-f04e-7470" id="3270-75ef-9ab6-6db9" primary="false" name="Vanguard"/>
+        <categoryLink targetId="639d-7660-22f8-e165" id="f16a-bc23-1177-f7a8" primary="true" name="Support"/>
+        <categoryLink targetId="b299-685a-c3bf-add7" id="8416-f7a9-b076-a756" primary="false" name="Infantry"/>
       </categoryLinks>
       <rules>
         <rule name="Covert Operative" id="4ce4-cde5-0b1b-ad61" hidden="false">
-          <description>This unit cannot be targeted by any ranged attacks or invocations while it is outside contact range, or within 3” of any terrain.</description>
+          <description>This unit cannot be targeted by ranged attacks or affected by any enemy invocations. The first time this unit makes either a charge move action or shoot action, or if an enemy unit ends a move within 6” of this unit, it loses this ability, until any phase ends where this unit is obscured from, or no longer visible to, all enemy units.</description>
         </rule>
         <rule name="Smoke and Blades" id="afe0-a510-6a19-10b6" hidden="false">
-          <description>If this unit makes a successful charge, any attacks with melee weapons that target it have disadvantage.
-When this unit targets a group with an attack, it can target an *independent* units regardless of how many models are in its retinue. In addition, successful hits made by this model can be allocated to models in a target unit by the attacking player, rather than by the target unit’s controlling player (even if models in that unit are already injured).</description>
+          <description>If this unit makes a successful charge, any attacks with melee weapons that target it have disadvantage.
+Successful hits made by this model can be allocated to models in a target unit by the attacking player, rather than by the target unit’s controlling player (even if models in that unit are already injured). Such attacks can also be allocated to *independent* units in a group, even if there are three or models in its retinue.</description>
         </rule>
       </rules>
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="d654-f473-47fc-df4e" hidden="false">
           <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3678-8ace-ae5c-09ec" includeChildSelections="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3678-8ace-ae5c-09ec-min" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3678-8ace-ae5c-09ec-max" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Shot Revolver" hidden="false" id="c537-e464-06b3-940b" defaultAmount="2" sortIndex="1">
@@ -814,7 +964,7 @@ When this unit targets a group with an attack, it can target an *independent* u
                 <infoLink name="Resonance Blade" id="b5ce-bd23-0f50-d472" hidden="false" type="profile" targetId="fa39-b276-f00b-7453"/>
               </infoLinks>
               <costs>
-                <cost name="Auri" typeId="cost-auri" value="10"/>
+                <cost name="Auri" typeId="cost-auri" value="20"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Shotrifle" hidden="false" id="a244-a60a-e59c-b70f" sortIndex="3">
@@ -846,52 +996,60 @@ When this unit targets a group with an attack, it can target an *independent* u
               <profiles>
                 <profile name="Explosives Cache" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="b898-b1c0-cc73-383a">
                   <characteristics>
-                    <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
-                    <characteristic name="Dice" typeId="1192-2222-5926-5b4b">-</characteristic>
-                    <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+3</characteristic>
-                    <characteristic name="Damage" typeId="a482-225f-a3cb-a700">1</characteristic>
-                    <characteristic name="Traits" typeId="76cd-5882-86da-52cf">This weapon can only be used once per battle. When attacking with this weapon, select a visible point within 10” of this unit. Make D5 attack rolls against each unit within 3” of that point, using this weapon’s profile.</characteristic>
+                    <characteristic name="Range" typeId="1023-f0db-ffcf-da31">6&quot;</characteristic>
+                    <characteristic name="Dice" typeId="1192-2222-5926-5b4b">1</characteristic>
+                    <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+6</characteristic>
+                    <characteristic name="Damage" typeId="a482-225f-a3cb-a700">D5</characteristic>
+                    <characteristic name="Traits" typeId="76cd-5882-86da-52cf">This weapon can only be used once per battle. This weapon makes a blast attack targeting a visible point on the battlefield within range, with a blast radius of 2”.
+In addition, if a unit with this weapon makes a successful charge, it can choose to immediately make a detonate its cache. This detonation is a *blast* attack originating from (and including) the bearer’s base, with a blast radius of 2”.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <costs>
-                <cost name="Auri" typeId="cost-auri" value="20"/>
+                <cost name="Auri" typeId="cost-auri" value="25"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Base 35" id="5288-e261-c843-26b3" hidden="false" type="profile" targetId="5638-4dce-9001-1d15"/>
+      </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Viper Scout Craft" hidden="false" id="9b93-7473-f6b1-8237">
+    <selectionEntry type="model" import="true" name="Viper Scout Craft" hidden="false" id="9b93-7473-f6b1-8237">
       <costs>
         <cost name="Auri" typeId="cost-auri" value="160"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="4d59-409d-b10a-9244" id="f350-f2bd-381f-1c6f" primary="false" name="Aventine Dynasties"/>
-        <categoryLink targetId="cat-vehicle" id="b959-abca-5ff7-56e1" primary="true" name="Vehicle"/>
         <categoryLink targetId="2228-50ba-f04e-7470" id="8dc5-172d-2bfc-dd8e" primary="false" name="Vanguard"/>
         <categoryLink targetId="3326-5b0a-b607-c6b3" id="78cc-f9a2-22f9-76f4" primary="false" name="Airborne"/>
+        <categoryLink targetId="6e36-be99-bf15-fb56" id="990c-b808-464d-32a9" primary="true" name="Vehicle"/>
       </categoryLinks>
       <profiles>
         <profile name="Viper Scout Craft" typeId="profile-unit" typeName="Unit" hidden="false" id="a523-9911-862a-e703">
           <characteristics>
             <characteristic name="Speed" typeId="char-speed">10</characteristic>
             <characteristic name="Health" typeId="char-health">14</characteristic>
-            <characteristic name="Defence" typeId="char-defence">11</characteristic>
+            <characteristic name="Defence" typeId="char-defence">14 / 11 / 11</characteristic>
             <characteristic name="Initiative" typeId="char-initiative">3</characteristic>
-            <characteristic name="Morale" typeId="char-morale">4</characteristic>
+            <characteristic name="Morale" typeId="char-morale">3</characteristic>
             <characteristic name="Arcane" typeId="char-arcane">-</characteristic>
           </characteristics>
         </profile>
+        <profile name="Reinforced Prow" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="014b-36ce-cd3f-e5f1">
+          <characteristics>
+            <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">1</characteristic>
+            <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+6</characteristic>
+            <characteristic name="Damage" typeId="2780-b560-1641-b9a5">D5+5</characteristic>
+            <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d">This weapon can only be used in a turn in which the attacking model successfully charged.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
-      <rules>
-        <rule name="Reinforced Plating" id="5e34-28c2-b2e5-8aef" hidden="false">
-          <description>Units targeting this unit while within its front arc treat it as having a defence characteristic of 14. If this unit makes a charge move, its unarmed attack has a strength characteristic of +6 and a damage characteristic of D10.</description>
-        </rule>
-      </rules>
       <infoLinks>
         <infoLink name="Explosive End (D5”)" id="bbc3-6073-fea8-ad85" hidden="false" type="rule" targetId="ed1f-a2b1-977b-a80d"/>
         <infoLink name="Aethercraft" id="6caa-db53-dd2b-7d55" hidden="false" type="rule" targetId="8e65-6439-1495-6995"/>
+        <infoLink name="Base 120" id="d066-4d14-c28b-554f" hidden="false" type="profile" targetId="3f40-ae27-fc52-87ca"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="d027-2ff5-2c50-4d27" hidden="false">
@@ -899,27 +1057,25 @@ When this unit targets a group with an attack, it can target an *independent* u
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4cb9-4452-a43b-015a" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Forward-mounted Heavy Incinerator" hidden="false" id="5fbc-6761-e765-9b6e" defaultAmount="1" sortIndex="1">
+            <selectionEntry type="upgrade" import="true" name="Forward-mounted Twin Heavy Incinerator" hidden="false" id="5fbc-6761-e765-9b6e" defaultAmount="1" sortIndex="1">
               <profiles>
-                <profile name="Heavy Incinerator" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="7401-9ab7-357f-4fda">
+                <profile name="Twin Heavy Incinerator" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="7401-9ab7-357f-4fda">
                   <characteristics>
-                    <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
+                    <characteristic name="Range" typeId="1023-f0db-ffcf-da31">16&quot;</characteristic>
                     <characteristic name="Dice" typeId="1192-2222-5926-5b4b">2D5</characteristic>
                     <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+3</characteristic>
                     <characteristic name="Damage" typeId="a482-225f-a3cb-a700">2</characteristic>
-                    <characteristic name="Traits" typeId="76cd-5882-86da-52cf">This weapon can only target units within 15” of the attacking model.
-Obscuration rolls cannot be made against this weapon.
-Each time a unit gains an attrition point as part of an attack that includes this weapon, it gains one additional attrition point.</characteristic>
+                    <characteristic name="Traits" typeId="76cd-5882-86da-52cf">Units do not benefit from cover when being targeted by this weapon, unless its bearer has *altitude*. Each time a unit gains an attrition point as part of an attack that includes this weapon, it gains one additional attrition point. This is not cumulative with other instances of this rule.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Forward-mounted Rotary Cannon" hidden="false" id="3960-50b8-afd0-62ea" sortIndex="2">
+            <selectionEntry type="upgrade" import="true" name="Forward-mounted Twin Rotary Shotcannon" hidden="false" id="3960-50b8-afd0-62ea" sortIndex="2">
               <profiles>
-                <profile name="Rotary Cannon" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="0d9e-741d-a9d8-b9a9">
+                <profile name="Twin Rotary Shotcannon" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="0d9e-741d-a9d8-b9a9">
                   <characteristics>
-                    <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
-                    <characteristic name="Dice" typeId="1192-2222-5926-5b4b">10</characteristic>
+                    <characteristic name="Range" typeId="1023-f0db-ffcf-da31">36&quot;</characteristic>
+                    <characteristic name="Dice" typeId="1192-2222-5926-5b4b">8</characteristic>
                     <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+1</characteristic>
                     <characteristic name="Damage" typeId="a482-225f-a3cb-a700">1</characteristic>
                     <characteristic name="Traits" typeId="76cd-5882-86da-52cf"/>
@@ -927,18 +1083,17 @@ Each time a unit gains an attrition point as part of an attack that includes thi
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Forward-mounted Heavy Harpoon Launcher" hidden="false" id="9dca-7ca7-f28b-8fef" sortIndex="3">
+            <selectionEntry type="upgrade" import="true" name="Forward-mounted Twin Heavy Harpoon Launcher" hidden="false" id="9dca-7ca7-f28b-8fef" sortIndex="3">
               <profiles>
-                <profile name="Heavy Harpoon Launcher" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="28cc-c8a0-dd9c-5ed9">
+                <profile name="Twin Heavy Harpoon Launcher" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="28cc-c8a0-dd9c-5ed9">
                   <characteristics>
-                    <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
+                    <characteristic name="Range" typeId="1023-f0db-ffcf-da31">16&quot;</characteristic>
                     <characteristic name="Dice" typeId="1192-2222-5926-5b4b">2</characteristic>
                     <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+5</characteristic>
-                    <characteristic name="Damage" typeId="a482-225f-a3cb-a700">2</characteristic>
-                    <characteristic name="Traits" typeId="76cd-5882-86da-52cf">This weapon can only target units within 10” of the attacking model. When targeting non-*infantry* units, attacks with this weapon have advantage and always successfully hit on a natural roll of a 10.
-Each time a non-*infantry* unit loses a point of health from this weapon, until the beginning of the following shooting phase, it gains a *tether* point.
-For each tether point a unit has, it must subtract 1 from its initiative, speed, and charge move distances (to a minimum of 0). If a unit that inflicted any tether points is entirely destroyed, all of the tether points it inflicted are removed.
-*Leviathan* units are not affected by tether points.</characteristic>
+                    <characteristic name="Damage" typeId="a482-225f-a3cb-a700">3</characteristic>
+                    <characteristic name="Traits" typeId="76cd-5882-86da-52cf">This weapon can only target units within 16” of the attacking model, and cannot be used if the bearer has *altitude*.
+When targeting non-*infantry* units, attacks with this weapon have advantage and always successfully hit on a natural roll of a 10.
+Each time a non-*infantry* unit loses a point of health from this weapon, until the beginning of the following shooting phase, it gains a tether point. For each tether point a unit has, it must subtract 1 from its initiative, speed, and charge move distances (to a minimum of 0). If a unit that inflicted any tether points is entirely destroyed, all of the tether points it inflicted are removed. *Leviathan* units are not affected by tether points.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -950,12 +1105,12 @@ For each tether point a unit has, it must subtract 1 from its initiative, speed,
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Mamba Strike Craft" hidden="false" id="bacf-8514-4476-e50e">
+    <selectionEntry type="model" import="true" name="Mamba Strike Craft" hidden="false" id="bacf-8514-4476-e50e">
       <categoryLinks>
         <categoryLink targetId="4d59-409d-b10a-9244" id="b160-9196-65bc-e354" primary="false" name="Aventine Dynasties"/>
-        <categoryLink targetId="cat-vehicle" id="707d-32aa-e1cd-6eea" primary="true" name="Vehicle"/>
         <categoryLink targetId="2228-50ba-f04e-7470" id="3e0f-fb72-2cda-0baa" primary="false" name="Vanguard"/>
         <categoryLink targetId="3326-5b0a-b607-c6b3" id="798e-0115-551c-1f92" primary="false" name="Airborne"/>
+        <categoryLink targetId="6e36-be99-bf15-fb56" id="a351-571b-a073-2795" primary="true" name="Vehicle"/>
       </categoryLinks>
       <profiles>
         <profile name="Mamba Strike Craft" typeId="profile-unit" typeName="Unit" hidden="false" id="10d5-6cb7-73f8-fe97">
@@ -968,25 +1123,18 @@ For each tether point a unit has, it must subtract 1 from its initiative, speed,
             <characteristic name="Arcane" typeId="char-arcane">-</characteristic>
           </characteristics>
         </profile>
-        <profile name="Ion Devastator Array" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="9a7f-e7e0-f567-4627">
-          <characteristics>
-            <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
-            <characteristic name="Dice" typeId="1192-2222-5926-5b4b">4</characteristic>
-            <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+6</characteristic>
-            <characteristic name="Damage" typeId="a482-225f-a3cb-a700">6</characteristic>
-            <characteristic name="Traits" typeId="76cd-5882-86da-52cf">When a target is selected for this weapon, it can be fired in acceleration mode. If it does so, it has a dice characteristic of 6, but it cannot be fired in the following turn.</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Aethercraft" id="ab46-04a0-8e5c-acf6" hidden="false" type="rule" targetId="8e65-6439-1495-6995"/>
         <infoLink name="Explosive End (D5”)" id="acc0-1013-597e-a1ca" hidden="false" type="rule" targetId="ed1f-a2b1-977b-a80d"/>
+        <infoLink name="Ion Devastator Array" id="69a7-365f-b67f-18ab" hidden="false" type="profile" targetId="d896-4401-f0f7-8885"/>
+        <infoLink name="Base 160" id="200f-fb16-cd26-5267" hidden="false" type="profile" targetId="c7b5-8d2f-ceaa-cd7e"/>
       </infoLinks>
       <costs>
         <cost name="Auri" typeId="cost-auri" value="265"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Cobra Annihilator Craft" hidden="false" id="0d73-88df-9a36-bebb">
+    <selectionEntry type="model" import="true" name="Cobra Annihilator Craft" hidden="false" id="0d73-88df-9a36-bebb">
       <costs>
         <cost name="Auri" typeId="cost-auri" value="650"/>
       </costs>
@@ -1003,21 +1151,23 @@ For each tether point a unit has, it must subtract 1 from its initiative, speed,
         </profile>
         <profile name="Solar Annihilator" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="87e2-5a30-e56b-309f">
           <characteristics>
-            <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
-            <characteristic name="Dice" typeId="1192-2222-5926-5b4b">2</characteristic>
-            <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+10</characteristic>
-            <characteristic name="Damage" typeId="a482-225f-a3cb-a700">20</characteristic>
-            <characteristic name="Traits" typeId="76cd-5882-86da-52cf">Attacks from this weapon count as *destroyer* attacks.
-At the end of any activation in which this weapon was fired, roll a dice. On a natural roll of a 10, one model in the target unit immediately loses an additional 20 health. On a natural 1, this unit immediately loses 10 health.</characteristic>
+            <characteristic name="Range" typeId="1023-f0db-ffcf-da31">120&quot;</characteristic>
+            <characteristic name="Dice" typeId="1192-2222-5926-5b4b">1</characteristic>
+            <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+8</characteristic>
+            <characteristic name="Damage" typeId="a482-225f-a3cb-a700">12</characteristic>
+            <characteristic name="Traits" typeId="76cd-5882-86da-52cf">Attacks from this weapon count as *destroyer* attacks. Models slain by this weapon are ontologically annihilated and cannot be resurrected by any means, and any abilities which would add models to a unit as a result of other models being slain do not take effect if those models were slain by this weapon.
+When selecting a target for this weapon, the attacking player can choose for it to widen its aperture. If it does so, instead of attacking normally this weapon makes a *blast* attack targeting a visible point on the battlefield, with a radius of 3”, but reduces its damage characteristic to 5.
+After firing this weapon, all units within 6” of the target unit (or blast epicentre, if it is firing with a widened aperture) immediately gain an attrition point.
+At the end of any activation in which this weapon was fired with a widened aperture, roll a dice. On a natural roll of a 1, this unit immediately loses 2D10 health.</characteristic>
           </characteristics>
         </profile>
         <profile name="Sunderance Missile Launcher" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="b4fa-c2b2-3d23-527b">
           <characteristics>
-            <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
-            <characteristic name="Dice" typeId="1192-2222-5926-5b4b">D10</characteristic>
+            <characteristic name="Range" typeId="1023-f0db-ffcf-da31">48&quot;</characteristic>
+            <characteristic name="Dice" typeId="1192-2222-5926-5b4b">1</characteristic>
             <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+3</characteristic>
             <characteristic name="Damage" typeId="a482-225f-a3cb-a700">3</characteristic>
-            <characteristic name="Traits" typeId="76cd-5882-86da-52cf"/>
+            <characteristic name="Traits" typeId="76cd-5882-86da-52cf">This weapon makes a blast attack targeting a visible point on the battlefield, with a *blast* radius of 5&quot;.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1025,214 +1175,709 @@ At the end of any activation in which this weapon was fired, roll a dice. On a 
         <rule name="The Shadow of Hokorek" id="11d2-68a0-b003-ef74" hidden="false">
           <description>When this unit would lose a point of health, roll a dice. For each 8+, that point of health is not lost, and the next time it makes a shoot action, add 1 to the damage of its solar annihilator. In addition, all *infantry* units within 6” of this model subtract 1 from their attrition test rolls.</description>
         </rule>
-        <rule name="Explosive End (Singularity Engine, D5+5”)" id="f84e-b14a-f158-4150" hidden="false">
-          <description>When this unit is destroyed, before removing the model, it explosion in a D5+5” blast radius from its base, with a strength of +5 and a damage of 5.
-If this unit is destroyed by its own solar annihilator, its singularity engine instead implodes in a D5+5” blast radius, with a strength of +5 and a damage of D10+10, and all *infantry* models within 1” are vaporised and slain immediately</description>
+        <rule name="Explosive End (Singularity Engine)" id="f84e-b14a-f158-4150" hidden="false">
+          <description>When this unit is destroyed, before removing the model, it explodes. This explosion is a *blast* attack, with a 6” radius originating from its base, with a strength of +5 and a damage of 3.
+If this unit is destroyed by its own Solar Annihilator, its singularity engine instead implodes. All *infantry* models within 2” are vaporised and slain immediately, and the implosion devastates the surrounding area in a *blast* attack with a 12” radius from the model’s base, with a strength of +5 and a damage of D10+10.</description>
         </rule>
       </rules>
       <infoLinks>
         <infoLink name="Aethercraft" id="ee2b-e7a1-5efb-80c0" hidden="false" type="rule" targetId="8e65-6439-1495-6995"/>
+        <infoLink name="Base 200" id="9b09-5564-5e43-3d78" hidden="false" type="profile" targetId="54fa-2339-a49e-08dd"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="4d59-409d-b10a-9244" id="d6b3-3b83-641b-abf4" primary="false" name="Aventine Dynasties"/>
-        <categoryLink targetId="cat-leviathan" id="4cad-2259-dfa4-f8a0" primary="true" name="Leviathan"/>
         <categoryLink targetId="3326-5b0a-b607-c6b3" id="7ad5-26af-e251-51d6" primary="false" name="Airborne"/>
-        <categoryLink targetId="cat-vehicle" id="68b4-b2d2-9b3d-95a7" primary="false" name="Vehicle"/>
+        <categoryLink targetId="1c82-800c-2e0c-6127" id="cc3e-17dc-e2b0-1a64" primary="true" name="Leviathan"/>
+        <categoryLink targetId="6e36-be99-bf15-fb56" id="8b3a-eb31-2e2f-d3d0" primary="false" name="Vehicle"/>
+        <categoryLink targetId="c91d-24e6-4ffc-c4fa" id="0e96-39cc-de59-2d80" primary="false" name="Colossus"/>
       </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Captain" hidden="false" id="fc45-e01e-4ba4-25df">
+      <profiles>
+        <profile name="Captain" typeId="profile-unit" typeName="Unit" hidden="false" id="71f3-0dbc-813b-4145">
+          <characteristics>
+            <characteristic name="Speed" typeId="char-speed">6</characteristic>
+            <characteristic name="Health" typeId="char-health">5</characteristic>
+            <characteristic name="Defence" typeId="char-defence">7</characteristic>
+            <characteristic name="Initiative" typeId="char-initiative">4</characteristic>
+            <characteristic name="Morale" typeId="char-morale">4</characteristic>
+            <characteristic name="Arcane" typeId="char-arcane">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Auri" typeId="cost-auri" value="55"/>
+      </costs>
+      <rules>
+        <rule name="Veteran Warrior" id="5a57-c0b1-c980-d4cc" hidden="false">
+          <description>Groups including this unit can use its Initiative and Morale characteristic instead of their own.</description>
+        </rule>
+      </rules>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="0f90-fa7d-2736-b148" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Ranged Weapon" id="52c9-4afa-cd83-0d67" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Shot Revolver" hidden="false" id="20ac-14ab-7c19-6dbd" defaultAmount="1">
+                  <infoLinks>
+                    <infoLink name="Shot Revolver" id="5bff-18b9-e4be-3f2e" hidden="false" type="profile" targetId="c6ff-33c8-585f-36b7"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Shotrifle" hidden="false" id="67cc-0ecb-757f-3055">
+                  <infoLinks>
+                    <infoLink name="Shotrifle" id="8ada-1a2e-ae55-f408" hidden="false" type="profile" targetId="950c-ac4b-f80f-1f2c"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Auri" typeId="cost-auri" value="5"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Tachyon Rifle" hidden="false" id="404e-be85-fbbe-5313">
+                  <infoLinks>
+                    <infoLink name="Tachyon Rifle" id="34bc-75ff-0253-312b" hidden="false" type="profile" targetId="042b-72f1-6ac7-8781"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Auri" typeId="cost-auri" value="5"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2a5f-8543-056f-fc85-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a5f-8543-056f-fc85-max"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Melee Weapon" id="4a46-2263-2312-a2d4" hidden="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a91-a88e-8f15-3778"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Ancestral Sabre" hidden="false" id="6543-016c-de2f-e474">
+                  <infoLinks>
+                    <infoLink name="Ancestral Sabre" id="6d9f-627d-0c57-5ae9" hidden="false" type="profile" targetId="32e6-9d3a-f3a6-d705"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Auri" typeId="cost-auri" value="10"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Phase Axe" hidden="false" id="b3d6-9c47-3592-0dab">
+                  <infoLinks>
+                    <infoLink name="Phase Axe" id="7ad6-31de-4d68-357a" hidden="false" type="profile" targetId="ed12-e080-55ba-0c6e"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Auri" typeId="cost-auri" value="10"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Storm Armour" hidden="false" id="9999-7b16-7e46-74aa" type="selectionEntry" targetId="d8d2-13c5-cb7f-5b9e"/>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Battle Standard" hidden="false" id="7b9d-7575-cb88-23f9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="60de-bfc5-a027-7e04"/>
+              </constraints>
+              <rules>
+                <rule name="Battle Standard" id="34be-28c4-148d-edda" hidden="false">
+                  <description>Units within 6” of this model can use its Initiative and Morale characteristics instead of their own.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="Auri" typeId="cost-auri" value="25"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="4d59-409d-b10a-9244" id="18c4-b79f-7978-27a1" primary="false" name="Aventine Dynasties"/>
+        <categoryLink targetId="2824-ed94-4a5b-e775" id="621e-5551-debc-cd0d" primary="true" name="Leader"/>
+        <categoryLink targetId="b299-685a-c3bf-add7" id="74e2-c2fb-440d-a550" primary="false" name="Infantry"/>
+        <categoryLink targetId="8bd5-e71f-ad75-c8f5" id="8e12-b398-e36b-39d0" primary="false" name="Independent"/>
+        <categoryLink targetId="ec43-7f75-10fb-0ba5" id="5101-0787-7f70-f411" primary="false" name="Navigators"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Base 28.5" id="1944-7840-b1d0-0917" hidden="false" type="profile" targetId="e1d3-bd05-6cb1-9bdd"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Mamba Flagship" hidden="false" id="889f-a93d-872a-8c8f">
+      <categoryLinks>
+        <categoryLink targetId="4d59-409d-b10a-9244" id="0ae6-03a3-de84-00b0" primary="false" name="Aventine Dynasties"/>
+        <categoryLink targetId="4295-166c-68c2-a0ff" id="f16a-cde7-f95a-86b0" primary="false" name="Fleetmaster"/>
+        <categoryLink targetId="2228-50ba-f04e-7470" id="6275-568a-26f7-6943" primary="false" name="Vanguard"/>
+        <categoryLink targetId="3326-5b0a-b607-c6b3" id="62fa-2040-ffa6-02aa" primary="false" name="Airborne"/>
+        <categoryLink targetId="2824-ed94-4a5b-e775" id="aa3d-aa6b-04fa-9016" primary="true" name="Leader"/>
+        <categoryLink targetId="6e36-be99-bf15-fb56" id="7a76-d1b4-478f-2f29" primary="false" name="Vehicle"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Mamba Flagship" typeId="profile-unit" typeName="Unit" hidden="false" id="87d0-8df4-aebe-1cde">
+          <characteristics>
+            <characteristic name="Speed" typeId="char-speed">16</characteristic>
+            <characteristic name="Health" typeId="char-health">20</characteristic>
+            <characteristic name="Defence" typeId="char-defence">12 / 11 / 10</characteristic>
+            <characteristic name="Initiative" typeId="char-initiative">4</characteristic>
+            <characteristic name="Morale" typeId="char-morale">4</characteristic>
+            <characteristic name="Arcane" typeId="char-arcane">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="The Divine Right" id="0ed0-38f3-f510-9989" hidden="false">
+          <description>Each time this unit is hit by an attack, before inflicting damage, roll a dice. On a natural 8+, that hit is negated.</description>
+        </rule>
+        <rule name="Lord of Conquest – Command action" id="56ed-e64f-02ea-485d" hidden="false">
+          <description>During the Strategy Phase, one unit with this ability can make this action.
+During the Strategy Phase, select one objective marker within 12” of this unit. If, during the subsequent Resolution Phase of that turn, any friendly units (except airborne and shaken units) are within control range of that objective marker, it is claimed by that friendly unit, regardless of any other enemy units in range of it.
+Only one friendly unit may make this action each turn.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Grand Admiral of the Aventine Fleets" id="e0ae-480e-640b-c89f" hidden="false" type="rule" targetId="b529-7c22-65df-2744"/>
+        <infoLink name="Aethercraft" id="7156-3f4d-30f2-5515" hidden="false" type="rule" targetId="8e65-6439-1495-6995"/>
+        <infoLink name="Explosive End (D5”)" id="3c11-ddb5-d806-d9cf" hidden="false" type="rule" targetId="ed1f-a2b1-977b-a80d"/>
+        <infoLink name="Ion Devastator Array" id="d17a-9e3a-3d3f-5970" hidden="false" type="profile" targetId="d896-4401-f0f7-8885"/>
+        <infoLink name="Base 160" id="4275-7e04-fcc3-21e8" hidden="false" type="profile" targetId="c7b5-8d2f-ceaa-cd7e"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Warlord" hidden="false" id="269a-6822-62c5-72b5" type="selectionEntry" targetId="8497-7cf3-9a4a-1ecf"/>
+      </entryLinks>
+      <costs>
+        <cost name="Auri" typeId="cost-auri" value="355"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Grey Shepherd" hidden="false" id="bda9-e6fb-bf41-f3ab">
+      <profiles>
+        <profile name="Grey Shepherd" typeId="profile-unit" typeName="Unit" hidden="false" id="90bb-6630-7f12-998e">
+          <characteristics>
+            <characteristic name="Speed" typeId="char-speed">6</characteristic>
+            <characteristic name="Health" typeId="char-health">5</characteristic>
+            <characteristic name="Defence" typeId="char-defence">7</characteristic>
+            <characteristic name="Initiative" typeId="char-initiative">3</characteristic>
+            <characteristic name="Morale" typeId="char-morale">4</characteristic>
+            <characteristic name="Arcane" typeId="char-arcane">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Auri" typeId="cost-auri" value="85"/>
+      </costs>
+      <rules>
+        <rule name="Minister of the Faithless – Aura (12”)" id="db29-98b1-2395-5caa" hidden="false">
+          <description>Groups including this unit can use its Morale characteristic instead of their own. Additionally, if this unit is destroyed by an enemy unit, all friendly units add 1 to their attack rolls when targeting that enemy unit until the end of the battle.</description>
+        </rule>
+        <rule name="Guiding Words" id="55b7-4b08-dca4-4cc3" hidden="false">
+          <description>In the Movement Phase, after this unit has finished an action (but before any reactions are made), this unit can instil its warriors with guiding words. It can instil them by using one of the following orations:
+
+
+*Vigilance to the end!*
+Select one friendly unit or group within 12”. This unit doubles its initiative characteristic until it makes a reaction in this turn. This is not cumulative with being Ready To React.
+
+
+*Let fear have no place in your souls!*
+Select one friendly infantry unit within 12”. This unit immediately takes an attrition test.
+
+
+*Fight for your family, for your home, for your freedom!*
+Select one friendly unit or group within 12”. This unit can immediately make a Fight action as if it were the Combat Phase, and adds 1 to its attack rolls. It cannot perform any actions or reactions until the next turn.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink targetId="4d59-409d-b10a-9244" id="8c1d-40fc-a679-0ab3" primary="false" name="Aventine Dynasties"/>
+        <categoryLink targetId="2824-ed94-4a5b-e775" id="f14f-9f95-40a8-9972" primary="true" name="Leader"/>
+        <categoryLink targetId="b299-685a-c3bf-add7" id="980e-faba-e47a-c84d" primary="false" name="Infantry"/>
+        <categoryLink targetId="8bd5-e71f-ad75-c8f5" id="9916-0c66-be4e-7729" primary="false" name="Independent"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Base 35" id="e739-f1cb-ebae-19e6" hidden="false" type="profile" targetId="5638-4dce-9001-1d15"/>
+        <infoLink name="Shot Revolver" id="328d-8364-b8af-5571" hidden="false" type="profile" targetId="c6ff-33c8-585f-36b7"/>
+        <infoLink name="Wanderer’s Staff" id="1b92-87bf-c042-a5e2" hidden="false" type="profile" targetId="6546-7936-83f7-2265"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Warlord" hidden="false" id="4d80-34f3-ffdb-0e57" type="selectionEntry" targetId="8497-7cf3-9a4a-1ecf"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Hydra Skatecraft" hidden="false" id="d58d-3b06-df85-6ecf">
+      <profiles>
+        <profile name="Hydra Skatecraft" typeId="profile-unit" typeName="Unit" hidden="false" id="2eb0-4b9d-8a56-35ef">
+          <characteristics>
+            <characteristic name="Speed" typeId="char-speed">12</characteristic>
+            <characteristic name="Health" typeId="char-health">14</characteristic>
+            <characteristic name="Defence" typeId="char-defence">11 / 11 / 9</characteristic>
+            <characteristic name="Initiative" typeId="char-initiative">4</characteristic>
+            <characteristic name="Morale" typeId="char-morale">3</characteristic>
+            <characteristic name="Arcane" typeId="char-arcane">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Skatecraft" id="7eb0-85ac-2d3e-fadc" hidden="false" type="rule" targetId="1958-255b-b7e3-5d3e"/>
+        <infoLink name="Twin Shattercannon" id="3793-1c29-8f5a-629b" hidden="false" type="profile" targetId="8333-c1cb-9698-6c2c"/>
+        <infoLink name="Base 120" id="672d-17fd-1951-bf9c" hidden="false" type="profile" targetId="3f40-ae27-fc52-87ca"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="4d59-409d-b10a-9244" id="47a0-fe41-c6e4-5f6a" primary="false" name="Aventine Dynasties"/>
+        <categoryLink targetId="6e36-be99-bf15-fb56" id="c8df-63b4-51e1-f738" primary="true" name="Vehicle"/>
+        <categoryLink targetId="2228-50ba-f04e-7470" id="376c-5631-30e8-409b" primary="false" name="Vanguard"/>
+        <categoryLink targetId="3326-5b0a-b607-c6b3" id="30c9-6f19-aa4f-abee" primary="false" name="Airborne"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Auri" typeId="cost-auri" value="155"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Storm Armour" hidden="false" id="d8d2-13c5-cb7f-5b9e">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb49-6d46-834d-bae5"/>
+      </constraints>
+      <costs>
+        <cost name="Auri" typeId="cost-auri" value="15"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="9" field="char-defence" scope="parent" affects="profiles.Unit"/>
+        <modifier type="set" value="5" field="char-speed" scope="parent" affects="profiles.Unit"/>
+      </modifiers>
+      <rules>
+        <rule name="Storm Armour" id="cbf2-9ae7-53b3-441e" hidden="false">
+          <description>A model equipped with Storm Armour increases its Defence characteristic to 9, but reduces its Speed characteristic to 5.</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="The Aventine Armada" hidden="false" id="04f2-fe17-042d-75f2" type="selectionEntry" targetId="241c-e764-e169-65fb"/>
-    <entryLink import="true" name="Fleetmaster" hidden="false" id="be59-0b69-5c66-154e" type="selectionEntry" targetId="0ae9-f83f-7fc2-dda3">
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4331-2cb4-f5b4-5bad-min" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4331-2cb4-f5b4-5bad-max" includeChildSelections="false"/>
-      </constraints>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
+    <entryLink import="true" name="Fleetmaster" hidden="true" id="be59-0b69-5c66-154e" type="selectionEntry" targetId="0ae9-f83f-7fc2-dda3">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+          </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="676a-c573-5ae0-a1ea" shared="true" includeChildSelections="false"/>
+            <condition type="instanceOf" value="1" field="selections" scope="676a-c573-5ae0-a1ea" childId="any" shared="true"/>
           </conditions>
-        </modifier>
-      </modifiers>
-    </entryLink>
-    <entryLink import="true" name="Helmwarden" hidden="false" id="c595-dffb-04bb-7b30" type="selectionEntry" targetId="66f3-63d1-f107-cdec">
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5429-e073-c2b5-642f-min" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5429-e073-c2b5-642f-max" includeChildSelections="false"/>
-      </constraints>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
+        </modifierGroup>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+          </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="0d90-aa61-60c7-eca0" shared="true" includeChildSelections="false"/>
+            <condition type="instanceOf" value="1" field="selections" scope="0d90-aa61-60c7-eca0" childId="any" shared="true"/>
           </conditions>
-        </modifier>
-      </modifiers>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="a6e7-1a82-ddaf-d848" childId="any" shared="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
     </entryLink>
-    <entryLink import="true" name="Navigators" hidden="false" id="0b58-9602-9530-d761" type="selectionEntry" targetId="f481-9288-261e-c08c">
+    <entryLink import="true" name="Helmwarden" hidden="true" id="c595-dffb-04bb-7b30" type="selectionEntry" targetId="66f3-63d1-f107-cdec">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="0d90-aa61-60c7-eca0" childId="any" shared="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="true" name="Navigators" hidden="true" id="0b58-9602-9530-d761" type="selectionEntry" targetId="f481-9288-261e-c08c">
       <constraints>
-        <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7620-5a55-e298-69d3" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="eac8-2871-a152-ae8b"/>
       </constraints>
-      <modifiers>
-        <modifier type="increment" value="2" field="7620-5a55-e298-69d3">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+            <modifier type="set" value="2" field="eac8-2871-a152-ae8b"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="676a-c573-5ae0-a1ea" childId="any" shared="true"/>
+          </conditions>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="increment" value="2" field="eac8-2871-a152-ae8b"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="8497-7cf3-9a4a-1ecf" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+            <modifier type="set" value="2" field="eac8-2871-a152-ae8b"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="0d90-aa61-60c7-eca0" childId="any" shared="true"/>
+          </conditions>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+            <modifier type="set" value="3" field="eac8-2871-a152-ae8b"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="a6e7-1a82-ddaf-d848" childId="any" shared="true"/>
+          </conditions>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="increment" value="2" field="eac8-2871-a152-ae8b"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="8497-7cf3-9a4a-1ecf" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="true" name="Navigators in Storm Armour" hidden="true" id="572f-af18-f88e-e448" type="selectionEntry" targetId="a363-1ab9-6bfd-10cf">
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="9d25-f332-7805-cead"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+            <modifier type="set" value="2" field="9d25-f332-7805-cead"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="0d90-aa61-60c7-eca0" childId="any" shared="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="true" name="Asp Sentry Squadron" hidden="true" id="dbc9-3628-844b-fd59" type="selectionEntry" targetId="b8e2-023c-4263-d9dd">
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="50eb-c073-1bee-4471"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+            <modifier type="set" value="2" field="50eb-c073-1bee-4471"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="0d90-aa61-60c7-eca0" childId="any" shared="true"/>
+          </conditions>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+            <modifier type="set" value="3" field="50eb-c073-1bee-4471"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="5293-c2f6-f64b-abd5" childId="any" shared="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="true" name="Fleetguard Protectors" hidden="true" id="d593-de6c-6577-8c76" type="selectionEntry" targetId="7e3e-d983-5ac0-3ded">
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b2b1-59eb-4141-d401"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="increment" value="1" field="b2b1-59eb-4141-d401"/>
+            <modifier type="set" value="false" field="hidden"/>
+          </modifiers>
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="676a-c573-5ae0-a1ea" shared="true" includeChildSelections="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="676a-c573-5ae0-a1ea" childId="any" shared="true"/>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="8497-7cf3-9a4a-1ecf" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-        <modifier type="increment" value="3" field="7620-5a55-e298-69d3">
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="true" name="Navigator Engineers" hidden="true" id="30cd-312c-65ff-cfdc" type="selectionEntry" targetId="f318-05ec-afb4-12b5">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+            <modifier type="set" value="1" field="4405-62cb-2b21-2c42"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="676a-c573-5ae0-a1ea" childId="any" shared="true"/>
+          </conditions>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="increment" value="1" field="4405-62cb-2b21-2c42"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="8497-7cf3-9a4a-1ecf" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+            <modifier type="increment" value="1" field="4405-62cb-2b21-2c42"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="0d90-aa61-60c7-eca0" childId="any" shared="true"/>
+          </conditions>
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="0d90-aa61-60c7-eca0" shared="true" includeChildSelections="false"/>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="8497-7cf3-9a4a-1ecf" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="0d90-aa61-60c7-eca0" childId="any" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-      </modifiers>
-    </entryLink>
-    <entryLink import="true" name="Navigators in Storm Armour" hidden="false" id="572f-af18-f88e-e448" type="selectionEntry" targetId="a363-1ab9-6bfd-10cf">
+        </modifierGroup>
+      </modifierGroups>
       <constraints>
-        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="95f4-de73-9323-3b13" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="4405-62cb-2b21-2c42"/>
       </constraints>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="0d90-aa61-60c7-eca0" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" value="3" field="95f4-de73-9323-3b13">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8497-7cf3-9a4a-1ecf" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </entryLink>
-    <entryLink import="true" name="Asp Sentry Squadron" hidden="false" id="dbc9-3628-844b-fd59" type="selectionEntry" targetId="b8e2-023c-4263-d9dd">
+    <entryLink import="true" name="Pathfinder Cadre" hidden="true" id="1977-5deb-4177-6aa5" type="selectionEntry" targetId="48a4-81e3-b990-eef5">
       <constraints>
-        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4c2b-0a4f-e0c1-c72f" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e76e-506c-f0ab-617a"/>
       </constraints>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+            <modifier type="set" value="1" field="e76e-506c-f0ab-617a"/>
+          </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="0d90-aa61-60c7-eca0" shared="true" includeChildSelections="false"/>
+            <condition type="instanceOf" value="1" field="selections" scope="676a-c573-5ae0-a1ea" childId="any" shared="true"/>
           </conditions>
-        </modifier>
-      </modifiers>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+            <modifier type="increment" value="1" field="e76e-506c-f0ab-617a"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="0d90-aa61-60c7-eca0" childId="any" shared="true"/>
+          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="8497-7cf3-9a4a-1ecf" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="0d90-aa61-60c7-eca0" childId="any" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifierGroup>
+      </modifierGroups>
     </entryLink>
-    <entryLink import="true" name="Fleetguard Protectors" hidden="false" id="d593-de6c-6577-8c76" type="selectionEntry" targetId="7e3e-d983-5ac0-3ded">
+    <entryLink import="true" name="Coryphe" hidden="true" id="1c2b-64e4-8afe-e403" type="selectionEntry" targetId="066d-715d-490d-1c8f">
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a04a-210b-e46f-3993" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="fb81-875f-f6bf-cbf9"/>
       </constraints>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+            <modifier type="set" value="1" field="fb81-875f-f6bf-cbf9"/>
+          </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="0d90-aa61-60c7-eca0" shared="true" includeChildSelections="false"/>
+            <condition type="instanceOf" value="1" field="selections" scope="0d90-aa61-60c7-eca0" childId="any" shared="true"/>
           </conditions>
-        </modifier>
-      </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </entryLink>
-    <entryLink import="true" name="Navigator Engineers" hidden="false" id="30cd-312c-65ff-cfdc" type="selectionEntry" targetId="f318-05ec-afb4-12b5">
+    <entryLink import="true" name="Viper Scout Craft" hidden="true" id="1c92-9459-8042-8242" type="selectionEntry" targetId="9b93-7473-f6b1-8237">
       <constraints>
-        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3e5c-23c0-24c4-d855" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1c5d-d82e-d819-146d"/>
       </constraints>
-      <modifiers>
-        <modifier type="increment" value="1" field="3e5c-23c0-24c4-d855">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+            <modifier type="set" value="2" field="1c5d-d82e-d819-146d"/>
+          </modifiers>
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8497-7cf3-9a4a-1ecf" shared="true" includeChildSelections="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="5293-c2f6-f64b-abd5" childId="any" shared="true"/>
           </conditions>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
+        </modifierGroup>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+            <modifier type="set" value="1" field="1c5d-d82e-d819-146d"/>
+            <modifier type="increment" value="1" field="1c5d-d82e-d819-146d">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="8497-7cf3-9a4a-1ecf" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="676a-c573-5ae0-a1ea" shared="true" includeChildSelections="false"/>
+            <condition type="instanceOf" value="1" field="selections" scope="0d90-aa61-60c7-eca0" childId="any" shared="true"/>
           </conditions>
-        </modifier>
-      </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </entryLink>
-    <entryLink import="true" name="Pathfinder Cadre" hidden="false" id="1977-5deb-4177-6aa5" type="selectionEntry" targetId="48a4-81e3-b990-eef5">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e941-635c-1fc5-72b1" includeChildSelections="false"/>
-      </constraints>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
+    <entryLink import="true" name="Mamba Strike Craft" hidden="true" id="7179-f406-405e-9307" type="selectionEntry" targetId="bacf-8514-4476-e50e">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+            <modifier type="set" value="1" field="a70f-b4cb-3df8-6222"/>
+          </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="676a-c573-5ae0-a1ea" shared="true" includeChildSelections="false"/>
+            <condition type="instanceOf" value="1" field="selections" scope="676a-c573-5ae0-a1ea" childId="any" shared="true"/>
           </conditions>
-        </modifier>
-      </modifiers>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+            <modifier type="set" value="2" field="a70f-b4cb-3df8-6222"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="5293-c2f6-f64b-abd5" childId="any" shared="true"/>
+          </conditions>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+            <modifier type="increment" value="1" field="a70f-b4cb-3df8-6222"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="0d90-aa61-60c7-eca0" childId="any" shared="true"/>
+          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="8497-7cf3-9a4a-1ecf" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="0d90-aa61-60c7-eca0" childId="any" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifierGroup>
+      </modifierGroups>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a70f-b4cb-3df8-6222"/>
+      </constraints>
     </entryLink>
-    <entryLink import="true" name="Coryphe" hidden="false" id="1c2b-64e4-8afe-e403" type="selectionEntry" targetId="066d-715d-490d-1c8f">
+    <entryLink import="true" name="Cobra Annihilator Craft" hidden="true" id="7251-0e64-71b5-e614" type="selectionEntry" targetId="0d73-88df-9a36-bebb">
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de71-2311-0b96-3b93" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="5ef7-400e-a3ca-53d0"/>
       </constraints>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+            <modifier type="set" value="1" field="5ef7-400e-a3ca-53d0"/>
+          </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="0d90-aa61-60c7-eca0" shared="true" includeChildSelections="false"/>
+            <condition type="instanceOf" value="1" field="selections" scope="5293-c2f6-f64b-abd5" childId="any" shared="true"/>
           </conditions>
-        </modifier>
-      </modifiers>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+            <modifier type="increment" value="1" field="5ef7-400e-a3ca-53d0"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="0d90-aa61-60c7-eca0" childId="any" shared="true"/>
+          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="8497-7cf3-9a4a-1ecf" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="0d90-aa61-60c7-eca0" childId="any" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifierGroup>
+      </modifierGroups>
     </entryLink>
-    <entryLink import="true" name="Viper Scout Craft" hidden="false" id="1c92-9459-8042-8242" type="selectionEntry" targetId="9b93-7473-f6b1-8237">
-      <constraints>
-        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="fea3-3c88-36ff-d91c" includeChildSelections="false"/>
-      </constraints>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
+    <entryLink import="true" name="Captain" hidden="true" id="af83-07e1-5399-40e7" type="selectionEntry" targetId="fc45-e01e-4ba4-25df">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+          </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="0d90-aa61-60c7-eca0" shared="true" includeChildSelections="false"/>
+            <condition type="instanceOf" value="1" field="selections" scope="676a-c573-5ae0-a1ea" childId="any" shared="true"/>
           </conditions>
-        </modifier>
-        <modifier type="increment" value="3" field="fea3-3c88-36ff-d91c">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8497-7cf3-9a4a-1ecf" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </entryLink>
-    <entryLink import="true" name="Mamba Strike Craft" hidden="false" id="7179-f406-405e-9307" type="selectionEntry" targetId="bacf-8514-4476-e50e">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ddf-46df-e7e9-9849" includeChildSelections="false"/>
-      </constraints>
-      <modifiers>
-        <modifier type="increment" value="2" field="4ddf-46df-e7e9-9849">
+    <entryLink import="true" name="Mamba Flagship" hidden="true" id="4251-7c43-837f-cd42" type="selectionEntry" targetId="889f-a93d-872a-8c8f">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+          </modifiers>
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8497-7cf3-9a4a-1ecf" shared="true" includeChildSelections="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="5293-c2f6-f64b-abd5" childId="any" shared="true"/>
           </conditions>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
+        </modifierGroup>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+          </modifiers>
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="676a-c573-5ae0-a1ea" shared="true" includeChildSelections="false"/>
+            <condition type="instanceOf" value="1" field="selections" scope="0d90-aa61-60c7-eca0" childId="any" shared="true"/>
           </conditions>
-        </modifier>
-      </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </entryLink>
-    <entryLink import="true" name="Cobra Annihilator Craft" hidden="false" id="7251-0e64-71b5-e614" type="selectionEntry" targetId="0d73-88df-9a36-bebb">
+    <entryLink import="true" name="Grey Shepherd" hidden="false" id="5890-aee1-c5ed-bde1" type="selectionEntry" targetId="bda9-e6fb-bf41-f3ab">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="a6e7-1a82-ddaf-d848" childId="any" shared="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="true" name="Hydra Skatecraft" hidden="false" id="75be-e07c-afff-1701" type="selectionEntry" targetId="d58d-3b06-df85-6ecf">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+            <modifier type="set" value="2" field="f560-0dea-9d7a-dbee"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="a6e7-1a82-ddaf-d848" childId="any" shared="true"/>
+          </conditions>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="increment" value="2" field="f560-0dea-9d7a-dbee"/>
+              </modifiers>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="8497-7cf3-9a4a-1ecf" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
+        </modifierGroup>
+      </modifierGroups>
       <constraints>
-        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="cf9a-5a61-8b5e-dd81" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f560-0dea-9d7a-dbee"/>
       </constraints>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="0d90-aa61-60c7-eca0" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" value="1" field="cf9a-5a61-8b5e-dd81">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8497-7cf3-9a4a-1ecf" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </entryLink>
   </entryLinks>
   <categoryEntries>
     <categoryEntry name="Aventine Dynasties" id="4d59-409d-b10a-9244" hidden="false"/>
     <categoryEntry name="Cavalry" id="98e2-8bf5-6242-c731" hidden="false"/>
+    <categoryEntry name="Fleetmaster" id="4295-166c-68c2-a0ff" hidden="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a0c9-14c4-cca2-2659" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry name="Navigators" id="ec43-7f75-10fb-0ba5" hidden="false"/>
+    <categoryEntry name="Colossus" id="c91d-24e6-4ffc-c4fa" hidden="false"/>
   </categoryEntries>
   <sharedProfiles>
     <profile name="Tachyon Rifle" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="042b-72f1-6ac7-8781">
@@ -1246,20 +1891,20 @@ If this unit is destroyed by its own solar annihilator, its singularity engine 
     </profile>
     <profile name="Shotrifle" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="950c-ac4b-f80f-1f2c">
       <characteristics>
-        <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
+        <characteristic name="Range" typeId="1023-f0db-ffcf-da31">24&quot;</characteristic>
         <characteristic name="Dice" typeId="1192-2222-5926-5b4b">1</characteristic>
-        <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+2</characteristic>
+        <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+1</characteristic>
         <characteristic name="Damage" typeId="a482-225f-a3cb-a700">1</characteristic>
-        <characteristic name="Traits" typeId="76cd-5882-86da-52cf">This weapon has a dice characteristic of 2 when targeting a unit within 10” of the attacking model.</characteristic>
+        <characteristic name="Traits" typeId="76cd-5882-86da-52cf">This weapon has a damage characteristic of 2 when targeting a unit within 12” of the attacking model.</characteristic>
       </characteristics>
     </profile>
     <profile name="Shot Revolver" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="c6ff-33c8-585f-36b7">
       <characteristics>
-        <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
+        <characteristic name="Range" typeId="1023-f0db-ffcf-da31">12&quot;</characteristic>
         <characteristic name="Dice" typeId="1192-2222-5926-5b4b">1</characteristic>
         <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+1</characteristic>
         <characteristic name="Damage" typeId="a482-225f-a3cb-a700">1</characteristic>
-        <characteristic name="Traits" typeId="76cd-5882-86da-52cf">This weapon can only target units within 10” of the attacking model.</characteristic>
+        <characteristic name="Traits" typeId="76cd-5882-86da-52cf"/>
       </characteristics>
     </profile>
     <profile name="Resonance Blade" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="fa39-b276-f00b-7453">
@@ -1270,10 +1915,119 @@ If this unit is destroyed by its own solar annihilator, its singularity engine 
         <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d">Natural attack rolls of 10 made with this weapon are always hits.</characteristic>
       </characteristics>
     </profile>
+    <profile name="Siege Maul" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="cf93-bcfe-6500-0c86">
+      <characteristics>
+        <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">2</characteristic>
+        <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+3</characteristic>
+        <characteristic name="Damage" typeId="2780-b560-1641-b9a5">3</characteristic>
+        <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d"/>
+      </characteristics>
+    </profile>
+    <profile name="Ion Pistol" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="5880-8a41-ac8c-20dc">
+      <characteristics>
+        <characteristic name="Range" typeId="1023-f0db-ffcf-da31">12&quot;</characteristic>
+        <characteristic name="Dice" typeId="1192-2222-5926-5b4b">1</characteristic>
+        <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+3</characteristic>
+        <characteristic name="Damage" typeId="a482-225f-a3cb-a700">3</characteristic>
+        <characteristic name="Traits" typeId="76cd-5882-86da-52cf"/>
+      </characteristics>
+    </profile>
+    <profile name="Heavy Resonance Blade" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="df0c-619c-305f-2603">
+      <characteristics>
+        <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8"/>
+        <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3"/>
+        <characteristic name="Damage" typeId="2780-b560-1641-b9a5"/>
+        <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d"/>
+      </characteristics>
+    </profile>
+    <profile name="Fleetguard Pike" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="f73c-df71-23c1-9b9f">
+      <characteristics>
+        <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">1</characteristic>
+        <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+2</characteristic>
+        <characteristic name="Damage" typeId="2780-b560-1641-b9a5">3</characteristic>
+        <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d">This weapon has advantage when targeting *monsters* or *cavalry* units. If a model equipped with fleetguard pikes is successfully charged, it adds 2 to this weapon’s strength until the end of the phase.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Ion Devastator Array" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="d896-4401-f0f7-8885">
+      <characteristics>
+        <characteristic name="Range" typeId="1023-f0db-ffcf-da31">48&quot;</characteristic>
+        <characteristic name="Dice" typeId="1192-2222-5926-5b4b">4</characteristic>
+        <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+6</characteristic>
+        <characteristic name="Damage" typeId="a482-225f-a3cb-a700">4</characteristic>
+        <characteristic name="Traits" typeId="76cd-5882-86da-52cf">When selecting a target for this weapon, the attacking player can choose for it to fire in acceleration mode. If it does so, this weapon has a Damage characteristic of 5, but each time an attack roll fails, the attacking unit gains an attrition point.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Wanderer’s Staff" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="6546-7936-83f7-2265">
+      <characteristics>
+        <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">2</characteristic>
+        <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+2</characteristic>
+        <characteristic name="Damage" typeId="2780-b560-1641-b9a5">1</characteristic>
+        <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d"/>
+      </characteristics>
+    </profile>
+    <profile name="Ancestral Sabre" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="32e6-9d3a-f3a6-d705">
+      <characteristics>
+        <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">3</characteristic>
+        <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+2</characteristic>
+        <characteristic name="Damage" typeId="2780-b560-1641-b9a5">1</characteristic>
+        <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d"/>
+      </characteristics>
+    </profile>
+    <profile name="Phase Axe" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="ed12-e080-55ba-0c6e">
+      <characteristics>
+        <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">2</characteristic>
+        <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+3</characteristic>
+        <characteristic name="Damage" typeId="2780-b560-1641-b9a5">2</characteristic>
+        <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d"/>
+      </characteristics>
+    </profile>
+    <profile name="Cult Blade" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="1598-ec2f-03a4-747e">
+      <characteristics>
+        <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">3</characteristic>
+        <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">-</characteristic>
+        <characteristic name="Damage" typeId="2780-b560-1641-b9a5">1</characteristic>
+        <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d"/>
+      </characteristics>
+    </profile>
+    <profile name="Incinerator" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="8d9b-2f4e-cda9-6d81">
+      <characteristics>
+        <characteristic name="Range" typeId="1023-f0db-ffcf-da31">16&quot;</characteristic>
+        <characteristic name="Dice" typeId="1192-2222-5926-5b4b">D5</characteristic>
+        <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+3</characteristic>
+        <characteristic name="Damage" typeId="a482-225f-a3cb-a700">1</characteristic>
+        <characteristic name="Traits" typeId="76cd-5882-86da-52cf">Units do not benefit from cover when being targeted by this weapon. Each time a unit gains an attrition point as part of an attack that includes this weapon, it gains one additional attrition point. This is not cumulative with other instances of this rule.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Heavy Ion Torch" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="d881-46d7-ef7c-a504">
+      <characteristics>
+        <characteristic name="Range" typeId="1023-f0db-ffcf-da31">4&quot;</characteristic>
+        <characteristic name="Dice" typeId="1192-2222-5926-5b4b">1</characteristic>
+        <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+2</characteristic>
+        <characteristic name="Damage" typeId="a482-225f-a3cb-a700">6</characteristic>
+        <characteristic name="Traits" typeId="76cd-5882-86da-52cf">When an attack with this weapon targets a *vehicle*, *construct*, *monster* or *structure* model, it has a strength characteristic of +4.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Heavy Ion Torch" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="4361-8d1b-e85e-bd31">
+      <characteristics>
+        <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">1</characteristic>
+        <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+2</characteristic>
+        <characteristic name="Damage" typeId="2780-b560-1641-b9a5">6</characteristic>
+        <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d">When an attack with this weapon targets a *vehicle*, *construct*, *monster* or *structure* model, it has a strength characteristic of +4.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Twin Shattercannon" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="8333-c1cb-9698-6c2c">
+      <characteristics>
+        <characteristic name="Range" typeId="1023-f0db-ffcf-da31">36&quot;</characteristic>
+        <characteristic name="Dice" typeId="1192-2222-5926-5b4b">4</characteristic>
+        <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+3</characteristic>
+        <characteristic name="Damage" typeId="a482-225f-a3cb-a700">3</characteristic>
+        <characteristic name="Traits" typeId="76cd-5882-86da-52cf">Health points lost in excess of a model’s Health characteristic as a result of attacks with this weapon are not discarded, but instead allocated to the next model in the unit.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedRules>
     <rule name="Ranked Fire" id="ae07-7486-20a6-2acb" hidden="false">
-      <description>If all models in this unit are in base lock, when it shoots at an enemy unit within contact range, it adds 1 to its attack rolls. If any *independent* units attached to this unit are in base lock with this unit, they also benefit from this ability.</description>
+      <description>If all models in this unit are in base lock, when a model in this unit targets an enemy unit with its ranged weapons within 12”, it may reroll natural attack rolls of 1.</description>
     </rule>
     <rule name="Explosive End (D5”)" id="ed1f-a2b1-977b-a80d" hidden="false">
       <description>When this unit is destroyed, before removing the model, it explodes in a D5” blast radius from its base, with a strength of +3 and a damage of 1. If this unit had *altitude* when it was destroyed, the explosion has strength of +5 and a damage of 3.</description>
@@ -1290,5 +2044,85 @@ All non-*altitude* units have *vertical disadvantage*. A unit with vertical dis
 * Cannot target *altitude* units with melee weapons or weapons with a limited range.
 * Cannot charge *altitude* units. Additionally, altitude units never count as the closest unit for the purposes of disordered charges.</description>
     </rule>
+    <rule name="Grand Admiral of the Aventine Fleets" id="b529-7c22-65df-2744" hidden="false">
+      <description>Your force may only ever include one *Fleetmaster* unit, and if your force includes one, it is always your *warlord*, superseding all other options.</description>
+    </rule>
+    <rule name="Skatecraft" id="1958-255b-b7e3-5d3e" hidden="false">
+      <description>Each time this unit makes an advance move, it can move up to its full Speed characteristic instead of only half.</description>
+    </rule>
+    <rule name="Explosive End (Skatecraft, D5”)" id="03f2-d152-4f9e-2998" hidden="false">
+      <description>When this unit is destroyed, before removing the model, roll a dice. On a 5+, it explodes in a *blast* attack, with a D5” radius originating from its base, with a strength of +3 and a damage of 1. If this unit made an advance move in the turn in which it was destroyed, the explosion has strength of +5 and a damage of 3.</description>
+    </rule>
   </sharedRules>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Captain (extra)" hidden="true" id="eeb4-452b-e9e1-b72d">
+      <categoryLinks>
+        <categoryLink targetId="d811-3a71-b9ea-e8e2" id="df68-6704-7b77-e6e1" primary="true" name="Leader (extra)"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Captain" hidden="false" id="e881-22d0-f1bd-e535" type="selectionEntry" targetId="fc45-e01e-4ba4-25df">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2b57-3b96-a513-9011-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b57-3b96-a513-9011-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0d32-7d8c-171a-7e8c"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="8497-7cf3-9a4a-1ecf" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="676a-c573-5ae0-a1ea" childId="any" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="0d90-aa61-60c7-eca0" childId="any" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="a6e7-1a82-ddaf-d848" childId="any" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Extra (warlord)" hidden="true" id="7195-b192-a7b8-0681">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f66c-5da3-1fe2-122e"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="8497-7cf3-9a4a-1ecf" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="0d90-aa61-60c7-eca0" childId="any" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="e2de-1d53-4801-4bc4" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70fd-df93-c375-60aa"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Navigators in Storm Armour" hidden="false" id="c57e-e5d9-9c16-ca02" type="selectionEntry" targetId="a363-1ab9-6bfd-10cf"/>
+            <entryLink import="true" name="Navigators" hidden="false" id="a46e-cbe6-d4d8-a18c" type="selectionEntry" targetId="f481-9288-261e-c08c"/>
+            <entryLink import="true" name="Fleetguard Protectors" hidden="false" id="790f-e227-f24d-567a" type="selectionEntry" targetId="7e3e-d983-5ac0-3ded">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4df7-a2f3-c1d6-fd35"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>
