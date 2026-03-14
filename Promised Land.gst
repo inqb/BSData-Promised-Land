@@ -109,7 +109,7 @@
     </profile>
     <profile name="Base 250" typeId="76aa-68f9-b955-0f6b" typeName="Base" hidden="false" id="9dbd-323f-2f96-4b5a">
       <characteristics>
-        <characteristic name="Base Size" typeId="e452-67d7-e861-25f9"/>
+        <characteristic name="Base Size" typeId="e452-67d7-e861-25f9">250</characteristic>
       </characteristics>
       <modifiers>
         <modifier type="set" value="Base" field="name"/>
@@ -117,7 +117,39 @@
     </profile>
     <profile name="Base 160" typeId="76aa-68f9-b955-0f6b" typeName="Base" hidden="false" id="c7b5-8d2f-ceaa-cd7e">
       <characteristics>
-        <characteristic name="Base Size" typeId="e452-67d7-e861-25f9"/>
+        <characteristic name="Base Size" typeId="e452-67d7-e861-25f9">160</characteristic>
+      </characteristics>
+      <modifiers>
+        <modifier type="set" value="Base" field="name"/>
+      </modifiers>
+    </profile>
+    <profile name="Base 50" typeId="76aa-68f9-b955-0f6b" typeName="Base" hidden="false" id="2425-4fb1-f230-4beb">
+      <characteristics>
+        <characteristic name="Base Size" typeId="e452-67d7-e861-25f9">50</characteristic>
+      </characteristics>
+      <modifiers>
+        <modifier type="set" value="Base" field="name"/>
+      </modifiers>
+    </profile>
+    <profile name="Base 60" typeId="76aa-68f9-b955-0f6b" typeName="Base" hidden="false" id="ebee-2597-c52d-5eb8">
+      <characteristics>
+        <characteristic name="Base Size" typeId="e452-67d7-e861-25f9">60</characteristic>
+      </characteristics>
+      <modifiers>
+        <modifier type="set" value="Base" field="name"/>
+      </modifiers>
+    </profile>
+    <profile name="Base 120" typeId="76aa-68f9-b955-0f6b" typeName="Base" hidden="false" id="3f40-ae27-fc52-87ca">
+      <characteristics>
+        <characteristic name="Base Size" typeId="e452-67d7-e861-25f9">120</characteristic>
+      </characteristics>
+      <modifiers>
+        <modifier type="set" value="Base" field="name"/>
+      </modifiers>
+    </profile>
+    <profile name="Base 200" typeId="76aa-68f9-b955-0f6b" typeName="Base" hidden="false" id="54fa-2339-a49e-08dd">
+      <characteristics>
+        <characteristic name="Base Size" typeId="e452-67d7-e861-25f9">200</characteristic>
       </characteristics>
       <modifiers>
         <modifier type="set" value="Base" field="name"/>
