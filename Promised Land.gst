@@ -50,7 +50,12 @@
     </profileType>
   </profileTypes>
   <categoryEntries>
-    <categoryEntry id="cat-leader" name="Leader" hidden="false"/>
+    <categoryEntry id="cat-leader" name="Leader" hidden="false">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="31a8-b21b-81d0-b22a-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="31a8-b21b-81d0-b22a-max"/>
+      </constraints>
+    </categoryEntry>
     <categoryEntry id="cat-troops" name="Troops" hidden="false"/>
     <categoryEntry id="cat-support" name="Support" hidden="false"/>
     <categoryEntry id="cat-monster" name="Monster" hidden="false"/>

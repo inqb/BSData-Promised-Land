@@ -62,10 +62,6 @@
         </entryLink>
         <entryLink import="true" name="Warlord" hidden="false" id="25ee-3cca-0544-b958" type="selectionEntry" targetId="8497-7cf3-9a4a-1ecf"/>
       </entryLinks>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0075-88a8-eedc-7b8a-min"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0075-88a8-eedc-7b8a-max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink targetId="cat-leader" id="7047-2e92-c4f4-beee" primary="true" name="Leader"/>
       </categoryLinks>

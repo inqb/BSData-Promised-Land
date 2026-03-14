@@ -58,10 +58,6 @@
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" id="0874-2e53-2e97-0bac" type="selectionEntry" targetId="8497-7cf3-9a4a-1ecf"/>
       </entryLinks>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e3c9-e415-f14e-41ee-min"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e3c9-e415-f14e-41ee-max"/>
-      </constraints>
     </selectionEntry>
   </selectionEntries>
 </catalogue>
