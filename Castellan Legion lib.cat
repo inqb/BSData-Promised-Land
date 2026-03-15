@@ -411,4 +411,7 @@ If the result is equal to or less than the number of attrition points allocated 
       <description>When a *Dæmon* *mystic* makes a counterspell reaction against a *Divine* invocations, it halves its Arcane characteristic (rounding up).</description>
     </rule>
   </rules>
+  <infoLinks>
+    <infoLink name="Rites of Radiance" id="f7cb-361e-f13e-f5ef" hidden="false" type="infoGroup" targetId="96b7-1f2f-b4c1-99ff"/>
+  </infoLinks>
 </catalogue>
