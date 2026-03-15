@@ -157,6 +157,30 @@
         <modifier type="set" value="Base" field="name"/>
       </modifiers>
     </profile>
+    <profile name="Base 30" typeId="76aa-68f9-b955-0f6b" typeName="Base" hidden="false" id="2f69-19dd-1d8a-6998">
+      <characteristics>
+        <characteristic name="Base Size" typeId="e452-67d7-e861-25f9">30</characteristic>
+      </characteristics>
+      <modifiers>
+        <modifier type="set" value="Base" field="name"/>
+      </modifiers>
+    </profile>
+    <profile name="Base 40" typeId="76aa-68f9-b955-0f6b" typeName="Base" hidden="false" id="ca04-7a25-5d47-0b6f">
+      <characteristics>
+        <characteristic name="Base Size" typeId="e452-67d7-e861-25f9">40</characteristic>
+      </characteristics>
+      <modifiers>
+        <modifier type="set" value="Base" field="name"/>
+      </modifiers>
+    </profile>
+    <profile name="Base 300" typeId="76aa-68f9-b955-0f6b" typeName="Base" hidden="false" id="a49d-70d8-ac27-ef9f">
+      <characteristics>
+        <characteristic name="Base Size" typeId="e452-67d7-e861-25f9">300</characteristic>
+      </characteristics>
+      <modifiers>
+        <modifier type="set" value="Base" field="name"/>
+      </modifiers>
+    </profile>
   </sharedProfiles>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Warlord" hidden="false" id="8497-7cf3-9a4a-1ecf">
