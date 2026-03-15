@@ -1189,7 +1189,7 @@ If this unit is destroyed by its own Solar Annihilator, its singularity engine i
         <categoryLink targetId="3326-5b0a-b607-c6b3" id="7ad5-26af-e251-51d6" primary="false" name="Airborne"/>
         <categoryLink targetId="1c82-800c-2e0c-6127" id="cc3e-17dc-e2b0-1a64" primary="true" name="Leviathan"/>
         <categoryLink targetId="6e36-be99-bf15-fb56" id="8b3a-eb31-2e2f-d3d0" primary="false" name="Vehicle"/>
-        <categoryLink targetId="c91d-24e6-4ffc-c4fa" id="0e96-39cc-de59-2d80" primary="false" name="Colossus"/>
+        <categoryLink targetId="549c-3dbd-370e-5ed3" id="f96c-50ff-6cc4-cbfe" primary="false" name="Colossus"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Captain" hidden="false" id="fc45-e01e-4ba4-25df">
@@ -1843,7 +1843,6 @@ Select one friendly unit or group within 12”. This unit can immediately make 
       </constraints>
     </categoryEntry>
     <categoryEntry name="Navigators" id="ec43-7f75-10fb-0ba5" hidden="false"/>
-    <categoryEntry name="Colossus" id="c91d-24e6-4ffc-c4fa" hidden="false"/>
   </categoryEntries>
   <sharedProfiles>
     <profile name="Tachyon Rifle" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="042b-72f1-6ac7-8781">

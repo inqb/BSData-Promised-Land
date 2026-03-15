@@ -90,6 +90,7 @@
     <categoryEntry name="Sightless" id="0d5e-5366-12b5-5918" hidden="false"/>
     <categoryEntry name="Vanguard" id="2228-50ba-f04e-7470" hidden="false"/>
     <categoryEntry name="Leader (extra)" id="d811-3a71-b9ea-e8e2" hidden="false"/>
+    <categoryEntry name="Colossus" id="549c-3dbd-370e-5ed3" hidden="false"/>
   </categoryEntries>
   <sharedProfiles>
     <profile name="Base 28.5" typeId="76aa-68f9-b955-0f6b" typeName="Base" hidden="false" id="e1d3-bd05-6cb1-9bdd">
