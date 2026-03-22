@@ -182,6 +182,70 @@
         <modifier type="set" value="Base" field="name"/>
       </modifiers>
     </profile>
+    <profile name="Base Nyoma" typeId="76aa-68f9-b955-0f6b" typeName="Base" hidden="false" id="90b6-d658-7888-a65f">
+      <characteristics>
+        <characteristic name="Base Size" typeId="e452-67d7-e861-25f9">90x155</characteristic>
+      </characteristics>
+      <modifiers>
+        <modifier type="set" value="Base" field="name"/>
+      </modifiers>
+    </profile>
+    <profile name="Base 100" typeId="76aa-68f9-b955-0f6b" typeName="Base" hidden="false" id="b594-7e3b-0a9f-7480">
+      <characteristics>
+        <characteristic name="Base Size" typeId="e452-67d7-e861-25f9">100</characteristic>
+      </characteristics>
+      <modifiers>
+        <modifier type="set" value="Base" field="name"/>
+      </modifiers>
+    </profile>
+    <profile name="Base 90x155" typeId="76aa-68f9-b955-0f6b" typeName="Base" hidden="false" id="1da7-86f6-73a6-1bb5">
+      <characteristics>
+        <characteristic name="Base Size" typeId="e452-67d7-e861-25f9">90x155</characteristic>
+      </characteristics>
+      <modifiers>
+        <modifier type="set" value="Base" field="name"/>
+      </modifiers>
+    </profile>
+    <profile name="Base 95x210" typeId="76aa-68f9-b955-0f6b" typeName="Base" hidden="false" id="9543-bb55-0e64-80f3">
+      <characteristics>
+        <characteristic name="Base Size" typeId="e452-67d7-e861-25f9">95x210</characteristic>
+      </characteristics>
+      <modifiers>
+        <modifier type="set" value="Base" field="name"/>
+      </modifiers>
+    </profile>
+    <profile name="Base 95x190" typeId="76aa-68f9-b955-0f6b" typeName="Base" hidden="false" id="271a-8161-2660-e26e">
+      <characteristics>
+        <characteristic name="Base Size" typeId="e452-67d7-e861-25f9">95x190</characteristic>
+      </characteristics>
+      <modifiers>
+        <modifier type="set" value="Base" field="name"/>
+      </modifiers>
+    </profile>
+    <profile name="Base 90x135" typeId="76aa-68f9-b955-0f6b" typeName="Base" hidden="false" id="bda8-6c5d-4cd3-001a">
+      <characteristics>
+        <characteristic name="Base Size" typeId="e452-67d7-e861-25f9">90x135</characteristic>
+      </characteristics>
+      <modifiers>
+        <modifier type="set" value="Base" field="name"/>
+      </modifiers>
+    </profile>
+    <profile name="Base 80" typeId="76aa-68f9-b955-0f6b" typeName="Base" hidden="false" id="6832-9982-ca13-1a6c">
+      <characteristics>
+        <characteristic name="Base Size" typeId="e452-67d7-e861-25f9">80</characteristic>
+      </characteristics>
+      <modifiers>
+        <modifier type="set" value="Base" field="name"/>
+      </modifiers>
+    </profile>
+    <profile name="Base 105x170" typeId="76aa-68f9-b955-0f6b" typeName="Base" hidden="false" id="c6c2-22a2-917b-c2a7">
+      <characteristics>
+        <characteristic name="Base Size" typeId="e452-67d7-e861-25f9">105x170</characteristic>
+      </characteristics>
+      <modifiers>
+        <modifier type="set" value="Base" field="name"/>
+      </modifiers>
+    </profile>
   </sharedProfiles>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Warlord" hidden="false" id="8497-7cf3-9a4a-1ecf">
