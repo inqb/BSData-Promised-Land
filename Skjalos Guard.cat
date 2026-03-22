@@ -19,11 +19,6 @@
     <categoryEntry name="Oryssa" id="914e-579d-a5c8-81a0" hidden="false"/>
     <categoryEntry name="Sakraston" id="5c19-25fc-aebe-64e7" hidden="false"/>
     <categoryEntry name="Skaryssa" id="a08e-cbaa-1955-95c3" hidden="false"/>
-    <categoryEntry name="Foo" id="cb6c-1d34-4239-5ce5" hidden="true">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc14-db03-9140-b723"/>
-      </constraints>
-    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="The Legions of Slaughter" id="f3b8-206a-82ea-821c" hidden="false">
@@ -185,14 +180,6 @@ That unit or group has disadvantage on all of its attacks until the end of the
         <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+1</characteristic>
         <characteristic name="Damage" typeId="2780-b560-1641-b9a5">2</characteristic>
         <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d">*Trap* abilities have no effect if they were triggered by a unit equipped with this weapon.</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Heavy Ram" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="6481-ed3c-ee04-c34b">
-      <characteristics>
-        <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">D5</characteristic>
-        <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+1</characteristic>
-        <characteristic name="Damage" typeId="2780-b560-1641-b9a5">2</characteristic>
-        <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d"/>
       </characteristics>
     </profile>
     <profile name="Autocannon" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="1915-28d4-03de-9849">
@@ -906,7 +893,7 @@ If the challenge is accepted, attacks from both this unit and the challenged *l
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Heavy Ram" hidden="false" id="64c9-3ae6-a4d7-8dce" defaultAmount="1" sortIndex="1">
                   <infoLinks>
-                    <infoLink name="Heavy Ram" id="17fd-3cbe-42bc-3ff2" hidden="false" type="profile" targetId="6481-ed3c-ee04-c34b"/>
+                    <infoLink name="Heavy Ram" id="17fd-3cbe-42bc-3ff2" hidden="false" type="profile" targetId="ae2e-8bdc-aeae-877b"/>
                   </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Dozer Blade" hidden="false" id="weap-nyoma-dozer-blade" max="1" sortIndex="3">
@@ -1091,7 +1078,7 @@ This weapon can select points on the battlefield that are not visible to the at
         <infoLink name="Explosive End (D5&quot;)" id="997c-ae8c-8b11-c858" hidden="false" type="rule" targetId="rule-explosive-end"/>
         <infoLink name="Primordial Relic" id="f8c1-7d7b-8dc0-be19" hidden="false" type="rule" targetId="rule-primordial-relic"/>
         <infoLink name="Explosive End (D5&quot;)" id="28bd-316c-b5bd-8d03" hidden="false" type="rule" targetId="rule-explosive-end"/>
-        <infoLink name="Heavy Ram" id="2aba-0c82-caf0-b5f5" hidden="false" type="profile" targetId="6481-ed3c-ee04-c34b"/>
+        <infoLink name="Heavy Ram" id="2aba-0c82-caf0-b5f5" hidden="false" type="profile" targetId="ae2e-8bdc-aeae-877b"/>
         <infoLink name="Base 95x190" id="a7db-0319-0bf7-1f68" hidden="false" type="profile" targetId="271a-8161-2660-e26e"/>
       </infoLinks>
     </selectionEntry>
@@ -1159,14 +1146,6 @@ If a model equipped with this weapon makes no actions in the movement phase, su
             <characteristic name="Arcane" typeId="char-arcane">-</characteristic>
           </characteristics>
         </profile>
-        <profile name="Super-Heavy Ram" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="7eb5-a55a-a51e-c58d">
-          <characteristics>
-            <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">2D10</characteristic>
-            <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+3</characteristic>
-            <characteristic name="Damage" typeId="2780-b560-1641-b9a5">3</characteristic>
-            <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d"/>
-          </characteristics>
-        </profile>
         <profile name="Skaryssa Destroyer Battery" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="f061-2a64-81f3-c393">
           <characteristics>
             <characteristic name="Range" typeId="1023-f0db-ffcf-da31">120&quot;</characteristic>
@@ -1184,6 +1163,7 @@ If a model equipped with this weapon makes no actions in the movement phase, su
       </rules>
       <infoLinks>
         <infoLink name="Explosive End (D5&quot;)" id="7c88-2511-b271-3699" hidden="false" type="rule" targetId="rule-explosive-end"/>
+        <infoLink name="Super-Heavy Ram" id="35d9-54a9-e694-d545" hidden="false" type="profile" targetId="bb68-933c-039a-dc29"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Witch Cult" hidden="false" id="2290-beb5-229e-3449" collective="false">
@@ -1850,7 +1830,7 @@ A unit with caskets of redemption can accidentally detonate when they lose point
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Heavy Ram" hidden="false" id="5cc1-7c2d-0ad7-d558" defaultAmount="1" sortIndex="1">
                   <infoLinks>
-                    <infoLink name="Heavy Ram" id="3636-dd0d-521a-30d0" hidden="false" type="profile" targetId="6481-ed3c-ee04-c34b"/>
+                    <infoLink name="Heavy Ram" id="3636-dd0d-521a-30d0" hidden="false" type="profile" targetId="ae2e-8bdc-aeae-877b"/>
                   </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Dozer Blade" hidden="false" id="8139-a74b-b51f-36dc" max="1" sortIndex="3">
@@ -2321,7 +2301,7 @@ This unit cannot be targeted by ranged attacks or affected by any enemy invocati
       </costs>
       <infoLinks>
         <infoLink name="Explosive End (D5&quot;)" id="01a0-6ff2-a812-3e05" hidden="false" type="rule" targetId="rule-explosive-end"/>
-        <infoLink name="Heavy Ram" id="29b2-abc3-91b1-0d8f" hidden="false" type="profile" targetId="6481-ed3c-ee04-c34b"/>
+        <infoLink name="Heavy Ram" id="29b2-abc3-91b1-0d8f" hidden="false" type="profile" targetId="ae2e-8bdc-aeae-877b"/>
         <infoLink name="Base 90x155" id="68ee-087d-1cb1-4c68" hidden="false" type="profile" targetId="1da7-86f6-73a6-1bb5"/>
         <infoLink name="Outlander Adaptation" id="8b9e-f322-06db-ac3d" hidden="false" type="rule" targetId="5a40-ba7b-6297-fd46"/>
       </infoLinks>
@@ -2402,15 +2382,11 @@ This unit cannot be targeted by ranged attacks or affected by any enemy invocati
       <infoLinks>
         <infoLink name="Outlander Adaptation" id="10fb-dd54-e171-284f" hidden="false" type="rule" targetId="5a40-ba7b-6297-fd46"/>
         <infoLink name="Explosive End (D5&quot;)" id="377f-f92c-3a1f-edee" hidden="false" type="rule" targetId="rule-explosive-end"/>
-        <infoLink name="Heavy Ram" id="3918-2b27-e933-8a10" hidden="false" type="profile" targetId="6481-ed3c-ee04-c34b"/>
+        <infoLink name="Heavy Ram" id="3918-2b27-e933-8a10" hidden="false" type="profile" targetId="ae2e-8bdc-aeae-877b"/>
         <infoLink name="Heavy Autocannon Battery" id="d2ea-c01c-b53c-7fce" hidden="false" type="profile" targetId="a697-657d-aa90-139a"/>
         <infoLink name="Base 95x210" id="28bd-e9a1-f4e2-524e" hidden="false" type="profile" targetId="9543-bb55-0e64-80f3"/>
+        <infoLink name="Infantry Fighting Vehicle" id="ba86-1d4d-11af-34d1" hidden="false" type="rule" targetId="f42b-f34e-4efe-87eb"/>
       </infoLinks>
-      <rules>
-        <rule name="Infantry Fighting Vehicle" id="10c0-d70c-cb63-e318" hidden="false">
-          <description>This transport can carry up to 22 friendly *infantry* models.</description>
-        </rule>
-      </rules>
       <categoryLinks>
         <categoryLink targetId="e385-16f4-3a80-8997" id="3877-5f0d-0a53-15b7" primary="false" name="Skjalos Guard"/>
         <categoryLink targetId="6e36-be99-bf15-fb56" id="9ebc-a816-3727-a61e" primary="true" name="Vehicle"/>
@@ -2434,7 +2410,7 @@ This unit cannot be targeted by ranged attacks or affected by any enemy invocati
       </profiles>
       <infoLinks>
         <infoLink name="Rugged Plate" id="c51f-57eb-9a83-8562" hidden="false" type="rule" targetId="rule-rugged-plate"/>
-        <infoLink name="Heavy Ram" id="baa4-4002-addd-c842" hidden="false" type="profile" targetId="6481-ed3c-ee04-c34b"/>
+        <infoLink name="Heavy Ram" id="baa4-4002-addd-c842" hidden="false" type="profile" targetId="ae2e-8bdc-aeae-877b"/>
         <infoLink name="Base 90x155" id="87de-dfae-cfe6-032a" hidden="false" type="profile" targetId="1da7-86f6-73a6-1bb5"/>
       </infoLinks>
       <rules>
@@ -2508,7 +2484,7 @@ Each time a *burning* unit fails an attrition roll, it loses one point of health
       <infoLinks>
         <infoLink name="Rugged Plate" id="e197-24dd-7cdd-f500" hidden="false" type="rule" targetId="rule-rugged-plate"/>
         <infoLink name="Explosive End (D5&quot;)" id="e310-6056-eaa1-b8c1" hidden="false" type="rule" targetId="rule-explosive-end"/>
-        <infoLink name="Heavy Ram" id="f077-0733-e164-61f6" hidden="false" type="profile" targetId="6481-ed3c-ee04-c34b"/>
+        <infoLink name="Heavy Ram" id="f077-0733-e164-61f6" hidden="false" type="profile" targetId="ae2e-8bdc-aeae-877b"/>
         <infoLink name="Base 90x155" id="24fe-0a4f-ad71-84a7" hidden="false" type="profile" targetId="1da7-86f6-73a6-1bb5"/>
       </infoLinks>
       <selectionEntryGroups>
@@ -2597,7 +2573,7 @@ Units may not make a tow move without towing another unit. A unit cannot both m
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Heavy Ram" hidden="false" id="e47b-87b3-7156-4d2b" sortIndex="1" defaultAmount="1">
               <infoLinks>
-                <infoLink name="Heavy Ram" id="1f53-c0fc-a546-9d1d" hidden="false" type="profile" targetId="6481-ed3c-ee04-c34b"/>
+                <infoLink name="Heavy Ram" id="1f53-c0fc-a546-9d1d" hidden="false" type="profile" targetId="ae2e-8bdc-aeae-877b"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Mine Plough" hidden="false" id="837a-18c5-6b9e-602d" sortIndex="2">
@@ -2655,7 +2631,7 @@ Units may not make a tow move without towing another unit. A unit cannot both m
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Heavy Ram" hidden="false" id="96a5-e335-b825-5d59" defaultAmount="1" sortIndex="1">
                   <infoLinks>
-                    <infoLink name="Heavy Ram" id="0410-5050-cd14-306a" hidden="false" type="profile" targetId="6481-ed3c-ee04-c34b"/>
+                    <infoLink name="Heavy Ram" id="0410-5050-cd14-306a" hidden="false" type="profile" targetId="ae2e-8bdc-aeae-877b"/>
                   </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Dozer Blade" hidden="false" id="39aa-42ae-1af0-c042" max="1" sortIndex="3">
@@ -3393,54 +3369,6 @@ A unit equipped with Quad-Skaryssan Tracks cannot make a Fight action unless it
         </modifierGroup>
       </modifierGroups>
     </entryLink>
-    <entryLink import="true" name="Skaryssa Destroyer" hidden="true" id="6cf2-fec5-34ba-3544" type="selectionEntry" targetId="2af8-82a6-c34b-703b">
-      <categoryLinks>
-        <categoryLink targetId="cb6c-1d34-4239-5ce5" id="d6db-6ebf-46ad-0daa" primary="false" name="Foo"/>
-      </categoryLinks>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden"/>
-            <modifier type="increment" value="1" field="bc46-13a8-3824-d4f4"/>
-          </modifiers>
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5284-089c-a4c3-ca73" shared="true" includeChildSelections="false"/>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="8497-7cf3-9a4a-1ecf" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifierGroup>
-      </modifierGroups>
-      <constraints>
-        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="bc46-13a8-3824-d4f4"/>
-      </constraints>
-    </entryLink>
-    <entryLink import="true" name="Shikari" hidden="true" id="dd4f-caec-2d9d-3746" type="selectionEntry" targetId="1c20-da87-1484-efe2">
-      <categoryLinks>
-        <categoryLink targetId="cb6c-1d34-4239-5ce5" id="817a-5219-50de-157c" primary="false" name="Foo"/>
-      </categoryLinks>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden"/>
-            <modifier type="increment" value="1" field="875a-090c-4f6f-5e0e"/>
-          </modifiers>
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5284-089c-a4c3-ca73" shared="true" includeChildSelections="false"/>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="8497-7cf3-9a4a-1ecf" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifierGroup>
-      </modifierGroups>
-      <constraints>
-        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="875a-090c-4f6f-5e0e"/>
-      </constraints>
-    </entryLink>
   </entryLinks>
   <sharedInfoGroups>
     <infoGroup name="The Esoterica Sykara" id="04f9-7843-5f47-b8df" hidden="false">
@@ -3545,7 +3473,4 @@ A unit equipped with Quad-Skaryssan Tracks cannot make a Fight action unless it
   <catalogueLinks>
     <catalogueLink type="catalogue" name="New Catalogue (link)" id="b776-4e19-89d9-38d9" targetId="8531-a20c-cb3b-77aa"/>
   </catalogueLinks>
-  <sharedSelectionEntryGroups>
-    <selectionEntryGroup name="Foo" id="8388-bdd7-b4ac-6d85" hidden="false"/>
-  </sharedSelectionEntryGroups>
 </catalogue>

@@ -92,6 +92,7 @@
     <categoryEntry name="Leader (extra)" id="d811-3a71-b9ea-e8e2" hidden="false"/>
     <categoryEntry name="Command (Core)" id="c3b5-5e66-cb51-0d89" hidden="false"/>
     <categoryEntry name="Colossus" id="549c-3dbd-370e-5ed3" hidden="false"/>
+    <categoryEntry name="Transport" id="6b08-1d14-c12c-3f0f" hidden="false"/>
   </categoryEntries>
   <sharedProfiles>
     <profile name="Base 28.5" typeId="76aa-68f9-b955-0f6b" typeName="Base" hidden="false" id="e1d3-bd05-6cb1-9bdd">
@@ -246,6 +247,30 @@
         <modifier type="set" value="Base" field="name"/>
       </modifiers>
     </profile>
+    <profile name="Heavy Ram" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="ae2e-8bdc-aeae-877b">
+      <characteristics>
+        <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">D5</characteristic>
+        <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+1</characteristic>
+        <characteristic name="Damage" typeId="2780-b560-1641-b9a5">2</characteristic>
+        <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d"/>
+      </characteristics>
+    </profile>
+    <profile name="Super-Heavy Ram" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="bb68-933c-039a-dc29">
+      <characteristics>
+        <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">2D10</characteristic>
+        <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+3</characteristic>
+        <characteristic name="Damage" typeId="2780-b560-1641-b9a5">3</characteristic>
+        <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d"/>
+      </characteristics>
+    </profile>
+    <profile name="Base 120x260" typeId="76aa-68f9-b955-0f6b" typeName="Base" hidden="false" id="5990-ca9c-aa32-4d4e">
+      <characteristics>
+        <characteristic name="Base Size" typeId="e452-67d7-e861-25f9">120x260</characteristic>
+      </characteristics>
+      <modifiers>
+        <modifier type="set" value="Base" field="name"/>
+      </modifiers>
+    </profile>
   </sharedProfiles>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Warlord" hidden="false" id="8497-7cf3-9a4a-1ecf">
@@ -255,4 +280,9 @@
       </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
+  <sharedRules>
+    <rule name="Infantry Fighting Vehicle" id="f42b-f34e-4efe-87eb" hidden="false">
+      <description>This transport can carry up to 22 friendly *infantry* models.</description>
+    </rule>
+  </sharedRules>
 </gameSystem>
