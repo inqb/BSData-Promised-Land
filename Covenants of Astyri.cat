@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="7c48-0504-3c48-89a0" name="Covenants of Astyri" gameSystemId="sys-promised-land" gameSystemRevision="1" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="7c48-0504-3c48-89a0" name="Covenants of Astyri" gameSystemId="sys-promised-land" gameSystemRevision="1" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="The Forces of Astyri" id="7aa2-a7ce-f7b3-a63e" hidden="false">
       <constraints>
@@ -37,6 +37,16 @@
             <categoryLink name="Troops" hidden="false" id="7440-db53-7cf6-4748" targetId="6545-e1b1-0b43-eb83"/>
             <categoryLink name="Vehicle" hidden="false" id="ff3e-6577-81d2-660d" targetId="6e36-be99-bf15-fb56"/>
             <categoryLink name="Leviathan" hidden="false" id="26bb-a780-72f2-3e4a" targetId="1c82-800c-2e0c-6127"/>
+          </categoryLinks>
+        </forceEntry>
+        <forceEntry name="In the Hand of Dust, In the Grasp of Dusk" id="b51f-86fb-0ba3-cffd" hidden="false">
+          <categoryLinks>
+            <categoryLink name="Leader" hidden="false" id="eacc-3a13-c3ac-ce25" targetId="2824-ed94-4a5b-e775"/>
+            <categoryLink name="Troops" hidden="false" id="f8cf-1fc2-3853-579b" targetId="6545-e1b1-0b43-eb83"/>
+            <categoryLink name="Support" hidden="false" id="e348-5e6d-b61a-9292" targetId="639d-7660-22f8-e165"/>
+            <categoryLink name="Vehicle" hidden="false" id="6963-16ca-816b-a492" targetId="6e36-be99-bf15-fb56"/>
+            <categoryLink name="Leviathan" hidden="false" id="3cd4-6bf9-91a6-05cb" targetId="1c82-800c-2e0c-6127"/>
+            <categoryLink name="Leader (extra)" hidden="false" id="2eab-62f8-d5ed-d20e" targetId="d811-3a71-b9ea-e8e2"/>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
@@ -197,16 +207,9 @@
             <selectionEntryGroup name="Melee Weapon" id="0329-deba-7a36-08ed" hidden="false">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Electrolance" hidden="false" id="6f80-0e00-c297-ceca" sortIndex="1" defaultAmount="1">
-                  <profiles>
-                    <profile name="Electrolance" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="e84b-c80b-4696-a3aa">
-                      <characteristics>
-                        <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">2</characteristic>
-                        <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+2</characteristic>
-                        <characteristic name="Damage" typeId="2780-b560-1641-b9a5">1</characteristic>
-                        <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d">This weapon has advantage when targeting *monsters* or *cavalry*. If an attack roll of a natural 10 is made with this weapon, the target unit subtracts 1 from its initiative until the following combat phase.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Electrolance" id="2250-14e6-6b1e-be5d" hidden="false" type="profile" targetId="0ba5-90cc-eb9b-288f"/>
+                  </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Myadea Warblade" hidden="false" id="182b-2ea2-d45c-7b22" sortIndex="2">
                   <profiles>
@@ -402,14 +405,6 @@ In addition, while this unit is within 6” of two or more friendly *vehicles* a
             <characteristic name="Arcane" typeId="char-arcane">-</characteristic>
           </characteristics>
         </profile>
-        <profile name="Myadea Warblade" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="e266-97fd-270b-8fd4">
-          <characteristics>
-            <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">1</characteristic>
-            <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+3</characteristic>
-            <characteristic name="Damage" typeId="2780-b560-1641-b9a5">2</characteristic>
-            <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d"/>
-          </characteristics>
-        </profile>
         <profile name="Voltaic Blastpistol" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="fd72-8c18-74eb-8e4b">
           <characteristics>
             <characteristic name="Range" typeId="1023-f0db-ffcf-da31"/>
@@ -438,6 +433,7 @@ Until the end of the turn, when a friendly *Myadea* unit attacks one of your pri
       </categoryLinks>
       <infoLinks>
         <infoLink name="Base 30" id="0cb2-60ab-ac58-779e" hidden="false" type="profile" targetId="2f69-19dd-1d8a-6998"/>
+        <infoLink name="Myadea Warblade" id="82f2-7088-e0d0-71fb" hidden="false" type="profile" targetId="d23e-965e-ba7f-b484"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Hystarite Companions" hidden="false" id="4749-fbff-3123-3ced">
@@ -1057,6 +1053,526 @@ In addition, if this unit is grouped with no other *independent* units, friendly
         <categoryLink targetId="9ef4-1734-63a2-32b1" id="6cb0-bc9d-0981-993e" primary="false" name="Hieronites"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Covenant Overlord" hidden="false" id="7de6-b22b-7aed-8733">
+      <costs>
+        <cost name="Auri" typeId="cost-auri" value="115"/>
+      </costs>
+      <rules>
+        <rule name="Lords of the Slave Legions" id="df18-cf16-2048-ce88" hidden="false">
+          <description>Your force may only ever include one *Overlord* unit, and if your force includes one, it is always your *warlord*, superseding all other options.</description>
+        </rule>
+        <rule name="Thralls to a Greater Mind - Aura (10”)" id="effb-843f-9d23-78dd" hidden="false">
+          <description>Friendly visible *hieronite* units do not count as *shaken* while within 10” of this unit.</description>
+        </rule>
+      </rules>
+      <profiles>
+        <profile name="Covenant Overlord" typeId="profile-unit" typeName="Unit" hidden="false" id="e602-eabe-b351-51ca">
+          <characteristics>
+            <characteristic name="Speed" typeId="char-speed">6</characteristic>
+            <characteristic name="Health" typeId="char-health">8</characteristic>
+            <characteristic name="Defence" typeId="char-defence">9</characteristic>
+            <characteristic name="Initiative" typeId="char-initiative">6</characteristic>
+            <characteristic name="Morale" typeId="char-morale">4</characteristic>
+            <characteristic name="Arcane" typeId="char-arcane">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="2774-3ba0-c0f9-c607" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Trait" id="b7e5-c17c-5552-4a80" hidden="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1c43-9ac9-8b9c-ed2a-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c43-9ac9-8b9c-ed2a-max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="A Nightmare of Flesh and Steel" hidden="false" id="608d-ebc0-b3a0-0572">
+                  <rules>
+                    <rule name="A Nightmare of Flesh and Steel" id="9c7d-cd1e-9cb6-2128" hidden="false">
+                      <description>Enemy units within 6” of this model subtract 1 from their attrition rolls.</description>
+                    </rule>
+                  </rules>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Hierarch of Unnumbered Souls" hidden="false" id="1feb-77e0-035e-feff">
+                  <rules>
+                    <rule name="Hierarch of Unnumbered Souls" id="0bff-f368-3f29-e198" hidden="false">
+                      <description>Friendly *infantry* units within 6” of this unit are *core*, and Minatarii Hieronites units in your force can include up to twenty additional Minatarii instead of an additional ten.</description>
+                    </rule>
+                  </rules>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Immortal Transcendence" hidden="false" id="b094-7d42-48c9-f86e">
+                  <rules>
+                    <rule name="Immortal Transcendence" id="d47b-174c-753c-d622" hidden="false">
+                      <description>Damage inflicted by successful hits targeting this unit is halved (rounding up).</description>
+                    </rule>
+                  </rules>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Master of Destruction" hidden="false" id="8490-5d93-4bd1-abbe">
+                  <rules>
+                    <rule name="Master of Destruction" id="0237-ec3c-f3d1-8862" hidden="false">
+                      <description>Friendly *blast* weapons within 12” of this model may reroll natural attack rolls of 1.</description>
+                    </rule>
+                  </rules>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Paragon of Sorcery" hidden="false" id="0325-fa02-4904-c7bc">
+                  <rules>
+                    <rule name="Paragon of Sorcery" id="21fa-bebc-425b-2353" hidden="false">
+                      <description>This unit has an Arcane characteristic of 6.</description>
+                    </rule>
+                  </rules>
+                  <modifiers>
+                    <modifier type="set" value="6" field="char-arcane" scope="parent" affects="profiles.Unit"/>
+                  </modifiers>
+                  <infoLinks>
+                    <infoLink name="The Disciplines Kolymite" id="6783-4bf0-a68b-468d" hidden="false" type="infoGroup" targetId="8c18-8e01-ac22-407d"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="The Ochystan Slayer" hidden="false" id="5e78-a6c7-08e9-438c">
+                  <rules>
+                    <rule name="The Ochystan Slayer" id="3d08-e617-5981-d80f" hidden="false">
+                      <description>When this unit targets a group with an attack, it can target *independent* units, regardless of how many models are in its retinue.</description>
+                    </rule>
+                  </rules>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Weapons" id="e49f-af25-97a7-807e" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Macrocoils" hidden="false" id="3c9c-6e45-7da2-d1dd" sortIndex="1">
+                  <costs>
+                    <cost name="Auri" typeId="cost-auri" value="15"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Macrocoils" id="131a-f095-1091-efc5" hidden="false" type="profile" targetId="65f5-936f-b3e9-6612"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e829-dc28-a01d-2094"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Two additional Phase Revolvers" hidden="false" id="0704-d93d-8c1b-5d31" sortIndex="2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4538-e143-a00a-c66b"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Auri" typeId="cost-auri" value="20"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Wings" hidden="false" id="822b-f50e-83fe-6d77" sortIndex="3">
+                  <costs>
+                    <cost name="Auri" typeId="cost-auri" value="35"/>
+                  </costs>
+                  <rules>
+                    <rule name="Wings" id="d9a5-139f-abe2-94c1" hidden="false">
+                      <description>A model equipped with Wings is *airborne*, and has a Speed characteristic of 12.</description>
+                    </rule>
+                  </rules>
+                  <modifiers>
+                    <modifier type="set" value="12" field="char-speed" scope="parent" affects="profiles.Unit"/>
+                    <modifier type="add" value="3326-5b0a-b607-c6b3" field="category"/>
+                  </modifiers>
+                </selectionEntry>
+              </selectionEntries>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="2-handed" id="0323-e7c4-646c-9930" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Augmented Blades" hidden="false" id="02e0-ffe1-cceb-3542">
+                      <infoLinks>
+                        <infoLink name="Augmented Blades" id="f591-e59a-7646-c480" hidden="false" type="profile" targetId="e01c-d2d0-6a51-fd5c"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Demolition Maul" hidden="false" id="6141-1ea4-ed24-985d">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cd5-e62b-8e3d-5494"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Demolition Maul" id="831d-a641-f6fe-b09c" hidden="false" type="profile" targetId="292c-9433-cb8f-5aa1"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="Auri" typeId="cost-auri" value="10"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Electrolance" hidden="false" id="72f8-eaa1-d83f-10dd">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e0a6-1262-94e5-a064"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Electrolance" id="2790-aa19-9067-369d" hidden="false" type="profile" targetId="0ba5-90cc-eb9b-288f"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="Auri" typeId="cost-auri" value="5"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Heavy Greataxe" hidden="false" id="3b9d-4740-f486-aaa3">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c6b8-11ae-bc5b-0c3c"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Heavy Greataxe" id="28de-5b89-3d97-564e" hidden="false" type="profile" targetId="fbf5-43ce-c87f-dc34"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="Auri" typeId="cost-auri" value="15"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Incinerator" hidden="false" id="6baa-a0aa-16fd-89c4">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a505-56ac-0a46-6f5c"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Incinerator" id="40bd-45aa-ea69-57a9" hidden="false" type="profile" targetId="6b5b-7ec8-c11a-6cf2"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="Auri" typeId="cost-auri" value="10"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Phase Ankus" hidden="false" id="09ae-ff66-c149-bc92">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c2a-0855-574d-c532"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Phase Ankus" id="adcb-4b9a-33c8-e986" hidden="false" type="profile" targetId="93db-95f1-bbce-1928"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="Auri" typeId="cost-auri" value="15"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Phase Carbine" hidden="false" id="f67d-c06f-cb28-4831">
+                      <infoLinks>
+                        <infoLink name="Phase Carbine" id="39ff-aa8b-c80e-6e55" hidden="false" type="profile" targetId="d471-ea58-bf03-689c"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Warglaive" hidden="false" id="6323-1894-c8f9-8404">
+                      <costs>
+                        <cost name="Auri" typeId="cost-auri" value="10"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b33e-35c5-e522-7175"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Warglaive" id="6e56-1d64-3e84-5522" hidden="false" type="profile" targetId="5a83-c4e2-967c-d96e"/>
+                      </infoLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="1-handed" id="a3bc-db22-ce55-f95b" hidden="false">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="f4c5-d318-1ccf-2edf-min"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f4c5-d318-1ccf-2edf-max"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="decrement" value="2" field="f4c5-d318-1ccf-2edf-min">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="0323-e7c4-646c-9930" shared="true" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" value="2" field="f4c5-d318-1ccf-2edf-max">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="0323-e7c4-646c-9930" shared="true" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="increment" value="2" field="f4c5-d318-1ccf-2edf-min">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="0704-d93d-8c1b-5d31" shared="true" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="increment" value="2" field="f4c5-d318-1ccf-2edf-max">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="0704-d93d-8c1b-5d31" shared="true" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Phase Revolver" hidden="false" id="043b-cbc0-29c8-b069" sortIndex="1" defaultAmount="2">
+                      <infoLinks>
+                        <infoLink name="Phase Revolver" id="e5fd-4e91-11ce-0f2c" hidden="false" type="profile" targetId="a638-ec03-0934-9a89"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Demiglaive" hidden="false" id="c264-850c-2984-dbe0" sortIndex="2">
+                      <costs>
+                        <cost name="Auri" typeId="cost-auri" value="10"/>
+                      </costs>
+                      <infoLinks>
+                        <infoLink name="Demiglaive" id="be48-73c7-63ac-18bc" hidden="false" type="profile" targetId="9e0a-89d2-284c-e7ce"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Hieronite Blades" hidden="false" id="b818-bdaf-01b2-4d66" sortIndex="3">
+                      <infoLinks>
+                        <infoLink name="Hieronite Blades" id="af43-c5a5-9999-647a" hidden="false" type="profile" targetId="d92d-63d0-224f-b030"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Myadea Warblade" hidden="false" id="8793-8f61-fb6a-6240" sortIndex="4">
+                      <infoLinks>
+                        <infoLink name="Myadea Warblade" id="aea8-6371-4d1f-3084" hidden="false" type="profile" targetId="d23e-965e-ba7f-b484"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="Auri" typeId="cost-auri" value="15"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="97de-7cf1-5476-73f0" id="7211-8935-3dba-8c6e" primary="false" name="Covenants of Astyri"/>
+        <categoryLink targetId="2824-ed94-4a5b-e775" id="1afc-b4c0-8643-ea94" primary="true" name="Leader"/>
+        <categoryLink targetId="b299-685a-c3bf-add7" id="cc7b-b4a5-8a4f-00d1" primary="false" name="Infantry"/>
+        <categoryLink targetId="8bd5-e71f-ad75-c8f5" id="d0ef-34c4-6360-983f" primary="false" name="Independent"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Warlord" hidden="false" id="ee42-4866-a9b0-1eae" type="selectionEntry" targetId="8497-7cf3-9a4a-1ecf"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Minatarii Artillery Team" hidden="false" id="80f5-0cc8-0f21-5bd0">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Minatarii Engineer" hidden="false" id="6669-d94f-73e7-6f2f">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="0497-4774-58b0-9cc0-min"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="0497-4774-58b0-9cc0-max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Phase Carbine" id="a1cc-f093-9e56-00f9" hidden="false" type="profile" targetId="d471-ea58-bf03-689c"/>
+            <infoLink name="Base 28.5" id="af3e-fbcc-4626-2673" hidden="false" type="profile" targetId="e1d3-bd05-6cb1-9bdd">
+              <comment>25?</comment>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Minatarii Engineer" hidden="false" id="6b82-850f-5c9a-d57b">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="24a3-10bf-52e0-154d-min"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="24a3-10bf-52e0-154d-max"/>
+          </constraints>
+          <profiles>
+            <profile name="Prometheus Mortar" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="0a19-fe89-eec9-18b9">
+              <characteristics>
+                <characteristic name="Range" typeId="1023-f0db-ffcf-da31">36&quot;</characteristic>
+                <characteristic name="Dice" typeId="1192-2222-5926-5b4b">1</characteristic>
+                <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+3</characteristic>
+                <characteristic name="Damage" typeId="a482-225f-a3cb-a700">2</characteristic>
+                <characteristic name="Traits" typeId="76cd-5882-86da-52cf">Attacks made by this weapon are *artillery* *blast* attacks, with a 3” radius originating from a point within range.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Base 40" id="306d-fb13-1ae5-fe1e" hidden="false" type="profile" targetId="ca04-7a25-5d47-0b6f"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Auri" typeId="cost-auri" value="85"/>
+      </costs>
+      <profiles>
+        <profile name="Minatarii Artillery Team" typeId="profile-unit" typeName="Unit" hidden="false" id="8ef4-5f01-45ff-4a51">
+          <characteristics>
+            <characteristic name="Speed" typeId="char-speed">6</characteristic>
+            <characteristic name="Health" typeId="char-health">1</characteristic>
+            <characteristic name="Defence" typeId="char-defence">7</characteristic>
+            <characteristic name="Initiative" typeId="char-initiative">1</characteristic>
+            <characteristic name="Morale" typeId="char-morale">1</characteristic>
+            <characteristic name="Arcane" typeId="char-arcane">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="97de-7cf1-5476-73f0" id="2355-7be8-1ecc-6f2c" primary="false" name="Covenants of Astyri"/>
+        <categoryLink targetId="639d-7660-22f8-e165" id="1f09-3e8e-a7a0-b8bf" primary="true" name="Support"/>
+        <categoryLink targetId="b299-685a-c3bf-add7" id="8e42-c017-a9fa-db4e" primary="false" name="Infantry"/>
+        <categoryLink targetId="9ef4-1734-63a2-32b1" id="3297-1219-d45e-ec73" primary="false" name="Hieronites"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Encarii Command Vehicle" hidden="false" id="92c0-4646-c206-d6c7">
+      <costs>
+        <cost name="Auri" typeId="cost-auri" value="180"/>
+      </costs>
+      <profiles>
+        <profile name="Encarii Command Vehicle" typeId="profile-unit" typeName="Unit" hidden="false" id="6d8e-834c-c325-424e">
+          <characteristics>
+            <characteristic name="Speed" typeId="char-speed">12</characteristic>
+            <characteristic name="Health" typeId="char-health">20</characteristic>
+            <characteristic name="Defence" typeId="char-defence">12 / 12 10</characteristic>
+            <characteristic name="Initiative" typeId="char-initiative">2</characteristic>
+            <characteristic name="Morale" typeId="char-morale">3</characteristic>
+            <characteristic name="Arcane" typeId="char-arcane">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Command Transport" id="10de-a599-0f6b-9e19" hidden="false">
+          <description>This transport can carry up to 12 friendly *infantry* models. This unit gains any *aura* and *command* abilities of any units embarked upon this model.</description>
+        </rule>
+        <rule name="Signal Array" id="5b6e-a0c0-f262-d293" hidden="false">
+          <description>When a unit with this ability is on the battlefield, the following rules apply:
+* Its controlling player may roll two dice and discard a result of their choice when making rolls to bring in reinforcement warbands.
+* Friendly indirect *artillery* attacks made by units within 24” of this unit are not heavily disadvantaged if their target is within line of sight of this unit.
+* Friendly visible *vehicle* units (other than Encarii Command Vehicle units) within 18” of a unit with this ability add 1 to their Initiative characteristics.</description>
+        </rule>
+      </rules>
+      <entryLinks>
+        <entryLink import="true" name="Warlord" hidden="false" id="c3df-12d7-21dd-52ff" type="selectionEntry" targetId="8497-7cf3-9a4a-1ecf"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Explosive End (2”)" id="71e4-d998-ba5f-403b" hidden="false" type="rule" targetId="e7a2-d585-bc1b-637d"/>
+        <infoLink name="Base 95x190" id="fa7b-fce0-1e92-07c9" hidden="false" type="profile" targetId="271a-8161-2660-e26e"/>
+        <infoLink name="Heavy Ram" id="946a-2514-6c1f-35a6" hidden="false" type="profile" targetId="ae2e-8bdc-aeae-877b"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="97de-7cf1-5476-73f0" id="5681-854d-96d3-5f8e" primary="false" name="Covenants of Astyri"/>
+        <categoryLink targetId="2824-ed94-4a5b-e775" id="6589-b081-26a4-e4f9" primary="true" name="Leader"/>
+        <categoryLink targetId="6e36-be99-bf15-fb56" id="b8ea-385c-d87b-150c" primary="false" name="Vehicle"/>
+        <categoryLink targetId="6b08-1d14-c12c-3f0f" id="97b4-f715-5517-90fb" primary="false" name="Transport"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Encarii Emissary" hidden="false" id="53a5-5590-f0e8-4494">
+      <profiles>
+        <profile name="Encarii Emissary" typeId="profile-unit" typeName="Unit" hidden="false" id="97d2-70ce-8608-d19a">
+          <characteristics>
+            <characteristic name="Speed" typeId="char-speed">12</characteristic>
+            <characteristic name="Health" typeId="char-health">20</characteristic>
+            <characteristic name="Defence" typeId="char-defence">12 / 12 / 10</characteristic>
+            <characteristic name="Initiative" typeId="char-initiative">2</characteristic>
+            <characteristic name="Morale" typeId="char-morale">3</characteristic>
+            <characteristic name="Arcane" typeId="char-arcane">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Helios Autocannon Battery" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="64c6-f0d4-e2e5-81d4">
+          <characteristics>
+            <characteristic name="Range" typeId="1023-f0db-ffcf-da31">64&quot;</characteristic>
+            <characteristic name="Dice" typeId="1192-2222-5926-5b4b">4</characteristic>
+            <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+4</characteristic>
+            <characteristic name="Damage" typeId="a482-225f-a3cb-a700">3</characteristic>
+            <characteristic name="Traits" typeId="76cd-5882-86da-52cf">Attacks made with this weapon are *interceptor* attacks.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Auri" typeId="cost-auri" value="160"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Infantry Fighting Vehicle" id="283b-907d-3ced-5629" hidden="false" type="rule" targetId="f42b-f34e-4efe-87eb"/>
+        <infoLink name="Explosive End (2”)" id="9b10-75e3-596b-22cc" hidden="false" type="rule" targetId="e7a2-d585-bc1b-637d"/>
+        <infoLink name="Heavy Ram" id="a4cd-3b4f-0dca-02ee" hidden="false" type="profile" targetId="ae2e-8bdc-aeae-877b"/>
+        <infoLink name="Base 95x190" id="98c9-7f31-3e36-13d4" hidden="false" type="profile" targetId="271a-8161-2660-e26e"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="97de-7cf1-5476-73f0" id="b8d8-8b72-6539-664a" primary="false" name="Covenants of Astyri"/>
+        <categoryLink targetId="6e36-be99-bf15-fb56" id="23df-12a7-d659-14d6" primary="true" name="Vehicle"/>
+        <categoryLink targetId="6b08-1d14-c12c-3f0f" id="8337-8f0a-a7b6-3cfd" primary="false" name="Transport"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Encarii Hunter" hidden="false" id="e5f4-4540-01b7-f031">
+      <costs>
+        <cost name="Auri" typeId="cost-auri" value="195"/>
+      </costs>
+      <profiles>
+        <profile name="Encarii Hunter" typeId="profile-unit" typeName="Unit" hidden="false" id="af51-a4d7-f1d5-d540">
+          <characteristics>
+            <characteristic name="Speed" typeId="char-speed">12</characteristic>
+            <characteristic name="Health" typeId="char-health">20</characteristic>
+            <characteristic name="Defence" typeId="char-defence">12 / 12 / 10</characteristic>
+            <characteristic name="Initiative" typeId="char-initiative">2</characteristic>
+            <characteristic name="Morale" typeId="char-morale">3</characteristic>
+            <characteristic name="Arcane" typeId="char-arcane">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Physaktine Devastator" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="36d2-bb46-ace8-644d">
+          <characteristics>
+            <characteristic name="Range" typeId="1023-f0db-ffcf-da31">64&quot;</characteristic>
+            <characteristic name="Dice" typeId="1192-2222-5926-5b4b">2</characteristic>
+            <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+6</characteristic>
+            <characteristic name="Damage" typeId="a482-225f-a3cb-a700">6</characteristic>
+            <characteristic name="Traits" typeId="76cd-5882-86da-52cf">This weapon has advantage when targeting *vehicles*, *monsters* and *constructs*.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Combat Transport" id="ebb8-3673-be45-75e9" hidden="false">
+          <description>This transport can carry up to 12 friendly *infantry* models.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Explosive End (2”)" id="e27d-cf66-14fc-6d3c" hidden="false" type="rule" targetId="e7a2-d585-bc1b-637d"/>
+        <infoLink name="Heavy Ram" id="11cc-6f56-61dd-0991" hidden="false" type="profile" targetId="ae2e-8bdc-aeae-877b"/>
+        <infoLink name="Base 95x190" id="46ca-3695-0f6a-b9ba" hidden="false" type="profile" targetId="271a-8161-2660-e26e"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="97de-7cf1-5476-73f0" id="6234-be9d-8b4c-c1c7" primary="false" name="Covenants of Astyri"/>
+        <categoryLink targetId="6e36-be99-bf15-fb56" id="aa68-1b64-c0e1-c890" primary="true" name="Vehicle"/>
+        <categoryLink targetId="6b08-1d14-c12c-3f0f" id="bf1d-ce97-34ff-9704" primary="false" name="Transport"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Kastellite" hidden="false" id="5e40-f74d-ec3a-55ea">
+      <costs>
+        <cost name="Auri" typeId="cost-auri" value="140"/>
+      </costs>
+      <profiles>
+        <profile name="Kastellite" typeId="profile-unit" typeName="Unit" hidden="false" id="e35e-4466-ee88-16df">
+          <characteristics>
+            <characteristic name="Speed" typeId="char-speed">7</characteristic>
+            <characteristic name="Health" typeId="char-health">12</characteristic>
+            <characteristic name="Defence" typeId="char-defence">12 / 11 / 10</characteristic>
+            <characteristic name="Initiative" typeId="char-initiative">3</characteristic>
+            <characteristic name="Morale" typeId="char-morale">4</characteristic>
+            <characteristic name="Arcane" typeId="char-arcane">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Vengeance From Beyond" id="3ad1-1e48-edb6-c2a8" hidden="false">
+          <description>This unit’s speed and morale characteristics may never be negatively modified by enemy units’ abilities. Additionally, whenever an enemy *Covenants of Astyri* non-*Apostates* unit is on the battlefield, this unit can add 2 to its speed as long as it ends that move closer to that enemy unit.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Explosive End (D5&quot;)" id="f97f-0841-d03d-239f" hidden="false" type="rule" targetId="5d45-8796-2e04-09ea"/>
+        <infoLink name="Ion Maul" id="b1dc-f581-9f90-7652" hidden="false" type="profile" targetId="15a1-9426-4fe2-61ff"/>
+        <infoLink name="Armoured Gauntlet" id="d0c2-51bc-3597-96fb" hidden="false" type="profile" targetId="18bd-9580-0d21-d5ee"/>
+        <infoLink name="Base 100" id="e5a3-dec1-9c52-cdba" hidden="false" type="profile" targetId="b594-7e3b-0a9f-7480"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="97de-7cf1-5476-73f0" id="dde7-a9e2-660d-a529" primary="false" name="Covenants of Astyri"/>
+        <categoryLink targetId="55d6-4f4f-a4fd-e249" id="115b-67a9-c73a-a84b" primary="true" name="Construct"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Kaphos Heavy Destroyer" hidden="false" id="926d-8692-1b3a-a997">
+      <costs>
+        <cost name="Auri" typeId="cost-auri" value="450"/>
+      </costs>
+      <profiles>
+        <profile name="Kaphos Heavy Destroyer" typeId="profile-unit" typeName="Unit" hidden="false" id="8259-cd14-b7b0-7650">
+          <characteristics>
+            <characteristic name="Speed" typeId="char-speed">12</characteristic>
+            <characteristic name="Health" typeId="char-health">40</characteristic>
+            <characteristic name="Defence" typeId="char-defence">12 / 12 / 10</characteristic>
+            <characteristic name="Initiative" typeId="char-initiative">-</characteristic>
+            <characteristic name="Morale" typeId="char-morale">4</characteristic>
+            <characteristic name="Arcane" typeId="char-arcane">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Heavy Accelerator Battery" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="5c90-9bcd-da55-0492">
+          <characteristics>
+            <characteristic name="Range" typeId="1023-f0db-ffcf-da31">72&quot;</characteristic>
+            <characteristic name="Dice" typeId="1192-2222-5926-5b4b">4</characteristic>
+            <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+8</characteristic>
+            <characteristic name="Damage" typeId="a482-225f-a3cb-a700">6</characteristic>
+            <characteristic name="Traits" typeId="76cd-5882-86da-52cf">This is a *destroyer* attack.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Explosive End (D5”)" id="58a6-e7eb-f253-486f" hidden="false">
+          <description>When this unit is destroyed, before removing the model, roll a dice. On a 5+, it explodes in a D5” blast radius from its base, with a strength of +3 and a damage of 1.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Super-Heavy Ram" id="632e-539c-87b5-871b" hidden="false" type="profile" targetId="bb68-933c-039a-dc29"/>
+        <infoLink name="Base 120x260" id="5aa8-2760-d914-8e29" hidden="false" type="profile" targetId="5990-ca9c-aa32-4d4e"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="97de-7cf1-5476-73f0" id="95df-1ec3-da80-19f7" primary="false" name="Covenants of Astyri"/>
+        <categoryLink targetId="1c82-800c-2e0c-6127" id="9b5b-a1e1-fde3-dd8e" primary="true" name="Leviathan"/>
+        <categoryLink targetId="6e36-be99-bf15-fb56" id="5202-10eb-8087-8586" primary="false" name="Vehicle"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile name="Unearting" typeId="profile-invocation" typeName="Invocation" hidden="false" id="9aa2-2aeb-a06d-7cf0">
@@ -1232,6 +1748,47 @@ If a model equipped with this weapon makes no actions in the movement phase, su
         <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d"/>
       </characteristics>
     </profile>
+    <profile name="Phase Revolver" typeId="f94b-6526-ad27-3051" typeName="Ranged Weapon" hidden="false" id="a638-ec03-0934-9a89">
+      <characteristics>
+        <characteristic name="Range" typeId="1023-f0db-ffcf-da31">10&quot;</characteristic>
+        <characteristic name="Dice" typeId="1192-2222-5926-5b4b">1</characteristic>
+        <characteristic name="Strength" typeId="ff5b-347b-c7f0-5770">+2</characteristic>
+        <characteristic name="Damage" typeId="a482-225f-a3cb-a700">1</characteristic>
+        <characteristic name="Traits" typeId="76cd-5882-86da-52cf">This weapon has a damage characteristic of 2 when targeting a unit within 12” of the attacking model.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Myadea Warblade" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="d23e-965e-ba7f-b484">
+      <characteristics>
+        <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">1</characteristic>
+        <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+3</characteristic>
+        <characteristic name="Damage" typeId="2780-b560-1641-b9a5">2</characteristic>
+        <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d"/>
+      </characteristics>
+    </profile>
+    <profile name="Electrolance" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="0ba5-90cc-eb9b-288f">
+      <characteristics>
+        <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">2</characteristic>
+        <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+2</characteristic>
+        <characteristic name="Damage" typeId="2780-b560-1641-b9a5">1</characteristic>
+        <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d">This weapon has advantage when targeting *monsters* or *cavalry*. If an attack roll of a natural 10 is made with this weapon, the target unit subtracts 1 from its initiative until the following combat phase.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Ion Maul" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="15a1-9426-4fe2-61ff">
+      <characteristics>
+        <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">3</characteristic>
+        <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+1</characteristic>
+        <characteristic name="Damage" typeId="2780-b560-1641-b9a5">1</characteristic>
+        <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d"/>
+      </characteristics>
+    </profile>
+    <profile name="Armoured Gauntlet" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="18bd-9580-0d21-d5ee">
+      <characteristics>
+        <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">2</characteristic>
+        <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+2</characteristic>
+        <characteristic name="Damage" typeId="2780-b560-1641-b9a5">1</characteristic>
+        <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d"/>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedInfoGroups>
     <infoGroup name="The Disciplines Kolymite" id="8c18-8e01-ac22-407d" hidden="false">
@@ -1250,6 +1807,7 @@ If a model equipped with this weapon makes no actions in the movement phase, su
     <categoryEntry name="Hieronites" id="9ef4-1734-63a2-32b1" hidden="false"/>
     <categoryEntry name="Hastaxii" id="7b99-9d57-da32-13c8" hidden="false"/>
     <categoryEntry name="Myadea" id="3e8d-534c-c607-7565" hidden="false"/>
+    <categoryEntry name="Overlord" id="df11-32d3-bf25-5e11" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink import="true" name="Iconoclast" hidden="true" id="6a35-c500-b757-aab6" type="selectionEntry" targetId="d321-f4db-6b38-eea9">
@@ -1299,6 +1857,20 @@ If a model equipped with this weapon makes no actions in the movement phase, su
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+            <modifier type="set" value="2" field="f4ab-3041-26a2-25a5"/>
+            <modifier type="increment" value="2" field="f4ab-3041-26a2-25a5">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="8497-7cf3-9a4a-1ecf" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b51f-86fb-0ba3-cffd" shared="true"/>
+          </conditions>
         </modifierGroup>
       </modifierGroups>
     </entryLink>
@@ -1442,7 +2014,7 @@ If a model equipped with this weapon makes no actions in the movement phase, su
         </modifierGroup>
       </modifierGroups>
     </entryLink>
-    <entryLink import="true" name="The Covenant Legions" hidden="true" id="ddab-22a5-8ad0-d507" type="selectionEntry" targetId="ead4-f076-8290-9700"/>
+    <entryLink import="true" name="The Covenant Legions" hidden="false" id="ddab-22a5-8ad0-d507" type="selectionEntry" targetId="ead4-f076-8290-9700"/>
     <entryLink import="true" name="Hieronite Specialists" hidden="true" id="4592-2b83-821b-3498" type="selectionEntry" targetId="8b46-c3b8-8c99-2535">
       <constraints>
         <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0f9c-c6ca-7509-028c" includeChildSelections="false"/>
@@ -1516,6 +2088,7 @@ If a model equipped with this weapon makes no actions in the movement phase, su
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a93b-c5aa-eb13-6e4a" shared="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e03c-14d8-f55a-ed5e" shared="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b6a7-2b23-0602-d4c2" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b51f-86fb-0ba3-cffd" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1544,6 +2117,7 @@ If a model equipped with this weapon makes no actions in the movement phase, su
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a93b-c5aa-eb13-6e4a" shared="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e03c-14d8-f55a-ed5e" shared="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b6a7-2b23-0602-d4c2" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b51f-86fb-0ba3-cffd" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1599,6 +2173,101 @@ If a model equipped with this weapon makes no actions in the movement phase, su
         <categoryLink targetId="df72-a664-a1a2-6978" id="7f41-ae18-a29b-74d7" primary="false" name="Ally"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Encarii Command Vehicle" hidden="true" id="f626-e54c-3c34-afdb" type="selectionEntry" targetId="92c0-4646-c206-d6c7">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b51f-86fb-0ba3-cffd" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Covenant Overlord" hidden="true" id="bc33-c17a-24af-b6a1" type="selectionEntry" targetId="7de6-b22b-7aed-8733">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b51f-86fb-0ba3-cffd" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Minatarii Artillery Team" hidden="true" id="843e-5caf-fef3-112b" type="selectionEntry" targetId="80f5-0cc8-0f21-5bd0">
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="be9f-8859-06d3-8d8e"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+            <modifier type="set" value="1" field="be9f-8859-06d3-8d8e"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b51f-86fb-0ba3-cffd" shared="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="true" name="Encarii Emissary" hidden="true" id="de16-c316-c18e-ef40" type="selectionEntry" targetId="53a5-5590-f0e8-4494">
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="eaa9-9bf7-d0e5-44d2"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+            <modifier type="increment" value="1" field="eaa9-9bf7-d0e5-44d2">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="3a77-6b02-355f-e066" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b51f-86fb-0ba3-cffd" shared="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="true" name="Encarii Hunter" hidden="true" id="3347-0fc0-521b-4f4e" type="selectionEntry" targetId="e5f4-4540-01b7-f031">
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f25d-6ca3-580e-5d1e"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+            <modifier type="set" value="1" field="f25d-6ca3-580e-5d1e"/>
+            <modifier type="increment" value="2" field="f25d-6ca3-580e-5d1e">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="8497-7cf3-9a4a-1ecf" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b51f-86fb-0ba3-cffd" shared="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="true" name="Kaphos Heavy Destroyer" hidden="true" id="86f5-da80-7e5d-a6c9" type="selectionEntry" targetId="926d-8692-1b3a-a997">
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="97fe-4d4b-2d23-b9e4"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+            <modifier type="increment" value="1" field="97fe-4d4b-2d23-b9e4">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="8497-7cf3-9a4a-1ecf" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b51f-86fb-0ba3-cffd" shared="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
   </entryLinks>
   <sharedRules>
     <rule name="Skittering Horror" id="5644-27ad-e862-118b" hidden="false">
@@ -1607,6 +2276,9 @@ If a model equipped with this weapon makes no actions in the movement phase, su
     <rule name="Explosive End (2”)" id="e7a2-d585-bc1b-637d" hidden="false">
       <description>When this unit is destroyed, before removing the model, roll a dice. On a 5+, it explodes in a blast attack, with a 2” radius originating from its base, with a strength of +3 and a damage of 1.</description>
     </rule>
+    <rule name="Explosive End (D5&quot;)" id="5d45-8796-2e04-09ea" hidden="false">
+      <description>When this unit is destroyed, before removing the model, it explodes in a 3” blast radius from its base, with a strength of +3 and a damage of 1. If this unit was destroyed by a *psychic* attack, the explosion has a damage of 2, and counts as a psychic *attack*.</description>
+    </rule>
   </sharedRules>
   <infoLinks>
     <infoLink name="The Disciplines Kolymite" id="f4fb-49fb-6bfb-d9de" hidden="false" type="infoGroup" targetId="8c18-8e01-ac22-407d"/>
@@ -1614,4 +2286,30 @@ If a model equipped with this weapon makes no actions in the movement phase, su
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Atlas Conclaves (link)" id="394b-a30e-d3b1-c30a" targetId="c7bc-e4cf-827b-af5a"/>
   </catalogueLinks>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Leader (extra)" hidden="true" id="a09c-0087-4cbc-28d4">
+      <categoryLinks>
+        <categoryLink targetId="d811-3a71-b9ea-e8e2" id="8cc6-7709-23bd-960a" primary="true" name="Leader (extra)"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="8497-7cf3-9a4a-1ecf" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b51f-86fb-0ba3-cffd" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Encarii Command Vehicle" hidden="false" id="59a0-c425-e96a-92ba" type="selectionEntry" targetId="92c0-4646-c206-d6c7" defaultAmount="1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c2f-3cf3-a84f-6f51"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>
