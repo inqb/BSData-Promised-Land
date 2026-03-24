@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="7c48-0504-3c48-89a0" name="Covenants of Astyri" gameSystemId="sys-promised-land" gameSystemRevision="1" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="7c48-0504-3c48-89a0" name="Covenants of Astyri" gameSystemId="sys-promised-land" gameSystemRevision="1" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry name="The Forces of Astyri" id="7aa2-a7ce-f7b3-a63e" hidden="false">
       <constraints>
@@ -22,6 +22,7 @@
             <categoryLink name="Support" hidden="false" id="de5e-d96c-1737-f789" targetId="639d-7660-22f8-e165"/>
             <categoryLink name="Construct" hidden="false" id="6516-27ac-989d-07b7" targetId="55d6-4f4f-a4fd-e249"/>
             <categoryLink name="Leviathan" hidden="false" id="ab37-c8e9-22e0-514b" targetId="1c82-800c-2e0c-6127"/>
+            <categoryLink name="Kastellite" hidden="false" id="80c0-c252-5724-f984" targetId="fcac-540d-aa5e-1a77"/>
           </categoryLinks>
         </forceEntry>
         <forceEntry name="Bringers of Light" id="e03c-14d8-f55a-ed5e" hidden="false">
@@ -29,6 +30,7 @@
             <categoryLink name="Leader" hidden="false" id="b3f3-e934-51d9-c2a0" targetId="2824-ed94-4a5b-e775"/>
             <categoryLink name="Troops" hidden="false" id="0175-4190-c2e4-99c3" targetId="6545-e1b1-0b43-eb83"/>
             <categoryLink name="Support" hidden="false" id="42d5-0c8b-a752-b983" targetId="639d-7660-22f8-e165"/>
+            <categoryLink name="Kastellite" hidden="false" id="a54f-3cfe-97c2-d4b9" targetId="fcac-540d-aa5e-1a77"/>
           </categoryLinks>
         </forceEntry>
         <forceEntry name="Destroyer Conclave" id="5a30-23e7-e393-ee8d" hidden="false">
@@ -37,6 +39,7 @@
             <categoryLink name="Troops" hidden="false" id="7440-db53-7cf6-4748" targetId="6545-e1b1-0b43-eb83"/>
             <categoryLink name="Vehicle" hidden="false" id="ff3e-6577-81d2-660d" targetId="6e36-be99-bf15-fb56"/>
             <categoryLink name="Leviathan" hidden="false" id="26bb-a780-72f2-3e4a" targetId="1c82-800c-2e0c-6127"/>
+            <categoryLink name="Kastellite" hidden="false" id="90ce-bb51-e5aa-43db" targetId="fcac-540d-aa5e-1a77"/>
           </categoryLinks>
         </forceEntry>
         <forceEntry name="In the Hand of Dust, In the Grasp of Dusk" id="b51f-86fb-0ba3-cffd" hidden="false">
@@ -47,6 +50,7 @@
             <categoryLink name="Vehicle" hidden="false" id="6963-16ca-816b-a492" targetId="6e36-be99-bf15-fb56"/>
             <categoryLink name="Leviathan" hidden="false" id="3cd4-6bf9-91a6-05cb" targetId="1c82-800c-2e0c-6127"/>
             <categoryLink name="Leader (extra)" hidden="false" id="2eab-62f8-d5ed-d20e" targetId="d811-3a71-b9ea-e8e2"/>
+            <categoryLink name="Kastellite" hidden="false" id="8912-ac7d-cf30-3058" targetId="fcac-540d-aa5e-1a77"/>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
@@ -1503,7 +1507,7 @@ In addition, if this unit is grouped with no other *independent* units, friendly
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Kastellite" hidden="false" id="5e40-f74d-ec3a-55ea">
       <costs>
-        <cost name="Auri" typeId="cost-auri" value="140"/>
+        <cost name="Auri" typeId="cost-auri" value="160"/>
       </costs>
       <profiles>
         <profile name="Kastellite" typeId="profile-unit" typeName="Unit" hidden="false" id="e35e-4466-ee88-16df">
@@ -1524,13 +1528,17 @@ In addition, if this unit is grouped with no other *independent* units, friendly
       </rules>
       <infoLinks>
         <infoLink name="Explosive End (D5&quot;)" id="f97f-0841-d03d-239f" hidden="false" type="rule" targetId="5d45-8796-2e04-09ea"/>
-        <infoLink name="Ion Maul" id="b1dc-f581-9f90-7652" hidden="false" type="profile" targetId="15a1-9426-4fe2-61ff"/>
-        <infoLink name="Armoured Gauntlet" id="d0c2-51bc-3597-96fb" hidden="false" type="profile" targetId="18bd-9580-0d21-d5ee"/>
+        <infoLink name="Kastellite Fist" id="b1dc-f581-9f90-7652" hidden="false" type="profile" targetId="15a1-9426-4fe2-61ff"/>
         <infoLink name="Base 100" id="e5a3-dec1-9c52-cdba" hidden="false" type="profile" targetId="b594-7e3b-0a9f-7480"/>
+        <infoLink name="Hyperion Armour" id="5297-0bcc-1c25-9f58" hidden="false" type="rule" targetId="4b7d-f9db-3dbe-36e3"/>
+        <infoLink name="Heavy Seismic Pulveriser" id="c0f5-10d1-e581-4210" hidden="false" type="profile" targetId="ffd3-8f92-1e35-fce5"/>
+        <infoLink name="Kastellite" id="45b4-9d73-b04c-f619" hidden="false" type="rule" targetId="6201-4fa2-fb10-052b"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="97de-7cf1-5476-73f0" id="dde7-a9e2-660d-a529" primary="false" name="Covenants of Astyri"/>
-        <categoryLink targetId="55d6-4f4f-a4fd-e249" id="115b-67a9-c73a-a84b" primary="true" name="Construct"/>
+        <categoryLink targetId="55d6-4f4f-a4fd-e249" id="115b-67a9-c73a-a84b" primary="false" name="Construct"/>
+        <categoryLink targetId="0cc9-67ad-7b2f-2188" id="9a48-a2df-6a14-ea21" primary="false" name="Shade&apos;s Apostates"/>
+        <categoryLink targetId="fcac-540d-aa5e-1a77" id="6d79-a2ea-68ad-1233" primary="true" name="Kastellite"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Kaphos Heavy Destroyer" hidden="false" id="926d-8692-1b3a-a997">
@@ -1773,20 +1781,22 @@ If a model equipped with this weapon makes no actions in the movement phase, su
         <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d">This weapon has advantage when targeting *monsters* or *cavalry*. If an attack roll of a natural 10 is made with this weapon, the target unit subtracts 1 from its initiative until the following combat phase.</characteristic>
       </characteristics>
     </profile>
-    <profile name="Ion Maul" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="15a1-9426-4fe2-61ff">
+    <profile name="Kastellite Fist" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="15a1-9426-4fe2-61ff">
       <characteristics>
         <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">3</characteristic>
-        <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+1</characteristic>
-        <characteristic name="Damage" typeId="2780-b560-1641-b9a5">1</characteristic>
-        <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d"/>
+        <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+2</characteristic>
+        <characteristic name="Damage" typeId="2780-b560-1641-b9a5">2</characteristic>
+        <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d">If, during a Fight action, an attack with this weapon slays one or more *infantry* models, it can throw one of their corpses at another unit. Once this unit has finished all of its attacks, select one enemy unit within 12” as the target.
+For each *infantry* model slain by this weapon, make an attack roll with a strength characteristic of +2 and a damage of 2.</characteristic>
       </characteristics>
     </profile>
-    <profile name="Armoured Gauntlet" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="18bd-9580-0d21-d5ee">
+    <profile name="Heavy Seismic Pulveriser" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="ffd3-8f92-1e35-fce5">
       <characteristics>
-        <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">2</characteristic>
-        <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+2</characteristic>
-        <characteristic name="Damage" typeId="2780-b560-1641-b9a5">1</characteristic>
-        <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d"/>
+        <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">1</characteristic>
+        <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+5</characteristic>
+        <characteristic name="Damage" typeId="2780-b560-1641-b9a5">5</characteristic>
+        <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d">ach time this weapon inflicts a successful hit on a *vehicle*, *construct*, *monster* or *structure* model, the target gains a seismic shock point. At the end of the phase, if the target model is not slain, make one attack roll with this weapon for each seismic shock point the target has allocated to it. Damage inflicted by these attacks cannot be allocated to models that do not have drill points allocated to them.
+This is a *destroyer* attack.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
@@ -1808,6 +1818,8 @@ If a model equipped with this weapon makes no actions in the movement phase, su
     <categoryEntry name="Hastaxii" id="7b99-9d57-da32-13c8" hidden="false"/>
     <categoryEntry name="Myadea" id="3e8d-534c-c607-7565" hidden="false"/>
     <categoryEntry name="Overlord" id="df11-32d3-bf25-5e11" hidden="false"/>
+    <categoryEntry name="Shade&apos;s Apostates" id="0cc9-67ad-7b2f-2188" hidden="false"/>
+    <categoryEntry name="Kastellite" id="fcac-540d-aa5e-1a77" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink import="true" name="Iconoclast" hidden="true" id="6a35-c500-b757-aab6" type="selectionEntry" targetId="d321-f4db-6b38-eea9">
@@ -2268,6 +2280,7 @@ If a model equipped with this weapon makes no actions in the movement phase, su
         </modifierGroup>
       </modifierGroups>
     </entryLink>
+    <entryLink import="true" name="Kastellite" hidden="false" id="01cf-48d1-13fa-bd7a" type="selectionEntry" targetId="5e40-f74d-ec3a-55ea"/>
   </entryLinks>
   <sharedRules>
     <rule name="Skittering Horror" id="5644-27ad-e862-118b" hidden="false">
@@ -2278,6 +2291,13 @@ If a model equipped with this weapon makes no actions in the movement phase, su
     </rule>
     <rule name="Explosive End (D5&quot;)" id="5d45-8796-2e04-09ea" hidden="false">
       <description>When this unit is destroyed, before removing the model, it explodes in a 3” blast radius from its base, with a strength of +3 and a damage of 1. If this unit was destroyed by a *psychic* attack, the explosion has a damage of 2, and counts as a psychic *attack*.</description>
+    </rule>
+    <rule name="Hyperion Armour" id="4b7d-f9db-3dbe-36e3" hidden="false">
+      <description>Attacks with a damage characteristic of 2 or less that target this unit are made with disadvantage.</description>
+    </rule>
+    <rule name="Kastellite" id="6201-4fa2-fb10-052b" hidden="false">
+      <description>The rules for this unit are provided hereas a demonstration for future, and players that wish to use it may replace one *Construct* unit in a warband with this unit.
+However, as it is part of a very distinct subfaction, it will be available solely in a unique warband when therestof its subfaction is released.</description>
     </rule>
   </sharedRules>
   <infoLinks>
