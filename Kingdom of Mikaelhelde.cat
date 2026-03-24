@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="610b-48af-e8ef-2f35" name="Kingdoms of Mikaelhelde" gameSystemId="sys-promised-land" gameSystemRevision="1" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="610b-48af-e8ef-2f35" name="Kingdoms of Mikaelhelde" gameSystemId="sys-promised-land" gameSystemRevision="1" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Cardinal" hidden="false" id="2ce2-88bf-8777-0c3e">
       <categoryLinks>
@@ -109,7 +109,7 @@ This effect does not prevent the target unit from making other actions during th
       </selectionEntryGroups>
       <infoLinks>
         <infoLink name="Fleshwrought Abominations (8+)" id="b1a4-4500-c61a-f063" hidden="false" type="rule" targetId="1c40-0281-0ec5-b2cb"/>
-        <infoLink name="The Disciplines Kolymite" id="1ea7-c574-31ef-c1e0" hidden="false" type="infoGroup" targetId="3f7c-f16a-1bb4-6e7d"/>
+        <infoLink name="Lore of Primordial Arts" id="1ea7-c574-31ef-c1e0" hidden="false" type="infoGroup" targetId="3f7c-f16a-1bb4-6e7d"/>
         <infoLink name="Base 90x135" id="aed1-feda-cf31-f794" hidden="false" type="profile" targetId="bda8-6c5d-4cd3-001a"/>
       </infoLinks>
       <entryLinks>
@@ -151,7 +151,7 @@ This effect does not prevent the target unit from making other actions during th
         <infoLink name="Butcher&apos;s Blade" id="7bed-1fd6-0ab1-7050" hidden="false" type="profile" targetId="134e-5b2c-cddd-d337"/>
         <infoLink name="Butcher&apos;s Blade" id="324b-87ee-62d4-0808" hidden="false" type="profile" targetId="134e-5b2c-cddd-d337"/>
         <infoLink name="Butcher&apos;s Blade" id="de57-e5b1-dba6-e991" hidden="false" type="profile" targetId="134e-5b2c-cddd-d337"/>
-        <infoLink name="The Disciplines Kolymite" id="76fc-149e-1a0e-1c34" hidden="false" type="infoGroup" targetId="3f7c-f16a-1bb4-6e7d"/>
+        <infoLink name="Lore of Primordial Arts" id="76fc-149e-1a0e-1c34" hidden="false" type="infoGroup" targetId="3f7c-f16a-1bb4-6e7d"/>
         <infoLink name="Base 35" id="76b0-8aa6-e2ce-35e6" hidden="false" type="profile" targetId="5638-4dce-9001-1d15"/>
       </infoLinks>
       <entryLinks>
@@ -344,7 +344,7 @@ A unit with this ability can only be used to channel another unit&apos;s power o
       </rules>
       <infoLinks>
         <infoLink name="Fleshwrought Abominations (8+)" id="b463-e3bc-bf62-2a59" hidden="false" type="rule" targetId="1c40-0281-0ec5-b2cb"/>
-        <infoLink name="The Disciplines Kolymite" id="cbcc-e142-a9df-6507" hidden="false" type="infoGroup" targetId="3f7c-f16a-1bb4-6e7d"/>
+        <infoLink name="Lore of Primordial Arts" id="cbcc-e142-a9df-6507" hidden="false" type="infoGroup" targetId="3f7c-f16a-1bb4-6e7d"/>
         <infoLink name="Base 35" id="4bd5-92f1-c489-e4d4" hidden="false" type="profile" targetId="5638-4dce-9001-1d15"/>
       </infoLinks>
       <selectionEntries>
@@ -363,12 +363,12 @@ A unit with this ability can only be used to channel another unit&apos;s power o
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d8c-165e-3845-30cb-max" includeChildSelections="false"/>
               </constraints>
               <selectionEntryGroups>
-                <selectionEntryGroup name="" id="68a2-b0c1-bd29-7758" hidden="false" sortIndex="1">
+                <selectionEntryGroup id="68a2-b0c1-bd29-7758" hidden="false" sortIndex="1">
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Two Hookblades" hidden="false" id="2d26-768c-a2b3-b0ed" sortIndex="1" defaultAmount="1">
                       <infoLinks>
-                        <infoLink name="Acolyte Cleavers" id="0b71-71ce-9a02-1565" hidden="false" type="profile" targetId="e52f-69e6-d5fb-077d"/>
-                        <infoLink name="Acolyte Cleavers" id="0195-d650-60e8-deba" hidden="false" type="profile" targetId="e52f-69e6-d5fb-077d"/>
+                        <infoLink name="Hookblade" id="0b71-71ce-9a02-1565" hidden="false" type="profile" targetId="e52f-69e6-d5fb-077d"/>
+                        <infoLink name="Hookblade" id="0195-d650-60e8-deba" hidden="false" type="profile" targetId="e52f-69e6-d5fb-077d"/>
                       </infoLinks>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Two Falchions" hidden="false" id="01b9-dbbb-86e8-8f62" sortIndex="2">
@@ -537,7 +537,7 @@ This power may be successfully invoked only once per battle, and after invoking
       </rules>
       <infoLinks>
         <infoLink name="Fleshwrought Abominations (8+)" id="8e1b-bfc9-03c1-9cbe" hidden="false" type="rule" targetId="1c40-0281-0ec5-b2cb"/>
-        <infoLink name="The Disciplines Kolymite" id="18eb-f4aa-f0d7-d224" hidden="false" type="infoGroup" targetId="3f7c-f16a-1bb4-6e7d"/>
+        <infoLink name="Lore of Primordial Arts" id="18eb-f4aa-f0d7-d224" hidden="false" type="infoGroup" targetId="3f7c-f16a-1bb4-6e7d"/>
         <infoLink name="Base 60" id="273b-a2bc-c852-3ee5" hidden="false" type="profile" targetId="ebee-2597-c52d-5eb8"/>
       </infoLinks>
     </selectionEntry>
@@ -570,7 +570,7 @@ At the end of each combat phase, roll a dice for each unit within 6” of one or
       </rules>
       <infoLinks>
         <infoLink name="Fleshwrought Abominations (8+)" id="40e0-7979-0652-9858" hidden="false" type="rule" targetId="1c40-0281-0ec5-b2cb"/>
-        <infoLink name="The Disciplines Kolymite" id="4032-cbb2-ef00-a87c" hidden="false" type="infoGroup" targetId="3f7c-f16a-1bb4-6e7d"/>
+        <infoLink name="Lore of Primordial Arts" id="4032-cbb2-ef00-a87c" hidden="false" type="infoGroup" targetId="3f7c-f16a-1bb4-6e7d"/>
         <infoLink name="Base 80" id="a840-4f98-bc31-5da2" hidden="false" type="profile" targetId="6832-9982-ca13-1a6c"/>
       </infoLinks>
       <categoryLinks>
@@ -721,7 +721,7 @@ At the end of each combat phase, roll a dice for each unit within 6” of one or
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="Explosive End (D 5”)" id="6da7-1b5f-bb42-5330" hidden="false" type="rule" targetId="a56d-7894-0e66-e162"/>
+        <infoLink name="Explosive End (D5”)" id="6da7-1b5f-bb42-5330" hidden="false" type="rule" targetId="a56d-7894-0e66-e162"/>
         <infoLink name="Base 105x170" id="27f7-20e4-dd2c-145a" hidden="false" type="profile" targetId="c6c2-22a2-917b-c2a7"/>
       </infoLinks>
     </selectionEntry>
@@ -779,7 +779,7 @@ If there are twelve or more friendly units’ *void echo* and *resonance* units 
         <infoLink name="A Relic of the Primordial World" id="bed8-4c00-e5bb-58e3" hidden="false" type="rule" targetId="28ee-2333-5eec-2b99"/>
         <infoLink name="Rupture of Reality" id="c485-a46b-3c99-7aa8" hidden="false" type="rule" targetId="43df-968f-d742-3136"/>
         <infoLink name="Soul Eater" id="90aa-a321-75fa-e732" hidden="false" type="rule" targetId="590e-dc58-646b-83ad"/>
-        <infoLink name="The Disciplines Kolymite" id="0b9b-306e-4647-61d6" hidden="false" type="infoGroup" targetId="3f7c-f16a-1bb4-6e7d"/>
+        <infoLink name="Lore of Primordial Arts" id="0b9b-306e-4647-61d6" hidden="false" type="infoGroup" targetId="3f7c-f16a-1bb4-6e7d"/>
         <infoLink name="Base 200" id="2504-7e9c-cb30-c6e3" hidden="false" type="profile" targetId="54fa-2339-a49e-08dd"/>
       </infoLinks>
     </selectionEntry>
@@ -829,6 +829,7 @@ At the end of each Movement Phase, any enemy units visible to and within 6” of
       <infoLinks>
         <infoLink name="Base 80" id="a60a-0416-5381-49ed" hidden="false" type="profile" targetId="6832-9982-ca13-1a6c"/>
         <infoLink name="Lore of Primordial Arts" id="7a83-278b-5362-386f" hidden="false" type="infoGroup" targetId="3f7c-f16a-1bb4-6e7d"/>
+        <infoLink name="Fleshwrought Abominations (8+)" id="4a01-cc6c-ba4b-4f09" hidden="false" type="rule" targetId="1c40-0281-0ec5-b2cb"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" id="d493-bce9-0925-9a4a" type="selectionEntry" targetId="8497-7cf3-9a4a-1ecf"/>
@@ -872,7 +873,7 @@ At the end of each Movement Phase, any enemy units visible to and within 6” of
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup name="" id="9daa-4784-9784-3004" hidden="false" sortIndex="1">
+            <selectionEntryGroup id="9daa-4784-9784-3004" hidden="false" sortIndex="1">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Two Hookblades" hidden="false" id="999f-a5a4-ccca-fd67" sortIndex="1" defaultAmount="1">
                   <infoLinks>
@@ -1334,10 +1335,10 @@ At the end of each Movement Phase, any enemy units visible to and within 6” of
   </forceEntries>
   <sharedRules>
     <rule name="Fleshwrought Abominations (8+)" id="1c40-0281-0ec5-b2cb" hidden="false">
-      <description>Each time a model from this unit is slain, roll a dice. On a roll of an 8+, that model remains alive with a single point of health remaining.</description>
+      <description>Each time a model from this unit is slain, roll a dice. On a roll of an 8+, that model remains alive with a single point of health remaining. This has no effect on *destroyer* attacks.</description>
     </rule>
     <rule name="Fleshwrought Abominations (10+)" id="50b6-7cf2-2776-06ae" hidden="false">
-      <description>Each time a model from this unit is slain, roll a dice. On a roll of an 10+, that model remains alive with a single point of health remaining.</description>
+      <description>Each time a model from this unit is slain, roll a dice. On a roll of an 10+, that model remains alive with a single point of health remaining. This has no effect on *destroyer* attacks.</description>
     </rule>
     <rule name="A Construct of Ancient Stone" id="3dac-2ffa-ebe9-3d88" hidden="false">
       <description>All attacks except *destroyer* attacks have disadvantage against this unit. In addition, this unit never accumulates attrition points and is immune to any attacks and effects based on morale or initiative.
@@ -1475,8 +1476,8 @@ A unit enveloped by darkness:
     <profile name="Surgical Tools" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="e60d-18c7-1ba5-3d4c">
       <characteristics>
         <characteristic name="Dice" typeId="e736-f6b3-0474-ddb8">2</characteristic>
-        <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+4</characteristic>
-        <characteristic name="Damage" typeId="2780-b560-1641-b9a5">4</characteristic>
+        <characteristic name="Strength" typeId="9a62-cd45-d844-0bc3">+2</characteristic>
+        <characteristic name="Damage" typeId="2780-b560-1641-b9a5">1</characteristic>
         <characteristic name="Traits" typeId="1977-0f4d-9e75-2e2d"/>
       </characteristics>
     </profile>
@@ -1512,6 +1513,6 @@ The target unit loses a number of points of health equal to the result, subtra
     </infoGroup>
   </sharedInfoGroups>
   <infoLinks>
-    <infoLink name="The Disciplines Kolymite" id="a805-01b5-0e6b-3650" hidden="false" type="infoGroup" targetId="3f7c-f16a-1bb4-6e7d"/>
+    <infoLink name="Lore of Primordial Arts" id="a805-01b5-0e6b-3650" hidden="false" type="infoGroup" targetId="3f7c-f16a-1bb4-6e7d"/>
   </infoLinks>
 </catalogue>
