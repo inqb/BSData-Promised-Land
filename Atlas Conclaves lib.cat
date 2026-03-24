@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="c7bc-e4cf-827b-af5a" name="Atlas Conclaves lib" gameSystemId="sys-promised-land" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="c7bc-e4cf-827b-af5a" name="Atlas Conclaves lib" gameSystemId="sys-promised-land" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Amalia Assault Engine" hidden="false" id="2100-7e8d-755c-6a14">
       <categoryLinks>
         <categoryLink targetId="1018-2140-b907-b2d9" id="ce22-1c54-e3c9-c876" primary="false" name="Atlas Conclaves"/>
         <categoryLink targetId="55d6-4f4f-a4fd-e249" id="4f9f-4513-8cd4-a881" primary="false" name="Construct"/>
-        <categoryLink targetId="7662-20c1-b08b-911f" id="e15f-391a-5f38-5596" primary="false" name="Nyphia"/>
         <categoryLink targetId="1c82-800c-2e0c-6127" id="e478-574e-fb7e-3194" primary="true" name="Leviathan"/>
+        <categoryLink targetId="8568-d2dd-e00f-9b3c" id="fdbc-7b18-d4c2-b885" primary="false" name="Amalia"/>
       </categoryLinks>
       <costs>
         <cost name="Auri" typeId="cost-auri" value="395"/>
@@ -199,10 +199,10 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <infoLinks>
-        <infoLink name="Base 250" id="697a-b34b-66b4-7772" hidden="false" type="profile" targetId="9dbd-323f-2f96-4b5a"/>
         <infoLink name="Ancient Colossus" id="d526-ff05-78a0-9acd" hidden="false" type="rule" targetId="ac42-c7ab-6f57-a1d7"/>
         <infoLink name="The Ruin of All (D5+5”)" id="bbd4-2991-03ef-dcce" hidden="false" type="rule" targetId="7323-bfe2-44d0-6c9d"/>
         <infoLink name="Destructive Stomps" id="97cb-6749-579a-beab" hidden="false" type="profile" targetId="7975-f99c-3391-da93"/>
+        <infoLink name="Base 200" id="5524-5d7a-9c19-395b" hidden="false" type="profile" targetId="54fa-2339-a49e-08dd"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Gatherings of Iron (Choose 2)" hidden="false" id="a79f-7002-8b18-83a1" type="selectionEntryGroup" targetId="84d7-e739-71ae-570a"/>
@@ -329,6 +329,7 @@
   <categoryEntries>
     <categoryEntry name="Atlas Conclaves" id="1018-2140-b907-b2d9" hidden="false"/>
     <categoryEntry name="Nyphia" id="7662-20c1-b08b-911f" hidden="false"/>
+    <categoryEntry name="Amalia" id="8568-d2dd-e00f-9b3c" hidden="false"/>
   </categoryEntries>
   <sharedProfiles>
     <profile name="Destroyer Gauntlet" typeId="2857-5ab3-db0f-64a1" typeName="Melee Weapon" hidden="false" id="8a58-5266-8b25-709b">
